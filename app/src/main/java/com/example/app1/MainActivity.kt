@@ -15,7 +15,7 @@ import kotlinx.coroutines.CancellationException
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if(getPreferences(Context.MODE_PRIVATE).all.isEmpty()){
+        if(!getPreferences(Context.MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }
