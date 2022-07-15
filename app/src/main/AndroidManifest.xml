@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App1.NoActionBar"/>
+        <activity
             android:name=".PreferenceActivity"
             android:exported="false" />
         <activity
@@ -24,15 +28,18 @@
             android:name=".ErrorActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.App1.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
