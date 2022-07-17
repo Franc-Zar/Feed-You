@@ -36,7 +36,6 @@
         android:layout_marginEnd="75dp"
         android:backgroundTint="#248B9C"
         android:drawableStart="@drawable/ic_baseline_vpn_key_18"
-        android:drawableEnd="@drawable/ic_baseline_visibility_18"
         android:ems="10"
         android:fontFamily="@font/asap"
         android:hint=" Password"
@@ -175,7 +174,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:entries="@array/countries_array"/>
 
     <TextView
         android:id="@+id/have_an_account"

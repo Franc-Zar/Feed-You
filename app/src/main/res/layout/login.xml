@@ -27,6 +27,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/decoration_welcomeBack" />
 
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#248B9C"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_18"
+        android:drawableRight="@drawable/ic_baseline_remove_red_eye_18"
+        android:ems="10"
+        android:fontFamily="@font/asap"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#248B9C" />
+
     <Button
         android:id="@+id/sign_in"
         android:layout_width="0dp"
@@ -191,32 +215,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/google_login"
         app:layout_constraintVertical_bias="1.0" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
-            android:layout_width="0dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/sign_in"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email"
-            android:hint=" Password"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="#248B9C"
-            android:backgroundTint="#248B9C"
-
-            android:fontFamily="@font/asap"
-            android:inputType="textPassword" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:ems="10" />
-        </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

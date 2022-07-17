@@ -11,16 +11,21 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var switch_activity: Intent
 
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
+        //val currentUser = auth.currentUser
+        //solo per test purposessssss
+        val currentUser = null
         if (currentUser != null) {
-            //passa direttamente alla schermata principale
+            switch_activity = Intent(this, MainActivity::class.java)
+            startActivity(switch_activity)
         }
     }
 
@@ -39,15 +44,11 @@ class LoginActivity : AppCompatActivity() {
         val forgot_password = findViewById<TextView>(R.id.forgot_password)
 
 
-
-
-
-
         sign_up.setOnClickListener {
 
             //cambio activity --> signup
-            val go_sign_up = Intent(this, SignUpActivity::class.java)
-            startActivity(go_sign_up)
+            switch_activity = Intent(this, SignUpActivity::class.java)
+            startActivity(switch_activity)
 
         }
 
@@ -80,11 +81,9 @@ class LoginActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
-                        // sostituire toast con passaggio alla schermata principale
-                        Toast.makeText(
-                            baseContext, "OK",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        switch_activity = Intent(this, MainActivity::class.java)
+                        startActivity(switch_activity)
+
                     } else {
                         // If sign in fails, display a message to the user.
                         Toast.makeText(
