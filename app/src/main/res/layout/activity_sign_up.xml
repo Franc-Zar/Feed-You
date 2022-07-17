@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/email"
@@ -25,23 +25,43 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_welcomeBack" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration_welcome" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="75dp"
+        android:backgroundTint="#248B9C"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_18"
+        android:drawableEnd="@drawable/ic_baseline_visibility_18"
+        android:ems="10"
+        android:fontFamily="@font/asap"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/country_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/continue_sign_up"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#00C8F8"
-        android:text="Sign In"
-        app:layout_constraintBottom_toTopOf="@+id/decoration_useSocial"
+        android:text="continue"
+        app:layout_constraintBottom_toTopOf="@+id/have_an_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/termini_condizioni"
         app:strokeColor="#00C8F8" />
 
     <ImageView
@@ -56,16 +76,16 @@
 
     <TextView
         android:id="@+id/decoration_signIn"
-        android:layout_width="90dp"
+        android:layout_width="95dp"
         android:layout_height="36dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/quicksand_bold"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/decoration_welcomeBack"
+        app:layout_constraintBottom_toTopOf="@+id/decoration_welcome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name"
         app:layout_constraintVertical_bias="0.437" />
@@ -82,7 +102,7 @@
         android:textColor="#248B9C"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/decoration_welcomeBack"
+        app:layout_constraintBottom_toTopOf="@+id/decoration_welcome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,14 +110,15 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/decoration_welcomeBack"
+        android:id="@+id/decoration_welcome"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="75dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="75dp"
+        android:layout_marginBottom="15dp"
         android:fontFamily="@font/asap"
-        android:text="Hi there! Nice to see you again!"
+        android:text="Hi there! First time here?"
         android:textColor="#989EB1"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -107,116 +128,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/decoration_signIn" />
 
-    <TextView
-        android:id="@+id/decoration_useSocial"
-        android:layout_width="243dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="14dp"
-        android:fontFamily="@font/asap"
-        android:text="or use one of your social profiles"
-        android:textColor="#989EB1"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/twitter_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_in" />
-
-    <Button
-        android:id="@+id/twitter_login"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+    <ProgressBar
+        android:id="@+id/account_creation_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="262dp"
+        android:layout_height="25dp"
         android:layout_marginStart="75dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#1da1f2"
-        android:fontFamily="@font/asap"
-        android:text="Twitter"
-        android:textAllCaps="false"
-        app:icon="@drawable/ic_icons8_twitter"
-        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
-        app:layout_constraintEnd_toStartOf="@+id/google_login"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/google_login"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="11dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="#3C3F41"
-        android:isScrollContainer="false"
-        android:text="Google"
-        android:textAllCaps="false"
-        app:icon="@drawable/ic_icons8_google"
-        app:iconTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/forgot_password"
+        android:layout_marginBottom="100dp"
+        android:progress="50"
+        android:progressTint="#248B9C"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/twitter_login"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_useSocial"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/have_an_account"
         app:layout_constraintVertical_bias="1.0" />
 
+    <CheckedTextView
+        android:id="@+id/termini_condizioni"
+        android:layout_width="253dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:checkMarkTint="#248B9C"
+        android:checked="false"
+        android:text="I agree to the Terms of Services and Privacy Policy."
+        android:textColor="#989EB1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/continue_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_list" />
+
+    <Spinner
+        android:id="@+id/country_list"
+        android:layout_width="259dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#248B9C"
+        app:layout_constraintBottom_toTopOf="@+id/termini_condizioni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
     <TextView
-        android:id="@+id/forgot_password"
+        android:id="@+id/have_an_account"
         android:layout_width="147dp"
         android:layout_height="30dp"
         android:layout_marginStart="75dp"
-        android:layout_marginBottom="40dp"
-        android:clickable="true"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/asap"
-        android:text="Forgot Password?"
+        android:text="Have an Account? "
         android:textColor="#989EB1"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sign_up"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continue_sign_up" />
 
     <TextView
-        android:id="@+id/sign_up"
-        android:layout_width="95dp"
+        android:id="@+id/sign_in"
+        android:layout_width="56dp"
         android:layout_height="30dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="75dp"
-        android:layout_marginBottom="40dp"
         android:clickable="true"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:textColor="#248B9C"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/google_login"
-        app:layout_constraintVertical_bias="1.0" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password"
-            android:layout_width="0dp"
-            android:layout_height="43dp"
-            android:layout_marginStart="75dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="75dp"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/sign_in"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email"
-            android:hint=" Password"
-            app:passwordToggleEnabled="true"
-            app:passwordToggleTint="#248B9C"
-            android:backgroundTint="#248B9C"
-
-            android:fontFamily="@font/asap"
-            android:inputType="textPassword" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:ems="10" />
-        </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toEndOf="@+id/have_an_account"
+        app:layout_constraintTop_toBottomOf="@+id/continue_sign_up" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,9 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
-            android:theme="@style/Theme.App1.NoActionBar"/>
+            android:theme="@style/Theme.App1.NoActionBar" />
         <activity
             android:name=".PreferenceActivity"
             android:exported="false" />
@@ -33,6 +36,7 @@
             android:theme="@style/Theme.App1.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
