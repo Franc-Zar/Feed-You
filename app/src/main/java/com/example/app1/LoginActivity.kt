@@ -1,13 +1,22 @@
 package com.example.app1
 
+import android.content.ContentValues.TAG
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.auth.api.identity.BeginSignInRequest
+import com.google.android.gms.tasks.OnFailureListener
+import com.google.android.gms.tasks.OnSuccessListener
+import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.OAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -16,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var switch_activity: Intent
+    private lateinit var provider: OAuthProvider.Builder
 
     public override fun onStart() {
         super.onStart()
@@ -53,8 +63,62 @@ class LoginActivity : AppCompatActivity() {
         }
 
 
-
         twitter_login.setOnClickListener {
+
+            val pending_result: Task<AuthResult>? = auth.pendingAuthResult
+            provider = OAuthProvider.newBuilder("twitter.com");
+
+            if (pending_result != null) {
+                // There's something already here! Finish the sign-in for your user.
+                pending_result
+                    .addOnSuccessListener(
+                        OnSuccessListener<AuthResult?> {
+
+                            switch_activity = Intent(this, MainActivity::class.java)
+                            startActivity(switch_activity)
+
+                        })
+                    .addOnFailureListener(
+                        OnFailureListener {
+                            // Handle failure.
+                            Toast.makeText(
+                                baseContext, "Something went wrong.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        })
+            } else {
+                // There's no pending result so you need to start the sign-in flow.
+                // See below.
+                auth
+                    .startActivityForSignInWithProvider( this, provider.build())
+                    .addOnSuccessListener(
+                        OnSuccessListener<AuthResult?> {
+                            // User is signed in.
+                            // IdP data available in
+                            // authResult.getAdditionalUserInfo().getProfile().
+                            // The OAuth access token can also be retrieved:
+                            // authResult.getCredential().getAccessToken().
+                            // The OAuth secret can be retrieved by calling:
+                            // authResult.getCredential().getSecret().
+                            switch_activity = Intent(this, MainActivity::class.java)
+                            startActivity(switch_activity)
+                            Toast.makeText(
+                                baseContext, "Login Successful.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        })
+                    .addOnFailureListener(
+                        OnFailureListener {
+                            // Handle failure.
+                            Toast.makeText(
+                                baseContext, "Something went wrong.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        })
+
+
+            }
 
         }
 
@@ -62,11 +126,12 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-
         forgot_password.setOnClickListener {
-            //devo creare la activity per rinviare la password all'email scelta
-        }
+            //devo creare la activity per rinviare la password all'email scelta --> fatto
+            switch_activity = Intent(this, PasswordRecoverActivity::class.java)
+            startActivity(switch_activity)
 
+        }
 
         //login
         sign_in.setOnClickListener {
@@ -81,6 +146,10 @@ class LoginActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
+                        Toast.makeText(
+                            baseContext, "Login successful.",
+                            Toast.LENGTH_SHORT
+                        ).show()
                         switch_activity = Intent(this, MainActivity::class.java)
                         startActivity(switch_activity)
 

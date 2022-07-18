@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".PasswordRecoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TwitterActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity

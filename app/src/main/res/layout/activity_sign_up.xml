@@ -17,8 +17,9 @@
         android:backgroundTint="#248B9C"
         android:drawableStart="@drawable/ic_baseline_email_18"
         android:ems="10"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/asap"
-        android:hint=" Email"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toTopOf="@+id/password"
@@ -38,7 +39,8 @@
         android:drawableStart="@drawable/ic_baseline_vpn_key_18"
         android:ems="10"
         android:fontFamily="@font/asap"
-        android:hint=" Password"
+        android:drawablePadding="10dp"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/country_list"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +76,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/decoration_signIn"
+        android:id="@+id/decoration_password"
         android:layout_width="95dp"
         android:layout_height="36dp"
         android:layout_marginTop="20dp"
@@ -125,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_signIn" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration_password" />
 
     <ProgressBar
         android:id="@+id/account_creation_progress"
@@ -153,13 +155,16 @@
         android:layout_marginEnd="75dp"
         android:checkMarkTint="#248B9C"
         android:checked="false"
+        android:clickable="true"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
         android:text="I agree to the Terms of Services and Privacy Policy."
         android:textColor="#989EB1"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/continue_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/country_list" />
+        app:layout_constraintTop_toBottomOf="@+id/country_list"
+        android:focusable="true" />
 
     <Spinner
         android:id="@+id/country_list"
