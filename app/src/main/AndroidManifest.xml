@@ -13,13 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
-            android:name=".PasswordRecoverActivity"
-            android:exported="false" />
+            android:name=".authentication.TwitterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".TwitterActivity"
-            android:exported="false" />
+            android:name=".authentication.GoogleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Translucent" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".authentication.PasswordRecoverActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App1.NoActionBar" />
+        <activity
+            android:name=".authentication.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -37,7 +43,7 @@
             android:name=".ErrorActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".authentication.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.App1.NoActionBar">
             <intent-filter>
