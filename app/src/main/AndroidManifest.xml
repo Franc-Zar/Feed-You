@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".authentication.SimpleSignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
             android:name=".authentication.TwitterActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Translucent" />

@@ -17,23 +17,6 @@ class SignUpActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
     private lateinit var switch_activity: Intent
-    private lateinit var email: EditText
-    private lateinit var password: EditText
-    private lateinit var termini_condizioni: CheckedTextView
-
-    public override fun onRestart() {
-
-        super.onRestart()
-        progress()
-
-        if(termini_condizioni.isChecked)
-            termini_condizioni.toggle()
-
-        email.setText("")
-        password.setText("")
-
-    }
-
 
     private fun progress() {
 
@@ -59,12 +42,12 @@ class SignUpActivity : AppCompatActivity() {
 
         progress()
 
-        email = findViewById(R.id.email)
-        password = findViewById(R.id.password)
+        val email = findViewById<EditText>(R.id.email)
+        val password = findViewById<EditText>(R.id.password)
 
         val continue_sign_up = findViewById<Button>(R.id.sign_up)
         val sign_in = findViewById<TextView>(R.id.sign_in)
-        termini_condizioni = findViewById(R.id.termini_condizioni)
+        val termini_condizioni = findViewById<CheckedTextView>(R.id.termini_condizioni)
 
         sign_in.setOnClickListener {
 

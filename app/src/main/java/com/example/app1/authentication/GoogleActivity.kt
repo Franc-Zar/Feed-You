@@ -59,16 +59,22 @@ class GoogleActivity : AppCompatActivity() {
 
         oneTapClient.beginSignIn(signInRequest)
             .addOnSuccessListener(this) { result ->
+
                 try {
+
                     val REQ_ONE_TAP = 2
                     startIntentSenderForResult(
                         result.pendingIntent.intentSender, REQ_ONE_TAP,
                         null, 0, 0, 0
                     )
+
                 } catch (e: IntentSender.SendIntentException) {
+
                     Log.e(TAG, "Couldn't start One Tap UI: " + e.localizedMessage)
 
                     finish()
+                    overridePendingTransition(0, 0)
+
                 }
             }
             .addOnFailureListener(this) { e -> // No saved credentials found. Launch the One Tap sign-up flow, or
@@ -76,6 +82,7 @@ class GoogleActivity : AppCompatActivity() {
                 Log.d(TAG, e.localizedMessage)
 
                 finish()
+                overridePendingTransition(0, 0)
             }
 
 
@@ -99,18 +106,20 @@ class GoogleActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
 
                 if (task.isSuccessful) {
+
                     // Sign in success, update UI with the signed-in user's information
-                        val user = auth.currentUser
+                    val user = auth.currentUser
 
-                        Toast.makeText(
-                            baseContext, "Login Successful.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                    Toast.makeText(
+                        baseContext, "Login Successful.",
+                        Toast.LENGTH_SHORT
+                    ).show()
 
-                        finish()
+                    finish()
+                    overridePendingTransition(0, 0)
 
-                        switch_activity = Intent(this, MainActivity::class.java)
-                        startActivity(switch_activity)
+                    switch_activity = Intent(this, MainActivity::class.java)
+                    startActivity(switch_activity)
 
                     } else {
                         // If sign in fails, display a message to the user.
@@ -120,6 +129,8 @@ class GoogleActivity : AppCompatActivity() {
                         ).show()
 
                         finish()
+                        overridePendingTransition(0, 0)
+
                     }
                 }
         }
@@ -129,24 +140,36 @@ class GoogleActivity : AppCompatActivity() {
             super.onActivityResult(requestCode, resultCode, data)
 
             // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-            if (requestCode == RC_SIGN_IN) {
-                val task = GoogleSignIn.getSignedInAccountFromIntent(data)
-                try {
-                    // Google Sign In was successful, authenticate with Firebase
+            //resultCode == -1 corrisponde ad una interruzione della OneTapUI
+            if(resultCode == -1) {
 
-                    val account = task.getResult(ApiException::class.java)!!
-                    firebaseAuthWithGoogle(account.idToken!!)
+                if (requestCode == RC_SIGN_IN) {
+                    val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+                    try {
+                        // Google Sign In was successful, authenticate with Firebase
 
-                } catch (e: ApiException) {
-                    // Google Sign In failed, update UI appropriately
-                    Toast.makeText(
-                        baseContext, "Something went wrong, please try again.",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                        val account = task.getResult(ApiException::class.java)!!
+                        firebaseAuthWithGoogle(account.idToken!!)
 
-                    finish()
+                    } catch (e: ApiException) {
+                        // Google Sign In failed, update UI appropriately
 
+                        Toast.makeText(
+                            baseContext, "Something went wrong, please try again.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                        finish()
+                        overridePendingTransition(0, 0)
+
+                    }
                 }
+
+            } else {
+
+                finish()
+                overridePendingTransition(0,0)
+
             }
         }
 

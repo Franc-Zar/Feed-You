@@ -5,14 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.MainActivity
 import com.example.app1.R
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import org.w3c.dom.Text
 
 
 class LoginActivity : AppCompatActivity() {
@@ -48,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
 
         auth = Firebase.auth
 
@@ -96,52 +94,12 @@ class LoginActivity : AppCompatActivity() {
             val email_chosen = email.text.toString().trim()
             val password_chosen = password.text.toString().trim()
 
-            if (email_chosen != "" && password_chosen != "") {
+            switch_activity = Intent(this, SimpleSignInActivity::class.java)
+            switch_activity.putExtra("email_chosen", email_chosen)
+            switch_activity.putExtra("password_chosen", password_chosen)
+            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(switch_activity)
 
-                auth.signInWithEmailAndPassword(email_chosen, password_chosen)
-                    .addOnCompleteListener { task ->
-
-                        if (task.isSuccessful) {
-                            // Sign in success, update UI with the signed-in user's information
-                            val user = auth.currentUser
-
-                            Toast.makeText(
-                                baseContext, "Login successful.",
-                                Toast.LENGTH_SHORT
-                            ).show()
-                            switch_activity = Intent(this, MainActivity::class.java)
-                            startActivity(switch_activity)
-
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            when (task.exception) {
-
-                                is FirebaseAuthInvalidCredentialsException ->
-
-                                    Toast.makeText(
-                                        baseContext, "Authentication failed: invalid credential!",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-
-                                else ->
-
-                                    Toast.makeText(
-                                        baseContext, "Something went wrong, please try again.",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
-
-                            }
-                        }
-                    }
-
-            } else {
-
-                Toast.makeText(
-                    baseContext, "email and/or password missing!",
-                    Toast.LENGTH_SHORT
-                ).show()
-
-            }
         }
     }
 }

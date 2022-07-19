@@ -40,6 +40,9 @@ class TwitterActivity : AppCompatActivity() {
             .addOnSuccessListener(
                 OnSuccessListener<AuthResult?> {
 
+                    finish()
+                    overridePendingTransition(0, 0)
+
                     Toast.makeText(
                         baseContext, "Login Successful.",
                         Toast.LENGTH_SHORT
@@ -53,6 +56,7 @@ class TwitterActivity : AppCompatActivity() {
                 OnFailureListener {
                     // Handle failure.
                     finish()
+                    overridePendingTransition(0, 0)
 
                     Toast.makeText(
                         baseContext, "Something went wrong, please try again.",
@@ -77,12 +81,13 @@ class TwitterActivity : AppCompatActivity() {
                     // The OAuth secret can be retrieved by calling:
                     // authResult.getCredential().getSecret().
 
+                    finish()
+                    overridePendingTransition(0, 0)
+
                     Toast.makeText(
                         baseContext, "Login Successful.",
                         Toast.LENGTH_SHORT
                     ).show()
-
-                    finish()
 
                     switch_activity = Intent(this, MainActivity::class.java)
                     startActivity(switch_activity)
@@ -93,6 +98,7 @@ class TwitterActivity : AppCompatActivity() {
                     // Handle failure.
 
                     finish()
+                    overridePendingTransition(0, 0)
 
                     Toast.makeText(
                         baseContext, "Something went wrong, please try again.",

@@ -16,15 +16,6 @@ import com.google.firebase.ktx.Firebase
 class PasswordRecoverActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
-    private lateinit var email: EditText
-
-    public override fun onRestart() {
-
-        super.onRestart()
-        email.setText("")
-
-    }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,7 +23,7 @@ class PasswordRecoverActivity : AppCompatActivity() {
 
         val sign_in = findViewById<TextView>(R.id.sign_in)
         val reset_password = findViewById<Button>(R.id.reset_password)
-        email = findViewById(R.id.email)
+        val email = findViewById<EditText>(R.id.email)
 
         reset_password.setOnClickListener{
 
