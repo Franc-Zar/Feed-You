@@ -2,6 +2,8 @@ package com.example.app1.authentication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -10,8 +12,6 @@ import com.example.app1.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthEmailException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
 class PasswordRecoveryActivity : AppCompatActivity() {
 
@@ -19,7 +19,10 @@ class PasswordRecoveryActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_password_recovery)
+
 
         val sign_in = findViewById<TextView>(R.id.sign_in)
         val reset_password = findViewById<Button>(R.id.reset_password)
