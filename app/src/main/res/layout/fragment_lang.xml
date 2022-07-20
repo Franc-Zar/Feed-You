@@ -10,34 +10,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <TextView
             android:id="@+id/tv_frag_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_lang"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_lang"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
-        <RadioGroup
-            android:id="@+id/rg_langs"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_frag_title"/>
-
-        <Button
-            android:id="@+id/button"
+        <Spinner
+            android:id="@+id/spinner_lang"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/continua"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="432dp"
+            android:entries="@array/langs"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rg_langs" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

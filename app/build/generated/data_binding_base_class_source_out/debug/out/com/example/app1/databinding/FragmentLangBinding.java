@@ -4,9 +4,8 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,19 +21,15 @@ public final class FragmentLangBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final Button button;
-
-  @NonNull
-  public final RadioGroup rgLangs;
+  public final Spinner spinnerLang;
 
   @NonNull
   public final TextView tvFragTitle;
 
-  private FragmentLangBinding(@NonNull FrameLayout rootView, @NonNull Button button,
-      @NonNull RadioGroup rgLangs, @NonNull TextView tvFragTitle) {
+  private FragmentLangBinding(@NonNull FrameLayout rootView, @NonNull Spinner spinnerLang,
+      @NonNull TextView tvFragTitle) {
     this.rootView = rootView;
-    this.button = button;
-    this.rgLangs = rgLangs;
+    this.spinnerLang = spinnerLang;
     this.tvFragTitle = tvFragTitle;
   }
 
@@ -65,15 +60,9 @@ public final class FragmentLangBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
-        break missingId;
-      }
-
-      id = R.id.rg_langs;
-      RadioGroup rgLangs = ViewBindings.findChildViewById(rootView, id);
-      if (rgLangs == null) {
+      id = R.id.spinner_lang;
+      Spinner spinnerLang = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerLang == null) {
         break missingId;
       }
 
@@ -83,7 +72,7 @@ public final class FragmentLangBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentLangBinding((FrameLayout) rootView, button, rgLangs, tvFragTitle);
+      return new FragmentLangBinding((FrameLayout) rootView, spinnerLang, tvFragTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
