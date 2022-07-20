@@ -67,7 +67,13 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array countries_array
+array langs
 array preloaded_fonts
+array topics_colors
+array topics_de
+array topics_en
+array topics_fr
+array topics_it
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -2738,7 +2744,6 @@ id custom
 id customPanel
 id cut
 id cv_layout
-id cv_textLayout
 id dark
 id date_picker_actions
 id decelerate
@@ -2844,11 +2849,13 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id iv_favicon
 id jumpToEnd
 id jumpToStart
 id labeled
 id layout
 id layout_app
+id layout_topics
 id left
 id leftToRight
 id legacy
@@ -2965,7 +2972,6 @@ id ratio
 id rectangles
 id reset_password
 id reverseSawtooth
-id rg_langs
 id right
 id rightToLeft
 id right_icon
@@ -2982,6 +2988,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scroll_topics
 id scrollable
 id search
 id search_badge
@@ -3016,6 +3023,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner_lang
 id spline
 id split_action_bar
 id spread
@@ -3038,6 +3046,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swiperefresh
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3090,7 +3099,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_desc
+id tv_category
 id tv_frag_title
 id tv_sorry
 id tv_title
@@ -3242,6 +3251,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_lang
+layout fragment_topics
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3364,6 +3374,7 @@ string action_settings
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string askConfirm
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
 string character_counter_content_description
@@ -3411,6 +3422,7 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
 string label
+string lang
 string large_text
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -3488,12 +3500,16 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string prefTopics
 string project_id
+string redirect
 string search_menu_title
 string sorry
 string status_bar_notification_info_overflow
 string title_activity_news
 string title_lang
+string title_topics
+string topics
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

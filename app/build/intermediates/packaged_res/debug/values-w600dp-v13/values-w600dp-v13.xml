@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="langs">
+        <item>it: Italiano</item>
+        <item>en: English</item>
+        <item>fr: Français</item>
+        <item>de: Deutsche</item>
+    </string-array>
+    <string-array name="topics_colors">
+        <item>#FF606060</item>
+        <item>#FF006e8c</item>
+        <item>#FFe93578</item>
+        <item>#FFe61610</item>
+        <item>#FF4c7a34</item>
+        <item>#FF232323</item>
+        <item>#FF1c0c4f</item>
+    </string-array>
+    <string-array name="topics_de">
+        <item>Top News</item>
+        <item>Cronaca</item>
+        <item>Politica</item>
+        <item>Economia</item>
+        <item>Costumi e Società</item>
+        <item>Cinema e Cultura</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="topics_en">
+        <item>Top News</item>
+        <item>Cronaca</item>
+        <item>Politics</item>
+        <item>Economy</item>
+        <item>Costum and Society</item>
+        <item>Cinema and Culture</item>
+        <item>Sports</item>
+    </string-array>
+    <string-array name="topics_fr">
+        <item>Top News</item>
+        <item>Cronaca</item>
+        <item>Politica</item>
+        <item>Economia</item>
+        <item>Costumi e Società</item>
+        <item>Cinema e Cultura</item>
+        <item>Sport</item>
+    </string-array>
+    <string-array name="topics_it">
+        <item>Top News</item>
+        <item>Cronaca</item>
+        <item>Politica</item>
+        <item>Economia</item>
+        <item>Costume e Società</item>
+        <item>Cinema e Cultura</item>
+        <item>Sport</item>
+    </string-array>
     <dimen name="fab_margin">48dp</dimen>
     <dimen name="text_margin">48dp</dimen>
 </resources>

@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.app1.R;
@@ -32,15 +33,20 @@ public final class ActivityMainBinding implements ViewBinding {
   public final RecyclerView rv;
 
   @NonNull
+  public final SwipeRefreshLayout swiperefresh;
+
+  @NonNull
   public final MaterialToolbar toolbar;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
       @NonNull ConstraintLayout layoutApp, @NonNull ProgressBar loadingIcon,
-      @NonNull RecyclerView rv, @NonNull MaterialToolbar toolbar) {
+      @NonNull RecyclerView rv, @NonNull SwipeRefreshLayout swiperefresh,
+      @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.layoutApp = layoutApp;
     this.loadingIcon = loadingIcon;
     this.rv = rv;
+    this.swiperefresh = swiperefresh;
     this.toolbar = toolbar;
   }
 
@@ -89,6 +95,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.swiperefresh;
+      SwipeRefreshLayout swiperefresh = ViewBindings.findChildViewById(rootView, id);
+      if (swiperefresh == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -96,7 +108,7 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, layoutApp, loadingIcon, rv,
-          toolbar);
+          swiperefresh, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

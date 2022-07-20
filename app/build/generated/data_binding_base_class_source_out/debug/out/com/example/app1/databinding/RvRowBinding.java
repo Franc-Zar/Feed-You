@@ -4,11 +4,12 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.app1.R;
@@ -21,23 +22,23 @@ public final class RvRowBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final LinearLayout cvLayout;
+  public final ConstraintLayout cvLayout;
 
   @NonNull
-  public final LinearLayout cvTextLayout;
+  public final ImageView ivFavicon;
 
   @NonNull
-  public final TextView tvDesc;
+  public final TextView tvCategory;
 
   @NonNull
   public final TextView tvTitle;
 
-  private RvRowBinding(@NonNull CardView rootView, @NonNull LinearLayout cvLayout,
-      @NonNull LinearLayout cvTextLayout, @NonNull TextView tvDesc, @NonNull TextView tvTitle) {
+  private RvRowBinding(@NonNull CardView rootView, @NonNull ConstraintLayout cvLayout,
+      @NonNull ImageView ivFavicon, @NonNull TextView tvCategory, @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.cvLayout = cvLayout;
-    this.cvTextLayout = cvTextLayout;
-    this.tvDesc = tvDesc;
+    this.ivFavicon = ivFavicon;
+    this.tvCategory = tvCategory;
     this.tvTitle = tvTitle;
   }
 
@@ -69,20 +70,20 @@ public final class RvRowBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.cv_layout;
-      LinearLayout cvLayout = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout cvLayout = ViewBindings.findChildViewById(rootView, id);
       if (cvLayout == null) {
         break missingId;
       }
 
-      id = R.id.cv_textLayout;
-      LinearLayout cvTextLayout = ViewBindings.findChildViewById(rootView, id);
-      if (cvTextLayout == null) {
+      id = R.id.iv_favicon;
+      ImageView ivFavicon = ViewBindings.findChildViewById(rootView, id);
+      if (ivFavicon == null) {
         break missingId;
       }
 
-      id = R.id.tv_desc;
-      TextView tvDesc = ViewBindings.findChildViewById(rootView, id);
-      if (tvDesc == null) {
+      id = R.id.tv_category;
+      TextView tvCategory = ViewBindings.findChildViewById(rootView, id);
+      if (tvCategory == null) {
         break missingId;
       }
 
@@ -92,7 +93,7 @@ public final class RvRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RvRowBinding((CardView) rootView, cvLayout, cvTextLayout, tvDesc, tvTitle);
+      return new RvRowBinding((CardView) rootView, cvLayout, ivFavicon, tvCategory, tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

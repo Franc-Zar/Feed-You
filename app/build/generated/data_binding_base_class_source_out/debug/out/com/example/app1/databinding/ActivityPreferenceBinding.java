@@ -4,6 +4,7 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,11 +21,15 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button button;
+
+  @NonNull
   public final FragmentContainerView fragment;
 
-  private ActivityPreferenceBinding(@NonNull LinearLayout rootView,
+  private ActivityPreferenceBinding(@NonNull LinearLayout rootView, @NonNull Button button,
       @NonNull FragmentContainerView fragment) {
     this.rootView = rootView;
+    this.button = button;
     this.fragment = fragment;
   }
 
@@ -55,13 +60,19 @@ public final class ActivityPreferenceBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button;
+      Button button = ViewBindings.findChildViewById(rootView, id);
+      if (button == null) {
+        break missingId;
+      }
+
       id = R.id.fragment;
       FragmentContainerView fragment = ViewBindings.findChildViewById(rootView, id);
       if (fragment == null) {
         break missingId;
       }
 
-      return new ActivityPreferenceBinding((LinearLayout) rootView, fragment);
+      return new ActivityPreferenceBinding((LinearLayout) rootView, button, fragment);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

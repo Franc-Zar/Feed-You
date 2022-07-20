@@ -1,11 +1,16 @@
 <resources>
     <string name="app_name">FeedU</string>
     <string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string>
-    <string name="title_lang">Seleziona la lingua preferita</string>
     <string name="continua">Continua</string>
     <string name="forgot_password"><u>Forgot Password?</u></string>
     <string name="have_account">Have an Account?</string>
-
+    <string name="lang" translatable="false">SELECTED_LANGUAGE</string>
+    <string name="topics" translatable="false">topics</string>
+    <string name="title_lang">Select language</string>
+    <string name="title_topics">Select the topics you\'re interested in</string>
+    <string name="prefTopics" translatable="false">prefTopics</string>
+    <string name="redirect">Redirect to Browser</string>
+    <string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string>
 
     <string name="title_activity_news">NewsActivity</string>
     <string name="large_text">
