@@ -95,8 +95,8 @@
 
     <TextView
         android:id="@+id/app_name"
-        android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginEnd="155dp"
         android:layout_marginBottom="30dp"
@@ -132,8 +132,8 @@
 
     <TextView
         android:id="@+id/decoration_useSocial"
-        android:layout_width="243dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="14dp"
         android:fontFamily="@font/asap"
         android:text="or use one of your social profiles"
@@ -147,8 +147,8 @@
 
     <Button
         android:id="@+id/twitter_login"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
         android:layout_marginBottom="26dp"
         android:backgroundTint="#1da1f2"
