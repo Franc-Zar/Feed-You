@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatImageButton
 import com.example.app1.MainActivity
 import com.example.app1.R
 import com.google.firebase.auth.*
@@ -53,11 +54,21 @@ class LoginActivity : AppCompatActivity() {
         email = findViewById(R.id.email)
         password = findViewById(R.id.password)
 
-        val sign_in = findViewById<Button>(R.id.sign_in)
+        val simple_sign_in = findViewById<Button>(R.id.sign_in)
         val sign_up = findViewById<TextView>(R.id.sign_up)
         val twitter_login = findViewById<Button>(R.id.twitter_login)
         val google_login = findViewById<Button>(R.id.google_login)
         val forgot_password = findViewById<TextView>(R.id.forgot_password)
+        val anonymous_login = findViewById<AppCompatImageButton>(R.id.anonymous_login)
+
+
+        anonymous_login.setOnClickListener{
+
+            switch_activity = Intent(this, AnonymousActivity::class.java)
+            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(switch_activity)
+
+        }
 
         sign_up.setOnClickListener {
 
@@ -70,6 +81,7 @@ class LoginActivity : AppCompatActivity() {
         twitter_login.setOnClickListener {
 
             switch_activity = Intent(this, TwitterActivity::class.java)
+            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(switch_activity)
 
         }
@@ -77,19 +89,20 @@ class LoginActivity : AppCompatActivity() {
         google_login.setOnClickListener {
 
             switch_activity = Intent(this, GoogleActivity::class.java)
+            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(switch_activity)
 
         }
 
         forgot_password.setOnClickListener {
             //devo creare la activity per rinviare la password all'email scelta --> fatto
-            switch_activity = Intent(this, PasswordRecoverActivity::class.java)
+            switch_activity = Intent(this, PasswordRecoveryActivity::class.java)
             startActivity(switch_activity)
 
         }
 
         //login email + password
-        sign_in.setOnClickListener {
+        simple_sign_in.setOnClickListener {
 
             val email_chosen = email.text.toString().trim()
             val password_chosen = password.text.toString().trim()

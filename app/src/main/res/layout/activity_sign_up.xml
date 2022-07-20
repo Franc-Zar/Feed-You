@@ -174,7 +174,7 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/asap"
-        android:text="Have an Account?"
+        android:text="@string/have_account"
         android:textColor="#989EB1"
         android:textSize="18sp"
         android:textStyle="bold"

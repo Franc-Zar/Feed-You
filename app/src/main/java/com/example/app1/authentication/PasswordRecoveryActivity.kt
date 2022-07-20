@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-class PasswordRecoverActivity : AppCompatActivity() {
+class PasswordRecoveryActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
 

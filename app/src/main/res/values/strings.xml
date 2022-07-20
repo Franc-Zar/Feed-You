@@ -3,6 +3,9 @@
     <string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string>
     <string name="title_lang">Seleziona la lingua preferita</string>
     <string name="continua">Continua</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="have_account">Have an Account?</string>
+
 
     <string name="title_activity_news">NewsActivity</string>
     <string name="large_text">
