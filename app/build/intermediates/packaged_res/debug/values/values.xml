@@ -268,15 +268,15 @@
         <item>@font/quicksand_bold</item>
         <item>@font/rock_salt</item>
     </array>
-    <string-array name="topics_colors">
-        <item>#FF606060</item>
-        <item>#FF006e8c</item>
-        <item>#FFe93578</item>
-        <item>#FFe61610</item>
-        <item>#FF4c7a34</item>
-        <item>#FF232323</item>
-        <item>#FF1c0c4f</item>
-    </string-array>
+    <array name="topics_colors">
+        <item>@color/dark_grey</item>
+        <item>@color/azure</item>
+        <item>@color/pink</item>
+        <item>@color/red</item>
+        <item>@color/green_pea</item>
+        <item>@color/darker_grey</item>
+        <item>@color/dark_blue</item>
+    </array>
     <string-array name="topics_de">
         <item>Top News</item>
         <item>Cronaca</item>
@@ -313,10 +313,17 @@
         <item>Cinema e Cultura</item>
         <item>Sport</item>
     </string-array>
+    <color name="azure">#FF006e8c</color>
     <color name="black">#FF000000</color>
+    <color name="dark_blue">#FF1c0c4f</color>
+    <color name="dark_grey">#FF606060</color>
+    <color name="darker_grey">#FF232323</color>
+    <color name="green_pea">#FF4c7a34</color>
+    <color name="pink">#FFe93578</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+    <color name="red">#FFe61610</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>

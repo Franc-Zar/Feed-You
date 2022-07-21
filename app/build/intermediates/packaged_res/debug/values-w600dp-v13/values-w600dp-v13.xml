@@ -6,15 +6,15 @@
         <item>fr: Français</item>
         <item>de: Deutsche</item>
     </string-array>
-    <string-array name="topics_colors">
-        <item>#FF606060</item>
-        <item>#FF006e8c</item>
-        <item>#FFe93578</item>
-        <item>#FFe61610</item>
-        <item>#FF4c7a34</item>
-        <item>#FF232323</item>
-        <item>#FF1c0c4f</item>
-    </string-array>
+    <array name="topics_colors">
+        <item>@color/dark_grey</item>
+        <item>@color/azure</item>
+        <item>@color/pink</item>
+        <item>@color/red</item>
+        <item>@color/green_pea</item>
+        <item>@color/darker_grey</item>
+        <item>@color/dark_blue</item>
+    </array>
     <string-array name="topics_de">
         <item>Top News</item>
         <item>Cronaca</item>
