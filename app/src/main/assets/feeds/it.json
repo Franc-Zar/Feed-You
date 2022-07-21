@@ -4,18 +4,20 @@
         "https://www.agi.it/rss",
         "https://www.corriere.it/rss",
         "https://www.ilfattoquotidiano.it/",
-        "https://www.ilfattoquotidiano.it/societa/",
         "https://www.ilsole24ore.com/rss/italia--in-edicola.xml",
         "http://www.repubblica.it/rss/homepage/rss2.0.xml?ref=RHFT",
         "https://www.ansa.it/sito/ansait_rss.xml",
         "https://www.ilsole24ore.com/rss/",
         "https://www.ilsole24ore.com/rss/cultura.xml",
         "http://www.ansa.it/sito/ansait_rss.xml",
-        "http://www.ansa.it/sito/notizie/cultura/cultura_rss.xml",
         "http://www.ansa.it/sito/notizie/topnews/topnews_rss.xml",
         "http://www.tgcom24.mediaset.it/rss/homepage.xml",
         "https://it.notizie.yahoo.com/rss"
     ],
+
+
+    "4": ["https://www.ilfattoquotidiano.it/societa/"],
+    "5":["http://www.ansa.it/sito/notizie/cultura/cultura_rss.xml"],
     "6": [
         "https://www.ultimouomo.com/feed"
     ]
