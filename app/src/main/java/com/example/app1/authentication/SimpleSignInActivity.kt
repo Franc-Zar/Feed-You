@@ -2,6 +2,8 @@ package com.example.app1.authentication
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.MainActivity

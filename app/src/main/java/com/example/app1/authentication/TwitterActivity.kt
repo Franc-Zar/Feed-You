@@ -3,6 +3,8 @@ package com.example.app1.authentication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.app1.MainActivity
 import com.google.android.gms.tasks.OnFailureListener

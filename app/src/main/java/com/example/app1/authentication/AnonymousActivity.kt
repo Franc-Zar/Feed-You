@@ -3,6 +3,8 @@ package com.example.app1.authentication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.app1.MainActivity
 import com.google.firebase.auth.FirebaseAuth
@@ -14,7 +16,6 @@ class AnonymousActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
 
         auth.signInAnonymously()
             .addOnCompleteListener(this) { task ->

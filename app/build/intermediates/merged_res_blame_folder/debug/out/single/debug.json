@@ -36,12 +36,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_news.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_news.xml"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_preference.xml.flat",
@@ -56,16 +56,16 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_icons8_twitter.png.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icons8_twitter.png"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_icons8_twitter.png.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icons8_twitter.png"
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/menu_top_bar.xml.flat",

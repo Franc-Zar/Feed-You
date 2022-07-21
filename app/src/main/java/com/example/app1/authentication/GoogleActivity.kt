@@ -5,6 +5,8 @@ import android.content.IntentSender
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Toast
 import com.example.app1.MainActivity
 import com.example.app1.R
