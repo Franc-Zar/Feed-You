@@ -10,11 +10,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CancellationException
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var database: DatabaseReference
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        database = Firebase.database.reference
+        //val user = User(name, email)
+        //database.child("users").child(userId).setValue(user)    vale ricorsivamente sui parametri dell'oggetto, che sono a loro volta child
 
         //reset delle preferenze, finche non aggiungiamo il menu per modificarle
         /**
@@ -99,4 +109,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        moveTaskToBack(true);
+        exitProcess(-1)
+    }
 }

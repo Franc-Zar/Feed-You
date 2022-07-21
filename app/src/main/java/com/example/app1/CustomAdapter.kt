@@ -1,5 +1,7 @@
+import android.R.attr.radius
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.os.Build
@@ -9,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app1.NewsActivity
 import com.example.app1.R
@@ -38,13 +42,12 @@ class CustomAdapter(private val mList: List<NewsData>) : RecyclerView.Adapter<Cu
             Html.fromHtml(item.title)
         }).also { holder.tv_title.text = it }
 
+
         holder.tv_category.text = categories?.get(item.category) ?: ""
-        holder.tv_category.setBackgroundColor(Color.parseColor(
-            context?.resources?.getStringArray(R.array.topics_colors)?.get(item.category) ?: "#FFFFFFFF"
-        ))
-
+        holder.tv_category.setBackgroundColor(
+            context?.resources?.getIntArray(R.array.topics_colors)?.get(item.category) ?: R.color.black)
+        context?.let { ContextCompat.getColor(it, R.color.white)}
         var icon : org.jsoup.nodes.Element? = null
-
         val thread = Thread {
             try {
                 //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
