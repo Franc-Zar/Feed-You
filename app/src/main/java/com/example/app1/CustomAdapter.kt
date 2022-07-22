@@ -43,23 +43,20 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
 
 
         holder.tv_category.text = categories.get(item.category) ?: ""
-
         val radius: Float = context.resources.getDimension(R.dimen.default_corner_radius)
         val shapeAppearanceModel = ShapeAppearanceModel()
             .toBuilder()
             .setAllCorners(CornerFamily.ROUNDED, radius.toFloat())
             .build()
-
         val shapeDrawable = MaterialShapeDrawable(shapeAppearanceModel)
-
         val colorStateList = ColorStateList(
             arrayOf(intArrayOf(android.R.attr.state_enabled)),
             intArrayOf(context.resources.getIntArray(R.array.topics_colors)[item.category])
         )
         shapeDrawable.fillColor = colorStateList
         ViewCompat.setBackground(holder.tv_category, shapeDrawable)
-
         holder.tv_category.setTextColor(ContextCompat.getColor(context, R.color.white))
+
         var icon : org.jsoup.nodes.Element? = null
         var image : Bitmap? = null
         val thread = Thread {

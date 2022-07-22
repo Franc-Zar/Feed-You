@@ -79,13 +79,12 @@ class CustomFeeder(var context: Context){
                 news.add(mutableListOf())
                 for (j in 0 until links[i].size){
                     try {
-                        var result: RssStandardChannelData? = null
-                        Log.d("TEMPO",measureTimeMillis{result = Reader.coRead<RssStandardChannelData>(links[i][j])}.toString())
-                        result!!.items!!.forEach {
+                        val result = Reader.coRead<RssStandardChannelData>(links[i][j])
+                        result.items!!.forEach {
                             news[i].add(NewsData(it.title!!,it.description ?: "...",
                                         it.link!!, i, it.guid))}
                     }catch (e : Exception){
-                        ;
+                        e.printStackTrace()
                     }
                 }
                 news[i].shuffle()
