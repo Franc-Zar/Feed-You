@@ -2,7 +2,8 @@ package com.example.app1
 
 import CustomAdapter
 import android.content.Context
-import android.util.Log
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.view.View
 import android.widget.ProgressBar
 import androidx.recyclerview.widget.RecyclerView
@@ -10,10 +11,12 @@ import com.example.app1.model.FeederPreferences
 import com.example.app1.model.NewsData
 import kotlinx.coroutines.*
 import org.json.JSONObject
+import org.jsoup.Jsoup
 import tw.ktrssreader.Reader
 import tw.ktrssreader.kotlin.model.channel.RssStandardChannelData
 import java.io.IOException
 import java.io.InputStream
+import java.net.URL
 import kotlin.system.measureTimeMillis
 
 
@@ -59,8 +62,9 @@ class CustomFeeder(var context: Context){
         val news = ArrayList<NewsData>()
         CoroutineScope(Dispatchers.IO).launch {
             val result = Reader.coRead<RssStandardChannelData>(link)
+            val icon  = getIcon(result.items!![0].link.toString())
             result.items!!.forEach {
-                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1, it.guid))
+                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1, it.guid, icon))
             }
             withContext(Dispatchers.Main){
                 val adapter = CustomAdapter(news, context)
@@ -80,9 +84,10 @@ class CustomFeeder(var context: Context){
                 for (j in 0 until links[i].size){
                     try {
                         val result = Reader.coRead<RssStandardChannelData>(links[i][j])
+                        val icon = getIcon(result.items!![0].link.toString())
                         result.items!!.forEach {
                             news[i].add(NewsData(it.title!!,it.description ?: "...",
-                                        it.link!!, i, it.guid))}
+                                        it.link!!, i, it.guid, icon))}
                     }catch (e : Exception){
                         e.printStackTrace()
                     }
@@ -108,14 +113,42 @@ class CustomFeeder(var context: Context){
         }
         return list
     }
-}
-/**
-class newsList : List<com.example.app1.NewsData>{
-    val list: List<com.example.app1.NewsData> = listOf()
-    override fun get(index: Int): com.example.app1.NewsData {
-        if (index<list.size){
-            return list[index]
-        }
 
+    fun getIcon(link: String): Bitmap? {
+        var icon : org.jsoup.nodes.Element? = null
+        var image : Bitmap? = null
+        try {
+            //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
+            val doc = URL(link).readText()
+
+            icon = try {
+                Jsoup.parse(doc).head().select("link[href~=.*\\.(ico|png)]").first()
+            } catch (e: Exception) {
+                try {
+                    Jsoup.parse(doc).head().select("meta[itemprop=image]").first()
+                } catch (e: Exception) {
+                    null
+                }
+            }
+            var favicon = icon?.attributes()?.get("href")
+            if (favicon?.startsWith('/') == true) {
+                favicon = favicon.substringAfter('/')
+                if (favicon.startsWith('/')) {
+                    favicon = favicon.substringAfter('/')
+                }
+                if (!favicon.startsWith("www")) {
+                    val baseurl = link.split('/')
+                    favicon = baseurl[0] + "//" + baseurl[2] + '/' + favicon
+                } else {
+                    favicon = "https://" + favicon
+                }
+            }
+            image =
+                BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+        return image
     }
-}**/
+
+}

@@ -6,5 +6,6 @@ import tw.ktrssreader.kotlin.model.item.Guid
 
 data class NewsData(
     var title: String, var desc: String, var link:String,
-    var category: Int, var guid: Guid?){}
+    var category: Int, var guid: Guid?, val icon: Bitmap?){}
+//TODO il logo e la categoria si possono salvare una sola volta per feed, quindi eventualmente pensare ad un model relativo il feed
 

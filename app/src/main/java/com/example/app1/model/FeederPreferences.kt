@@ -33,10 +33,19 @@ class FeederPreferences (private val context: Context){
 
     //Per adesso la logica è molto semplice, ma può ovviamente essere cambiata
     fun setFavouriteTopics(indexes: MutableList<Int>) {
-        val inTopic = (0.85 / indexes.size)
-        val offTopic = (0.15 / (preferences.size - indexes.size))
+        val numTopics = context.resources.getStringArray(R.array.topics_it).size
+        val inTopic = when {
+            indexes.isEmpty() -> {0.0}
+            indexes.size == numTopics -> {(1.0 / indexes.size)}
+            else -> {(0.8 / indexes.size)}
+        }
+        val offTopic = when {
+            indexes.isEmpty() -> {(1.0 / (preferences.size - indexes.size))}
+            indexes.size == numTopics -> {0.0}
+            else -> {(0.15 / (preferences.size - indexes.size))}
+        }
         for (i in 0 until preferences.size) {
-            preferences[i] = if (i in indexes) inTopic else offTopic
+            preferences[i] = (if (i in indexes) inTopic else offTopic)
         }
         savePreferences()
         setBounds()

@@ -1,3 +1,4 @@
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
@@ -21,6 +22,14 @@ import com.google.android.material.shape.ShapeAppearanceModel
 import org.jsoup.Jsoup
 import java.net.URL
 import android.graphics.Bitmap
+import android.text.Layout
+import android.util.Log
+import android.view.MotionEvent
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
+import kotlinx.coroutines.CoroutineScope
+import kotlin.contracts.contract
+import kotlin.system.measureTimeMillis
 
 
 class CustomAdapter(private val mList: List<NewsData>, private val context: Context) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
@@ -30,10 +39,13 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
             .inflate(R.layout.rv_row, parent, false)
         return ViewHolder(view)
     }
+
     // popola la row con i dati delle notizia
+    @SuppressLint("ClickableViewAccessibility")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
-        val categories = context.resources.getStringArray(R.array.topics_it)
+
+
         (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Html.fromHtml(item.title, Html.FROM_HTML_MODE_COMPACT)
         } else {
@@ -41,8 +53,30 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
             Html.fromHtml(item.title)
         }).also { holder.tv_title.text = it }
 
+        Log.d("Tempo build tv-category:", measureTimeMillis {
+                setCategory(holder, item.category)
+            }.toString())
+        Log.d("Thread icon", measureTimeMillis{
+                item.icon.let { holder.iv_favicon.setImageBitmap(it) }
+            }.toString())
 
-        holder.tv_category.text = categories.get(item.category) ?: ""
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, NewsActivity::class.java).apply {
+                putExtra("TITLE", item.title)
+                putExtra("HTML_CONTENT", item.link)
+            }
+            holder.itemView.context.startActivity(intent)
+        }
+    }
+
+    // return the number of the items in the list
+    override fun getItemCount(): Int {
+        return mList.size
+    }
+
+    fun setCategory(holder: ViewHolder, category: Int){
+        val categories = context.resources.getStringArray(R.array.topics_it)
+        holder.tv_category.text = categories[category] ?: ""
         val radius: Float = context.resources.getDimension(R.dimen.default_corner_radius)
         val shapeAppearanceModel = ShapeAppearanceModel()
             .toBuilder()
@@ -51,22 +85,24 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
         val shapeDrawable = MaterialShapeDrawable(shapeAppearanceModel)
         val colorStateList = ColorStateList(
             arrayOf(intArrayOf(android.R.attr.state_enabled)),
-            intArrayOf(context.resources.getIntArray(R.array.topics_colors)[item.category])
+            intArrayOf(context.resources.getIntArray(R.array.topics_colors)[category])
         )
         shapeDrawable.fillColor = colorStateList
         ViewCompat.setBackground(holder.tv_category, shapeDrawable)
         holder.tv_category.setTextColor(ContextCompat.getColor(context, R.color.white))
+    }
 
+    fun setIcon(holder: ViewHolder, link: String){
         var icon : org.jsoup.nodes.Element? = null
         var image : Bitmap? = null
         val thread = Thread {
             try {
                 //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
-                val doc = URL(item.link.toString()).readText()
+                val doc = URL(link).readText()
 
-                icon = try{
+                icon = try {
                     Jsoup.parse(doc).head().select("link[href~=.*\\.(ico|png)]").first()
-                }catch (e: Exception) {
+                } catch (e: Exception) {
                     try {
                         Jsoup.parse(doc).head().select("meta[itemprop=image]").first()
                     } catch (e: Exception) {
@@ -74,46 +110,31 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                     }
                 }
                 var favicon = icon?.attributes()?.get("href")
-                if (favicon?.startsWith('/') == true){
+                if (favicon?.startsWith('/') == true) {
                     favicon = favicon.substringAfter('/')
-                    if (favicon.startsWith('/')){
+                    if (favicon.startsWith('/')) {
                         favicon = favicon.substringAfter('/')
                     }
-                    if (! favicon.startsWith("www")){
-                        val baseurl = item.link.split('/')
-                        favicon  = baseurl[0] + "//" + baseurl[2] + '/' + favicon
-                    }else{
+                    if (!favicon.startsWith("www")) {
+                        val baseurl = link.split('/')
+                        favicon = baseurl[0] + "//" + baseurl[2] + '/' + favicon
+                    } else {
                         favicon = "https://" + favicon
                     }
                 }
-
-                image = BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
+                image =
+                    BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
             } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
         thread.start()
 
-        holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, NewsActivity::class.java).apply {
-                putExtra("TITLE", item.title)
-                putExtra("HTML_CONTENT", item.link)
-            }
-            holder.itemView.context.startActivity(intent)
-            //val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(item.link))
-            //holder.itemView.context.startActivity(browserIntent)
-        }
-        thread.join()
-        image.let { holder.iv_favicon.setImageBitmap(it) }
-    }
-
-    // return the number of the items in the list
-    override fun getItemCount(): Int {
-        return mList.size
     }
 
     // Holds the views for adding it to image and text
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val cv_layout : ConstraintLayout = itemView.findViewById(R.id.cv_layout)
         val tv_title: TextView = itemView.findViewById(R.id.tv_title)
         val iv_favicon: ImageView = itemView.findViewById(R.id.iv_favicon)
         val tv_category: TextView = itemView.findViewById(R.id.tv_category)
