@@ -1912,6 +1912,7 @@ int dimen compat_control_corner_material 0x7f07005e
 int dimen compat_notification_large_icon_max_height 0x7f07005f
 int dimen compat_notification_large_icon_max_width 0x7f070060
 int dimen def_drawer_elevation 0x7f070061
+int dimen default_corner_radius 0x7f070255
 int dimen default_dimension 0x7f070062
 int dimen design_appbar_elevation 0x7f070063
 int dimen design_bottom_navigation_active_item_max_width 0x7f070064

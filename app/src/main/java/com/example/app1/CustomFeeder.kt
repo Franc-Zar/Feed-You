@@ -2,7 +2,7 @@ package com.example.app1
 
 import CustomAdapter
 import android.content.Context
-import android.graphics.BitmapFactory
+import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import androidx.recyclerview.widget.RecyclerView
@@ -14,7 +14,7 @@ import tw.ktrssreader.Reader
 import tw.ktrssreader.kotlin.model.channel.RssStandardChannelData
 import java.io.IOException
 import java.io.InputStream
-import java.net.URL
+import kotlin.system.measureTimeMillis
 
 
 class CustomFeeder(var context: Context){
@@ -63,7 +63,7 @@ class CustomFeeder(var context: Context){
                 news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1, it.guid))
             }
             withContext(Dispatchers.Main){
-                val adapter = CustomAdapter(news)
+                val adapter = CustomAdapter(news, context)
                 rv.adapter = adapter
                 load.visibility= View.INVISIBLE
             }
@@ -79,8 +79,9 @@ class CustomFeeder(var context: Context){
                 news.add(mutableListOf())
                 for (j in 0 until links[i].size){
                     try {
-                        val result = Reader.coRead<RssStandardChannelData>(links[i][j])
-                        result.items!!.forEach {
+                        var result: RssStandardChannelData? = null
+                        Log.d("TEMPO",measureTimeMillis{result = Reader.coRead<RssStandardChannelData>(links[i][j])}.toString())
+                        result!!.items!!.forEach {
                             news[i].add(NewsData(it.title!!,it.description ?: "...",
                                         it.link!!, i, it.guid))}
                     }catch (e : Exception){
@@ -91,7 +92,7 @@ class CustomFeeder(var context: Context){
             }
 
             withContext(Dispatchers.Main) {
-                val adapter = CustomAdapter(shuffler(news))
+                val adapter = CustomAdapter(shuffler(news), context)
                 rv.adapter = adapter
                 load.visibility = View.INVISIBLE
             }
@@ -109,3 +110,13 @@ class CustomFeeder(var context: Context){
         return list
     }
 }
+/**
+class newsList : List<com.example.app1.NewsData>{
+    val list: List<com.example.app1.NewsData> = listOf()
+    override fun get(index: Int): com.example.app1.NewsData {
+        if (index<list.size){
+            return list[index]
+        }
+
+    }
+}**/

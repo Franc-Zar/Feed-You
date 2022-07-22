@@ -13,6 +13,9 @@
         "http://www.tgcom24.mediaset.it/rss/homepage.xml",
         "https://it.notizie.yahoo.com/rss"
     ],
+    "1": ["https://www.ansa.it/sito/notizie/cronaca/cronaca_rss.xml"],
+    "2": ["https://www.ansa.it/sito/notizie/politica/politica_rss.xml"],
+    "3": ["https://www.ansa.it/sito/notizie/economia/economia_rss.xml"],
     "4": ["https://www.ilfattoquotidiano.it/societa/"],
     "5":["http://www.ansa.it/sito/notizie/cultura/cultura_rss.xml"],
     "6": [

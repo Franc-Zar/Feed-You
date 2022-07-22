@@ -26,6 +26,7 @@ color teal_200
 color teal_700
 color white
 dimen app_bar_height
+dimen default_corner_radius
 dimen fab_margin
 dimen text_margin
 drawable ic_baseline_account_circle_18

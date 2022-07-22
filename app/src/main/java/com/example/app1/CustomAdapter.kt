@@ -1,9 +1,7 @@
-import android.R.attr.radius
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.BitmapFactory
-import android.graphics.Color
 import android.os.Build
 import android.text.Html
 import android.view.LayoutInflater
@@ -17,24 +15,25 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.app1.NewsActivity
 import com.example.app1.R
 import com.example.app1.model.NewsData
+import com.google.android.material.shape.CornerFamily
+import com.google.android.material.shape.MaterialShapeDrawable
+import com.google.android.material.shape.ShapeAppearanceModel
 import org.jsoup.Jsoup
 import java.net.URL
+import android.graphics.Bitmap
 
 
-class CustomAdapter(private val mList: List<NewsData>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
-    var context: Context? = null
-
+class CustomAdapter(private val mList: List<NewsData>, private val context: Context) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     // costruisce gli elementi della recyclerview sulla base della view rv_row
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.rv_row, parent, false)
-        context = parent.context
         return ViewHolder(view)
     }
     // popola la row con i dati delle notizia
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
-        val categories = context?.resources?.getStringArray(R.array.topics_it)
+        val categories = context.resources.getStringArray(R.array.topics_it)
         (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Html.fromHtml(item.title, Html.FROM_HTML_MODE_COMPACT)
         } else {
@@ -43,15 +42,30 @@ class CustomAdapter(private val mList: List<NewsData>) : RecyclerView.Adapter<Cu
         }).also { holder.tv_title.text = it }
 
 
-        holder.tv_category.text = categories?.get(item.category) ?: ""
-        holder.tv_category.setBackgroundColor(
-            context?.resources?.getIntArray(R.array.topics_colors)?.get(item.category) ?: R.color.black)
-        context?.let { ContextCompat.getColor(it, R.color.white)}
+        holder.tv_category.text = categories.get(item.category) ?: ""
+
+        val radius: Float = context.resources.getDimension(R.dimen.default_corner_radius)
+        val shapeAppearanceModel = ShapeAppearanceModel()
+            .toBuilder()
+            .setAllCorners(CornerFamily.ROUNDED, radius.toFloat())
+            .build()
+
+        val shapeDrawable = MaterialShapeDrawable(shapeAppearanceModel)
+
+        val colorStateList = ColorStateList(
+            arrayOf(intArrayOf(android.R.attr.state_enabled)),
+            intArrayOf(context.resources.getIntArray(R.array.topics_colors)[item.category])
+        )
+        shapeDrawable.fillColor = colorStateList
+        ViewCompat.setBackground(holder.tv_category, shapeDrawable)
+
+        holder.tv_category.setTextColor(ContextCompat.getColor(context, R.color.white))
         var icon : org.jsoup.nodes.Element? = null
+        var image : Bitmap? = null
         val thread = Thread {
             try {
                 //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
-                val doc = URL(item.guid?.value ?: "http://www.google.com/").readText()
+                val doc = URL(item.link.toString()).readText()
 
                 icon = try{
                     Jsoup.parse(doc).head().select("link[href~=.*\\.(ico|png)]").first()
@@ -76,8 +90,7 @@ class CustomAdapter(private val mList: List<NewsData>) : RecyclerView.Adapter<Cu
                     }
                 }
 
-                val image = BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
-                holder.iv_favicon.setImageBitmap(image)
+                image = BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -93,6 +106,8 @@ class CustomAdapter(private val mList: List<NewsData>) : RecyclerView.Adapter<Cu
             //val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(item.link))
             //holder.itemView.context.startActivity(browserIntent)
         }
+        thread.join()
+        image.let { holder.iv_favicon.setImageBitmap(it) }
     }
 
     // return the number of the items in the list

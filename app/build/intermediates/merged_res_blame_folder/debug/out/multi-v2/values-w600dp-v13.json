@@ -6,12 +6,12 @@
                 {
                     "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\values-w600dp\\arrays.xml",
                     "from": {
-                        "startLines": "-1,8,-1,-1,-1,-1",
-                        "startColumns": "-1,4,-1,-1,-1,-1",
-                        "startOffsets": "-1,250,-1,-1,-1,-1",
-                        "endLines": "-1,16,-1,-1,-1,-1",
-                        "endColumns": "-1,12,-1,-1,-1,-1",
-                        "endOffsets": "-1,552,-1,-1,-1,-1"
+                        "startLines": "2,8,45,27,36,18",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "57,250,1427,848,1139,560",
+                        "endLines": "7,16,53,35,44,26",
+                        "endColumns": "19,12,19,19,19,19",
+                        "endOffsets": "244,552,1709,1133,1421,842"
                     },
                     "to": {
                         "startLines": "2,8,17,26,35,44",
@@ -25,9 +25,11 @@
                 {
                     "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
-                        "startLines": "-1,-1",
-                        "startColumns": "-1,-1",
-                        "startOffsets": "-1,-1"
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "17,60",
+                        "endColumns": "41,42",
+                        "endOffsets": "54,98"
                     },
                     "to": {
                         "startLines": "53,54",
