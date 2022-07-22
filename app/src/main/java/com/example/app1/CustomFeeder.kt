@@ -105,7 +105,7 @@ class CustomFeeder(var context: Context){
 
     fun shuffler(news: List<MutableList<NewsData>>): List<NewsData> {
         val list = mutableListOf<NewsData>()
-        for (i in 0 until 100){
+        for (i in 0 until 40){
             val topic = preferences.getRandTopic()
             if (news[topic].isNotEmpty()){
                 list.add(news[topic].removeFirst())

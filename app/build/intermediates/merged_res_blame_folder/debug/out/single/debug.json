@@ -8,12 +8,12 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-mdpi\\logo_foreground.png"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_news.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_news.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle_18.xml.flat",
@@ -44,12 +44,12 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_round.png"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_logo_foreground.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_icons8_twitter.png.flat",

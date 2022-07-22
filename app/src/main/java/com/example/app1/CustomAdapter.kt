@@ -1,3 +1,5 @@
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
@@ -22,13 +24,15 @@ import com.google.android.material.shape.ShapeAppearanceModel
 import org.jsoup.Jsoup
 import java.net.URL
 import android.graphics.Bitmap
-import android.text.Layout
 import android.util.Log
 import android.view.MotionEvent
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import kotlinx.coroutines.CoroutineScope
-import kotlin.contracts.contract
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import java.lang.Float.min
 import kotlin.system.measureTimeMillis
 
 
@@ -39,12 +43,103 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
             .inflate(R.layout.rv_row, parent, false)
         return ViewHolder(view)
     }
-
     // popola la row con i dati delle notizia
     @SuppressLint("ClickableViewAccessibility")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
 
+
+        holder.cv_news.setOnTouchListener(
+            View.OnTouchListener { view, event ->
+                // variables to store current configuration of quote card.
+                val displayMetrics = context.resources.displayMetrics
+                val cardWidth = holder.cv_news.width
+                val cardStart = (displayMetrics.widthPixels.toFloat() / 2) - (cardWidth / 2)
+                val newX = event.rawX
+                val minDistance = context.resources.getInteger(R.integer.minDistance)
+
+                when (event.action) {
+                    //inizio gesture
+                    MotionEvent.ACTION_MOVE -> {
+                        // TODO: Handle ACTION_MOVE
+                        if (newX - cardWidth < cardStart) { // or newX < cardStart + cardWidth
+                            holder.cv_news.animate().x(minOf(cardStart, newX - (cardWidth / 2)))
+                                .setDuration(0)
+                                .start()
+                        }
+                    }
+                    //release
+                    MotionEvent.ACTION_UP -> {
+                        var currentX = holder.cv_news.x
+                        holder.cv_news.animate()
+                            .x(cardStart)
+                            .setDuration(150)
+                            .setListener(object : AnimatorListenerAdapter() {
+                                override fun onAnimationEnd(animation: Animator) {
+                                    CoroutineScope(Dispatchers.Default).launch {
+                                        delay(10)
+
+                                        if (currentX < -50) {
+                                            //cambiamento dei dati visualizzati
+                                            if (holder.tv_title.currentTextColor == ContextCompat.getColor(
+                                                    context,
+                                                    R.color.purple_700
+                                                )
+                                            ) {
+                                                (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                                                    Html.fromHtml(
+                                                        item.desc,
+                                                        Html.FROM_HTML_MODE_COMPACT
+                                                    )
+                                                } else {
+                                                    @Suppress("DEPRECATION")
+                                                    Html.fromHtml(item.desc)
+                                                }).also {
+                                                    holder.tv_title.text = if (it.length > 40) {
+                                                        it.subSequence(0, 40).toString().plus("...")
+                                                    } else {
+                                                        it
+                                                    }
+                                                }
+                                                holder.tv_title.setTextColor(
+                                                    ContextCompat.getColor(
+                                                        context,
+                                                        R.color.dark_grey
+                                                    )
+                                                )
+                                            } else {
+                                                (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                                                    Html.fromHtml(
+                                                        item.title,
+                                                        Html.FROM_HTML_MODE_COMPACT
+                                                    )
+                                                } else {
+                                                    @Suppress("DEPRECATION")
+                                                    Html.fromHtml(item.title)
+                                                }).also { holder.tv_title.text = it }
+                                                holder.tv_title.setTextColor(
+                                                    ContextCompat.getColor(
+                                                        context,
+                                                        R.color.purple_700
+                                                    )
+                                                )
+                                            }
+                                            currentX = 20f
+                                        } else if (currentX > 10f) {
+                                            view.performClick()
+                                        }
+                                        currentX = 20f
+                                    }
+                                }
+                            })
+                            .start()
+                    }
+                }
+
+                // required to by-pass lint warning
+                return@OnTouchListener true
+            }
+        )
 
         (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Html.fromHtml(item.title, Html.FROM_HTML_MODE_COMPACT)
@@ -53,12 +148,8 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
             Html.fromHtml(item.title)
         }).also { holder.tv_title.text = it }
 
-        Log.d("Tempo build tv-category:", measureTimeMillis {
-                setCategory(holder, item.category)
-            }.toString())
-        Log.d("Thread icon", measureTimeMillis{
-                item.icon.let { holder.iv_favicon.setImageBitmap(it) }
-            }.toString())
+        setCategory(holder, item.category)
+        item.icon.let { holder.iv_favicon.setImageBitmap(it) }
 
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, NewsActivity::class.java).apply {
@@ -92,49 +183,10 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
         holder.tv_category.setTextColor(ContextCompat.getColor(context, R.color.white))
     }
 
-    fun setIcon(holder: ViewHolder, link: String){
-        var icon : org.jsoup.nodes.Element? = null
-        var image : Bitmap? = null
-        val thread = Thread {
-            try {
-                //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
-                val doc = URL(link).readText()
-
-                icon = try {
-                    Jsoup.parse(doc).head().select("link[href~=.*\\.(ico|png)]").first()
-                } catch (e: Exception) {
-                    try {
-                        Jsoup.parse(doc).head().select("meta[itemprop=image]").first()
-                    } catch (e: Exception) {
-                        null
-                    }
-                }
-                var favicon = icon?.attributes()?.get("href")
-                if (favicon?.startsWith('/') == true) {
-                    favicon = favicon.substringAfter('/')
-                    if (favicon.startsWith('/')) {
-                        favicon = favicon.substringAfter('/')
-                    }
-                    if (!favicon.startsWith("www")) {
-                        val baseurl = link.split('/')
-                        favicon = baseurl[0] + "//" + baseurl[2] + '/' + favicon
-                    } else {
-                        favicon = "https://" + favicon
-                    }
-                }
-                image =
-                    BitmapFactory.decodeStream(URL(favicon).openConnection().getInputStream())
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-        }
-        thread.start()
-
-    }
 
     // Holds the views for adding it to image and text
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val cv_layout : ConstraintLayout = itemView.findViewById(R.id.cv_layout)
+        val cv_news : CardView = itemView.findViewById(R.id.cv_news)
         val tv_title: TextView = itemView.findViewById(R.id.tv_title)
         val iv_favicon: ImageView = itemView.findViewById(R.id.iv_favicon)
         val tv_category: TextView = itemView.findViewById(R.id.tv_category)

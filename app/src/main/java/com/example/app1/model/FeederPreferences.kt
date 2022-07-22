@@ -42,7 +42,7 @@ class FeederPreferences (private val context: Context){
         val offTopic = when {
             indexes.isEmpty() -> {(1.0 / (preferences.size - indexes.size))}
             indexes.size == numTopics -> {0.0}
-            else -> {(0.15 / (preferences.size - indexes.size))}
+            else -> {(0.2 / (preferences.size - indexes.size))}
         }
         for (i in 0 until preferences.size) {
             preferences[i] = (if (i in indexes) inTopic else offTopic)
