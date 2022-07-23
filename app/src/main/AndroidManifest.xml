@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name=".authentication.AnonymousActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Translucent" />

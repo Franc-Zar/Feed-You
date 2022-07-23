@@ -29,7 +29,10 @@ dimen app_bar_height
 dimen fab_margin
 dimen text_margin
 drawable ic_baseline_account_circle_18
+drawable ic_baseline_arrow_back_24
 drawable ic_baseline_email_18
+drawable ic_baseline_menu_24
+drawable ic_baseline_search_24
 drawable ic_baseline_visibility_18
 drawable ic_baseline_visibility_off_18
 drawable ic_baseline_vpn_key_18
@@ -45,6 +48,7 @@ font rock_salt
 id account_creation_progress
 id anonymous_login
 id app_bar
+id app_bar_search
 id app_name
 id appbar
 id button
@@ -54,7 +58,6 @@ id decoration_password_recovery
 id decoration_useSocial
 id decoration_welcome
 id email
-id favorite
 id forgot_password
 id fragment
 id google_login
@@ -65,18 +68,17 @@ id layout_app
 id layout_topics
 id loading_icon
 id logo
-id more
 id password
 id reset_password
 id rv
 id scroll_topics
-id search
 id sign_in
 id sign_up
 id spinner_lang
 id swiperefresh
 id termini_condizioni
 id toolbar
+id toolbar_menu
 id tv_category
 id tv_frag_title
 id tv_sorry
@@ -88,9 +90,11 @@ layout activity_error
 layout activity_google
 layout activity_login
 layout activity_main
+layout activity_menu
 layout activity_news
 layout activity_password_recovery
 layout activity_preference
+layout activity_settings
 layout activity_sign_up
 layout activity_simple_sign_in
 layout activity_twitter
@@ -99,6 +103,7 @@ layout fragment_topics
 layout rv_row
 menu top_bar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap logo_foreground
 mipmap logo_round
@@ -130,3 +135,4 @@ style Theme.App1.AppBarOverlay
 style Theme.App1.NoActionBar
 style Theme.App1.PopupOverlay
 style Theme.AppCompat.Translucent
+style ToolbarTheme

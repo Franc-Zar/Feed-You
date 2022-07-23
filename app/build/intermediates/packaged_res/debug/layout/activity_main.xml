@@ -13,9 +13,15 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:logo="@drawable/logo"
+            android:theme="@style/ToolbarTheme"
             app:menu="@menu/top_bar"
-            app:navigationIcon="@mipmap/logo_round"
-            app:title="@string/app_name" />
+            app:navigationIcon="@drawable/ic_baseline_menu_24"
+            app:title="Feed You"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:titleTextColor="#248B9C" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

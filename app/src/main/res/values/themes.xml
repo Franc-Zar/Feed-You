@@ -20,6 +20,10 @@
     <style name="Theme.App1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.App1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/rock_salt</item>
+    </style>
+
     <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">#33646464</item> <!-- Or any transparency or color you need -->
         <item name="android:windowNoTitle">true</item>

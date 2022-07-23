@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
 import android.widget.Toast
+import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,38 +20,45 @@ import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
+    private lateinit var switch_activity: Intent
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        menuInflater.inflate(R.menu.top_bar, menu)
+        val menuItem = menu?.findItem(R.id.app_bar_search)
+        return super.onCreateOptionsMenu(menu)
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         database = Firebase.database.reference
         //val user = User(name, email)
         //database.child("users").child(userId).setValue(user)    vale ricorsivamente sui parametri dell'oggetto, che sono a loro volta child
-
         //reset delle preferenze, finche non aggiungiamo il menu per modificarle
-        /**
+
         val pref =getSharedPreferences(getString(R.string.lang),Context.MODE_PRIVATE)
         if (pref != null) {
-                with(pref.edit()) {
-                    clear()
-                    apply()
-            }
+        with(pref.edit()) {
+        clear()
+        apply()
+        }
         }
         val spref =getSharedPreferences(getString(R.string.topics),Context.MODE_PRIVATE)
         if (spref != null) {
-            with(spref.edit()) {
-                clear()
-                apply()
-            }
+        with(spref.edit()) {
+        clear()
+        apply()
+        }
         }
         val tpref =getSharedPreferences(getString(R.string.prefTopics),Context.MODE_PRIVATE)
         if (spref != null) {
-            with(tpref.edit()) {
-                clear()
-                apply()
-            }
+        with(tpref.edit()) {
+        clear()
+        apply()
         }
-        **/
+        }
+
 
         if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
@@ -57,11 +66,22 @@ class MainActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_main)
 
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+
+        toolbar.setNavigationOnClickListener {
+
+            switch_activity = Intent(this, MenuActivity::class.java)
+            startActivity(switch_activity)
+
+        }
+
+
     }
 
     override fun onStart() {
         super.onStart()
-
+/*
         val materialToolbar = findViewById<MaterialToolbar>(R.id.toolbar)
         materialToolbar.setOnMenuItemClickListener {
             when (it.itemId) {
@@ -76,7 +96,7 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
-
+*/
         val refreshLayout = findViewById<SwipeRefreshLayout>(R.id.swiperefresh)
         refreshLayout.setOnRefreshListener {
             // This method performs the actual data-refresh operation.

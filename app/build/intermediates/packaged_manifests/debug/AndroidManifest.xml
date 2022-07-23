@@ -26,6 +26,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.App1" >
         <activity
+            android:name="com.example.app1.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.app1.SettingsActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.app1.authentication.AnonymousActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Translucent" />

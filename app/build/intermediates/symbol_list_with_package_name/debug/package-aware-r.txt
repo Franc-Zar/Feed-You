@@ -2528,7 +2528,10 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_baseline_account_circle_18
+drawable ic_baseline_arrow_back_24
 drawable ic_baseline_email_18
+drawable ic_baseline_menu_24
+drawable ic_baseline_search_24
 drawable ic_baseline_visibility_18
 drawable ic_baseline_visibility_off_18
 drawable ic_baseline_vpn_key_18
@@ -2681,6 +2684,7 @@ id anonymous_login
 id antiClockwise
 id anticipate
 id app_bar
+id app_bar_search
 id app_name
 id appbar
 id arc
@@ -2806,7 +2810,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id favorite
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2908,7 +2911,6 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
-id more
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -2998,7 +3000,6 @@ id scrollIndicatorUp
 id scrollView
 id scroll_topics
 id scrollable
-id search
 id search_badge
 id search_bar
 id search_button
@@ -3096,6 +3097,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar_menu
 id top
 id topPanel
 id touch_outside
@@ -3234,9 +3236,11 @@ layout activity_error
 layout activity_google
 layout activity_login
 layout activity_main
+layout activity_menu
 layout activity_news
 layout activity_password_recovery
 layout activity_preference
+layout activity_settings
 layout activity_sign_up
 layout activity_simple_sign_in
 layout activity_twitter
@@ -3346,6 +3350,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu top_bar
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap logo_foreground
 mipmap logo_round
@@ -4233,6 +4238,7 @@ style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
 style ThemeOverlayColorAccentRed
+style ToolbarTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
