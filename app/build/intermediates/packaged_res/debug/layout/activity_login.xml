@@ -79,7 +79,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/decoration_password"
+        android:id="@+id/decoration_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration_menu" />
 
     <TextView
         android:id="@+id/decoration_useSocial"
@@ -188,6 +188,8 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="40dp"
         android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:focusable="true"
         android:fontFamily="@font/asap"
         android:text="@string/forgot_password"
         android:textColor="#35424A"
@@ -206,6 +208,8 @@
         android:layout_marginBottom="40dp"
         android:clickable="true"
         android:text="Sign Up"
+        android:background="?attr/selectableItemBackground"
+        android:focusable="true"
         android:textColor="#248B9C"
         android:textSize="18sp"
         android:textStyle="bold"

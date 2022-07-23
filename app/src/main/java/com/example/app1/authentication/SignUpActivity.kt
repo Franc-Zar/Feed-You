@@ -14,11 +14,15 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
     private lateinit var switch_activity: Intent
+    // la password deve avere almeno una cifra, almeno un carattere minuscolo, almeno un carattere maiuscolo, almeno un carattere speciale,
+    // almeno una lunghezza di 6 caratteri
+    private val password_regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[{}@#$%^&+=*?'_ç£!<>])(?=\\S+$).{6,}$"
 
     private fun progress() {
 
@@ -28,6 +32,14 @@ class SignUpActivity : AppCompatActivity() {
         animation.setDuration(500)
         animation.setInterpolator(DecelerateInterpolator())
         animation.start()
+
+    }
+
+    private fun String.isValidPassword(): Boolean {
+
+        val pattern = Pattern.compile(password_regex)
+        val matcher = pattern.matcher(this)
+        return matcher.matches()
 
     }
 
@@ -71,51 +83,65 @@ class SignUpActivity : AppCompatActivity() {
             val password_chosen = password.text.toString().trim()
 
             if (email_chosen != "" && password_chosen != "") {
+
+
                 if (termini_condizioni.isChecked) {
 
-                    auth.createUserWithEmailAndPassword(email_chosen, password_chosen)
-                        .addOnCompleteListener(this) { task ->
 
-                            if (task.isSuccessful) {
-                                // Sign in success, update UI with the signed-in user's information
-                                val user = auth.currentUser
+                    if(password_chosen.isValidPassword()) {
 
-                                switch_activity = Intent(this, LoginActivity::class.java)
-                                startActivity(switch_activity)
+                        auth.createUserWithEmailAndPassword(email_chosen, password_chosen)
+                            .addOnCompleteListener(this) { task ->
 
-                                Toast.makeText(
-                                    baseContext, "User created successfully!",
-                                    Toast.LENGTH_SHORT
-                                ).show()
+                                if (task.isSuccessful) {
+                                    // Sign in success, update UI with the signed-in user's information
+                                    val user = auth.currentUser
 
-                            } else {
+                                    switch_activity = Intent(this, LoginActivity::class.java)
+                                    startActivity(switch_activity)
 
-                                when(task.exception) {
-
-                                    is FirebaseAuthUserCollisionException ->
-
-                                        Toast.makeText(
-                                            baseContext,
-                                            "A user with email:" + email_chosen + " already exists!",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-
-                                    is FirebaseAuthWeakPasswordException ->
-
-                                        Toast.makeText(
-                                            baseContext,
-                                            "Password should be at least 6 characters!",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-
-                                    else -> Toast.makeText(
-                                        baseContext,
-                                        "Something went wrong, please try again.",
+                                    Toast.makeText(
+                                        baseContext, "User created successfully!",
                                         Toast.LENGTH_SHORT
                                     ).show()
 
+                                } else {
+
+                                    when (task.exception) {
+
+                                        is FirebaseAuthUserCollisionException ->
+
+                                            Toast.makeText(
+                                                baseContext,
+                                                "A user with email:" + email_chosen + " already exists!",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+
+                                        is FirebaseAuthWeakPasswordException ->
+
+                                            Toast.makeText(
+                                                baseContext,
+                                                "Password should be at least 6 characters!",
+                                                Toast.LENGTH_SHORT
+                                            ).show()
+
+                                        else -> Toast.makeText(
+                                            baseContext,
+                                            "Something went wrong, please try again.",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+
+                                    }
                                 }
                             }
+
+                    } else {
+
+                        Toast.makeText(
+                            baseContext, "Password too weak!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
                     }
 
                 } else {

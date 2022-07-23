@@ -23,47 +23,52 @@ public final class ActivityMenuBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView decorationPassword;
+  public final TextView aboutFeedYou;
+
+  @NonNull
+  public final TextView accountSettings;
+
+  @NonNull
+  public final TextView blockedSources;
+
+  @NonNull
+  public final TextView decorationMenu;
+
+  @NonNull
+  public final TextView inviteFriends;
 
   @NonNull
   public final Switch pushNotifications;
 
   @NonNull
-  public final Spinner spinner4;
+  public final TextView reportProblems;
 
   @NonNull
-  public final TextView textView2;
+  public final Spinner spinnerThemes;
 
   @NonNull
-  public final TextView textView3;
+  public final TextView themes;
 
   @NonNull
-  public final TextView textView4;
+  public final MaterialToolbar toolbarAccount;
 
-  @NonNull
-  public final TextView textView5;
-
-  @NonNull
-  public final TextView textView6;
-
-  @NonNull
-  public final MaterialToolbar toolbarMenu;
-
-  private ActivityMenuBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView decorationPassword, @NonNull Switch pushNotifications,
-      @NonNull Spinner spinner4, @NonNull TextView textView2, @NonNull TextView textView3,
-      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
-      @NonNull MaterialToolbar toolbarMenu) {
+  private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
+      @NonNull TextView accountSettings, @NonNull TextView blockedSources,
+      @NonNull TextView decorationMenu, @NonNull TextView inviteFriends,
+      @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
+      @NonNull Spinner spinnerThemes, @NonNull TextView themes,
+      @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
-    this.decorationPassword = decorationPassword;
+    this.aboutFeedYou = aboutFeedYou;
+    this.accountSettings = accountSettings;
+    this.blockedSources = blockedSources;
+    this.decorationMenu = decorationMenu;
+    this.inviteFriends = inviteFriends;
     this.pushNotifications = pushNotifications;
-    this.spinner4 = spinner4;
-    this.textView2 = textView2;
-    this.textView3 = textView3;
-    this.textView4 = textView4;
-    this.textView5 = textView5;
-    this.textView6 = textView6;
-    this.toolbarMenu = toolbarMenu;
+    this.reportProblems = reportProblems;
+    this.spinnerThemes = spinnerThemes;
+    this.themes = themes;
+    this.toolbarAccount = toolbarAccount;
   }
 
   @Override
@@ -93,9 +98,33 @@ public final class ActivityMenuBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.decoration_password;
-      TextView decorationPassword = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPassword == null) {
+      id = R.id.about_feed_you;
+      TextView aboutFeedYou = ViewBindings.findChildViewById(rootView, id);
+      if (aboutFeedYou == null) {
+        break missingId;
+      }
+
+      id = R.id.account_settings;
+      TextView accountSettings = ViewBindings.findChildViewById(rootView, id);
+      if (accountSettings == null) {
+        break missingId;
+      }
+
+      id = R.id.blocked_sources;
+      TextView blockedSources = ViewBindings.findChildViewById(rootView, id);
+      if (blockedSources == null) {
+        break missingId;
+      }
+
+      id = R.id.decoration_menu;
+      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
+      if (decorationMenu == null) {
+        break missingId;
+      }
+
+      id = R.id.invite_friends;
+      TextView inviteFriends = ViewBindings.findChildViewById(rootView, id);
+      if (inviteFriends == null) {
         break missingId;
       }
 
@@ -105,51 +134,33 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.spinner4;
-      Spinner spinner4 = ViewBindings.findChildViewById(rootView, id);
-      if (spinner4 == null) {
+      id = R.id.report_problems;
+      TextView reportProblems = ViewBindings.findChildViewById(rootView, id);
+      if (reportProblems == null) {
         break missingId;
       }
 
-      id = R.id.textView2;
-      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
-      if (textView2 == null) {
+      id = R.id.spinner_themes;
+      Spinner spinnerThemes = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerThemes == null) {
         break missingId;
       }
 
-      id = R.id.textView3;
-      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
-      if (textView3 == null) {
+      id = R.id.themes;
+      TextView themes = ViewBindings.findChildViewById(rootView, id);
+      if (themes == null) {
         break missingId;
       }
 
-      id = R.id.textView4;
-      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
-      if (textView4 == null) {
+      id = R.id.toolbar_account;
+      MaterialToolbar toolbarAccount = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarAccount == null) {
         break missingId;
       }
 
-      id = R.id.textView5;
-      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
-      if (textView5 == null) {
-        break missingId;
-      }
-
-      id = R.id.textView6;
-      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
-      if (textView6 == null) {
-        break missingId;
-      }
-
-      id = R.id.toolbar_menu;
-      MaterialToolbar toolbarMenu = ViewBindings.findChildViewById(rootView, id);
-      if (toolbarMenu == null) {
-        break missingId;
-      }
-
-      return new ActivityMenuBinding((ConstraintLayout) rootView, decorationPassword,
-          pushNotifications, spinner4, textView2, textView3, textView4, textView5, textView6,
-          toolbarMenu);
+      return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
+          blockedSources, decorationMenu, inviteFriends, pushNotifications, reportProblems,
+          spinnerThemes, themes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

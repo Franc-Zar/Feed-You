@@ -26,7 +26,7 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationPassword;
+  public final TextView decorationMenu;
 
   @NonNull
   public final TextView decorationPasswordRecovery;
@@ -47,13 +47,13 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView signIn;
 
   private ActivityPasswordRecoveryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView appName, @NonNull TextView decorationPassword,
+      @NonNull TextView appName, @NonNull TextView decorationMenu,
       @NonNull TextView decorationPasswordRecovery, @NonNull EditText email,
       @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull Button resetPassword,
       @NonNull TextView signIn) {
     this.rootView = rootView;
     this.appName = appName;
-    this.decorationPassword = decorationPassword;
+    this.decorationMenu = decorationMenu;
     this.decorationPasswordRecovery = decorationPasswordRecovery;
     this.email = email;
     this.haveAnAccount = haveAnAccount;
@@ -95,9 +95,9 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_password;
-      TextView decorationPassword = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPassword == null) {
+      id = R.id.decoration_menu;
+      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
+      if (decorationMenu == null) {
         break missingId;
       }
 
@@ -138,7 +138,7 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
       }
 
       return new ActivityPasswordRecoveryBinding((ConstraintLayout) rootView, appName,
-          decorationPassword, decorationPasswordRecovery, email, haveAnAccount, logo, resetPassword,
+          decorationMenu, decorationPasswordRecovery, email, haveAnAccount, logo, resetPassword,
           signIn);
     }
     String missingId = rootView.getResources().getResourceName(id);

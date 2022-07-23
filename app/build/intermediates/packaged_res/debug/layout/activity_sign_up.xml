@@ -76,7 +76,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/decoration_password"
+        android:id="@+id/decoration_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -125,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration_menu" />
 
     <ProgressBar
         android:id="@+id/account_creation_progress"
@@ -187,6 +187,7 @@
         android:clickable="true"
         android:focusable="true"
         android:text="Sign In"
+        android:background="?attr/selectableItemBackground"
         android:textColor="#248B9C"
         android:textSize="18sp"
         android:textStyle="bold"

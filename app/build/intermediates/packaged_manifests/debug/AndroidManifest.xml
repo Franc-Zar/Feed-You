@@ -27,6 +27,9 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.app1.AccountActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.app1.MenuActivity"
             android:exported="false" />
         <activity

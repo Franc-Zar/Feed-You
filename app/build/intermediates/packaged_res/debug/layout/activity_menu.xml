@@ -7,7 +7,7 @@
     tools:context=".MenuActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbar_menu"
+        android:id="@+id/toolbar_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -22,33 +22,29 @@
         tools:layout_editor_absoluteX="1dp" />
 
     <TextView
-        android:id="@+id/decoration_password"
+        android:id="@+id/decoration_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-<<<<<<< HEAD
-=======
-        android:layout_marginTop="5dp"
->>>>>>> 3e2742ae59ed600d2f8a12b22fcf510d77379c8d
         android:fontFamily="@font/quicksand_bold"
         android:text="Menu"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_account" />
 
-<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="638dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password"
+        app:layout_constraintTop_toBottomOf="@+id/decoration_menu"
         tools:layout_editor_absoluteX="1dp">
 
         <Switch
             android:id="@+id/push_notifications"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_notifications_active_24"
             android:drawablePadding="10dp"
             android:fontFamily="@font/asap"
@@ -62,23 +58,39 @@
             android:layout_width="match_parent"
             android:layout_height="40dp" />
 
-        <Spinner
-            android:id="@+id/spinner4"
+        <TextView
+            android:id="@+id/themes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#248B9C" />
+            android:drawableStart="@drawable/ic_baseline_color_lens_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Themes"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_themes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#248B9C"
+            android:entries="@array/app_themes" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/blocked_sources"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_not_interested_24"
             android:drawablePadding="10dp"
+            android:focusable="true"
             android:fontFamily="@font/asap"
             android:paddingStart="10dp"
             android:text="Blocked Sources"
@@ -91,12 +103,14 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/invite_friends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_people_alt_24"
             android:drawablePadding="10dp"
+            android:focusable="true"
             android:fontFamily="@font/asap"
             android:paddingStart="10dp"
             android:text="Invite Friends"
@@ -109,11 +123,14 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/about_feed_you"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_info_24"
             android:drawablePadding="10dp"
+            android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:text="About Feed You"
@@ -126,11 +143,14 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/report_problems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_bug_report_24"
             android:drawablePadding="10dp"
+            android:focusable="true"
             android:fontFamily="@font/asap"
             android:paddingStart="10dp"
             android:text="Report Problems"
@@ -143,37 +163,20 @@
             android:layout_height="80dp" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/account_settings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_settings_24"
             android:drawablePadding="10dp"
+            android:focusable="true"
             android:fontFamily="@font/asap"
             android:paddingStart="10dp"
             android:text="Account Settings"
             android:textColor="#35424A"
             android:textSize="18sp"
             android:textStyle="bold" />
-=======
-    <Switch
-        android:id="@+id/push_notifications"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
-        android:drawablePadding="10dp"
-        android:fontFamily="@font/asap"
-        android:text="Push Notifications"
-        android:textColor="#35424A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password" />
->>>>>>> 3e2742ae59ed600d2f8a12b22fcf510d77379c8d
 
 
     </LinearLayout>

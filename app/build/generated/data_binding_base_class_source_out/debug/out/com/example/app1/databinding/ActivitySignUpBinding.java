@@ -31,7 +31,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationPassword;
+  public final TextView decorationMenu;
 
   @NonNull
   public final TextView decorationWelcome;
@@ -59,14 +59,14 @@ public final class ActivitySignUpBinding implements ViewBinding {
 
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
       @NonNull ProgressBar accountCreationProgress, @NonNull TextView appName,
-      @NonNull TextView decorationPassword, @NonNull TextView decorationWelcome,
+      @NonNull TextView decorationMenu, @NonNull TextView decorationWelcome,
       @NonNull EditText email, @NonNull TextView haveAnAccount, @NonNull ImageView logo,
       @NonNull EditText password, @NonNull TextView signIn, @NonNull Button signUp,
       @NonNull CheckedTextView terminiCondizioni) {
     this.rootView = rootView;
     this.accountCreationProgress = accountCreationProgress;
     this.appName = appName;
-    this.decorationPassword = decorationPassword;
+    this.decorationMenu = decorationMenu;
     this.decorationWelcome = decorationWelcome;
     this.email = email;
     this.haveAnAccount = haveAnAccount;
@@ -116,9 +116,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_password;
-      TextView decorationPassword = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPassword == null) {
+      id = R.id.decoration_menu;
+      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
+      if (decorationMenu == null) {
         break missingId;
       }
 
@@ -171,8 +171,8 @@ public final class ActivitySignUpBinding implements ViewBinding {
       }
 
       return new ActivitySignUpBinding((ConstraintLayout) rootView, accountCreationProgress,
-          appName, decorationPassword, decorationWelcome, email, haveAnAccount, logo, password,
-          signIn, signUp, terminiCondizioni);
+          appName, decorationMenu, decorationWelcome, email, haveAnAccount, logo, password, signIn,
+          signUp, terminiCondizioni);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

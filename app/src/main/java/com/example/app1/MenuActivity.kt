@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.widget.Toast
+import android.widget.TextView
 import com.google.android.material.appbar.MaterialToolbar
 
 class MenuActivity : AppCompatActivity() {
@@ -23,7 +23,8 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_menu)
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
+        val account_settings = findViewById<TextView>(R.id.account_settings)
         setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
@@ -31,6 +32,14 @@ class MenuActivity : AppCompatActivity() {
             finish()
 
         }
+
+        account_settings.setOnClickListener {
+
+            switch_activity = Intent(this, AccountActivity::class.java)
+            startActivity(switch_activity)
+
+        }
+
 
 
     }
