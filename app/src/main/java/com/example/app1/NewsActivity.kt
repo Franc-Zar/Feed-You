@@ -1,5 +1,6 @@
 package com.example.app1
 
+import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
@@ -7,10 +8,13 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.Window
+import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
+import android.webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.appbar.MaterialToolbar
 
 
 class NewsActivity : AppCompatActivity() {
@@ -20,10 +24,11 @@ class NewsActivity : AppCompatActivity() {
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
         toolbar?.title = intent.getStringExtra("TITLE")
         setSupportActionBar(toolbar)
-        getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val webView = findViewById<WebView>(R.id.web_view)
-        webView.loadUrl(intent.getStringExtra("HTML_CONTENT") ?: "https://www.google.com")
+        webView.settings.mixedContentMode = MIXED_CONTENT_COMPATIBILITY_MODE
+        webView.loadUrl(intent.getStringExtra("HTML_CONTENT")!!)
         //TODO: risontrollare il fallback nel caso in cui il link non è passato(oppure metterlo non nullable)
         //TODO Controllo del comportamento di WebView in assenza di rete o Url malformato...(alle volte link non ha http all'inizio...)
 
@@ -32,28 +37,39 @@ class NewsActivity : AppCompatActivity() {
                 view: WebView?,
                 request: WebResourceRequest?
                 ): Boolean {
-                showDialog()
+                webView.url?.let { showDialog(it) }
                 return false
+            }
+
+            override fun onReceivedError(
+                view: WebView?,
+                request: WebResourceRequest?,
+                error: WebResourceError?
+            ) {
+                if (error?.errorCode == ERROR_CONNECT || error?.errorCode == ERROR_TIMEOUT ){
+                    // TODO, se ci va, schermata errore personalizzata
+                }
+                super.onReceivedError(view, request, error)
             }
         }
     }
 
-    private fun showDialog() {
+    private fun showDialog(url: String) {
         val dialog = AlertDialog.Builder(this)
         dialog.setTitle(getString(R.string.redirect))
             .setMessage(getString(R.string.askConfirm))
             .setIcon(android.R.drawable.ic_dialog_alert)
             .setPositiveButton(android.R.string.ok,
-                DialogInterface.OnClickListener { dialog, whichButton ->
-                    dialog.dismiss()
+                DialogInterface.OnClickListener { d, whichButton ->
+                    d.dismiss()
                     val i = Intent(Intent.ACTION_VIEW)
-                    i.data = Uri.parse(intent.getStringExtra("HTML_CONTENT"))
+                    i.data = Uri.parse(url)
                     startActivity(i)
                 })
             .setNegativeButton(android.R.string.cancel,
-                DialogInterface.OnClickListener { dialog, whichButton ->
-                    dialog.dismiss()
-                    onBackPressed()
+                DialogInterface.OnClickListener { d, whichButton ->
+                    d.dismiss()
+                    //onBackPressed()
                 })
         dialog.show()
     }

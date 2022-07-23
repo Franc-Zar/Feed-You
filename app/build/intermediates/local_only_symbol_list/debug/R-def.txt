@@ -17,6 +17,7 @@ color dark_blue
 color dark_grey
 color darker_grey
 color green_pea
+color main
 color pink
 color purple_200
 color purple_500
@@ -81,6 +82,7 @@ id invite_friends
 id iv_favicon
 id layout_app
 id layout_topics
+id linearLayout
 id loading_icon
 id logo
 id password
@@ -95,7 +97,16 @@ id spinner_lang
 id spinner_themes
 id swiperefresh
 id termini_condizioni
+<<<<<<< HEAD
 id themes
+=======
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
+id title
+>>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
 id toolbar
 id toolbar_account
 id toolbar_main

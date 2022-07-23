@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.app1.R;
 import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,13 +25,13 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final AppBarLayout appbar;
 
   @NonNull
-  public final Toolbar toolbar;
+  public final MaterialToolbar toolbar;
 
   @NonNull
   public final WebView webView;
 
   private ActivityNewsBinding(@NonNull CoordinatorLayout rootView, @NonNull AppBarLayout appbar,
-      @NonNull Toolbar toolbar, @NonNull WebView webView) {
+      @NonNull MaterialToolbar toolbar, @NonNull WebView webView) {
     this.rootView = rootView;
     this.appbar = appbar;
     this.toolbar = toolbar;
@@ -72,7 +72,7 @@ public final class ActivityNewsBinding implements ViewBinding {
       }
 
       id = R.id.toolbar;
-      Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
+      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
         break missingId;
       }
