@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,12 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView inviteFriends;
 
   @NonNull
+  public final TextView language;
+
+  @NonNull
+  public final Spinner spinnerLanguages;
+
+  @NonNull
   public final TextView themes;
 
   @NonNull
@@ -44,13 +51,16 @@ public final class ActivityAccountBinding implements ViewBinding {
 
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView blockedSources, @NonNull TextView decorationMenu,
-      @NonNull Button googleLogin, @NonNull TextView inviteFriends, @NonNull TextView themes,
+      @NonNull Button googleLogin, @NonNull TextView inviteFriends, @NonNull TextView language,
+      @NonNull Spinner spinnerLanguages, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterLogin) {
     this.rootView = rootView;
     this.blockedSources = blockedSources;
     this.decorationMenu = decorationMenu;
     this.googleLogin = googleLogin;
     this.inviteFriends = inviteFriends;
+    this.language = language;
+    this.spinnerLanguages = spinnerLanguages;
     this.themes = themes;
     this.toolbarAccount = toolbarAccount;
     this.twitterLogin = twitterLogin;
@@ -107,6 +117,18 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.language;
+      TextView language = ViewBindings.findChildViewById(rootView, id);
+      if (language == null) {
+        break missingId;
+      }
+
+      id = R.id.spinner_languages;
+      Spinner spinnerLanguages = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerLanguages == null) {
+        break missingId;
+      }
+
       id = R.id.themes;
       TextView themes = ViewBindings.findChildViewById(rootView, id);
       if (themes == null) {
@@ -126,7 +148,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, blockedSources, decorationMenu,
-          googleLogin, inviteFriends, themes, toolbarAccount, twitterLogin);
+          googleLogin, inviteFriends, language, spinnerLanguages, themes, toolbarAccount,
+          twitterLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

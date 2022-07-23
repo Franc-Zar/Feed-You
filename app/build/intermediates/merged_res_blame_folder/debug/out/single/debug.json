@@ -4,28 +4,18 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_email_18.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_not_interested_24.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_not_interested_24.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xhdpi_logo_round.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_round.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_topics.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\fragment_topics.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_people_alt_24.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_visibility_18.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_18.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_settings_24.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_settings_24.xml"
     },
@@ -36,14 +26,6 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_fragment_lang.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_lang.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_news.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_logo_foreground.png.flat",
@@ -78,25 +60,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-mdpi_ic_baseline_people_alt_24.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-mdpi/ic_baseline_people_alt_24.png"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_bug_report_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_bug_report_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_people_alt_24.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_logo_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-mdpi\\logo_round.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-ldpi_ic_icons8_twitter.png.flat",
@@ -127,17 +96,8 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_icons8_google.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_people_alt_24.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_logo_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\logo_round.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_vpn_key_24.xml.flat",
@@ -160,6 +120,10 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_language_24.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_language_24.xml"
+    },
+    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_logo_round.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/logo_round.xml"
     },
@@ -168,17 +132,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_error.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_ic_baseline_people_alt_24.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_baseline_people_alt_24.png"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_lang.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\fragment_lang.xml"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_visibility_off_18.xml.flat",
@@ -209,13 +168,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/quicksand_bold.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_color_lens_24.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_color_lens_24.xml"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_bug_report_24.xml.flat",
@@ -236,18 +194,6 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_info_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_logo_round.webp.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-hdpi\\logo_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -266,17 +212,8 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_icons8_twitter.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-mdpi_logo_round.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_round.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_people_alt_24.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\logo.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_logo_foreground.png.flat",
@@ -287,7 +224,6 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/logo_round.png"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/font_rock_salt.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/rock_salt.xml"
     },
@@ -298,39 +234,18 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_sign_up.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_sign_up.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_people_alt_24.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\font_quicksand_bold.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\font\\quicksand_bold.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_notifications_active_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_notifications_active_24.xml"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_icons8_twitter.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-hdpi/ic_icons8_twitter.png"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_baseline_people_alt_24.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_baseline_people_alt_24.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_twitter.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_twitter.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_logo_foreground.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_foreground.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
@@ -361,7 +276,6 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_baseline_people_alt_24.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_baseline_people_alt_24.png"
     },
@@ -388,39 +302,14 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-mdpi_logo_foreground.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_foreground.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_baseline_people_alt_24.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_people_alt_24.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_password_recovery.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_password_recovery.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_login.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_login.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_account_circle_18.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_account_circle_18.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_baseline_people_alt_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_baseline_people_alt_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_vpn_key_18.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_vpn_key_18.xml"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_menu_24.xml.flat",
@@ -443,16 +332,7 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/logo.png"
     },
     {
-<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_person_add_24.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_person_add_24.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_not_interested_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_not_interested_24.xml"
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
     }
 ]

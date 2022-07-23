@@ -79,6 +79,34 @@
             android:layout_height="40dp" />
 
         <TextView
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_language_24"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Change Language"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#248B9C"
+            android:entries="@array/langs"
+            android:paddingStart="250dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
             android:id="@+id/invite_friends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

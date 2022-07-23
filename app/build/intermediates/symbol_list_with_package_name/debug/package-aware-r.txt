@@ -2535,6 +2535,7 @@ drawable ic_baseline_bug_report_24
 drawable ic_baseline_color_lens_24
 drawable ic_baseline_email_18
 drawable ic_baseline_info_24
+drawable ic_baseline_language_24
 drawable ic_baseline_menu_24
 drawable ic_baseline_not_interested_24
 drawable ic_baseline_notifications_active_24
@@ -2880,6 +2881,7 @@ id iv_favicon
 id jumpToEnd
 id jumpToStart
 id labeled
+id language
 id layout
 id layout_app
 id layout_topics
@@ -3052,6 +3054,7 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinner_lang
+id spinner_languages
 id spinner_themes
 id spline
 id split_action_bar

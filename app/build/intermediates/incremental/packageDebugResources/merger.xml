@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
 <merger version="3" xmlns:ns1="http://schemas.android.com/tools"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/rs/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/resValues/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/google-services/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res"><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/logo_round.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/logo_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="top_bar" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/menu/top_bar.xml" qualifiers="" type="menu"/><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/logo_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/logo_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-night/themes.xml" qualifiers="night-v8"><style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_200</item>
@@ -12,10 +11,7 @@
         
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
-    </style></file><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/logo_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/logo_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_baseline_account_circle_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_account_circle_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_bug_report_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_bug_report_24.xml" qualifiers="" type="drawable"/><file name="logo" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/logo.png" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_vpn_key_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_vpn_key_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_off_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_off_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_people_alt_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_email_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_email_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_notifications_active_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_search_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_search_24.xml" qualifiers="" type="drawable"/><file name="ic_icons8_google" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_icons8_google.xml" qualifiers="" type="drawable"/><file name="ic_baseline_not_interested_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_not_interested_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_info_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_info_24.xml" qualifiers="" type="drawable"/><file name="ic_icons8_twitter" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_icons8_twitter.xml" qualifiers="" type="drawable"/><file name="ic_baseline_menu_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_menu_24.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_baseline_arrow_back_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" qualifiers="" type="drawable"/><file name="rounded_corner" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/rounded_corner.xml" qualifiers="" type="drawable"/><file name="ic_baseline_settings_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_settings_24.xml" qualifiers="" type="drawable"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/arrays.xml" qualifiers="w600dp-v13"><string-array name="langs">
-=======
-<merger version="3" xmlns:ns1="http://schemas.android.com/tools"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res"/><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\rs\debug"/><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\resValues\debug"/><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\google-services\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res"><file name="ic_baseline_account_circle_18" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_account_circle_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_arrow_back_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_arrow_back_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_bug_report_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_bug_report_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_email_18" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_email_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_info_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_info_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_menu_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_menu_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_notifications_active_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_notifications_active_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_not_interested_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_not_interested_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_people_alt_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_people_alt_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_search_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_search_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_settings_24" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_settings_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_18" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_visibility_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_off_18" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_visibility_off_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_vpn_key_18" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_baseline_vpn_key_18.xml" qualifiers="" type="drawable"/><file name="ic_icons8_google" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_icons8_google.xml" qualifiers="" type="drawable"/><file name="ic_icons8_twitter" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_icons8_twitter.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="logo" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\logo.png" qualifiers="" type="drawable"/><file name="rounded_corner" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable\rounded_corner.xml" qualifiers="" type="drawable"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\drawable-v24\ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file name="asap" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\font\asap.xml" qualifiers="" type="font"/><file name="quicksand_bold" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\font\quicksand_bold.xml" qualifiers="" type="font"/><file name="rock_salt" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\font\rock_salt.xml" qualifiers="" type="font"/><file name="activity_anonymous" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_anonymous.xml" qualifiers="" type="layout"/><file name="activity_error" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_error.xml" qualifiers="" type="layout"/><file name="activity_google" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_google.xml" qualifiers="" type="layout"/><file name="activity_login" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_login.xml" qualifiers="" type="layout"/><file name="activity_main" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="activity_menu" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_menu.xml" qualifiers="" type="layout"/><file name="activity_news" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_news.xml" qualifiers="" type="layout"/><file name="activity_password_recovery" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_password_recovery.xml" qualifiers="" type="layout"/><file name="activity_preference" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_preference.xml" qualifiers="" type="layout"/><file name="activity_settings" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_settings.xml" qualifiers="" type="layout"/><file name="activity_sign_up" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_sign_up.xml" qualifiers="" type="layout"/><file name="activity_simple_sign_in" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_simple_sign_in.xml" qualifiers="" type="layout"/><file name="activity_twitter" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\activity_twitter.xml" qualifiers="" type="layout"/><file name="fragment_lang" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\fragment_lang.xml" qualifiers="" type="layout"/><file name="fragment_topics" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\fragment_topics.xml" qualifiers="" type="layout"/><file name="rv_row" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\layout\rv_row.xml" qualifiers="" type="layout"/><file name="top_bar" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\menu\top_bar.xml" qualifiers="" type="menu"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-anydpi-v26\logo_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-hdpi\ic_launcher_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="logo_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-hdpi\logo_foreground.png" qualifiers="hdpi-v4" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-hdpi\logo_round.webp" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-mdpi\ic_launcher_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-mdpi\ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-mdpi\logo_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-mdpi\logo_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xhdpi\ic_launcher_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xhdpi\ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xhdpi\logo_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xhdpi\logo_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxhdpi\ic_launcher_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxhdpi\ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxhdpi\logo_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxhdpi\logo_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxxhdpi\ic_launcher_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxxhdpi\ic_launcher_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="logo_foreground" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxxhdpi\logo_foreground.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="logo_round" path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\mipmap-xxxhdpi\logo_round.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\arrays.xml" qualifiers=""><string-array name="langs">
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
+    </style></file><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/logo_round.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxhdpi/logo_foreground.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_baseline_account_circle_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_account_circle_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_bug_report_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_bug_report_24.xml" qualifiers="" type="drawable"/><file name="logo" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/logo.png" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_vpn_key_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_vpn_key_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_visibility_off_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_off_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_people_alt_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_person_add_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_person_add_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_email_18" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_email_18.xml" qualifiers="" type="drawable"/><file name="ic_baseline_notifications_active_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_search_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_search_24.xml" qualifiers="" type="drawable"/><file name="ic_icons8_google" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_icons8_google.xml" qualifiers="" type="drawable"/><file name="ic_baseline_vpn_key_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_not_interested_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_not_interested_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_info_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_info_24.xml" qualifiers="" type="drawable"/><file name="ic_icons8_twitter" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_icons8_twitter.xml" qualifiers="" type="drawable"/><file name="ic_baseline_menu_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_menu_24.xml" qualifiers="" type="drawable"/><file name="ic_launcher_background" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_launcher_background.xml" qualifiers="" type="drawable"/><file name="ic_baseline_color_lens_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_color_lens_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_arrow_back_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" qualifiers="" type="drawable"/><file name="rounded_corner" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/rounded_corner.xml" qualifiers="" type="drawable"/><file name="ic_baseline_settings_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_settings_24.xml" qualifiers="" type="drawable"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/arrays.xml" qualifiers="w600dp-v13"><string-array name="langs">
         <item>it: Italiano</item>
         <item>en: English</item>
         <item>fr: Français</item>
@@ -60,268 +56,7 @@
         <item>Costumi e Società</item>
         <item>Cinema e Cultura</item>
         <item>Sport</item>
-<<<<<<< HEAD
-    </string-array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/dimens.xml" qualifiers="w600dp-v13"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file><file name="activity_password_recovery" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_recovery.xml" qualifiers="" type="layout"/><file name="activity_menu" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_menu.xml" qualifiers="" type="layout"/><file name="activity_login" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_login.xml" qualifiers="" type="layout"/><file name="activity_anonymous" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_anonymous.xml" qualifiers="" type="layout"/><file name="activity_simple_sign_in" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_simple_sign_in.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_settings" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_settings.xml" qualifiers="" type="layout"/><file name="rv_row" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/rv_row.xml" qualifiers="" type="layout"/><file name="activity_preference" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_preference.xml" qualifiers="" type="layout"/><file name="activity_sign_up" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_sign_up.xml" qualifiers="" type="layout"/><file name="activity_news" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_news.xml" qualifiers="" type="layout"/><file name="fragment_lang" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_lang.xml" qualifiers="" type="layout"/><file name="activity_error" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_error.xml" qualifiers="" type="layout"/><file name="fragment_topics" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_topics.xml" qualifiers="" type="layout"/><file name="activity_google" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_google.xml" qualifiers="" type="layout"/><file name="activity_twitter" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_twitter.xml" qualifiers="" type="layout"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w1240dp/dimens.xml" qualifiers="w1240dp-v13"><dimen name="fab_margin">200dp</dimen></file><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">FeedU</string><string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string><string name="continua">Continua</string><string name="forgot_password"><u>Forgot Password?</u></string><string name="have_account">Have an Account?</string><string name="lang" translatable="false">SELECTED_LANGUAGE</string><string name="topics" translatable="false">topics</string><string name="title_lang">Select language</string><string name="title_topics">Select the topics you\'re interested in</string><string name="prefTopics" translatable="false">prefTopics</string><string name="redirect">Redirect to Browser</string><string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string><string name="title_activity_news">NewsActivity</string><string name="large_text">
-=======
-    </string-array></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\colors.xml" qualifiers=""><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="dark_grey">#FF606060</color><color name="azure">#FF006e8c</color><color name="pink">#FFe93578</color><color name="red">#FFe61610</color><color name="green_pea">#FF4c7a34</color><color name="darker_grey">#FF232323</color><color name="dark_blue">#FF1c0c4f</color><color name="main">#FF248B9C</color></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\countries.xml" qualifiers=""><string-array name="countries_array">
-        <item>Afghanistan</item>
-        <item>Albania</item>
-        <item>Algeria</item>
-        <item>American Samoa</item>
-        <item>Andorra</item>
-        <item>Angola</item>
-        <item>Anguilla</item>
-        <item>Antarctica</item>
-        <item>Antigua and Barbuda</item>
-        <item>Argentina</item>
-        <item>Armenia</item>
-        <item>Aruba</item>
-        <item>Australia</item>
-        <item>Austria</item>
-        <item>Azerbaijan</item>
-        <item>Bahrain</item>
-        <item>Bangladesh</item>
-        <item>Barbados</item>
-        <item>Belarus</item>
-        <item>Belgium</item>
-        <item>Belize</item>
-        <item>Benin</item>
-        <item>Bermuda</item>
-        <item>Bhutan</item>
-        <item>Bolivia</item>
-        <item>Bosnia and Herzegovina</item>
-        <item>Botswana</item>
-        <item>Bouvet Island</item>
-        <item>Brazil</item>
-        <item>British Indian Ocean Territory</item>
-        <item>British Virgin Islands</item>
-        <item>Brunei</item>
-        <item>Bulgaria</item>
-        <item>Burkina Faso</item>
-        <item>Burundi</item>
-        <item>Cambodia</item>
-        <item>Cameroon</item>
-        <item>Canada</item>
-        <item>Cape Verde</item>
-        <item>Cayman Islands</item>
-        <item>Central African Republic</item>
-        <item>Chad</item>
-        <item>Chile</item>
-        <item>China</item>
-        <item>Christmas Island</item>
-        <item>Cocos (Keeling) Islands</item>
-        <item>Colombia</item>
-        <item>Comoros</item>
-        <item>Congo</item>
-        <item>Cook Islands</item>
-        <item>Costa Rica</item>
-        <item>Cote d\'Ivoire</item>
-        <item>Croatia</item>
-        <item>Cuba</item>
-        <item>Cyprus</item>
-        <item>Czech Republic</item>
-        <item>Democratic Republic of the Congo</item>
-        <item>Denmark</item>
-        <item>Djibouti</item>
-        <item>Dominica</item>
-        <item>Dominican Republic</item>
-        <item>East Timor</item>
-        <item>Ecuador</item>
-        <item>Egypt</item>
-        <item>El Salvador</item>
-        <item>Equatorial Guinea</item>
-        <item>Eritrea</item>
-        <item>Estonia</item>
-        <item>Ethiopia</item>
-        <item>Faeroe Islands</item>
-        <item>Falkland Islands</item>
-        <item>Fiji</item>
-        <item>Finland</item>
-        <item>Former Yugoslav Republic of Macedonia</item>
-        <item>France</item>
-        <item>French Guiana</item>
-        <item>French Polynesia</item>
-        <item>French Southern Territories</item>
-        <item>Gabon</item>
-        <item>Georgia</item>
-        <item>Germany</item>
-        <item>Ghana</item>
-        <item>Gibraltar</item>
-        <item>Greece</item>
-        <item>Greenland</item>
-        <item>Grenada</item>
-        <item>Guadeloupe</item>
-        <item>Guam</item>
-        <item>Guatemala</item>
-        <item>Guinea</item>
-        <item>Guinea-Bissau</item>
-        <item>Guyana</item>
-        <item>Haiti</item>
-        <item>Heard Island and McDonald Islands</item>
-        <item>Honduras</item>
-        <item>Hong Kong</item>
-        <item>Hungary</item>
-        <item>Iceland</item>
-        <item>India</item>
-        <item>Indonesia</item>
-        <item>Iran</item>
-        <item>Iraq</item>
-        <item>Ireland</item>
-        <item>Israel</item>
-        <item>Italy</item>
-        <item>Jamaica</item>
-        <item>Japan</item>
-        <item>Jordan</item>
-        <item>Kazakhstan</item>
-        <item>Kenya</item>
-        <item>Kiribati</item>
-        <item>Kuwait</item>
-        <item>Kyrgyzstan</item>
-        <item>Laos</item>
-        <item>Latvia</item>
-        <item>Lebanon</item>
-        <item>Lesotho</item>
-        <item>Liberia</item>
-        <item>Libya</item>
-        <item>Liechtenstein</item>
-        <item>Lithuania</item>
-        <item>Luxembourg</item>
-        <item>Macau</item>
-        <item>Madagascar</item>
-        <item>Malawi</item>
-        <item>Malaysia</item>
-        <item>Maldives</item>
-        <item>Mali</item>
-        <item>Malta</item>
-        <item>Marshall Islands</item>
-        <item>Martinique</item>
-        <item>Mauritania</item>
-        <item>Mauritius</item>
-        <item>Mayotte</item>
-        <item>Mexico</item>
-        <item>Micronesia</item>
-        <item>Moldova</item>
-        <item>Monaco</item>
-        <item>Mongolia</item>
-        <item>Montenegro</item>
-        <item>Montserrat</item>
-        <item>Morocco</item>
-        <item>Mozambique</item>
-        <item>Myanmar</item>
-        <item>Namibia</item>
-        <item>Nauru</item>
-        <item>Nepal</item>
-        <item>Netherlands</item>
-        <item>Netherlands Antilles</item>
-        <item>New Caledonia</item>
-        <item>New Zealand</item>
-        <item>Nicaragua</item>
-        <item>Niger</item>
-        <item>Nigeria</item>
-        <item>Niue</item>
-        <item>Norfolk Island</item>
-        <item>North Korea</item>
-        <item>Northern Marianas</item>
-        <item>Norway</item>
-        <item>Oman</item>
-        <item>Pakistan</item>
-        <item>Palau</item>
-        <item>Panama</item>
-        <item>Papua New Guinea</item>
-        <item>Paraguay</item>
-        <item>Peru</item>
-        <item>Philippines</item>
-        <item>Pitcairn Islands</item>
-        <item>Poland</item>
-        <item>Portugal</item>
-        <item>Puerto Rico</item>
-        <item>Qatar</item>
-        <item>Reunion</item>
-        <item>Romania</item>
-        <item>Russia</item>
-        <item>Rwanda</item>
-        <item>Sqo Tome and Principe</item>
-        <item>Saint Helena</item>
-        <item>Saint Kitts and Nevis</item>
-        <item>Saint Lucia</item>
-        <item>Saint Pierre and Miquelon</item>
-        <item>Saint Vincent and the Grenadines</item>
-        <item>Samoa</item>
-        <item>San Marino</item>
-        <item>Saudi Arabia</item>
-        <item>Senegal</item>
-        <item>Serbia</item>
-        <item>Seychelles</item>
-        <item>Sierra Leone</item>
-        <item>Singapore</item>
-        <item>Slovakia</item>
-        <item>Slovenia</item>
-        <item>Solomon Islands</item>
-        <item>Somalia</item>
-        <item>South Africa</item>
-        <item>South Georgia and the South Sandwich Islands</item>
-        <item>South Korea</item>
-        <item>South Sudan</item>
-        <item>Spain</item>
-        <item>Sri Lanka</item>
-        <item>Sudan</item>
-        <item>Suriname</item>
-        <item>Svalbard and Jan Mayen</item>
-        <item>Swaziland</item>
-        <item>Sweden</item>
-        <item>Switzerland</item>
-        <item>Syria</item>
-        <item>Taiwan</item>
-        <item>Tajikistan</item>
-        <item>Tanzania</item>
-        <item>Thailand</item>
-        <item>The Bahamas</item>
-        <item>The Gambia</item>
-        <item>Togo</item>
-        <item>Tokelau</item>
-        <item>Tonga</item>
-        <item>Trinidad and Tobago</item>
-        <item>Tunisia</item>
-        <item>Turkey</item>
-        <item>Turkmenistan</item>
-        <item>Turks and Caicos Islands</item>
-        <item>Tuvalu</item>
-        <item>Virgin Islands</item>
-        <item>Uganda</item>
-        <item>Ukraine</item>
-        <item>United Arab Emirates</item>
-        <item>United Kingdom</item>
-        <item>United States</item>
-        <item>United States Minor Outlying Islands</item>
-        <item>Uruguay</item>
-        <item>Uzbekistan</item>
-        <item>Vanuatu</item>
-        <item>Vatican City</item>
-        <item>Venezuela</item>
-        <item>Vietnam</item>
-        <item>Wallis and Futuna</item>
-        <item>Western Sahara</item>
-        <item>Yemen</item>
-        <item>Yugoslavia</item>
-        <item>Zambia</item>
-        <item>Zimbabwe</item>
-    </string-array></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="app_bar_height">180dp</dimen><dimen name="fab_margin">16dp</dimen><dimen name="text_margin">16dp</dimen><dimen name="default_corner_radius">4dp</dimen></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\font_certs.xml" qualifiers=""><array name="com_google_android_gms_fonts_certs">
-        <item>@array/com_google_android_gms_fonts_certs_dev</item>
-        <item>@array/com_google_android_gms_fonts_certs_prod</item>
-    </array><string-array name="com_google_android_gms_fonts_certs_dev">
-        <item>
-            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
-        </item>
-    </string-array><string-array name="com_google_android_gms_fonts_certs_prod">
-        <item>
-            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
-        </item>
-    </string-array></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\integer.xml" qualifiers=""><integer name="minDistance">-128</integer></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\preloaded_fonts.xml" qualifiers=""><array name="preloaded_fonts" translatable="false">
-        <item>@font/asap</item>
-        <item>@font/quicksand_bold</item>
-        <item>@font/rock_salt</item>
-    </array></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">FeedYou</string><string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string><string name="continua">Continua</string><string name="forgot_password"><u>Forgot Password?</u></string><string name="have_account">Have an Account?</string><string name="lang" translatable="false">SELECTED_LANGUAGE</string><string name="topics" translatable="false">topics</string><string name="title_lang">Select language</string><string name="title_topics">Select the topics you\'re interested in</string><string name="prefTopics" translatable="false">prefTopics</string><string name="redirect">Redirect to Browser</string><string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string><string name="title_activity_news">NewsActivity</string><string name="large_text">
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
+    </string-array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/dimens.xml" qualifiers="w600dp-v13"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file><file name="activity_password_recovery" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_recovery.xml" qualifiers="" type="layout"/><file name="activity_menu" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_menu.xml" qualifiers="" type="layout"/><file name="activity_account" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_account.xml" qualifiers="" type="layout"/><file name="activity_login" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_login.xml" qualifiers="" type="layout"/><file name="activity_anonymous" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_anonymous.xml" qualifiers="" type="layout"/><file name="activity_simple_sign_in" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_simple_sign_in.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_settings" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_settings.xml" qualifiers="" type="layout"/><file name="rv_row" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/rv_row.xml" qualifiers="" type="layout"/><file name="activity_preference" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_preference.xml" qualifiers="" type="layout"/><file name="activity_sign_up" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_sign_up.xml" qualifiers="" type="layout"/><file name="activity_news" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_news.xml" qualifiers="" type="layout"/><file name="fragment_lang" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_lang.xml" qualifiers="" type="layout"/><file name="activity_error" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_error.xml" qualifiers="" type="layout"/><file name="fragment_topics" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_topics.xml" qualifiers="" type="layout"/><file name="activity_google" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_google.xml" qualifiers="" type="layout"/><file name="activity_twitter" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_twitter.xml" qualifiers="" type="layout"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w1240dp/dimens.xml" qualifiers="w1240dp-v13"><dimen name="fab_margin">200dp</dimen></file><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_round.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_foreground.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" qualifiers="v24" type="drawable"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">FeedYou</string><string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string><string name="continua">Continua</string><string name="forgot_password"><u>Forgot Password?</u></string><string name="have_account">Have an Account?</string><string name="lang" translatable="false">SELECTED_LANGUAGE</string><string name="topics" translatable="false">topics</string><string name="title_lang">Select language</string><string name="title_topics">Select the topics you\'re interested in</string><string name="prefTopics" translatable="false">prefTopics</string><string name="redirect">Redirect to Browser</string><string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string><string name="title_activity_news">NewsActivity</string><string name="large_text">
         "Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
@@ -409,47 +144,7 @@
         "On the layout level, design your app layout to minimize opportunities for interference. "
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
-<<<<<<< HEAD
     </string><string name="action_settings">Settings</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/arrays.xml" qualifiers=""><string-array name="langs">
-=======
-    </string><string name="action_settings">Settings</string><string name="hello_blank_fragment">Hello blank fragment</string></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values\themes.xml" qualifiers=""><style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        
-        <item name="colorPrimary">@color/main</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
-    </style><style name="Theme.App1.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style><style name="Theme.App1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/><style name="Theme.App1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/><style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="android:fontFamily">@font/rock_salt</item>
-    </style><style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:background">#33646464</item> 
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@android:style/Animation</item>
-    </style></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values-land\dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values-night\themes.xml" qualifiers="night-v8"><style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
-        
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        
-        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        
-    </style></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values-w1240dp\dimens.xml" qualifiers="w1240dp-v13"><dimen name="fab_margin">200dp</dimen></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values-w600dp\arrays.xml" qualifiers="w600dp-v13"><string-array name="langs">
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
         <item>it: Italiano</item>
         <item>en: English</item>
         <item>fr: Français</item>
@@ -494,10 +189,13 @@
         <item>Costumi e Società</item>
         <item>Cinema e Cultura</item>
         <item>Sport</item>
-<<<<<<< HEAD
+    </string-array><string-array name="app_themes">
+        <item>Feed You-Light</item>
+        <item>Feed You-Dark</item>
+        <item>High-Contrast</item>
     </string-array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/themes.xml" qualifiers=""><style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/main</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         
@@ -523,7 +221,7 @@
         <item>@font/asap</item>
         <item>@font/quicksand_bold</item>
         <item>@font/rock_salt</item>
-    </array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/colors.xml" qualifiers=""><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="dark_grey">#FF606060</color><color name="azure">#FF006e8c</color><color name="pink">#FFe93578</color><color name="red">#FFe61610</color><color name="green_pea">#FF4c7a34</color><color name="darker_grey">#FF232323</color><color name="dark_blue">#FF1c0c4f</color></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/font_certs.xml" qualifiers=""><array name="com_google_android_gms_fonts_certs">
+    </array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/colors.xml" qualifiers=""><color name="purple_200">#FFBB86FC</color><color name="purple_500">#FF6200EE</color><color name="purple_700">#FF3700B3</color><color name="teal_200">#FF03DAC5</color><color name="main">#FF248B9C</color><color name="teal_700">#FF018786</color><color name="black">#FF000000</color><color name="white">#FFFFFFFF</color><color name="dark_grey">#FF606060</color><color name="azure">#FF006e8c</color><color name="pink">#FFe93578</color><color name="red">#FFe61610</color><color name="green_pea">#FF4c7a34</color><color name="darker_grey">#FF232323</color><color name="dark_blue">#FF1c0c4f</color></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/font_certs.xml" qualifiers=""><array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>
         <item>@array/com_google_android_gms_fonts_certs_prod</item>
     </array><string-array name="com_google_android_gms_fonts_certs_dev">
@@ -534,11 +232,4 @@
         <item>
             MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
         </item>
-    </string-array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="app_bar_height">180dp</dimen><dimen name="fab_margin">16dp</dimen><dimen name="text_margin">16dp</dimen><dimen name="default_corner_radius">4dp</dimen></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/integer.xml" qualifiers=""><integer name="minDistance">-128</integer></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-land/dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file><file name="asap" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/asap.xml" qualifiers="" type="font"/><file name="quicksand_bold" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/quicksand_bold.xml" qualifiers="" type="font"/><file name="rock_salt" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/rock_salt.xml" qualifiers="" type="font"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/logo_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_baseline_color_lens_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_color_lens_24.xml" qualifiers="" type="drawable"/><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/feed_you_themes.xml" qualifiers=""><string-array name="app_themes">
-        <item>Feed You-Light</item>
-        <item>Feed You-Dark</item>
-        <item>High-Contrast</item>
-    </string-array></file><file name="activity_account" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_account.xml" qualifiers="" type="layout"/><file name="ic_baseline_person_add_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_person_add_24.xml" qualifiers="" type="drawable"/><file name="ic_baseline_vpn_key_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" qualifiers="" type="drawable"/></source><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/rs/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/resValues/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/google-services/debug"><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/google-services/debug/values/values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">170761880293-cako4q5cds2nihjlt5lhh5ckf00fjc71.apps.googleusercontent.com</string><string name="gcm_defaultSenderId" translatable="false">170761880293</string><string name="google_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_app_id" translatable="false">1:170761880293:android:00392cc91ea95a1ec18a0c</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_storage_bucket" translatable="false">feed-you-ca52a.appspot.com</string><string name="project_id" translatable="false">feed-you-ca52a</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/debug/res"/></dataSet><mergedItems/></merger>
-=======
-    </string-array></file><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\main\res\values-w600dp\dimens.xml" qualifiers="w600dp-v13"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file></source><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\rs\debug"/><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\resValues\debug"/><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\google-services\debug"><file path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\build\generated\res\google-services\debug\values\values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">170761880293-cako4q5cds2nihjlt5lhh5ckf00fjc71.apps.googleusercontent.com</string><string name="gcm_defaultSenderId" translatable="false">170761880293</string><string name="google_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_app_id" translatable="false">1:170761880293:android:00392cc91ea95a1ec18a0c</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_storage_bucket" translatable="false">feed-you-ca52a.appspot.com</string><string name="project_id" translatable="false">feed-you-ca52a</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\User\AndroidStudioProjects\Feed-You-2\app\src\debug\res"/></dataSet><mergedItems/></merger>
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
+    </string-array></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="app_bar_height">180dp</dimen><dimen name="fab_margin">16dp</dimen><dimen name="text_margin">16dp</dimen><dimen name="default_corner_radius">4dp</dimen></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/integer.xml" qualifiers=""><integer name="minDistance">-128</integer></file><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-land/dimens.xml" qualifiers="land"><dimen name="fab_margin">48dp</dimen><dimen name="text_margin">48dp</dimen></file><file name="asap" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/asap.xml" qualifiers="" type="font"/><file name="quicksand_bold" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/quicksand_bold.xml" qualifiers="" type="font"/><file name="rock_salt" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/font/rock_salt.xml" qualifiers="" type="font"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/logo_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" qualifiers="anydpi-v26" type="mipmap"/><file name="ic_launcher_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_round" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_round.png" qualifiers="mdpi-v4" type="mipmap"/><file name="logo_foreground" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/logo_foreground.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_baseline_language_24" path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_language_24.xml" qualifiers="" type="drawable"/></source><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/rs/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/resValues/debug"/><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/google-services/debug"><file path="/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/google-services/debug/values/values.xml" qualifiers=""><string name="default_web_client_id" translatable="false">170761880293-cako4q5cds2nihjlt5lhh5ckf00fjc71.apps.googleusercontent.com</string><string name="gcm_defaultSenderId" translatable="false">170761880293</string><string name="google_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_app_id" translatable="false">1:170761880293:android:00392cc91ea95a1ec18a0c</string><string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6HY-G1WqV8fyC24Phxt0hLO3JSKaWei4</string><string name="google_storage_bucket" translatable="false">feed-you-ca52a.appspot.com</string><string name="project_id" translatable="false">feed-you-ca52a</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/francesco/progetti_univpm/mobile/Feed-You/app/src/debug/res"/></dataSet><mergedItems/></merger>

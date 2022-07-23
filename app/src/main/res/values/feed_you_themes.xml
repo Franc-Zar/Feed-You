@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="app_themes">
-        <item>Feed You-Light</item>
-        <item>Feed You-Dark</item>
-        <item>High-Contrast</item>
-    </string-array>
-</resources>

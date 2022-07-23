@@ -16,6 +16,12 @@
         <item>@color/dark_blue</item>
     </array>
 
+    <string-array name="app_themes">
+        <item>Feed You-Light</item>
+        <item>Feed You-Dark</item>
+        <item>High-Contrast</item>
+    </string-array>
+
     <string-array name="topics_it">
         <item>Top News</item>
         <item>Cronaca</item>

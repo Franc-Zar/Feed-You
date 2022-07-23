@@ -36,6 +36,7 @@ drawable ic_baseline_bug_report_24
 drawable ic_baseline_color_lens_24
 drawable ic_baseline_email_18
 drawable ic_baseline_info_24
+drawable ic_baseline_language_24
 drawable ic_baseline_menu_24
 drawable ic_baseline_not_interested_24
 drawable ic_baseline_notifications_active_24
@@ -80,6 +81,7 @@ id have_an_account
 id imageView
 id invite_friends
 id iv_favicon
+id language
 id layout_app
 id layout_topics
 id linearLayout
@@ -94,19 +96,12 @@ id scroll_topics
 id sign_in
 id sign_up
 id spinner_lang
+id spinner_languages
 id spinner_themes
 id swiperefresh
 id termini_condizioni
-<<<<<<< HEAD
 id themes
-=======
-id textView2
-id textView3
-id textView4
-id textView5
-id textView6
 id title
->>>>>>> 67c5c218ab1a4553b5daff6b2198823fef4d09ad
 id toolbar
 id toolbar_account
 id toolbar_main
