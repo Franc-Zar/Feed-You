@@ -78,8 +78,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                             .setDuration(50)
                             .setListener(object : AnimatorListenerAdapter() {
                                 override fun onAnimationEnd(animation: Animator) {
-
-                                        if (currentX < -10f) {
+                                    if (currentX < -5f) {
                                             //cambiamento dei dati visualizzati
                                             if (holder.tv_title.currentTextColor == ContextCompat.getColor(
                                                     context,
@@ -95,11 +94,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                                     @Suppress("DEPRECATION")
                                                     Html.fromHtml(item.desc)
                                                 }).also {
-                                                    text.value = if (it.length > 80) {
-                                                        it.subSequence(0, 80).toString().plus("...")
-                                                    } else {
-                                                        it.toString()
-                                                    }
+                                                    text.value = it.toString()
                                                 }
                                                 holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.dark_grey))
                                             } else {
@@ -114,12 +109,10 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                                 }).also { text.value = it.toString() }
                                                 holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.purple_700))
                                             }
-                                            currentX = 20f
                                         } else {
                                             view.performClick()
                                         }
-                                        currentX = 20f
-
+                                    currentX = 20f
                                     holder.tv_title.text = text.value
                                 }
                             })
@@ -128,7 +121,6 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                 }
 
                 // required to by-pass lint warning
-
                 return@OnTouchListener true
             }
         )
