@@ -1623,6 +1623,7 @@ color m3_timepicker_display_text_color
 color m3_timepicker_secondary_text_button_ripple_color
 color m3_timepicker_secondary_text_button_text_color
 color m3_tonal_button_ripple_color_selector
+color main
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -2882,6 +2883,7 @@ id light
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id loading_icon

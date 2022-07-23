@@ -82,7 +82,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                             //cambiamento dei dati visualizzati
                                             if (holder.tv_title.currentTextColor == ContextCompat.getColor(
                                                     context,
-                                                    R.color.purple_700
+                                                    R.color.main
                                                 )
                                             ) {
                                                 (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -107,7 +107,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                                     @Suppress("DEPRECATION")
                                                     Html.fromHtml(item.title)
                                                 }).also { text.value = it.toString() }
-                                                holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.purple_700))
+                                                holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.main))
                                             }
                                         } else {
                                             view.performClick()

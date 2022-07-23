@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var switch_activity: Intent
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-
         menuInflater.inflate(R.menu.top_bar, menu)
         val menuItem = menu?.findItem(R.id.app_bar_search)
         return super.onCreateOptionsMenu(menu)
@@ -43,7 +42,6 @@ class MainActivity : AppCompatActivity() {
         clear()
         apply()
         }
-
         }
         val spref = getSharedPreferences(getString(R.string.topics),Context.MODE_PRIVATE)
         if (spref != null) {
@@ -66,48 +64,36 @@ class MainActivity : AppCompatActivity() {
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }
-
         setContentView(R.layout.activity_main)
 
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
-
             switch_activity = Intent(this, MenuActivity::class.java)
             startActivity(switch_activity)
-
         }
         /*
         toolbar.setOnMenuItemClickListener {
             when (it.itemId) {
-
                 R.id.app_bar_search -> {
                     ;
-
                 }
-
-
                 else -> false
             }
-
         }
         */
     }
 
     override fun onStart() {
         super.onStart()
-
-
         val refreshLayout = findViewById<SwipeRefreshLayout>(R.id.swiperefresh)
         refreshLayout.setOnRefreshListener {
             // This method performs the actual data-refresh operation.
             // The method calls setRefreshing(false) when it's finished.
             myUpdateOperation()
         }
-
         myUpdateOperation()
-
     }
 
     fun myUpdateOperation(){
