@@ -28,7 +28,9 @@ import android.util.Log
 import android.view.MotionEvent
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
-import kotlinx.coroutines.CoroutineScope
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.findViewTreeLifecycleOwner
+import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -47,7 +49,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
     @SuppressLint("ClickableViewAccessibility")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = mList[position]
-
+        val text = MutableLiveData(item.title)
 
         holder.cv_news.setOnTouchListener(
             View.OnTouchListener { view, event ->
@@ -73,13 +75,11 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                         var currentX = holder.cv_news.x
                         holder.cv_news.animate()
                             .x(cardStart)
-                            .setDuration(150)
+                            .setDuration(50)
                             .setListener(object : AnimatorListenerAdapter() {
                                 override fun onAnimationEnd(animation: Animator) {
-                                    CoroutineScope(Dispatchers.Default).launch {
-                                        delay(10)
 
-                                        if (currentX < -50) {
+                                        if (currentX < -10f) {
                                             //cambiamento dei dati visualizzati
                                             if (holder.tv_title.currentTextColor == ContextCompat.getColor(
                                                     context,
@@ -95,18 +95,13 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                                     @Suppress("DEPRECATION")
                                                     Html.fromHtml(item.desc)
                                                 }).also {
-                                                    holder.tv_title.text = if (it.length > 40) {
-                                                        it.subSequence(0, 40).toString().plus("...")
+                                                    text.value = if (it.length > 80) {
+                                                        it.subSequence(0, 80).toString().plus("...")
                                                     } else {
-                                                        it
+                                                        it.toString()
                                                     }
                                                 }
-                                                holder.tv_title.setTextColor(
-                                                    ContextCompat.getColor(
-                                                        context,
-                                                        R.color.dark_grey
-                                                    )
-                                                )
+                                                holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.dark_grey))
                                             } else {
                                                 (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                                                     Html.fromHtml(
@@ -116,20 +111,16 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                                                 } else {
                                                     @Suppress("DEPRECATION")
                                                     Html.fromHtml(item.title)
-                                                }).also { holder.tv_title.text = it }
-                                                holder.tv_title.setTextColor(
-                                                    ContextCompat.getColor(
-                                                        context,
-                                                        R.color.purple_700
-                                                    )
-                                                )
+                                                }).also { text.value = it.toString() }
+                                                holder.tv_title.setTextColor(ContextCompat.getColor( context, R.color.purple_700))
                                             }
                                             currentX = 20f
-                                        } else if (currentX > 10f) {
+                                        } else {
                                             view.performClick()
                                         }
                                         currentX = 20f
-                                    }
+
+                                    holder.tv_title.text = text.value
                                 }
                             })
                             .start()
@@ -137,6 +128,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                 }
 
                 // required to by-pass lint warning
+
                 return@OnTouchListener true
             }
         )
@@ -146,7 +138,9 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
         } else {
             @Suppress("DEPRECATION")
             Html.fromHtml(item.title)
-        }).also { holder.tv_title.text = it }
+        }).also { text.value = it.toString() }
+
+        holder.tv_title.text = text.value
 
         setCategory(holder, item.category)
         item.icon.let { holder.iv_favicon.setImageBitmap(it) }
