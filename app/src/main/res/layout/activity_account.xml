@@ -13,6 +13,7 @@
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
+        app:menu="@menu/top_bar"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Feed You"
