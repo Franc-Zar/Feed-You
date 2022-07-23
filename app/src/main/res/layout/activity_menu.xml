@@ -26,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
         android:fontFamily="@font/quicksand_bold"
         android:text="Menu"
         android:textSize="26sp"
@@ -34,26 +33,125 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar_menu" />
 
-    <Switch
-        android:id="@+id/push_notifications"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:drawableStart="@drawable/ic_baseline_notifications_active_24"
-        android:drawablePadding="10dp"
-        android:fontFamily="@font/asap"
-        android:text="Push Notifications"
-        android:textColor="#35424A"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="638dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/decoration_password"
+        tools:layout_editor_absoluteX="1dp">
+
+        <Switch
+            android:id="@+id/push_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_baseline_notifications_active_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Push Notifications"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#248B9C" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_not_interested_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Blocked Sources"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_people_alt_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Invite Friends"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_info_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:text="About Feed You"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_bug_report_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Report Problems"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_settings_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Account Settings"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
 
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

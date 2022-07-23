@@ -4,6 +4,7 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -28,14 +29,40 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final Switch pushNotifications;
 
   @NonNull
+  public final Spinner spinner4;
+
+  @NonNull
+  public final TextView textView2;
+
+  @NonNull
+  public final TextView textView3;
+
+  @NonNull
+  public final TextView textView4;
+
+  @NonNull
+  public final TextView textView5;
+
+  @NonNull
+  public final TextView textView6;
+
+  @NonNull
   public final MaterialToolbar toolbarMenu;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView decorationPassword, @NonNull Switch pushNotifications,
+      @NonNull Spinner spinner4, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull TextView textView4, @NonNull TextView textView5, @NonNull TextView textView6,
       @NonNull MaterialToolbar toolbarMenu) {
     this.rootView = rootView;
     this.decorationPassword = decorationPassword;
     this.pushNotifications = pushNotifications;
+    this.spinner4 = spinner4;
+    this.textView2 = textView2;
+    this.textView3 = textView3;
+    this.textView4 = textView4;
+    this.textView5 = textView5;
+    this.textView6 = textView6;
     this.toolbarMenu = toolbarMenu;
   }
 
@@ -78,6 +105,42 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinner4;
+      Spinner spinner4 = ViewBindings.findChildViewById(rootView, id);
+      if (spinner4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView3;
+      TextView textView3 = ViewBindings.findChildViewById(rootView, id);
+      if (textView3 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView4;
+      TextView textView4 = ViewBindings.findChildViewById(rootView, id);
+      if (textView4 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView6;
+      TextView textView6 = ViewBindings.findChildViewById(rootView, id);
+      if (textView6 == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar_menu;
       MaterialToolbar toolbarMenu = ViewBindings.findChildViewById(rootView, id);
       if (toolbarMenu == null) {
@@ -85,7 +148,8 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, decorationPassword,
-          pushNotifications, toolbarMenu);
+          pushNotifications, spinner4, textView2, textView3, textView4, textView5, textView6,
+          toolbarMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
