@@ -26,6 +26,7 @@ color teal_200
 color teal_700
 color white
 dimen app_bar_height
+dimen default_corner_radius
 dimen fab_margin
 dimen text_margin
 drawable ic_baseline_account_circle_18
@@ -53,6 +54,7 @@ id app_name
 id appbar
 id button
 id cv_layout
+id cv_news
 id decoration_password
 id decoration_password_recovery
 id decoration_useSocial
@@ -85,6 +87,7 @@ id tv_sorry
 id tv_title
 id twitter_login
 id web_view
+integer minDistance
 layout activity_anonymous
 layout activity_error
 layout activity_google

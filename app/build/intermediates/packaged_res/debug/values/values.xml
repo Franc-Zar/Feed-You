@@ -328,8 +328,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="default_corner_radius">4dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+    <integer name="minDistance">-128</integer>
     <string name="action_settings">Settings</string>
     <string name="app_name">FeedU</string>
     <string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string>

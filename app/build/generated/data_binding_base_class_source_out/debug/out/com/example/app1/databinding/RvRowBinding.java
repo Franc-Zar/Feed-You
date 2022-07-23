@@ -25,6 +25,9 @@ public final class RvRowBinding implements ViewBinding {
   public final ConstraintLayout cvLayout;
 
   @NonNull
+  public final CardView cvNews;
+
+  @NonNull
   public final ImageView ivFavicon;
 
   @NonNull
@@ -34,9 +37,11 @@ public final class RvRowBinding implements ViewBinding {
   public final TextView tvTitle;
 
   private RvRowBinding(@NonNull CardView rootView, @NonNull ConstraintLayout cvLayout,
-      @NonNull ImageView ivFavicon, @NonNull TextView tvCategory, @NonNull TextView tvTitle) {
+      @NonNull CardView cvNews, @NonNull ImageView ivFavicon, @NonNull TextView tvCategory,
+      @NonNull TextView tvTitle) {
     this.rootView = rootView;
     this.cvLayout = cvLayout;
+    this.cvNews = cvNews;
     this.ivFavicon = ivFavicon;
     this.tvCategory = tvCategory;
     this.tvTitle = tvTitle;
@@ -75,6 +80,8 @@ public final class RvRowBinding implements ViewBinding {
         break missingId;
       }
 
+      CardView cvNews = (CardView) rootView;
+
       id = R.id.iv_favicon;
       ImageView ivFavicon = ViewBindings.findChildViewById(rootView, id);
       if (ivFavicon == null) {
@@ -93,7 +100,8 @@ public final class RvRowBinding implements ViewBinding {
         break missingId;
       }
 
-      return new RvRowBinding((CardView) rootView, cvLayout, ivFavicon, tvCategory, tvTitle);
+      return new RvRowBinding((CardView) rootView, cvLayout, cvNews, ivFavicon, tvCategory,
+          tvTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

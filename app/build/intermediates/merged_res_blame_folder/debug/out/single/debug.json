@@ -8,6 +8,7 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/logo_round.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_visibility_18.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_visibility_18.xml"
     },
@@ -18,6 +19,18 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_fragment_lang.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_lang.xml"
+=======
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_news.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_news.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle_18.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle_18.xml"
+>>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_logo_foreground.png.flat",
@@ -36,6 +49,7 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_settings.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_news.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_news.xml"
     },
@@ -46,12 +60,17 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_preference.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_preference.xml"
+=======
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_logo_round.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-mdpi\\logo_round.png"
+>>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
@@ -70,6 +89,22 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_icons8_twitter.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icons8_twitter.png"
+=======
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_logo_foreground.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_icons8_twitter.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_icons8_twitter.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_logo_round.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\logo_round.png"
+>>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/menu_top_bar.xml.flat",
@@ -104,8 +139,13 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_logo_round.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-anydpi-v26/logo_round.xml"
+=======
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_rounded_corner.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\rounded_corner.xml"
+>>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_error.xml.flat",

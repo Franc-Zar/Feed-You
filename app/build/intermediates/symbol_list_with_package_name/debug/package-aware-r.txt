@@ -1913,6 +1913,7 @@ dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen def_drawer_elevation
+dimen default_corner_radius
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -2756,6 +2757,7 @@ id custom
 id customPanel
 id cut
 id cv_layout
+id cv_news
 id dark
 id date_picker_actions
 id decelerate
@@ -3177,6 +3179,7 @@ integer material_motion_duration_medium_2
 integer material_motion_duration_short_1
 integer material_motion_duration_short_2
 integer material_motion_path
+integer minDistance
 integer mtrl_badge_max_character_count
 integer mtrl_btn_anim_delay_ms
 integer mtrl_btn_anim_duration_ms

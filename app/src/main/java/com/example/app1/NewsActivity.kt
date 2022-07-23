@@ -31,7 +31,7 @@ class NewsActivity : AppCompatActivity() {
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
                 request: WebResourceRequest?
-            ): Boolean {
+                ): Boolean {
                 showDialog()
                 return false
             }
