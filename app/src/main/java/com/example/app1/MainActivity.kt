@@ -36,37 +36,40 @@ class MainActivity : AppCompatActivity() {
         //val user = User(name, email)
         //database.child("users").child(userId).setValue(user)    vale ricorsivamente sui parametri dell'oggetto, che sono a loro volta child
         //reset delle preferenze, finche non aggiungiamo il menu per modificarle
-
-        val pref =getSharedPreferences(getString(R.string.lang),Context.MODE_PRIVATE)
+        /*
+        val pref = getSharedPreferences(getString(R.string.lang),Context.MODE_PRIVATE)
         if (pref != null) {
         with(pref.edit()) {
         clear()
         apply()
         }
+
         }
-        val spref =getSharedPreferences(getString(R.string.topics),Context.MODE_PRIVATE)
+        val spref = getSharedPreferences(getString(R.string.topics),Context.MODE_PRIVATE)
         if (spref != null) {
         with(spref.edit()) {
         clear()
         apply()
         }
         }
-        val tpref =getSharedPreferences(getString(R.string.prefTopics),Context.MODE_PRIVATE)
+
+        val tpref = getSharedPreferences(getString(R.string.prefTopics),Context.MODE_PRIVATE)
         if (spref != null) {
         with(tpref.edit()) {
         clear()
         apply()
         }
         }
-
+        */
 
         if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }
+
         setContentView(R.layout.activity_main)
 
-        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_main)
         setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
@@ -75,28 +78,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(switch_activity)
 
         }
+        /*
+        toolbar.setOnMenuItemClickListener {
+            when (it.itemId) {
+
+                R.id.app_bar_search -> {
+                    ;
+
+                }
 
 
+                else -> false
+            }
+
+        }
+        */
     }
 
     override fun onStart() {
         super.onStart()
-/*
-        val materialToolbar = findViewById<MaterialToolbar>(R.id.toolbar)
-        materialToolbar.setOnMenuItemClickListener {
-            when (it.itemId) {
-                R.id.favorite -> {
-                    Toast.makeText(this, "Favorites Clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                R.id.search -> {
-                    Toast.makeText(this, "Search Clicked", Toast.LENGTH_SHORT).show()
-                    true
-                }
-                else -> false
-            }
-        }
-*/
+
+
         val refreshLayout = findViewById<SwipeRefreshLayout>(R.id.swiperefresh)
         refreshLayout.setOnRefreshListener {
             // This method performs the actual data-refresh operation.

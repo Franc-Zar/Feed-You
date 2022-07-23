@@ -8,12 +8,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_recovery.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_anonymous.xml",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_anonymous.xml"
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_menu.xml",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_menu.xml"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_anonymous.xml",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_anonymous.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",

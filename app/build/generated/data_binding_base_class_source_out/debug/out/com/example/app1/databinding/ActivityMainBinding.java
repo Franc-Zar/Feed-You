@@ -36,18 +36,18 @@ public final class ActivityMainBinding implements ViewBinding {
   public final SwipeRefreshLayout swiperefresh;
 
   @NonNull
-  public final MaterialToolbar toolbar;
+  public final MaterialToolbar toolbarMain;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
       @NonNull ConstraintLayout layoutApp, @NonNull ProgressBar loadingIcon,
       @NonNull RecyclerView rv, @NonNull SwipeRefreshLayout swiperefresh,
-      @NonNull MaterialToolbar toolbar) {
+      @NonNull MaterialToolbar toolbarMain) {
     this.rootView = rootView;
     this.layoutApp = layoutApp;
     this.loadingIcon = loadingIcon;
     this.rv = rv;
     this.swiperefresh = swiperefresh;
-    this.toolbar = toolbar;
+    this.toolbarMain = toolbarMain;
   }
 
   @Override
@@ -101,14 +101,14 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.toolbar;
-      MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
-      if (toolbar == null) {
+      id = R.id.toolbar_main;
+      MaterialToolbar toolbarMain = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarMain == null) {
         break missingId;
       }
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, layoutApp, loadingIcon, rv,
-          swiperefresh, toolbar);
+          swiperefresh, toolbarMain);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

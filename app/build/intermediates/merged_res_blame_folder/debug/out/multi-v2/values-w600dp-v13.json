@@ -6,20 +6,11 @@
                 {
                     "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/dimens.xml",
                     "from": {
-<<<<<<< HEAD
                         "startLines": "1,2",
                         "startColumns": "4,4",
                         "startOffsets": "16,58",
                         "endColumns": "41,42",
                         "endOffsets": "53,96"
-=======
-                        "startLines": "2,8,45,27,36,18",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "57,250,1427,848,1139,560",
-                        "endLines": "7,16,53,35,44,26",
-                        "endColumns": "19,12,19,19,19,19",
-                        "endOffsets": "244,552,1709,1133,1421,842"
->>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
                     },
                     "to": {
                         "startLines": "53,54",
@@ -32,20 +23,12 @@
                 {
                     "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/arrays.xml",
                     "from": {
-<<<<<<< HEAD
                         "startLines": "2,8,45,27,36,18",
                         "startColumns": "4,4,4,4,4,4",
                         "startOffsets": "55,242,1382,821,1103,542",
                         "endLines": "7,16,53,35,44,26",
                         "endColumns": "19,12,19,19,19,19",
                         "endOffsets": "237,536,1656,1098,1377,816"
-=======
-                        "startLines": "1,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "17,60",
-                        "endColumns": "41,42",
-                        "endOffsets": "54,98"
->>>>>>> dd90163a8b522723e8c8e5ea7ac897572c6041a1
                     },
                     "to": {
                         "startLines": "2,8,17,26,35,44",
