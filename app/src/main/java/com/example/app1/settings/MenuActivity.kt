@@ -1,10 +1,11 @@
-package com.example.app1
+package com.example.app1.settings
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.widget.TextView
+import com.example.app1.R
 import com.google.android.material.appbar.MaterialToolbar
 
 class MenuActivity : AppCompatActivity() {
@@ -39,8 +40,5 @@ class MenuActivity : AppCompatActivity() {
             startActivity(switch_activity)
 
         }
-
-
-
     }
 }

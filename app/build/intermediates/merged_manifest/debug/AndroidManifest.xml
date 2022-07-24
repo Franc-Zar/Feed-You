@@ -27,10 +27,13 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.app1.AccountActivity"
+            android:name="com.example.app1.settings.PasswordChangeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app1.MenuActivity"
+            android:name="com.example.app1.settings.AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.app1.settings.MenuActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.SettingsActivity"

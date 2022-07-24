@@ -30,10 +30,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationMenu;
+  public final TextView decorationPasswordRecovery;
 
   @NonNull
-  public final TextView decorationPasswordRecovery;
+  public final TextView decorationPasswordReset;
 
   @NonNull
   public final TextView decorationUseSocial;
@@ -45,7 +45,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView forgotPassword;
 
   @NonNull
-  public final Button googleLogin;
+  public final Button googleConnect;
 
   @NonNull
   public final ImageView logo;
@@ -60,29 +60,29 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView signUp;
 
   @NonNull
-  public final Button twitterLogin;
+  public final Button twitterConnect;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatImageButton anonymousLogin, @NonNull TextView appName,
-      @NonNull TextView decorationMenu, @NonNull TextView decorationPasswordRecovery,
+      @NonNull TextView decorationPasswordRecovery, @NonNull TextView decorationPasswordReset,
       @NonNull TextView decorationUseSocial, @NonNull EditText email,
-      @NonNull TextView forgotPassword, @NonNull Button googleLogin, @NonNull ImageView logo,
+      @NonNull TextView forgotPassword, @NonNull Button googleConnect, @NonNull ImageView logo,
       @NonNull EditText password, @NonNull Button signIn, @NonNull TextView signUp,
-      @NonNull Button twitterLogin) {
+      @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.anonymousLogin = anonymousLogin;
     this.appName = appName;
-    this.decorationMenu = decorationMenu;
     this.decorationPasswordRecovery = decorationPasswordRecovery;
+    this.decorationPasswordReset = decorationPasswordReset;
     this.decorationUseSocial = decorationUseSocial;
     this.email = email;
     this.forgotPassword = forgotPassword;
-    this.googleLogin = googleLogin;
+    this.googleConnect = googleConnect;
     this.logo = logo;
     this.password = password;
     this.signIn = signIn;
     this.signUp = signUp;
-    this.twitterLogin = twitterLogin;
+    this.twitterConnect = twitterConnect;
   }
 
   @Override
@@ -124,15 +124,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_menu;
-      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
-      if (decorationMenu == null) {
-        break missingId;
-      }
-
       id = R.id.decoration_password_recovery;
       TextView decorationPasswordRecovery = ViewBindings.findChildViewById(rootView, id);
       if (decorationPasswordRecovery == null) {
+        break missingId;
+      }
+
+      id = R.id.decoration_password_reset;
+      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
+      if (decorationPasswordReset == null) {
         break missingId;
       }
 
@@ -154,9 +154,9 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.google_login;
-      Button googleLogin = ViewBindings.findChildViewById(rootView, id);
-      if (googleLogin == null) {
+      id = R.id.google_connect;
+      Button googleConnect = ViewBindings.findChildViewById(rootView, id);
+      if (googleConnect == null) {
         break missingId;
       }
 
@@ -184,15 +184,15 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.twitter_login;
-      Button twitterLogin = ViewBindings.findChildViewById(rootView, id);
-      if (twitterLogin == null) {
+      id = R.id.twitter_connect;
+      Button twitterConnect = ViewBindings.findChildViewById(rootView, id);
+      if (twitterConnect == null) {
         break missingId;
       }
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, anonymousLogin, appName,
-          decorationMenu, decorationPasswordRecovery, decorationUseSocial, email, forgotPassword,
-          googleLogin, logo, password, signIn, signUp, twitterLogin);
+          decorationPasswordRecovery, decorationPasswordReset, decorationUseSocial, email,
+          forgotPassword, googleConnect, logo, password, signIn, signUp, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

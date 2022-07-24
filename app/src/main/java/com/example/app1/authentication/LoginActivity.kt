@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageButton
 import com.example.app1.MainActivity
 import com.example.app1.R
-import com.google.android.gms.common.Feature
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -60,8 +59,8 @@ class LoginActivity : AppCompatActivity() {
 
         val simple_sign_in = findViewById<Button>(R.id.sign_in)
         val sign_up = findViewById<TextView>(R.id.sign_up)
-        val twitter_login = findViewById<Button>(R.id.twitter_login)
-        val google_login = findViewById<Button>(R.id.google_login)
+        val twitter_login = findViewById<Button>(R.id.twitter_connect)
+        val google_login = findViewById<Button>(R.id.google_connect)
         val forgot_password = findViewById<TextView>(R.id.forgot_password)
         val anonymous_login = findViewById<AppCompatImageButton>(R.id.anonymous_login)
 

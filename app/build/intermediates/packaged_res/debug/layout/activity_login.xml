@@ -61,6 +61,7 @@
         android:layout_marginBottom="5dp"
         android:backgroundTint="#00C8F8"
         android:text="Sign In"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/decoration_useSocial"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,7 +80,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/decoration_menu"
+        android:id="@+id/decoration_password_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -127,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset" />
 
     <TextView
         android:id="@+id/decoration_useSocial"
@@ -141,13 +142,13 @@
         android:textColor="#989EB1"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/twitter_login"
+        app:layout_constraintBottom_toTopOf="@+id/twitter_connect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_in" />
 
     <Button
-        android:id="@+id/twitter_login"
+        android:id="@+id/twitter_connect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="90dp"
@@ -158,12 +159,12 @@
         android:textAllCaps="false"
         app:icon="@drawable/ic_icons8_twitter"
         app:layout_constraintBottom_toTopOf="@+id/forgot_password"
-        app:layout_constraintEnd_toStartOf="@+id/google_login"
+        app:layout_constraintEnd_toStartOf="@+id/google_connect"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/google_login"
+        android:id="@+id/google_connect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
@@ -176,7 +177,7 @@
         app:iconTint="@null"
         app:layout_constraintBottom_toTopOf="@+id/forgot_password"
         app:layout_constraintEnd_toStartOf="@+id/anonymous_login"
-        app:layout_constraintStart_toEndOf="@+id/twitter_login"
+        app:layout_constraintStart_toEndOf="@+id/twitter_connect"
         app:layout_constraintTop_toBottomOf="@+id/decoration_useSocial"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -226,6 +227,6 @@
         android:background="@drawable/ic_baseline_account_circle_18"
         app:layout_constraintBottom_toTopOf="@+id/sign_up"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/google_login" />
+        app:layout_constraintStart_toEndOf="@+id/google_connect" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AccountActivity">
+    tools:context=".settings.AccountActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_account"
@@ -13,6 +13,7 @@
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
+        app:menu="@menu/top_bar"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Feed You"
@@ -21,8 +22,18 @@
         app:titleTextColor="#248B9C"
         tools:layout_editor_absoluteX="1dp" />
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_account"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_account"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
     <TextView
-        android:id="@+id/decoration_menu"
+        android:id="@+id/decoration_password_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -38,11 +49,11 @@
         android:layout_height="638dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_menu"
+        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset"
         tools:layout_editor_absoluteX="147dp">
 
         <TextView
-            android:id="@+id/themes"
+            android:id="@+id/current_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_email_18"
@@ -59,7 +70,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/blocked_sources"
+            android:id="@+id/password_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
@@ -83,10 +94,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
-            android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_language_24"
             android:drawablePadding="10dp"
-            android:focusable="true"
             android:fontFamily="@font/asap"
             android:paddingStart="10dp"
             android:text="Change Language"
@@ -107,7 +116,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/invite_friends"
+            android:id="@+id/connect_socials"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
@@ -121,7 +130,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/twitter_login"
+            android:id="@+id/twitter_connect"
             android:layout_width="368dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -132,7 +141,7 @@
             app:icon="@drawable/ic_icons8_twitter" />
 
         <Button
-            android:id="@+id/google_login"
+            android:id="@+id/google_connect"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -2659,7 +2659,6 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id account_creation_progress
 id account_settings
 id action0
 id actionDown
@@ -2713,7 +2712,6 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
-id blocked_sources
 id blocking
 id bottom
 id bounce
@@ -2740,6 +2738,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id change_password
 id checkbox
 id checked
 id chip
@@ -2757,6 +2756,8 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id confirm_password
+id connect_socials
 id constraint
 id container
 id content
@@ -2767,6 +2768,7 @@ id coordinator
 id cos
 id counterclockwise
 id currentState
+id current_email
 id custom
 id customPanel
 id cut
@@ -2777,8 +2779,8 @@ id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
-id decoration_menu
 id decoration_password_recovery
+id decoration_password_reset
 id decoration_useSocial
 id decoration_welcome
 id default_activity_button
@@ -2847,7 +2849,7 @@ id fullscreen_header
 id ghost_view
 id ghost_view_holder
 id gone
-id google_login
+id google_connect
 id graph
 id graph_wrap
 id group_divider
@@ -2873,7 +2875,6 @@ id immediateStop
 id included
 id info
 id invisible
-id invite_friends
 id inward
 id italic
 id item_touch_helper_previous_elevation
@@ -2965,6 +2966,7 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id new_password
 id noScroll
 id noState
 id none
@@ -2974,6 +2976,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id old_password
 id on
 id onInterceptTouchReturnSwipe
 id outline
@@ -2986,6 +2989,8 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password
+id password_reset
+id password_reset_progress
 id password_toggle
 id path
 id pathRelative
@@ -3114,7 +3119,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id themes
 id time
 id title
 id titleDividerNoCustom
@@ -3123,6 +3127,7 @@ id toggle
 id toolbar
 id toolbar_account
 id toolbar_main
+id toolbar_password_change
 id top
 id topPanel
 id touch_outside
@@ -3138,7 +3143,7 @@ id tv_category
 id tv_frag_title
 id tv_sorry
 id tv_title
-id twitter_login
+id twitter_connect
 id unchecked
 id uniform
 id unlabeled
@@ -3265,6 +3270,7 @@ layout activity_login
 layout activity_main
 layout activity_menu
 layout activity_news
+layout activity_password_change
 layout activity_password_recovery
 layout activity_preference
 layout activity_settings

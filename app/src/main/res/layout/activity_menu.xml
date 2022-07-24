@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuActivity">
+    tools:context=".settings.MenuActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_account"
-        android:theme="@style/ToolbarTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Feed You"
@@ -21,8 +21,18 @@
         app:titleTextColor="#248B9C"
         tools:layout_editor_absoluteX="1dp" />
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_account"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_account"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
     <TextView
-        android:id="@+id/decoration_menu"
+        android:id="@+id/decoration_password_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -38,7 +48,7 @@
         android:layout_height="638dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_menu"
+        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset"
         tools:layout_editor_absoluteX="1dp">
 
         <Switch
@@ -59,7 +69,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/themes"
+            android:id="@+id/current_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_color_lens_24"
@@ -84,7 +94,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/blocked_sources"
+            android:id="@+id/password_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
@@ -104,7 +114,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/invite_friends"
+            android:id="@+id/connect_socials"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"

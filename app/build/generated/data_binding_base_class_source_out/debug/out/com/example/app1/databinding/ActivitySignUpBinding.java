@@ -25,13 +25,10 @@ public final class ActivitySignUpBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ProgressBar accountCreationProgress;
-
-  @NonNull
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationMenu;
+  public final TextView decorationPasswordReset;
 
   @NonNull
   public final TextView decorationWelcome;
@@ -49,6 +46,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText password;
 
   @NonNull
+  public final ProgressBar passwordResetProgress;
+
+  @NonNull
   public final TextView signIn;
 
   @NonNull
@@ -57,21 +57,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   public final CheckedTextView terminiCondizioni;
 
-  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ProgressBar accountCreationProgress, @NonNull TextView appName,
-      @NonNull TextView decorationMenu, @NonNull TextView decorationWelcome,
+  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
+      @NonNull TextView decorationPasswordReset, @NonNull TextView decorationWelcome,
       @NonNull EditText email, @NonNull TextView haveAnAccount, @NonNull ImageView logo,
-      @NonNull EditText password, @NonNull TextView signIn, @NonNull Button signUp,
+      @NonNull EditText password, @NonNull ProgressBar passwordResetProgress,
+      @NonNull TextView signIn, @NonNull Button signUp,
       @NonNull CheckedTextView terminiCondizioni) {
     this.rootView = rootView;
-    this.accountCreationProgress = accountCreationProgress;
     this.appName = appName;
-    this.decorationMenu = decorationMenu;
+    this.decorationPasswordReset = decorationPasswordReset;
     this.decorationWelcome = decorationWelcome;
     this.email = email;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.password = password;
+    this.passwordResetProgress = passwordResetProgress;
     this.signIn = signIn;
     this.signUp = signUp;
     this.terminiCondizioni = terminiCondizioni;
@@ -104,21 +104,15 @@ public final class ActivitySignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.account_creation_progress;
-      ProgressBar accountCreationProgress = ViewBindings.findChildViewById(rootView, id);
-      if (accountCreationProgress == null) {
-        break missingId;
-      }
-
       id = R.id.app_name;
       TextView appName = ViewBindings.findChildViewById(rootView, id);
       if (appName == null) {
         break missingId;
       }
 
-      id = R.id.decoration_menu;
-      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
-      if (decorationMenu == null) {
+      id = R.id.decoration_password_reset;
+      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
+      if (decorationPasswordReset == null) {
         break missingId;
       }
 
@@ -152,6 +146,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.password_reset_progress;
+      ProgressBar passwordResetProgress = ViewBindings.findChildViewById(rootView, id);
+      if (passwordResetProgress == null) {
+        break missingId;
+      }
+
       id = R.id.sign_in;
       TextView signIn = ViewBindings.findChildViewById(rootView, id);
       if (signIn == null) {
@@ -170,9 +170,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, accountCreationProgress,
-          appName, decorationMenu, decorationWelcome, email, haveAnAccount, logo, password, signIn,
-          signUp, terminiCondizioni);
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, appName,
+          decorationPasswordReset, decorationWelcome, email, haveAnAccount, logo, password,
+          passwordResetProgress, signIn, signUp, terminiCondizioni);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

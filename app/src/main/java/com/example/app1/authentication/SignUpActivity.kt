@@ -12,8 +12,6 @@ import com.example.app1.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
@@ -26,7 +24,7 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun progress() {
 
-        val progress_bar = findViewById<ProgressBar>(R.id.account_creation_progress)
+        val progress_bar = findViewById<ProgressBar>(R.id.password_reset_progress)
         val animation = ObjectAnimator.ofInt(progress_bar, "progress", 0, 50)
 
         animation.setDuration(500)

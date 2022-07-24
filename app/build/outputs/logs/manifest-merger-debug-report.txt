@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] /home/francesco/.gradle/caches/transforms-3/719baf7fcb693bfb10511561d8fee294/transformed/viewbinding-7.1.2/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] /home/francesco/.gradle/caches/transforms-3/220df5c2b8bf7cf475960e8425741579/transformed/android-v2.1.2/AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.0] /home/francesco/.gradle/caches/transforms-3/79dede709c4aa349261ad3a15b829a05/transformed/lifecycle-runtime-ktx-2.5.0/AndroidManifest.xml:17:1-24:12
@@ -88,20 +88,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/francesco/.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/francesco/.gradle/caches/transforms-3/ea56e0c42ecefd47a0235d5bf822a8fc/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/francesco/.gradle/caches/transforms-3/512d0e85758193a7b74d73bd1cf3e226/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/francesco/.gradle/caches/transforms-3/656293d799ea8e321930bb7cab01e3a7/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
-INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
 	package
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:3:5-31
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-79:12
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:2:11-69
@@ -142,7 +142,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.0.0] /h
 	android:name
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:8:5-77:19
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:8:5-80:19
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] /home/francesco/.gradle/caches/transforms-3/220df5c2b8bf7cf475960e8425741579/transformed/android-v2.1.2/AndroidManifest.xml:12:5-22:19
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] /home/francesco/.gradle/caches/transforms-3/220df5c2b8bf7cf475960e8425741579/transformed/android-v2.1.2/AndroidManifest.xml:12:5-22:19
 MERGED from [com.google.android.material:material:1.6.1] /home/francesco/.gradle/caches/transforms-3/f39d3c84da40f64912aaf5c0a0769d50/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
@@ -225,124 +225,130 @@ MERGED from [androidx.room:room-runtime:2.2.6] /home/francesco/.gradle/caches/tr
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:14:9-42
 	android:usesCleartextTraffic
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:15:9-44
-activity#com.example.app1.AccountActivity
+activity#com.example.app1.settings.PasswordChangeActivity
 ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:17:13-44
-activity#com.example.app1.MenuActivity
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:17:13-60
+activity#com.example.app1.settings.AccountActivity
 ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:20:13-41
-activity#com.example.app1.SettingsActivity
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:20:13-53
+activity#com.example.app1.settings.MenuActivity
 ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-45
-activity#com.example.app1.authentication.AnonymousActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:25:9-28:66
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-50
+activity#com.example.app1.SettingsActivity
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:27:13-37
-	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:28:13-63
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:26:13-61
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:26:13-45
+activity#com.example.app1.authentication.AnonymousActivity
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:28:9-31:66
+	android:exported
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:31:13-63
+	android:name
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:29:13-61
 activity#com.example.app1.authentication.SimpleSignInActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:29:9-32:66
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:32:9-35:66
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:31:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:34:13-37
 	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:32:13-63
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:35:13-63
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:30:13-64
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:33:13-64
 activity#com.example.app1.authentication.TwitterActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:33:9-36:66
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:36:9-39:66
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:38:13-37
 	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:36:13-63
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:39:13-63
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:34:13-59
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:37:13-59
 activity#com.example.app1.authentication.GoogleActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:37:9-40:66
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:40:9-43:66
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:39:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:42:13-37
 	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:40:13-63
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:43:13-63
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:38:13-58
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:41:13-58
 activity#com.example.app1.authentication.PasswordRecoveryActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:41:9-44:61
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:44:9-47:61
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:46:13-37
 	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:44:13-58
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:47:13-58
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:42:13-68
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:45:13-68
 activity#com.example.app1.authentication.SignUpActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:45:9-47:40
-	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:46:13-58
-activity#com.example.app1.MainActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:48:9-51:61
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:48:9-50:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:50:13-37
-	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:51:13-58
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:49:13-41
-activity#com.example.app1.PreferenceActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:52:9-54:40
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:49:13-58
+activity#com.example.app1.MainActivity
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:51:9-54:61
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:54:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:53:13-37
+	android:theme
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:54:13-58
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:53:13-47
-activity#com.example.app1.NewsActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:55:9-59:61
-	android:label
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:58:13-56
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:52:13-41
+activity#com.example.app1.PreferenceActivity
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:55:9-57:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:57:13-37
-	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:59:13-58
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:56:13-41
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:56:13-47
+activity#com.example.app1.NewsActivity
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:58:9-62:61
+	android:label
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:61:13-56
+	android:exported
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:60:13-37
+	android:theme
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:62:13-58
+	android:name
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:59:13-41
 activity#com.example.app1.ErrorActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:60:9-62:40
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:63:9-65:40
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:62:13-37
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:61:13-42
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:64:13-42
 activity#com.example.app1.authentication.LoginActivity
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:63:9-72:20
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:66:9-75:20
 	android:exported
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:65:13-36
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:68:13-36
 	android:theme
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:66:13-58
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:69:13-58
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:64:13-57
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:67:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:67:13-71:29
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:70:13-74:29
 action#android.intent.action.MAIN
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:68:17-69
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:71:17-69
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:68:25-66
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:71:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:70:17-77
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:73:17-77
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:70:27-74
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:73:27-74
 meta-data#preloaded_fonts
-ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:74:9-76:57
+ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:77:9-79:57
 	android:resource
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:76:13-54
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:79:13-54
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:75:13-43
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:78:13-43
 uses-sdk
 INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml

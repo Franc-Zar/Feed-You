@@ -26,10 +26,10 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationMenu;
+  public final TextView decorationPasswordRecovery;
 
   @NonNull
-  public final TextView decorationPasswordRecovery;
+  public final TextView decorationPasswordReset;
 
   @NonNull
   public final EditText email;
@@ -47,14 +47,14 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView signIn;
 
   private ActivityPasswordRecoveryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView appName, @NonNull TextView decorationMenu,
-      @NonNull TextView decorationPasswordRecovery, @NonNull EditText email,
+      @NonNull TextView appName, @NonNull TextView decorationPasswordRecovery,
+      @NonNull TextView decorationPasswordReset, @NonNull EditText email,
       @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull Button resetPassword,
       @NonNull TextView signIn) {
     this.rootView = rootView;
     this.appName = appName;
-    this.decorationMenu = decorationMenu;
     this.decorationPasswordRecovery = decorationPasswordRecovery;
+    this.decorationPasswordReset = decorationPasswordReset;
     this.email = email;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
@@ -95,15 +95,15 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_menu;
-      TextView decorationMenu = ViewBindings.findChildViewById(rootView, id);
-      if (decorationMenu == null) {
-        break missingId;
-      }
-
       id = R.id.decoration_password_recovery;
       TextView decorationPasswordRecovery = ViewBindings.findChildViewById(rootView, id);
       if (decorationPasswordRecovery == null) {
+        break missingId;
+      }
+
+      id = R.id.decoration_password_reset;
+      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
+      if (decorationPasswordReset == null) {
         break missingId;
       }
 
@@ -138,8 +138,8 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
       }
 
       return new ActivityPasswordRecoveryBinding((ConstraintLayout) rootView, appName,
-          decorationMenu, decorationPasswordRecovery, email, haveAnAccount, logo, resetPassword,
-          signIn);
+          decorationPasswordRecovery, decorationPasswordReset, email, haveAnAccount, logo,
+          resetPassword, signIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
