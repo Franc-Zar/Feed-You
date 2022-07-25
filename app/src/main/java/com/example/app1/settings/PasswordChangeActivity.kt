@@ -6,41 +6,40 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
+import com.example.app1.utilities.AccountUtilities.Companion.isValidPassword
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.EmailAuthProvider
-import com.google.firebase.auth.GoogleAuthCredential
-import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 
 class PasswordChangeActivity : AppCompatActivity() {
 
-    private val current_user = Firebase.auth.currentUser
-    private lateinit var new_password: EditText
+    private val current_user = Firebase.auth.currentUser!!
 
+    private fun passwordReset(newPassword: String) {
 
-    private fun checkCredential(): Boolean {
-
-        // Get auth credentials from the user for re-authentication. The example below shows
-        // email and password credentials but there are multiple possible providers,
-        // such as GoogleAuthProvider or FacebookAuthProvider. --> valuto dopo se implementare il password reset per altri provider
-
-        val credential = EmailAuthProvider.getCredential(current_user!!.email.toString(), new_password.text.toString())
-        var success = false
-
-        // Prompt the user to re-provide their sign-in credentials
-        current_user.reauthenticate(credential)
+        current_user.updatePassword(newPassword)
             .addOnCompleteListener { task ->
-
                 if (task.isSuccessful) {
 
-                    success = true
+                    finish()
 
+                    Toast.makeText(
+                        baseContext, "Password changed successfully!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                } else {
+
+                    Toast.makeText(
+                        baseContext,
+                        "Something went wrong: please, try again.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-            }
 
-        return success
+            }
 
     }
 
@@ -50,9 +49,10 @@ class PasswordChangeActivity : AppCompatActivity() {
 
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_password_change)
         val change_password = findViewById<Button>(R.id.change_password)
-        val old_password = findViewById<EditText>(R.id.old_password)
         val confirm_password = findViewById<EditText>(R.id.confirm_password)
-        new_password = findViewById(R.id.new_password)
+        val new_password = findViewById<EditText>(R.id.new_password)
+        val old_password = findViewById<EditText>(R.id.old_password)
+        setSupportActionBar(toolbar)
 
         toolbar.setNavigationOnClickListener {
 
@@ -64,52 +64,77 @@ class PasswordChangeActivity : AppCompatActivity() {
 
             val newPassword = new_password.text.toString()
             val confirmPassword = confirm_password.text.toString()
+            val oldPassword = old_password.text.toString()
+            val currentEmail = current_user.email.toString()
 
-            if (checkCredential()) {
+            if (oldPassword != "") {
 
-                if (newPassword != "" && confirmPassword != "") {
+                // Get auth credentials from the user for re-authentication. The example below shows
+                // email and password credentials but there are multiple possible providers,
+                // such as GoogleAuthProvider or FacebookAuthProvider. --> valuto dopo se implementare il password reset per altri provider
+                val user_credential = EmailAuthProvider.getCredential(currentEmail, oldPassword)
 
-                    if (newPassword == confirmPassword) {
+                current_user.reauthenticate(user_credential)
+                    .addOnCompleteListener { task ->
 
+                        if (task.isSuccessful) {
 
-                        current_user!!.updatePassword(newPassword)
-                            .addOnCompleteListener { task ->
-                                if (task.isSuccessful) {
+                            if (newPassword != "" && confirmPassword != "") {
 
-                                    finish()
+                                if (newPassword == confirmPassword) {
 
+                                    if (newPassword.isValidPassword()) {
 
-                                    Toast.makeText(
-                                        baseContext, "Password changed successfully!",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                        passwordReset(newPassword)
+
+                                    } else {
+
+                                        Toast.makeText(
+                                            baseContext,
+                                            "Password Reset failed: new password too weak.",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+
+                                    }
 
                                 } else {
 
                                     Toast.makeText(
-                                        baseContext, "Something went wrong: please, try again.",
+                                        baseContext,
+                                        "Password Reset failed: confirmation doesn't match.",
                                         Toast.LENGTH_SHORT
                                     ).show()
 
                                 }
+
+                            } else {
+
+                                Toast.makeText(
+                                    baseContext,
+                                    "Password Reset failed: new password and/or confirmation missing.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+
                             }
 
-                    } else {
+                        } else {
 
-                        Toast.makeText(
-                            baseContext, "Password Reset failed: confirmation doesn't match",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                            Toast.makeText(
+                                baseContext,
+                                "Password Reset failed: wrong password.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
 
                     }
-                }
 
             } else {
 
                 Toast.makeText(
-                    baseContext,"Password Reset failed: wrong password.",
+                    baseContext,"Password Reset failed: old password required.",
                     Toast.LENGTH_SHORT
-                    ).show()
+                ).show()
 
             }
         }

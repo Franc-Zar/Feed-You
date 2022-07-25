@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,9 +32,6 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final TextView decorationPasswordReset;
 
   @NonNull
-  public final ImageView logo;
-
-  @NonNull
   public final EditText newPassword;
 
   @NonNull
@@ -46,14 +42,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button changePassword, @NonNull EditText confirmPassword,
-      @NonNull TextView decorationPasswordReset, @NonNull ImageView logo,
-      @NonNull EditText newPassword, @NonNull EditText oldPassword,
-      @NonNull MaterialToolbar toolbarPasswordChange) {
+      @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
+      @NonNull EditText oldPassword, @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
     this.changePassword = changePassword;
     this.confirmPassword = confirmPassword;
     this.decorationPasswordReset = decorationPasswordReset;
-    this.logo = logo;
     this.newPassword = newPassword;
     this.oldPassword = oldPassword;
     this.toolbarPasswordChange = toolbarPasswordChange;
@@ -104,12 +98,6 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.logo;
-      ImageView logo = ViewBindings.findChildViewById(rootView, id);
-      if (logo == null) {
-        break missingId;
-      }
-
       id = R.id.new_password;
       EditText newPassword = ViewBindings.findChildViewById(rootView, id);
       if (newPassword == null) {
@@ -129,7 +117,7 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
       }
 
       return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, changePassword,
-          confirmPassword, decorationPasswordReset, logo, newPassword, oldPassword,
+          confirmPassword, decorationPasswordReset, newPassword, oldPassword,
           toolbarPasswordChange);
     }
     String missingId = rootView.getResources().getResourceName(id);

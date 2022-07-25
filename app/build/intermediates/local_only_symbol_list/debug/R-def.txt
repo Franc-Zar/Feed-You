@@ -37,6 +37,7 @@ drawable ic_baseline_color_lens_24
 drawable ic_baseline_email_18
 drawable ic_baseline_info_24
 drawable ic_baseline_language_24
+drawable ic_baseline_logout_24
 drawable ic_baseline_menu_24
 drawable ic_baseline_not_interested_24
 drawable ic_baseline_notifications_active_24
@@ -57,6 +58,7 @@ drawable rounded_corner
 font asap
 font quicksand_bold
 font rock_salt
+id About_us_text
 id about_feed_you
 id account_settings
 id anonymous_login
@@ -67,11 +69,9 @@ id appbar
 id button
 id change_password
 id confirm_password
-id connect_socials
 id current_email
 id cv_layout
 id cv_news
-id decoration_password_recovery
 id decoration_password_reset
 id decoration_useSocial
 id decoration_welcome
@@ -81,6 +81,7 @@ id fragment
 id google_connect
 id have_an_account
 id imageView
+id invite_friends
 id iv_favicon
 id language
 id layout_app
@@ -88,6 +89,7 @@ id layout_topics
 id linearLayout
 id loading_icon
 id logo
+id logout
 id new_password
 id old_password
 id password
@@ -107,6 +109,7 @@ id swiperefresh
 id termini_condizioni
 id title
 id toolbar
+id toolbar_about_us
 id toolbar_account
 id toolbar_main
 id toolbar_password_change
@@ -117,6 +120,7 @@ id tv_title
 id twitter_connect
 id web_view
 integer minDistance
+layout activity_about
 layout activity_account
 layout activity_anonymous
 layout activity_error
@@ -141,6 +145,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap logo_foreground
 mipmap logo_round
+string aboutUs
 string action_settings
 string app_name
 string askConfirm

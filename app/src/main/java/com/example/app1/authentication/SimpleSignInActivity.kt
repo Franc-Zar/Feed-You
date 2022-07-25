@@ -24,7 +24,7 @@ class SimpleSignInActivity : AppCompatActivity() {
 
         if (email_chosen != "" && password_chosen != "") {
 
-            if (android.util.Patterns.EMAIL_ADDRESS.matcher(email_chosen).matches()) {
+            if (android.util.Patterns.EMAIL_ADDRESS.matcher(email_chosen.trim()).matches()) {
 
                 auth.signInWithEmailAndPassword(email_chosen, password_chosen)
                     .addOnCompleteListener { task ->

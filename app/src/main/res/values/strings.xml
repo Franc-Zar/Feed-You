@@ -11,6 +11,18 @@
     <string name="prefTopics" translatable="false">prefTopics</string>
     <string name="redirect">Redirect to Browser</string>
     <string name="askConfirm">FeedYou can\'t handle this page, do you want to open it on browser?</string>
+    <string name="aboutUs">
+
+        Welcome to Feed You! v1.0 \n\n
+
+        Thank you for joining us, \n
+
+        Feed You is a simple app that will provide you with RSS Feeds coming from the most important international Newspapers. \n\n
+        We\'ll walk with you during your day, keeping you informed about what\'s happening meanwhile in the world,
+        in accordance with your personal preferences and choices. \n\n
+        Our main goal is to give to all of our users the best mobile reading experience.
+
+    </string>
 
     <string name="title_activity_news">NewsActivity</string>
     <string name="large_text">

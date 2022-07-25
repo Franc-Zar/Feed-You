@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password_recovery" />
+        app:layout_constraintTop_toBottomOf="@+id/About_us_text" />
 
 
     <EditText
@@ -89,7 +89,7 @@
         android:text="Sign In"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/decoration_password_recovery"
+        app:layout_constraintBottom_toTopOf="@+id/About_us_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_name"
         app:layout_constraintVertical_bias="0.437" />
@@ -106,14 +106,14 @@
         android:textColor="#248B9C"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/decoration_password_recovery"
+        app:layout_constraintBottom_toTopOf="@+id/About_us_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/decoration_password_recovery"
+        android:id="@+id/About_us_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"

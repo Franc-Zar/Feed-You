@@ -4,7 +4,6 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -30,16 +29,13 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView accountSettings;
 
   @NonNull
-  public final TextView connectSocials;
-
-  @NonNull
   public final TextView currentEmail;
 
   @NonNull
   public final TextView decorationPasswordReset;
 
   @NonNull
-  public final ImageView logo;
+  public final TextView inviteFriends;
 
   @NonNull
   public final TextView passwordReset;
@@ -57,18 +53,17 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-      @NonNull TextView accountSettings, @NonNull TextView connectSocials,
-      @NonNull TextView currentEmail, @NonNull TextView decorationPasswordReset,
-      @NonNull ImageView logo, @NonNull TextView passwordReset, @NonNull Switch pushNotifications,
+      @NonNull TextView accountSettings, @NonNull TextView currentEmail,
+      @NonNull TextView decorationPasswordReset, @NonNull TextView inviteFriends,
+      @NonNull TextView passwordReset, @NonNull Switch pushNotifications,
       @NonNull TextView reportProblems, @NonNull Spinner spinnerThemes,
       @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
-    this.connectSocials = connectSocials;
     this.currentEmail = currentEmail;
     this.decorationPasswordReset = decorationPasswordReset;
-    this.logo = logo;
+    this.inviteFriends = inviteFriends;
     this.passwordReset = passwordReset;
     this.pushNotifications = pushNotifications;
     this.reportProblems = reportProblems;
@@ -115,12 +110,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.connect_socials;
-      TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
-      if (connectSocials == null) {
-        break missingId;
-      }
-
       id = R.id.current_email;
       TextView currentEmail = ViewBindings.findChildViewById(rootView, id);
       if (currentEmail == null) {
@@ -133,9 +122,9 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.logo;
-      ImageView logo = ViewBindings.findChildViewById(rootView, id);
-      if (logo == null) {
+      id = R.id.invite_friends;
+      TextView inviteFriends = ViewBindings.findChildViewById(rootView, id);
+      if (inviteFriends == null) {
         break missingId;
       }
 
@@ -170,8 +159,8 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          connectSocials, currentEmail, decorationPasswordReset, logo, passwordReset,
-          pushNotifications, reportProblems, spinnerThemes, toolbarAccount);
+          currentEmail, decorationPasswordReset, inviteFriends, passwordReset, pushNotifications,
+          reportProblems, spinnerThemes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

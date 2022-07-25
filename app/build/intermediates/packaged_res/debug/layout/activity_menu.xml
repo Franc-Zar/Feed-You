@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".settings.MenuActivity">
+    tools:context=".settings.menu.MenuActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar_account"
@@ -20,16 +20,6 @@
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
         app:titleTextColor="#248B9C"
         tools:layout_editor_absoluteX="1dp" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar_account"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_account"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/decoration_password_reset"
@@ -114,7 +104,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/connect_socials"
+            android:id="@+id/invite_friends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"

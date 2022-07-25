@@ -9,18 +9,15 @@ import android.view.WindowManager
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
 import com.example.app1.R
+import com.example.app1.utilities.AccountUtilities.Companion.isValidPassword
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
-import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
 
     private val auth = FirebaseAuth.getInstance()
     private lateinit var switch_activity: Intent
-    // la password deve avere almeno una cifra, almeno un carattere minuscolo, almeno un carattere maiuscolo, almeno un carattere speciale,
-    // almeno una lunghezza di 6 caratteri
-    private val password_regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[{}@#$%^&+=*?'_ç£!<>])(?=\\S+$).{6,}$"
 
     private fun progress() {
 
@@ -33,18 +30,9 @@ class SignUpActivity : AppCompatActivity() {
 
     }
 
-    private fun String.isValidPassword(): Boolean {
-
-        val pattern = Pattern.compile(password_regex)
-        val matcher = pattern.matcher(this)
-        return matcher.matches()
-
-    }
-
     public override fun onStart() {
 
         super.onStart()
-        val currentUser = null
 
     }
 
@@ -93,7 +81,6 @@ class SignUpActivity : AppCompatActivity() {
 
                                 if (task.isSuccessful) {
                                     // Sign in success, update UI with the signed-in user's information
-                                    val user = auth.currentUser
 
                                     switch_activity = Intent(this, LoginActivity::class.java)
                                     startActivity(switch_activity)

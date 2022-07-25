@@ -5,14 +5,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.example.app1.settings.MenuActivity
+import com.example.app1.settings.menu.MenuActivity
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -22,6 +21,7 @@ import kotlin.system.exitProcess
 class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
+    private val current_user = Firebase.auth.currentUser!!
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.top_bar, menu)
@@ -33,33 +33,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         database = Firebase.database.reference
-        //val user = User(name, email)
-        //database.child("users").child(userId).setValue(user)    vale ricorsivamente sui parametri dell'oggetto, che sono a loro volta child
-        //reset delle preferenze, finche non aggiungiamo il menu per modificarle
-        /*
-        val pref = getSharedPreferences(getString(R.string.lang),Context.MODE_PRIVATE)
-        if (pref != null) {
-        with(pref.edit()) {
-        clear()
-        apply()
-        }
-        }
-        val spref = getSharedPreferences(getString(R.string.topics),Context.MODE_PRIVATE)
-        if (spref != null) {
-        with(spref.edit()) {
-        clear()
-        apply()
-        }
-        }
-
-        val tpref = getSharedPreferences(getString(R.string.prefTopics),Context.MODE_PRIVATE)
-        if (spref != null) {
-        with(tpref.edit()) {
-        clear()
-        apply()
-        }
-        }
-        */
 
         if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)

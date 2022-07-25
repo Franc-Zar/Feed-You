@@ -22,6 +22,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var switch_activity: Intent
     private lateinit var email: EditText
     private lateinit var password: EditText
+    private var current_user = Firebase.auth.currentUser
 
     public override fun onRestart() {
         super.onRestart()
@@ -34,12 +35,8 @@ class LoginActivity : AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        //val currentUser = auth.currentUser
-        //solo per test purposessssss
-        val currentUser = null
-
-
-        if (currentUser != null) {
+        current_user = null
+        if (current_user != null) {
 
             switch_activity = Intent(this, MainActivity::class.java)
             startActivity(switch_activity)
@@ -107,8 +104,8 @@ class LoginActivity : AppCompatActivity() {
         //login email + password
         simple_sign_in.setOnClickListener {
 
-            val email_chosen = email.text.toString().trim()
-            val password_chosen = password.text.toString().trim()
+            val email_chosen = email.text.toString()
+            val password_chosen = password.text.toString()
 
             switch_activity = Intent(this, SimpleSignInActivity::class.java)
             switch_activity.putExtra("email_chosen", email_chosen)

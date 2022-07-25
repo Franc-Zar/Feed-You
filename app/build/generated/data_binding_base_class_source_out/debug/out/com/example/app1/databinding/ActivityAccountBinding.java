@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,9 +23,6 @@ public final class ActivityAccountBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView connectSocials;
-
-  @NonNull
   public final TextView currentEmail;
 
   @NonNull
@@ -36,10 +32,13 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final Button googleConnect;
 
   @NonNull
+  public final TextView inviteFriends;
+
+  @NonNull
   public final TextView language;
 
   @NonNull
-  public final ImageView logo;
+  public final TextView logout;
 
   @NonNull
   public final TextView passwordReset;
@@ -53,19 +52,18 @@ public final class ActivityAccountBinding implements ViewBinding {
   @NonNull
   public final Button twitterConnect;
 
-  private ActivityAccountBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView connectSocials, @NonNull TextView currentEmail,
+  private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView currentEmail,
       @NonNull TextView decorationPasswordReset, @NonNull Button googleConnect,
-      @NonNull TextView language, @NonNull ImageView logo, @NonNull TextView passwordReset,
-      @NonNull Spinner spinnerLanguages, @NonNull MaterialToolbar toolbarAccount,
-      @NonNull Button twitterConnect) {
+      @NonNull TextView inviteFriends, @NonNull TextView language, @NonNull TextView logout,
+      @NonNull TextView passwordReset, @NonNull Spinner spinnerLanguages,
+      @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
-    this.connectSocials = connectSocials;
     this.currentEmail = currentEmail;
     this.decorationPasswordReset = decorationPasswordReset;
     this.googleConnect = googleConnect;
+    this.inviteFriends = inviteFriends;
     this.language = language;
-    this.logo = logo;
+    this.logout = logout;
     this.passwordReset = passwordReset;
     this.spinnerLanguages = spinnerLanguages;
     this.toolbarAccount = toolbarAccount;
@@ -99,12 +97,6 @@ public final class ActivityAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.connect_socials;
-      TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
-      if (connectSocials == null) {
-        break missingId;
-      }
-
       id = R.id.current_email;
       TextView currentEmail = ViewBindings.findChildViewById(rootView, id);
       if (currentEmail == null) {
@@ -123,15 +115,21 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.invite_friends;
+      TextView inviteFriends = ViewBindings.findChildViewById(rootView, id);
+      if (inviteFriends == null) {
+        break missingId;
+      }
+
       id = R.id.language;
       TextView language = ViewBindings.findChildViewById(rootView, id);
       if (language == null) {
         break missingId;
       }
 
-      id = R.id.logo;
-      ImageView logo = ViewBindings.findChildViewById(rootView, id);
-      if (logo == null) {
+      id = R.id.logout;
+      TextView logout = ViewBindings.findChildViewById(rootView, id);
+      if (logout == null) {
         break missingId;
       }
 
@@ -159,9 +157,9 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAccountBinding((ConstraintLayout) rootView, connectSocials, currentEmail,
-          decorationPasswordReset, googleConnect, language, logo, passwordReset, spinnerLanguages,
-          toolbarAccount, twitterConnect);
+      return new ActivityAccountBinding((ConstraintLayout) rootView, currentEmail,
+          decorationPasswordReset, googleConnect, inviteFriends, language, logout, passwordReset,
+          spinnerLanguages, toolbarAccount, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

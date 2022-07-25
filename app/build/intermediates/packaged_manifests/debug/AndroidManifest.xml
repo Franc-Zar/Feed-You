@@ -27,14 +27,28 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.app1.settings.menu.AboutActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.app1.settings.PasswordChangeActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.settings.AccountActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app1.settings.MenuActivity"
-            android:exported="false" />
+            android:name="com.example.app1.settings.menu.MenuActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.app1.SettingsActivity"
             android:exported="false" />
@@ -114,6 +128,9 @@
                 android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
@@ -124,6 +141,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"

@@ -22,16 +22,6 @@
         app:titleTextColor="#248B9C"
         tools:layout_editor_absoluteX="1dp" />
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="62dp"
-        android:layout_height="56dp"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar_account"
-        app:layout_constraintHorizontal_bias="0.326"
-        app:layout_constraintStart_toStartOf="@+id/toolbar_account"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
-
     <TextView
         android:id="@+id/decoration_password_reset"
         android:layout_width="wrap_content"
@@ -116,7 +106,7 @@
             android:layout_height="40dp" />
 
         <TextView
-            android:id="@+id/connect_socials"
+            android:id="@+id/invite_friends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
@@ -150,6 +140,26 @@
             android:textAllCaps="false"
             app:icon="@drawable/ic_icons8_google"
             app:iconTint="@null" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_logout_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/asap"
+            android:paddingStart="10dp"
+            android:text="Logout"
+            android:textColor="#35424A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
