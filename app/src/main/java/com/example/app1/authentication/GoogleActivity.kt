@@ -33,12 +33,12 @@ class GoogleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        setUp()
         startSignInProcess()
 
     }
 
-    override fun onStart() {
-        super.onStart()
+    private fun setUp() {
 
         oneTapClient = Identity.getSignInClient(this)
         signInRequest = BeginSignInRequest.builder()
