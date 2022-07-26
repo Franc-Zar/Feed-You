@@ -10,10 +10,13 @@ import com.example.app1.MainActivity
 import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class SimpleSignInActivity : AppCompatActivity() {
 
-    private val auth = FirebaseAuth.getInstance()
+    private val auth = Firebase.auth
     private lateinit var switch_activity: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,6 +72,17 @@ class SimpleSignInActivity : AppCompatActivity() {
                                         Toast.LENGTH_SHORT
                                     ).show()
 
+                                }
+
+                                is FirebaseAuthInvalidUserException -> {
+
+                                    finish()
+                                    overridePendingTransition(0, 0)
+
+                                    Toast.makeText(
+                                        baseContext, "Authentication failed: user with email: " + email_chosen + " doesn't exists." ,
+                                        Toast.LENGTH_SHORT
+                                    ).show()
 
                                 }
 

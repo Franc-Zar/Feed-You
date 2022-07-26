@@ -20,7 +20,7 @@
             android:name=".settings.PasswordChangeActivity"
             android:exported="false" />
         <activity
-            android:name=".settings.AccountActivity"
+            android:name=".settings.EmailAccountActivity"
             android:exported="false" />
         <activity
             android:name=".settings.menu.MenuActivity"

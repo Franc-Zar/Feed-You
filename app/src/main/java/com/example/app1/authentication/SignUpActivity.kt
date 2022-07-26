@@ -98,7 +98,7 @@ class SignUpActivity : AppCompatActivity() {
 
                                             Toast.makeText(
                                                 baseContext,
-                                                "A user with email:" + email_chosen + " already exists!",
+                                                "A user with email: " + email_chosen + " already exists!",
                                                 Toast.LENGTH_SHORT
                                             ).show()
 

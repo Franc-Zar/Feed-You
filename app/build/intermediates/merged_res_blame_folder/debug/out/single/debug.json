@@ -104,6 +104,10 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml"
     },
     {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_email_account.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_email_account.xml"
+    },
+    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_main.xml"
     },
@@ -166,10 +170,6 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_account.xml.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_account.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/font_quicksand_bold.xml.flat",

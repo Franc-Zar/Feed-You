@@ -8,6 +8,10 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_recovery.xml"
     },
     {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_email_account.xml",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_email_account.xml"
+    },
+    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_password_change.xml",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_change.xml"
     },

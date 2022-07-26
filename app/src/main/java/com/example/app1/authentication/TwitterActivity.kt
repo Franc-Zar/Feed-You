@@ -1,39 +1,48 @@
 package com.example.app1.authentication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.MainActivity
 import com.google.android.gms.tasks.OnFailureListener
 import com.google.android.gms.tasks.OnSuccessListener
 import com.google.android.gms.tasks.Task
-import com.google.firebase.auth.AuthResult
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.OAuthProvider
+import com.google.firebase.auth.*
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+
 
 class TwitterActivity : AppCompatActivity() {
 
-    private val auth = FirebaseAuth.getInstance()
+    private val auth = Firebase.auth
     private lateinit var switch_activity: Intent
-    private val provider = OAuthProvider.newBuilder("twitter.com")
+    private val provider = OAuthProvider.newBuilder(TwitterAuthProvider.PROVIDER_ID)
     private val pending_result: Task<AuthResult>? = auth.pendingAuthResult
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (pending_result != null) {
+        if (auth.currentUser != null) {
 
-            pending_result_handle()
+            linkTwitterAccount()
 
         } else {
 
-            twitter_sign_in()
+            if (pending_result != null) {
+
+                pending_result_handle()
+
+            } else {
+
+                twitterSignIn()
+
+            }
 
         }
+
     }
+
 
     private fun pending_result_handle() {
 
@@ -67,7 +76,48 @@ class TwitterActivity : AppCompatActivity() {
                 })
     }
 
-    private fun twitter_sign_in() {
+    private fun linkTwitterAccount() {
+
+        // The user is already signed-in.
+        // The user is already signed-in.
+
+        auth.currentUser!!
+            .startActivityForLinkWithProvider( /* activity= */this, provider.build())
+            .addOnSuccessListener {
+                // Twitter credential is linked to the current user.
+                // IdP data available in
+                // authResult.getAdditionalUserInfo().getProfile().
+                // The OAuth access token can also be retrieved:
+                // authResult.getCredential().getAccessToken().
+                // The OAuth secret can be retrieved by calling:
+                // authResult.getCredential().getSecret().
+                finish()
+                overridePendingTransition(0, 0)
+
+                Toast.makeText(
+                    baseContext, "Twitter Account connected successfully!",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+            }
+            .addOnFailureListener {
+                // Handle failure.
+                finish()
+                overridePendingTransition(0, 0)
+
+                Toast.makeText(
+                    baseContext, "Something went wrong, please try again.",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+            }
+
+
+    }
+
+
+
+    private fun twitterSignIn() {
 
         // There's no pending result so you need to start the sign-in flow.
         // See below.
@@ -95,6 +145,7 @@ class TwitterActivity : AppCompatActivity() {
                     startActivity(switch_activity)
 
                 })
+
             .addOnFailureListener(
                 OnFailureListener {
                     // Handle failure.

@@ -18,7 +18,7 @@ import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
-public final class ActivityAccountBinding implements ViewBinding {
+public final class ActivityEmailAccountBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
@@ -52,10 +52,10 @@ public final class ActivityAccountBinding implements ViewBinding {
   @NonNull
   public final Button twitterConnect;
 
-  private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView currentEmail,
-      @NonNull TextView decorationPasswordReset, @NonNull Button googleConnect,
-      @NonNull TextView inviteFriends, @NonNull TextView language, @NonNull TextView logout,
-      @NonNull TextView passwordReset, @NonNull Spinner spinnerLanguages,
+  private ActivityEmailAccountBinding(@NonNull ConstraintLayout rootView,
+      @NonNull TextView currentEmail, @NonNull TextView decorationPasswordReset,
+      @NonNull Button googleConnect, @NonNull TextView inviteFriends, @NonNull TextView language,
+      @NonNull TextView logout, @NonNull TextView passwordReset, @NonNull Spinner spinnerLanguages,
       @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.currentEmail = currentEmail;
@@ -77,14 +77,14 @@ public final class ActivityAccountBinding implements ViewBinding {
   }
 
   @NonNull
-  public static ActivityAccountBinding inflate(@NonNull LayoutInflater inflater) {
+  public static ActivityEmailAccountBinding inflate(@NonNull LayoutInflater inflater) {
     return inflate(inflater, null, false);
   }
 
   @NonNull
-  public static ActivityAccountBinding inflate(@NonNull LayoutInflater inflater,
+  public static ActivityEmailAccountBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup parent, boolean attachToParent) {
-    View root = inflater.inflate(R.layout.activity_account, parent, false);
+    View root = inflater.inflate(R.layout.activity_email_account, parent, false);
     if (attachToParent) {
       parent.addView(root);
     }
@@ -92,7 +92,7 @@ public final class ActivityAccountBinding implements ViewBinding {
   }
 
   @NonNull
-  public static ActivityAccountBinding bind(@NonNull View rootView) {
+  public static ActivityEmailAccountBinding bind(@NonNull View rootView) {
     // The body of this method is generated in a way you would not otherwise write.
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
@@ -157,7 +157,7 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAccountBinding((ConstraintLayout) rootView, currentEmail,
+      return new ActivityEmailAccountBinding((ConstraintLayout) rootView, currentEmail,
           decorationPasswordReset, googleConnect, inviteFriends, language, logout, passwordReset,
           spinnerLanguages, toolbarAccount, twitterConnect);
     }

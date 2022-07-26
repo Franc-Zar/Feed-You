@@ -3265,8 +3265,8 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_about 0x7f0d001c
-int layout activity_account 0x7f0d001d
 int layout activity_anonymous 0x7f0d001e
+int layout activity_email_account 0x7f0d0094
 int layout activity_error 0x7f0d001f
 int layout activity_google 0x7f0d0020
 int layout activity_login 0x7f0d0021

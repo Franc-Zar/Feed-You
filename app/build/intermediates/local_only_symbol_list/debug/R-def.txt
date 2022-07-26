@@ -121,8 +121,8 @@ id twitter_connect
 id web_view
 integer minDistance
 layout activity_about
-layout activity_account
 layout activity_anonymous
+layout activity_email_account
 layout activity_error
 layout activity_google
 layout activity_login

@@ -1,20 +1,14 @@
 package com.example.app1.settings.menu
 
-import android.content.ContentValues.TAG
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
-import com.example.app1.settings.AccountActivity
+import com.example.app1.settings.EmailAccountActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.dynamiclinks.DynamicLink
-import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
-import com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinksImpl
 import com.google.firebase.ktx.Firebase
 
 class MenuActivity : AppCompatActivity() {
@@ -48,7 +42,7 @@ class MenuActivity : AppCompatActivity() {
 
         account_settings.setOnClickListener {
 
-            switch_activity = Intent(this, AccountActivity::class.java)
+            switch_activity = Intent(this, EmailAccountActivity::class.java)
             startActivity(switch_activity)
 
         }
