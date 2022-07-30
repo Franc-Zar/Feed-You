@@ -2626,6 +2626,7 @@ drawable ic_baseline_menu_24
 drawable ic_baseline_not_interested_24
 drawable ic_baseline_notifications_active_24
 drawable ic_baseline_people_alt_24
+drawable ic_baseline_person_24
 drawable ic_baseline_person_add_24
 drawable ic_baseline_remove_circle_24
 drawable ic_baseline_search_24
@@ -2749,8 +2750,8 @@ id accessibility_custom_action_6
 id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
-id accountID
-id accountID_decoration
+id account_email
+id account_name
 id account_settings
 id action0
 id actionDown
@@ -2876,7 +2877,7 @@ id decoration_password_reset
 id decoration_useSocial
 id decoration_welcome
 id default_activity_button
-id deleteAccount
+id delete_account
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -2911,6 +2912,7 @@ id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
+id email_decoration
 id end
 id endToStart
 id end_padder
@@ -3052,6 +3054,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_decoration
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3583,6 +3586,7 @@ string copy
 string copy_toast_msg
 string default_web_client_id
 string deleteAccount
+string deleteAlert
 string error_icon_content_description
 string expand_button_title
 string exposed_dropdown_menu_content_description

@@ -10,14 +10,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
 import com.example.app1.authentication.GoogleActivity
+import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.TwitterActivity
 import com.example.app1.settings.PasswordChangeActivity
 import com.example.app1.utilities.AccountUtilities.Companion.getTwitterName
 import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
 import com.google.android.material.appbar.MaterialToolbar
-import com.google.firebase.auth.EmailAuthProvider
-import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.auth.TwitterAuthProvider
+import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
@@ -28,12 +27,67 @@ class AccountActivity : AppCompatActivity() {
     private val currentUser = Firebase.auth.currentUser!!
     private lateinit var twitterConnect: Button
     private lateinit var googleConnect: Button
-    private lateinit var accountID: TextView
-    private lateinit var accountIDdecoration: TextView
+    private lateinit var accountEmail: TextView
+    private lateinit var emailDecoration: TextView
     private lateinit var connectSocials: TextView
     private lateinit var passwordReset: TextView
+    private lateinit var accountName: TextView
+    private lateinit var nameDecoration: TextView
 
-    private fun createSocialAlert(socialProviderID: String) {
+    private fun deleteAccount() {
+
+        Firebase.auth.currentUser!!.delete()
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+
+                    Firebase.auth.signOut()
+
+                    Toast.makeText(
+                        baseContext, "Account deleted successfully. Bye!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    switch_activity = Intent(this, LoginActivity::class.java)
+                    switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    startActivity(switch_activity)
+
+                } else {
+
+                    when(task.exception) {
+
+                        is FirebaseAuthInvalidUserException ->
+
+                            Toast.makeText(
+                                baseContext, "Something went wrong: Account could already be deleted.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        is FirebaseAuthRecentLoginRequiredException -> {
+
+                            Firebase.auth.signOut()
+                            finish()
+
+                            Toast.makeText(
+                                baseContext, "Authentication time expired: please sign in again.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                            switch_activity = Intent(this, LoginActivity::class.java)
+                            switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                            startActivity(switch_activity)
+
+                        }
+
+                    }
+
+                }
+            }
+
+    }
+
+
+
+    private fun createAlert(socialProviderID: String?, alertType: String) {
 
         val alertDialog = AlertDialog.Builder(this).create()
 
@@ -45,24 +99,38 @@ class AccountActivity : AppCompatActivity() {
                 dialog, which -> dialog.dismiss()
         }
 
-        alertDialog.setButton(
-            AlertDialog.BUTTON_POSITIVE, "Unlink"
-        ) {
-                dialog, which -> unlinkSocial(socialProviderID)
+
+        if(alertType == "social") {
+
+            alertDialog.setButton(
+                AlertDialog.BUTTON_POSITIVE, "Unlink"
+            ) {
+                    dialog, which -> unlinkSocial(socialProviderID!!)
+            }
+
+            alertDialog.show()
+            val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
+
+            if(socialProviderID == GoogleAuthProvider.PROVIDER_ID)
+                alertMessage?.setText(R.string.googleAlert)
+            else if (socialProviderID == TwitterAuthProvider.PROVIDER_ID)
+                alertMessage?.setText(R.string.twitterAlert)
+
+        } else if(alertType == "delete") {
+
+            alertDialog.setButton(
+                AlertDialog.BUTTON_POSITIVE, "Delete"
+            ) {
+                    dialog, which -> deleteAccount()
+            }
+
+            alertDialog.show()
+
+            val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
+            alertMessage?.setText(R.string.deleteAlert)
+
         }
-
-        alertDialog.show()
-
-        val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
-
-        if(socialProviderID == GoogleAuthProvider.PROVIDER_ID)
-            alertMessage?.setText(R.string.googleAlert)
-
-        else if (socialProviderID == TwitterAuthProvider.PROVIDER_ID)
-            alertMessage?.setText(R.string.twitterAlert)
-
     }
-
 
     private fun socialLinksHandle() {
 
@@ -113,26 +181,37 @@ class AccountActivity : AppCompatActivity() {
 
         if(isSocialLinked(EmailAuthProvider.PROVIDER_ID)) {
 
-            accountID.setText(currentUser.email)
+            accountEmail.setText(currentUser.email)
+
+            if(currentUser.displayName == null) {
+
+                accountName.setVisibility(View.GONE)
+                nameDecoration.setVisibility(View.GONE)
+
+            }
 
         } else if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID)) {
 
-            accountID.setText(getTwitterName())
-            accountIDdecoration.setCompoundDrawablesWithIntrinsicBounds(R.drawable.twitter_classic, 0, 0, 0)
-            accountIDdecoration.setText("Name")
+            accountName.setText(getTwitterName())
+
             connectSocials.setVisibility(View.GONE)
             googleConnect.setVisibility(View.GONE)
             twitterConnect.setVisibility(View.GONE)
+
             passwordReset.setVisibility(View.GONE)
 
+            accountEmail.setVisibility(View.GONE)
+            emailDecoration.setVisibility(View.GONE)
 
         } else if(isSocialLinked(GoogleAuthProvider.PROVIDER_ID)) {
 
-            accountID.setText(currentUser.email)
-            accountIDdecoration.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_icons8_google, 0, 0, 0)
+            accountEmail.setText(currentUser.email)
+            accountName.setText(currentUser.displayName)
+
             connectSocials.setVisibility(View.GONE)
             googleConnect.setVisibility(View.GONE)
             twitterConnect.setVisibility(View.GONE)
+
             passwordReset.setVisibility(View.GONE)
 
         }
@@ -154,17 +233,26 @@ class AccountActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_account)
 
+        val deleteAccount = findViewById<TextView>(R.id.delete_account)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
         passwordReset = findViewById(R.id.password_reset)
-        accountID = findViewById(R.id.accountID)
+        accountEmail = findViewById(R.id.account_email)
         twitterConnect = findViewById(R.id.twitter_connect)
         googleConnect = findViewById(R.id.google_connect)
-        accountIDdecoration = findViewById(R.id.accountID_decoration)
+        emailDecoration = findViewById(R.id.email_decoration)
         connectSocials = findViewById(R.id.connect_socials)
+        accountName = findViewById(R.id.account_name)
+        nameDecoration = findViewById(R.id.name_decoration)
 
         setSupportActionBar(toolbar)
-
         setAccountLayout()
+
+        deleteAccount.setOnClickListener {
+
+            createAlert(null, "delete")
+
+        }
+
 
         toolbar.setNavigationOnClickListener {
 
@@ -184,7 +272,7 @@ class AccountActivity : AppCompatActivity() {
 
             if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID)) {
 
-                createSocialAlert(TwitterAuthProvider.PROVIDER_ID)
+                createAlert(TwitterAuthProvider.PROVIDER_ID, "social")
 
             } else {
 
@@ -199,7 +287,7 @@ class AccountActivity : AppCompatActivity() {
 
             if(isSocialLinked(GoogleAuthProvider.PROVIDER_ID)) {
 
-                createSocialAlert(GoogleAuthProvider.PROVIDER_ID)
+                createAlert(GoogleAuthProvider.PROVIDER_ID, "social")
 
             } else {
 

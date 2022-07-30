@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         auth = Firebase.auth
 
-        email = findViewById(R.id.accountID_decoration)
+        email = findViewById(R.id.email_decoration)
         password = findViewById(R.id.password)
 
         val simple_sign_in = findViewById<Button>(R.id.sign_in)

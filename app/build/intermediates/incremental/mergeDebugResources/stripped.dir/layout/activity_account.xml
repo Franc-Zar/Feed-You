@@ -43,7 +43,31 @@
         tools:layout_editor_absoluteX="147dp">
 
         <TextView
-            android:id="@+id/accountID_decoration"
+            android:id="@+id/name_decoration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Name"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Example Example"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_decoration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_email_18"
@@ -57,7 +81,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/accountID"
+            android:id="@+id/account_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/asap"
@@ -69,28 +93,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <TextView
-            android:id="@+id/password_reset"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
-            android:drawablePadding="10dp"
-            android:focusable="true"
-            android:fontFamily="@font/asap"
-            android:padding="10dp"
-            android:paddingStart="20dp"
-            android:text="Password Reset"
-            android:textColor="#35424A"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/language"
@@ -115,10 +118,6 @@
             android:entries="@array/langs"
             android:padding="10dp"
             android:paddingStart="240dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/connect_socials"
@@ -164,9 +163,31 @@
             android:layout_height="20dp" />
 
         <TextView
-            android:id="@+id/deleteAccount"
+            android:id="@+id/password_reset"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Password Reset"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/delete_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
             android:drawableLeft="@drawable/ic_baseline_delete_forever_24"
             android:drawablePadding="10dp"
             android:fontFamily="@font/asap"

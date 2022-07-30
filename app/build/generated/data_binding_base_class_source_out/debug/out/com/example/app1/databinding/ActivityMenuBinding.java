@@ -26,9 +26,6 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView aboutFeedYou;
 
   @NonNull
-  public final TextView accountIDDecoration;
-
-  @NonNull
   public final TextView accountSettings;
 
   @NonNull
@@ -36,6 +33,9 @@ public final class ActivityMenuBinding implements ViewBinding {
 
   @NonNull
   public final TextView decorationPasswordReset;
+
+  @NonNull
+  public final TextView emailDecoration;
 
   @NonNull
   public final TextView logout;
@@ -56,17 +56,17 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-      @NonNull TextView accountIDDecoration, @NonNull TextView accountSettings,
-      @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
+      @NonNull TextView accountSettings, @NonNull TextView connectSocials,
+      @NonNull TextView decorationPasswordReset, @NonNull TextView emailDecoration,
       @NonNull TextView logout, @NonNull TextView passwordReset, @NonNull Switch pushNotifications,
       @NonNull TextView reportProblems, @NonNull Spinner spinnerThemes,
       @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
-    this.accountIDDecoration = accountIDDecoration;
     this.accountSettings = accountSettings;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
+    this.emailDecoration = emailDecoration;
     this.logout = logout;
     this.passwordReset = passwordReset;
     this.pushNotifications = pushNotifications;
@@ -108,12 +108,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.accountID_decoration;
-      TextView accountIDDecoration = ViewBindings.findChildViewById(rootView, id);
-      if (accountIDDecoration == null) {
-        break missingId;
-      }
-
       id = R.id.account_settings;
       TextView accountSettings = ViewBindings.findChildViewById(rootView, id);
       if (accountSettings == null) {
@@ -129,6 +123,12 @@ public final class ActivityMenuBinding implements ViewBinding {
       id = R.id.decoration_password_reset;
       TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
       if (decorationPasswordReset == null) {
+        break missingId;
+      }
+
+      id = R.id.email_decoration;
+      TextView emailDecoration = ViewBindings.findChildViewById(rootView, id);
+      if (emailDecoration == null) {
         break missingId;
       }
 
@@ -168,8 +168,8 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountIDDecoration,
-          accountSettings, connectSocials, decorationPasswordReset, logout, passwordReset,
+      return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
+          connectSocials, decorationPasswordReset, emailDecoration, logout, passwordReset,
           pushNotifications, reportProblems, spinnerThemes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);

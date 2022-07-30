@@ -61,7 +61,7 @@
             android:layout_height="20dp" />
 
         <TextView
-            android:id="@+id/accountID_decoration"
+            android:id="@+id/email_decoration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_color_lens_24"

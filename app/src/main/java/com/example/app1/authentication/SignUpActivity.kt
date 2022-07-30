@@ -10,7 +10,6 @@ import android.view.animation.DecelerateInterpolator
 import android.widget.*
 import com.example.app1.R
 import com.example.app1.settings.account.AccountActivity
-import com.example.app1.settings.menu.MenuActivity
 import com.example.app1.utilities.AccountUtilities.Companion.isValidPassword
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
@@ -45,33 +44,33 @@ class SignUpActivity : AppCompatActivity() {
 
         progress()
 
-        val email = findViewById<EditText>(R.id.accountID_decoration)
+        val email = findViewById<EditText>(R.id.email_decoration)
         val password = findViewById<EditText>(R.id.password)
 
-        val continue_sign_up = findViewById<Button>(R.id.sign_up)
-        val sign_in = findViewById<TextView>(R.id.sign_in)
-        val termini_condizioni = findViewById<CheckedTextView>(R.id.termini_condizioni)
+        val signUp = findViewById<Button>(R.id.sign_up)
+        val signIn = findViewById<TextView>(R.id.sign_in)
+        val terminiCondizioni = findViewById<CheckedTextView>(R.id.termini_condizioni)
 
-        sign_in.setOnClickListener {
+        signIn.setOnClickListener {
 
             super.finish()
 
         }
 
-        termini_condizioni.setOnClickListener {
+        terminiCondizioni.setOnClickListener {
 
-            termini_condizioni.toggle()
+            terminiCondizioni.toggle()
 
         }
 
-        continue_sign_up.setOnClickListener {
+        signUp.setOnClickListener {
 
             val email_chosen = email.text.toString().trim()
             val password_chosen = password.text.toString().trim()
 
             if (email_chosen != "" && password_chosen != "") {
 
-                if (termini_condizioni.isChecked) {
+                if (terminiCondizioni.isChecked) {
 
                     if(password_chosen.isValidPassword()) {
 
