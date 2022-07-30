@@ -27,13 +27,16 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.example.app1.settings.account.AccountActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.app1.settings.menu.AboutActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.settings.PasswordChangeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app1.settings.EmailAccountActivity"
+            android:name="com.example.app1.settings.account.AccountActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.settings.menu.MenuActivity"
@@ -119,6 +122,13 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

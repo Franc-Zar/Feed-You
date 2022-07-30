@@ -24,8 +24,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private var current_user = Firebase.auth.currentUser
 
-    public override fun onRestart() {
-        super.onRestart()
+    public override fun onResume() {
+        super.onResume()
 
         email.setText("")
         password.setText("")
@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         auth = Firebase.auth
 
-        email = findViewById(R.id.email)
+        email = findViewById(R.id.accountID_decoration)
         password = findViewById(R.id.password)
 
         val simple_sign_in = findViewById<Button>(R.id.sign_in)
@@ -74,6 +74,7 @@ class LoginActivity : AppCompatActivity() {
 
             //cambio activity --> signup
             switch_activity = Intent(this, SignUpActivity::class.java)
+            switch_activity.putExtra("requestType","simpleSignin")
             startActivity(switch_activity)
 
         }
@@ -82,6 +83,7 @@ class LoginActivity : AppCompatActivity() {
 
             switch_activity = Intent(this, TwitterActivity::class.java)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            switch_activity.putExtra("requestType", "signIn")
             startActivity(switch_activity)
 
         }
@@ -90,6 +92,7 @@ class LoginActivity : AppCompatActivity() {
 
             switch_activity = Intent(this, GoogleActivity::class.java)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            switch_activity.putExtra("requestType", "signIn")
             startActivity(switch_activity)
 
         }

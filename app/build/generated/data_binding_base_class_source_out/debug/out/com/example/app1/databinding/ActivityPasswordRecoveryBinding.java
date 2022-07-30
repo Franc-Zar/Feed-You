@@ -26,13 +26,13 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView AboutUsText;
 
   @NonNull
+  public final EditText accountIDDecoration;
+
+  @NonNull
   public final TextView appName;
 
   @NonNull
   public final TextView decorationPasswordReset;
-
-  @NonNull
-  public final EditText email;
 
   @NonNull
   public final TextView haveAnAccount;
@@ -47,15 +47,15 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView signIn;
 
   private ActivityPasswordRecoveryBinding(@NonNull ConstraintLayout rootView,
-      @NonNull TextView AboutUsText, @NonNull TextView appName,
-      @NonNull TextView decorationPasswordReset, @NonNull EditText email,
+      @NonNull TextView AboutUsText, @NonNull EditText accountIDDecoration,
+      @NonNull TextView appName, @NonNull TextView decorationPasswordReset,
       @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull Button resetPassword,
       @NonNull TextView signIn) {
     this.rootView = rootView;
     this.AboutUsText = AboutUsText;
+    this.accountIDDecoration = accountIDDecoration;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
-    this.email = email;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.resetPassword = resetPassword;
@@ -95,6 +95,12 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.accountID_decoration;
+      EditText accountIDDecoration = ViewBindings.findChildViewById(rootView, id);
+      if (accountIDDecoration == null) {
+        break missingId;
+      }
+
       id = R.id.app_name;
       TextView appName = ViewBindings.findChildViewById(rootView, id);
       if (appName == null) {
@@ -104,12 +110,6 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
       id = R.id.decoration_password_reset;
       TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
       if (decorationPasswordReset == null) {
-        break missingId;
-      }
-
-      id = R.id.email;
-      EditText email = ViewBindings.findChildViewById(rootView, id);
-      if (email == null) {
         break missingId;
       }
 
@@ -137,8 +137,9 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPasswordRecoveryBinding((ConstraintLayout) rootView, AboutUsText, appName,
-          decorationPasswordReset, email, haveAnAccount, logo, resetPassword, signIn);
+      return new ActivityPasswordRecoveryBinding((ConstraintLayout) rootView, AboutUsText,
+          accountIDDecoration, appName, decorationPasswordReset, haveAnAccount, logo, resetPassword,
+          signIn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

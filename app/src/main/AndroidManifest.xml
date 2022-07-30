@@ -14,24 +14,29 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".settings.account.AccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".settings.menu.AboutActivity"
             android:exported="false" />
         <activity
             android:name=".settings.PasswordChangeActivity"
             android:exported="false" />
         <activity
-            android:name=".settings.EmailAccountActivity"
+            android:name=".settings.account.AccountActivity"
             android:exported="false" />
         <activity
             android:name=".settings.menu.MenuActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
                 <data
                     android:host="example.com"
-                    android:scheme="https"/>
+                    android:scheme="https" />
             </intent-filter>
         </activity>
         <activity

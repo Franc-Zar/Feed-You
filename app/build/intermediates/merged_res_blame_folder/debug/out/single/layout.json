@@ -16,12 +16,16 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_password_change.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_menu.xml",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_menu.xml"
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/alert_social.xml",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/alert_social.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_anonymous.xml",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_anonymous.xml"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_menu.xml",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_menu.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
@@ -72,11 +76,11 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/fragment_lang.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_simple_sign_in.xml",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_simple_sign_in.xml"
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_about.xml",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_simple_sign_in.xml",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_simple_sign_in.xml"
     }
 ]

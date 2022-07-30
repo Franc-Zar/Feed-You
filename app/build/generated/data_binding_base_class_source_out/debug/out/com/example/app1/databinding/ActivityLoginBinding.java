@@ -27,6 +27,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView AboutUsText;
 
   @NonNull
+  public final EditText accountIDDecoration;
+
+  @NonNull
   public final AppCompatImageButton anonymousLogin;
 
   @NonNull
@@ -37,9 +40,6 @@ public final class ActivityLoginBinding implements ViewBinding {
 
   @NonNull
   public final TextView decorationUseSocial;
-
-  @NonNull
-  public final EditText email;
 
   @NonNull
   public final TextView forgotPassword;
@@ -63,18 +63,18 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final Button twitterConnect;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView AboutUsText,
-      @NonNull AppCompatImageButton anonymousLogin, @NonNull TextView appName,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView decorationUseSocial,
-      @NonNull EditText email, @NonNull TextView forgotPassword, @NonNull Button googleConnect,
-      @NonNull ImageView logo, @NonNull EditText password, @NonNull Button signIn,
-      @NonNull TextView signUp, @NonNull Button twitterConnect) {
+      @NonNull EditText accountIDDecoration, @NonNull AppCompatImageButton anonymousLogin,
+      @NonNull TextView appName, @NonNull TextView decorationPasswordReset,
+      @NonNull TextView decorationUseSocial, @NonNull TextView forgotPassword,
+      @NonNull Button googleConnect, @NonNull ImageView logo, @NonNull EditText password,
+      @NonNull Button signIn, @NonNull TextView signUp, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.AboutUsText = AboutUsText;
+    this.accountIDDecoration = accountIDDecoration;
     this.anonymousLogin = anonymousLogin;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
     this.decorationUseSocial = decorationUseSocial;
-    this.email = email;
     this.forgotPassword = forgotPassword;
     this.googleConnect = googleConnect;
     this.logo = logo;
@@ -117,6 +117,12 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.accountID_decoration;
+      EditText accountIDDecoration = ViewBindings.findChildViewById(rootView, id);
+      if (accountIDDecoration == null) {
+        break missingId;
+      }
+
       id = R.id.anonymous_login;
       AppCompatImageButton anonymousLogin = ViewBindings.findChildViewById(rootView, id);
       if (anonymousLogin == null) {
@@ -138,12 +144,6 @@ public final class ActivityLoginBinding implements ViewBinding {
       id = R.id.decoration_useSocial;
       TextView decorationUseSocial = ViewBindings.findChildViewById(rootView, id);
       if (decorationUseSocial == null) {
-        break missingId;
-      }
-
-      id = R.id.email;
-      EditText email = ViewBindings.findChildViewById(rootView, id);
-      if (email == null) {
         break missingId;
       }
 
@@ -189,8 +189,8 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityLoginBinding((ConstraintLayout) rootView, AboutUsText, anonymousLogin,
-          appName, decorationPasswordReset, decorationUseSocial, email, forgotPassword,
+      return new ActivityLoginBinding((ConstraintLayout) rootView, AboutUsText, accountIDDecoration,
+          anonymousLogin, appName, decorationPasswordReset, decorationUseSocial, forgotPassword,
           googleConnect, logo, password, signIn, signUp, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);

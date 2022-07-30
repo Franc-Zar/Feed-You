@@ -5,8 +5,6 @@ import android.content.IntentSender
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.Window
-import android.view.WindowManager
 import android.widget.Toast
 import com.example.app1.MainActivity
 import com.example.app1.R
@@ -17,7 +15,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.FirebaseException
+import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -27,14 +26,14 @@ class GoogleActivity : AppCompatActivity() {
     private lateinit var oneTapClient: SignInClient
     private lateinit var signInRequest: BeginSignInRequest
     private lateinit var googleSignInClient: GoogleSignInClient
-    private val auth = Firebase.auth
+    private val currentUser = Firebase.auth.currentUser
     private lateinit var switch_activity: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setUp()
-        startSignInProcess()
+        startAuthProcess()
 
     }
 
@@ -59,7 +58,7 @@ class GoogleActivity : AppCompatActivity() {
 
     }
 
-    private fun startSignInProcess() {
+    private fun startAuthProcess() {
 
         oneTapClient.beginSignIn(signInRequest)
             .addOnSuccessListener(this) { result ->
@@ -102,38 +101,100 @@ class GoogleActivity : AppCompatActivity() {
 
     }
 
-    // [START auth_with_google]
-    private fun firebaseAuthWithGoogle(idToken: String) {
+    private fun linkAccountWithGoogle(idToken: String) {
 
         val credential = GoogleAuthProvider.getCredential(idToken, null)
-        auth.signInWithCredential(credential)
+        currentUser!!.linkWithCredential(credential)
             .addOnCompleteListener(this) { task ->
 
                 if (task.isSuccessful) {
 
-                    // Sign in success, update UI with the signed-in user's information
-                    val user = auth.currentUser
+                    finish()
+                    overridePendingTransition(0, 0)
 
+                    // Sign in success, update UI with the signed-in user's information
+                    Toast.makeText(
+                        baseContext, "Google Account linked successfully.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+
+                } else {
+
+                    when (task.exception) {
+
+                        is FirebaseAuthUserCollisionException -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Provided Google Account is already associated.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+
+                        is FirebaseException -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "User has already been linked to a Google Account.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+
+                        else -> {
+
+                            // Handle failure.
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Something went wrong, please try again.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+                    }
+                }
+            }
+    }
+
+
+    // [START auth_with_google]
+    private fun signInWithGoogle(idToken: String) {
+
+        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        Firebase.auth.signInWithCredential(credential)
+            .addOnCompleteListener(this) { task ->
+
+                if (task.isSuccessful) {
+
+                    finish()
+                    overridePendingTransition(0, 0)
+
+                    // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(
                         baseContext, "Login Successful.",
                         Toast.LENGTH_SHORT
                     ).show()
-
-                    finish()
-                    overridePendingTransition(0, 0)
 
                     switch_activity = Intent(this, MainActivity::class.java)
                     startActivity(switch_activity)
 
                     } else {
                         // If sign in fails, display a message to the user.
+                        finish()
+                        overridePendingTransition(0, 0)
+
                         Toast.makeText(
                             baseContext, "Something went wrong, please try again.",
                             Toast.LENGTH_SHORT
                         ).show()
-
-                        finish()
-                        overridePendingTransition(0, 0)
 
                     }
                 }
@@ -149,11 +210,18 @@ class GoogleActivity : AppCompatActivity() {
 
                 if (requestCode == RC_SIGN_IN) {
                     val task = GoogleSignIn.getSignedInAccountFromIntent(data)
+
                     try {
                         // Google Sign In was successful, authenticate with Firebase
+                        val requestType = intent.extras!!.getString("requestType").toString()
 
                         val account = task.getResult(ApiException::class.java)!!
-                        firebaseAuthWithGoogle(account.idToken!!)
+
+                        if(requestType == "signIn")
+                            signInWithGoogle(account.idToken!!)
+
+                        else if (requestType == "linkAccount")
+                            linkAccountWithGoogle(account.idToken!!)
 
                     } catch (e: ApiException) {
                         // Google Sign In failed, update UI appropriately

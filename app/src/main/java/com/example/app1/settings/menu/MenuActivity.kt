@@ -4,22 +4,29 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
-import com.example.app1.settings.EmailAccountActivity
+import com.example.app1.authentication.AnonymousActivity
+import com.example.app1.authentication.LoginActivity
+import com.example.app1.authentication.SignUpActivity
+import com.example.app1.settings.account.AccountActivity
+import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
 import com.google.android.material.appbar.MaterialToolbar
+import com.google.firebase.auth.AdditionalUserInfo
+import com.google.firebase.auth.EmailAuthProvider
+import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.auth.TwitterAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var switch_activity: Intent
-    private var current_user = Firebase.auth.currentUser!!
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
         menuInflater.inflate(R.menu.top_bar, menu)
-        val menuItem = menu?.findItem(R.id.app_bar_search)
         return super.onCreateOptionsMenu(menu)
 
     }
@@ -30,9 +37,10 @@ class MenuActivity : AppCompatActivity() {
 
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
         val aboutUs = findViewById<TextView>(R.id.about_feed_you)
-        val inviteFriends = findViewById<TextView>(R.id.invite_friends)
-        val account_settings = findViewById<TextView>(R.id.account_settings)
-        setSupportActionBar(toolbar)
+        val inviteFriends = findViewById<TextView>(R.id.connect_socials)
+        val accountSettings = findViewById<TextView>(R.id.account_settings)
+        val logout = findViewById<TextView>(R.id.logout)
+
 
         toolbar.setNavigationOnClickListener {
 
@@ -40,11 +48,28 @@ class MenuActivity : AppCompatActivity() {
 
         }
 
-        account_settings.setOnClickListener {
+        accountSettings.setOnClickListener {
 
-            switch_activity = Intent(this, EmailAccountActivity::class.java)
-            startActivity(switch_activity)
+            if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID) ||
+                isSocialLinked(GoogleAuthProvider.PROVIDER_ID) ||
+                    isSocialLinked(EmailAuthProvider.PROVIDER_ID)
+            ) {
 
+                switch_activity = Intent(this, AccountActivity::class.java)
+                startActivity(switch_activity)
+
+            } else {
+
+                Toast.makeText(
+                    baseContext, "You first need to create a Feed You Account.",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+                switch_activity = Intent(this, SignUpActivity::class.java)
+                switch_activity.putExtra("requestType", "createAccountRedirect")
+                startActivity(switch_activity)
+
+            }
         }
 
         aboutUs.setOnClickListener {
@@ -55,6 +80,17 @@ class MenuActivity : AppCompatActivity() {
         }
 
         inviteFriends.setOnClickListener {
+
+        }
+
+
+        logout.setOnClickListener {
+
+            Firebase.auth.signOut()
+
+            switch_activity = Intent(this, LoginActivity::class.java)
+            switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(switch_activity)
 
         }
     }

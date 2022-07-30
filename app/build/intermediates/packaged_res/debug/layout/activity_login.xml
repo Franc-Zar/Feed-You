@@ -7,7 +7,7 @@
     tools:context=".authentication.LoginActivity">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/accountID_decoration"
         android:layout_width="0dp"
         android:layout_height="43dp"
         android:layout_marginStart="45dp"
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/accountID_decoration"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#248B9C" />
 
@@ -124,7 +124,7 @@
         android:textColor="#989EB1"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/accountID_decoration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,11 +188,11 @@
         android:layout_marginStart="75dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="40dp"
-        android:clickable="true"
         android:background="?attr/selectableItemBackground"
+        android:clickable="true"
         android:focusable="true"
         android:fontFamily="@font/asap"
-        android:text="@string/forgot_password"
+        android:text="@string/forgotPassword"
         android:textColor="#35424A"
         android:textSize="18sp"
         android:textStyle="bold"

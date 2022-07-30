@@ -15,19 +15,22 @@ import com.google.firebase.ktx.Firebase
 
 class TwitterActivity : AppCompatActivity() {
 
-    private val auth = Firebase.auth
+
     private lateinit var switch_activity: Intent
     private val provider = OAuthProvider.newBuilder(TwitterAuthProvider.PROVIDER_ID)
-    private val pending_result: Task<AuthResult>? = auth.pendingAuthResult
+    private val pending_result: Task<AuthResult>? = Firebase.auth.pendingAuthResult
+    private val currentUser = Firebase.auth.currentUser
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (auth.currentUser != null) {
+        val requestType = intent.extras!!.getString("requestType").toString()
+
+        if (requestType == "linkAccount") {
 
             linkTwitterAccount()
 
-        } else {
+        } else if(requestType == "signIn") {
 
             if (pending_result != null) {
 
@@ -38,9 +41,7 @@ class TwitterActivity : AppCompatActivity() {
                 twitterSignIn()
 
             }
-
         }
-
     }
 
 
@@ -81,38 +82,69 @@ class TwitterActivity : AppCompatActivity() {
         // The user is already signed-in.
         // The user is already signed-in.
 
-        auth.currentUser!!
+        currentUser!!
             .startActivityForLinkWithProvider( /* activity= */this, provider.build())
-            .addOnSuccessListener {
-                // Twitter credential is linked to the current user.
-                // IdP data available in
-                // authResult.getAdditionalUserInfo().getProfile().
-                // The OAuth access token can also be retrieved:
-                // authResult.getCredential().getAccessToken().
-                // The OAuth secret can be retrieved by calling:
-                // authResult.getCredential().getSecret().
-                finish()
-                overridePendingTransition(0, 0)
+            .addOnCompleteListener { task ->
 
-                Toast.makeText(
-                    baseContext, "Twitter Account connected successfully!",
-                    Toast.LENGTH_SHORT
-                ).show()
+                if (task.isSuccessful) {
+                    // Twitter credential is linked to the current user.
+                    // IdP data available in
+                    // authResult.getAdditionalUserInfo().getProfile().
+                    // The OAuth access token can also be retrieved:
+                    // authResult.getCredential().getAccessToken().
+                    // The OAuth secret can be retrieved by calling:
+                    // authResult.getCredential().getSecret().
+                        finish()
+                        overridePendingTransition(0, 0)
 
+                        Toast.makeText(
+                            baseContext, "Twitter Account connected successfully!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                } else {
+
+                    when (task.exception) {
+
+                        is FirebaseAuthWebException -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Operation canceled by user.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+
+                        is FirebaseAuthUserCollisionException -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Provided Twitter Account is already associated.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+
+                        else -> {
+
+                            // Handle failure.
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Something went wrong, please try again.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+                    }
+                }
             }
-            .addOnFailureListener {
-                // Handle failure.
-                finish()
-                overridePendingTransition(0, 0)
-
-                Toast.makeText(
-                    baseContext, "Something went wrong, please try again.",
-                    Toast.LENGTH_SHORT
-                ).show()
-
-            }
-
-
     }
 
 
@@ -121,10 +153,11 @@ class TwitterActivity : AppCompatActivity() {
 
         // There's no pending result so you need to start the sign-in flow.
         // See below.
-        auth
+        Firebase.auth
             .startActivityForSignInWithProvider(this, provider.build())
-            .addOnSuccessListener(
-                OnSuccessListener<AuthResult?> {
+            .addOnCompleteListener { task ->
+
+                if (task.isSuccessful) {
                     // User is signed in.
                     // IdP data available in
                     // authResult.getAdditionalUserInfo().getProfile().
@@ -144,19 +177,45 @@ class TwitterActivity : AppCompatActivity() {
                     switch_activity = Intent(this, MainActivity::class.java)
                     startActivity(switch_activity)
 
-                })
+                } else {
 
-            .addOnFailureListener(
-                OnFailureListener {
-                    // Handle failure.
+                    when (task.exception) {
 
-                    finish()
-                    overridePendingTransition(0, 0)
+                        is FirebaseAuthWebException -> {
 
-                    Toast.makeText(
-                        baseContext, "Something went wrong, please try again.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                })
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Authentication failed: operation canceled by user.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+
+                        is FirebaseAuthException -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Authentication failed: permissions not granted by user.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        } else -> {
+
+                            finish()
+                            overridePendingTransition(0, 0)
+
+                            Toast.makeText(
+                                baseContext, "Something went wrong, please try again.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        }
+                    }
+                }
+            }
     }
 }

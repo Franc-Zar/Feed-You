@@ -26,7 +26,7 @@ class PasswordRecoveryActivity : AppCompatActivity() {
 
         val sign_in = findViewById<TextView>(R.id.sign_in)
         val reset_password = findViewById<Button>(R.id.reset_password)
-        val email = findViewById<EditText>(R.id.email)
+        val email = findViewById<EditText>(R.id.accountID_decoration)
 
         reset_password.setOnClickListener{
 

@@ -25,6 +25,9 @@ public final class ActivitySignUpBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final EditText accountIDDecoration;
+
+  @NonNull
   public final TextView appName;
 
   @NonNull
@@ -32,9 +35,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
 
   @NonNull
   public final TextView decorationWelcome;
-
-  @NonNull
-  public final EditText email;
 
   @NonNull
   public final TextView haveAnAccount;
@@ -57,17 +57,17 @@ public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   public final CheckedTextView terminiCondizioni;
 
-  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
+  private ActivitySignUpBinding(@NonNull ConstraintLayout rootView,
+      @NonNull EditText accountIDDecoration, @NonNull TextView appName,
       @NonNull TextView decorationPasswordReset, @NonNull TextView decorationWelcome,
-      @NonNull EditText email, @NonNull TextView haveAnAccount, @NonNull ImageView logo,
-      @NonNull EditText password, @NonNull ProgressBar passwordResetProgress,
-      @NonNull TextView signIn, @NonNull Button signUp,
+      @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull EditText password,
+      @NonNull ProgressBar passwordResetProgress, @NonNull TextView signIn, @NonNull Button signUp,
       @NonNull CheckedTextView terminiCondizioni) {
     this.rootView = rootView;
+    this.accountIDDecoration = accountIDDecoration;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
     this.decorationWelcome = decorationWelcome;
-    this.email = email;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.password = password;
@@ -104,6 +104,12 @@ public final class ActivitySignUpBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.accountID_decoration;
+      EditText accountIDDecoration = ViewBindings.findChildViewById(rootView, id);
+      if (accountIDDecoration == null) {
+        break missingId;
+      }
+
       id = R.id.app_name;
       TextView appName = ViewBindings.findChildViewById(rootView, id);
       if (appName == null) {
@@ -119,12 +125,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
       id = R.id.decoration_welcome;
       TextView decorationWelcome = ViewBindings.findChildViewById(rootView, id);
       if (decorationWelcome == null) {
-        break missingId;
-      }
-
-      id = R.id.email;
-      EditText email = ViewBindings.findChildViewById(rootView, id);
-      if (email == null) {
         break missingId;
       }
 
@@ -170,8 +170,8 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, appName,
-          decorationPasswordReset, decorationWelcome, email, haveAnAccount, logo, password,
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, accountIDDecoration, appName,
+          decorationPasswordReset, decorationWelcome, haveAnAccount, logo, password,
           passwordResetProgress, signIn, signUp, terminiCondizioni);
     }
     String missingId = rootView.getResources().getResourceName(id);

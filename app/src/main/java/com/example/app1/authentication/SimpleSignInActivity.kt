@@ -27,88 +27,77 @@ class SimpleSignInActivity : AppCompatActivity() {
 
         if (email_chosen != "" && password_chosen != "") {
 
-            if (android.util.Patterns.EMAIL_ADDRESS.matcher(email_chosen.trim()).matches()) {
+            auth.signInWithEmailAndPassword(email_chosen, password_chosen)
+                .addOnCompleteListener { task ->
 
-                auth.signInWithEmailAndPassword(email_chosen, password_chosen)
-                    .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
 
-                        if (task.isSuccessful) {
-                            // Sign in success, update UI with the signed-in user's information
-                            val user = auth.currentUser
+                        finish()
 
-                            finish()
+                        Toast.makeText(
+                            baseContext, "Login successful.",
+                            Toast.LENGTH_SHORT
+                        ).show()
 
-                            Toast.makeText(
-                                baseContext, "Login successful.",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                        switch_activity = Intent(this, MainActivity::class.java)
+                        startActivity(switch_activity)
 
-                            switch_activity = Intent(this, MainActivity::class.java)
-                            startActivity(switch_activity)
+                    } else {
 
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            when (task.exception) {
+                        // If sign in fails, display a message to the user.
+                        when (task.exception) {
 
-                                is FirebaseAuthInvalidCredentialsException -> {
+                            is FirebaseAuthInvalidCredentialsException -> {
 
-                                    finish()
-                                    overridePendingTransition(0, 0)
+                                finish()
+                                overridePendingTransition(0, 0)
 
-                                    Toast.makeText(
-                                        baseContext, "Authentication failed: invalid credential!",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                Toast.makeText(
+                                    baseContext, "Authentication failed: invalid credential!",
+                                    Toast.LENGTH_SHORT
+                                ).show()
 
-                                }
+                            }
 
-                                is FirebaseTooManyRequestsException -> {
+                            is FirebaseTooManyRequestsException -> {
 
-                                    finish()
-                                    overridePendingTransition(0, 0)
+                                finish()
+                                overridePendingTransition(0, 0)
 
-                                    Toast.makeText(
-                                        baseContext, "Account temporarily disabled due to many failed login attempts: restore it by resetting your password or try again later.",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                Toast.makeText(
+                                    baseContext, "Account temporarily disabled due to many failed login attempts: restore it by resetting your password or try again later.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
 
-                                }
+                            }
 
-                                is FirebaseAuthInvalidUserException -> {
+                            is FirebaseAuthInvalidUserException -> {
 
-                                    finish()
-                                    overridePendingTransition(0, 0)
+                                finish()
+                                overridePendingTransition(0, 0)
 
-                                    Toast.makeText(
-                                        baseContext, "Authentication failed: user with email: " + email_chosen + " doesn't exists." ,
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                Toast.makeText(
+                                    baseContext,
+                                    "Authentication failed: user with email: " + email_chosen + " doesn't exists.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
 
-                                }
+                            }
 
-                                else -> {
+                            else -> {
 
-                                    finish()
-                                    overridePendingTransition(0, 0)
+                                finish()
+                                overridePendingTransition(0, 0)
 
-                                    Toast.makeText(
-                                        baseContext, "Something went wrong, please try again.",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                Toast.makeText(
+                                    baseContext, "Something went wrong, please try again.",
+                                    Toast.LENGTH_SHORT
+                                ).show()
 
-                                }
                             }
                         }
                     }
-                } else {
-
-                finish()
-                overridePendingTransition(0, 0)
-
-                Toast.makeText(
-                        baseContext, "Autentication failed: malformed email.",
-                        Toast.LENGTH_SHORT
-                    ).show()
 
                 }
 
@@ -118,7 +107,7 @@ class SimpleSignInActivity : AppCompatActivity() {
                 overridePendingTransition(0, 0)
 
                 Toast.makeText(
-                    baseContext, "email and/or password missing!",
+                    baseContext, "Email and/or password missing!",
                     Toast.LENGTH_SHORT
                 ).show()
             }
