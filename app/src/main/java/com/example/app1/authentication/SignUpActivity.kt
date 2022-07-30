@@ -76,89 +76,15 @@ class SignUpActivity : AppCompatActivity() {
                     if(password_chosen.isValidPassword()) {
 
                         val requestType = intent.extras!!.getString("requestType").toString()
-                        val credential = EmailAuthProvider.getCredential(email_chosen, password_chosen)
 
                         if(requestType == "createAccountRedirect") {
 
-                            Firebase.auth.currentUser!!.linkWithCredential(credential)
-                                .addOnCompleteListener(this) { task ->
-
-                                    if (task.isSuccessful) {
-
-                                        finish()
-
-                                        Toast.makeText(
-                                            baseContext, "Account created successfully!",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-
-                                        switch_activity = Intent(this, AccountActivity::class.java)
-                                        startActivity(switch_activity)
-
-                                    } else {
-
-                                        finish()
-
-                                        Toast.makeText(
-                                            baseContext, "Account created successfully, but redirect failed.",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-
-                                    }
-                                }
+                            createAccountForAnonymous(email_chosen, password_chosen)
 
                         } else {
 
-                                Firebase.auth.createUserWithEmailAndPassword(email_chosen, password_chosen)
-                                .addOnCompleteListener(this) { task ->
+                            simpleCreateAccount(email_chosen, password_chosen)
 
-                                    if (task.isSuccessful) {
-                                        // Sign in success, update UI with the signed-in user's information
-
-                                        finish()
-
-                                        Toast.makeText(
-                                            baseContext, "Account created successfully!",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-
-                                    } else {
-
-                                        when (task.exception) {
-
-                                            is FirebaseAuthUserCollisionException ->
-
-                                                Toast.makeText(
-                                                    baseContext,
-                                                    "A user with email: " + email_chosen + " already exists!",
-                                                    Toast.LENGTH_SHORT
-                                                ).show()
-
-                                            is FirebaseAuthWeakPasswordException ->
-
-                                                Toast.makeText(
-                                                    baseContext,
-                                                    "Password should be at least 6 characters!",
-                                                    Toast.LENGTH_SHORT
-                                                ).show()
-
-                                            is FirebaseAuthInvalidCredentialsException ->
-
-                                                Toast.makeText(
-                                                    baseContext,
-                                                    "Malformed email.",
-                                                    Toast.LENGTH_SHORT
-                                                ).show()
-
-                                            else -> Toast.makeText(
-                                                baseContext,
-                                                "Something went wrong, please try again.",
-                                                Toast.LENGTH_SHORT
-                                            ).show()
-
-                                        }
-                                    }
-                                }
                         }
 
                     } else {
@@ -187,5 +113,91 @@ class SignUpActivity : AppCompatActivity() {
 
             }
         }
+    }
+
+    private fun createAccountForAnonymous(email: String, password: String) {
+
+        val credential = EmailAuthProvider.getCredential(email, password)
+
+        Firebase.auth.currentUser!!.linkWithCredential(credential)
+            .addOnCompleteListener(this) { task ->
+
+                if (task.isSuccessful) {
+
+                    finish()
+
+                    Toast.makeText(
+                        baseContext, "Account created successfully!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                    switch_activity = Intent(this, AccountActivity::class.java)
+                    startActivity(switch_activity)
+
+                } else {
+
+                    finish()
+
+                    Toast.makeText(
+                        baseContext, "Account created successfully, but redirect failed.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                }
+            }
+    }
+
+    private fun simpleCreateAccount(email: String, password: String) {
+
+        Firebase.auth.createUserWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+
+                    finish()
+
+                    Toast.makeText(
+                        baseContext, "Account created successfully!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+
+                } else {
+
+                    when (task.exception) {
+
+                        is FirebaseAuthUserCollisionException ->
+
+                            Toast.makeText(
+                                baseContext,
+                                "A user with email: " + email + " already exists!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        is FirebaseAuthWeakPasswordException ->
+
+                            Toast.makeText(
+                                baseContext,
+                                "Password should be at least 6 characters!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        is FirebaseAuthInvalidCredentialsException ->
+
+                            Toast.makeText(
+                                baseContext,
+                                "Malformed email.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                        else -> Toast.makeText(
+                            baseContext,
+                            "Something went wrong, please try again.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                    }
+                }
+            }
     }
 }
