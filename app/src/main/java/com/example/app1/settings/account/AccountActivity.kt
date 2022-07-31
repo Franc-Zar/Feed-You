@@ -24,7 +24,6 @@ import com.google.firebase.ktx.Firebase
 class AccountActivity : AppCompatActivity() {
 
     private lateinit var switch_activity: Intent
-    private val currentUser = Firebase.auth.currentUser!!
     private lateinit var twitterConnect: Button
     private lateinit var googleConnect: Button
     private lateinit var accountEmail: TextView
@@ -38,6 +37,7 @@ class AccountActivity : AppCompatActivity() {
 
         Firebase.auth.currentUser!!.delete()
             .addOnCompleteListener { task ->
+
                 if (task.isSuccessful) {
 
                     Firebase.auth.signOut()
@@ -77,21 +77,17 @@ class AccountActivity : AppCompatActivity() {
                             startActivity(switch_activity)
 
                         }
-
                     }
-
                 }
             }
-
     }
-
 
 
     private fun createAlert(socialProviderID: String?, alertType: String) {
 
         val alertDialog = AlertDialog.Builder(this).create()
 
-        alertDialog.setView(layoutInflater.inflate(R.layout.alert_social,null))
+        alertDialog.setView(layoutInflater.inflate(R.layout.alert_feed_you,null))
 
         alertDialog.setButton(
             AlertDialog.BUTTON_NEUTRAL, "Cancel"
@@ -181,14 +177,15 @@ class AccountActivity : AppCompatActivity() {
 
         if(isSocialLinked(EmailAuthProvider.PROVIDER_ID)) {
 
-            accountEmail.setText(currentUser.email)
+            accountEmail.setText(Firebase.auth.currentUser!!.email)
 
-            if(currentUser.displayName == null) {
+            if(Firebase.auth.currentUser!!.displayName == null) {
 
                 accountName.setVisibility(View.GONE)
                 nameDecoration.setVisibility(View.GONE)
 
-            }
+            } else
+                accountName.setText(Firebase.auth.currentUser!!.displayName)
 
         } else if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID)) {
 
@@ -205,8 +202,8 @@ class AccountActivity : AppCompatActivity() {
 
         } else if(isSocialLinked(GoogleAuthProvider.PROVIDER_ID)) {
 
-            accountEmail.setText(currentUser.email)
-            accountName.setText(currentUser.displayName)
+            accountEmail.setText(Firebase.auth.currentUser!!.email)
+            accountName.setText(Firebase.auth.currentUser!!.displayName)
 
             connectSocials.setVisibility(View.GONE)
             googleConnect.setVisibility(View.GONE)

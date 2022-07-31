@@ -38,18 +38,23 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final EditText oldPassword;
 
   @NonNull
+  public final TextView textView;
+
+  @NonNull
   public final MaterialToolbar toolbarPasswordChange;
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
       @NonNull Button changePassword, @NonNull EditText confirmPassword,
       @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
-      @NonNull EditText oldPassword, @NonNull MaterialToolbar toolbarPasswordChange) {
+      @NonNull EditText oldPassword, @NonNull TextView textView,
+      @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
     this.changePassword = changePassword;
     this.confirmPassword = confirmPassword;
     this.decorationPasswordReset = decorationPasswordReset;
     this.newPassword = newPassword;
     this.oldPassword = oldPassword;
+    this.textView = textView;
     this.toolbarPasswordChange = toolbarPasswordChange;
   }
 
@@ -110,6 +115,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView;
+      TextView textView = ViewBindings.findChildViewById(rootView, id);
+      if (textView == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar_password_change;
       MaterialToolbar toolbarPasswordChange = ViewBindings.findChildViewById(rootView, id);
       if (toolbarPasswordChange == null) {
@@ -117,7 +128,7 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
       }
 
       return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, changePassword,
-          confirmPassword, decorationPasswordReset, newPassword, oldPassword,
+          confirmPassword, decorationPasswordReset, newPassword, oldPassword, textView,
           toolbarPasswordChange);
     }
     String missingId = rootView.getResources().getResourceName(id);

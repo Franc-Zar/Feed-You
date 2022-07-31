@@ -22,7 +22,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var switch_activity: Intent
     private lateinit var email: EditText
     private lateinit var password: EditText
-    private var current_user = Firebase.auth.currentUser
 
     public override fun onResume() {
         super.onResume()
@@ -35,8 +34,7 @@ class LoginActivity : AppCompatActivity() {
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        current_user = null
-        if (current_user != null) {
+        if (Firebase.auth.currentUser != null) {
 
             switch_activity = Intent(this, MainActivity::class.java)
             startActivity(switch_activity)

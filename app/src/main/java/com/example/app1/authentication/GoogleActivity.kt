@@ -26,7 +26,6 @@ class GoogleActivity : AppCompatActivity() {
     private lateinit var oneTapClient: SignInClient
     private lateinit var signInRequest: BeginSignInRequest
     private lateinit var googleSignInClient: GoogleSignInClient
-    private val currentUser = Firebase.auth.currentUser
     private lateinit var switch_activity: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -104,7 +103,7 @@ class GoogleActivity : AppCompatActivity() {
     private fun linkAccountWithGoogle(idToken: String) {
 
         val credential = GoogleAuthProvider.getCredential(idToken, null)
-        currentUser!!.linkWithCredential(credential)
+        Firebase.auth.currentUser!!.linkWithCredential(credential)
             .addOnCompleteListener(this) { task ->
 
                 if (task.isSuccessful) {

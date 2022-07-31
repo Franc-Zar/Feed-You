@@ -9,8 +9,9 @@ class AccountUtilities {
 
     companion object {
 
-        // la password deve avere almeno una cifra, almeno un carattere minuscolo, almeno un carattere maiuscolo, almeno un carattere speciale,
-        // almeno una lunghezza di 6 caratteri
+        /** la password deve avere almeno una cifra, almeno un carattere minuscolo, almeno un carattere maiuscolo, almeno un carattere speciale,
+        almeno una lunghezza di 6 caratteri
+        */
         private val password_regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[{}@#$%^&+=*?'_ç£!<>])(?=\\S+$).{6,}$"
         private val pattern = Pattern.compile(password_regex)
 
@@ -21,13 +22,13 @@ class AccountUtilities {
 
         }
 
-        fun getTwitterName(): String {
+        fun getTwitterName(): String? {
 
             for(provider in Firebase.auth.currentUser!!.providerData)
                 if(provider.providerId == TwitterAuthProvider.PROVIDER_ID)
                     return provider.displayName.toString()
 
-            return ""
+            return null
 
         }
 

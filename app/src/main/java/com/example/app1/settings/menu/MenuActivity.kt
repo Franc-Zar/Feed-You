@@ -1,24 +1,31 @@
 package com.example.app1.settings.menu
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
-import com.example.app1.authentication.AnonymousActivity
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
 import com.example.app1.settings.account.AccountActivity
 import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
+import com.example.app1.utilities.linkUtilities.Companion.generateContentLink
 import com.google.android.material.appbar.MaterialToolbar
-import com.google.firebase.auth.AdditionalUserInfo
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.TwitterAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.example.app1.utilities.config.Companion.assistanceMail
+import com.example.app1.utilities.config.Companion.domain
+import com.example.app1.utilities.config.Companion.inviteLink
+import com.example.app1.utilities.config.Companion.reportEmailBody
+import com.example.app1.utilities.config.Companion.reportEmailSubject
+
 
 class MenuActivity : AppCompatActivity() {
 
@@ -40,13 +47,38 @@ class MenuActivity : AppCompatActivity() {
         val inviteFriends = findViewById<TextView>(R.id.connect_socials)
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
-
+        val reportProblem = findViewById<TextView>(R.id.report_problems)
 
         toolbar.setNavigationOnClickListener {
 
             finish()
 
         }
+
+        reportProblem.setOnClickListener {
+
+            val reportBugIntent = Intent(Intent.ACTION_SEND)
+            reportBugIntent.type = "message/rfc822"
+            reportBugIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(assistanceMail))
+            reportBugIntent.putExtra(Intent.EXTRA_SUBJECT, reportEmailSubject)
+            reportBugIntent.putExtra(Intent.EXTRA_TEXT, reportEmailBody)
+            reportBugIntent.putExtra(Intent.EXTRA_TITLE, "Choose an e-mail application")
+
+            try {
+
+                startActivity(Intent.createChooser(reportBugIntent, "Send mail..."))
+
+            } catch (ex: ActivityNotFoundException) {
+
+                Toast.makeText(
+                    this,
+                    "Operation failed: there are no email clients installed.",
+                    Toast.LENGTH_SHORT
+                ).show()
+
+            }
+        }
+
 
         accountSettings.setOnClickListener {
 
@@ -81,17 +113,63 @@ class MenuActivity : AppCompatActivity() {
 
         inviteFriends.setOnClickListener {
 
-        }
+            onShareClicked(inviteLink, domain)
 
+        }
 
         logout.setOnClickListener {
 
-            Firebase.auth.signOut()
-
-            switch_activity = Intent(this, LoginActivity::class.java)
-            switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            startActivity(switch_activity)
+            createAlert()
 
         }
     }
+
+
+    private fun onShareClicked(url: String, domain: String) {
+        val link = generateContentLink(url, domain)
+
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, link.toString())
+
+        startActivity(Intent.createChooser(intent, "Share Link"))
+
+    }
+
+    private fun createAlert() {
+
+        val alertDialog = AlertDialog.Builder(this).create()
+
+        alertDialog.setView(layoutInflater.inflate(R.layout.alert_feed_you,null))
+
+        alertDialog.setButton(
+            AlertDialog.BUTTON_NEUTRAL, "Cancel"
+        ) {
+                dialog, which -> dialog.dismiss()
+        }
+
+        alertDialog.setButton(
+            AlertDialog.BUTTON_POSITIVE, "Logout"
+        ) {
+                dialog, which -> logout()
+        }
+
+        alertDialog.show()
+        val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
+
+        alertMessage?.setText(R.string.logoutAlert)
+
+
+    }
+
+    private fun logout() {
+
+        Firebase.auth.signOut()
+
+        switch_activity = Intent(this, LoginActivity::class.java)
+        switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        startActivity(switch_activity)
+
+    }
+
 }

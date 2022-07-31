@@ -52,6 +52,7 @@ drawable ic_baseline_person_add_24
 drawable ic_baseline_remove_circle_24
 drawable ic_baseline_search_24
 drawable ic_baseline_settings_24
+drawable ic_baseline_topic_24
 drawable ic_baseline_visibility_18
 drawable ic_baseline_visibility_off_18
 drawable ic_baseline_vpn_key_18
@@ -119,12 +120,14 @@ id spinner_languages
 id spinner_themes
 id swiperefresh
 id termini_condizioni
+id textView
 id title
 id toolbar
 id toolbar_about_us
 id toolbar_account
 id toolbar_main
 id toolbar_password_change
+id topics
 id tv_category
 id tv_frag_title
 id tv_sorry
@@ -148,7 +151,7 @@ layout activity_settings
 layout activity_sign_up
 layout activity_simple_sign_in
 layout activity_twitter
-layout alert_social
+layout alert_feed_you
 layout fragment_lang
 layout fragment_topics
 layout rv_row
@@ -180,11 +183,15 @@ string have_account
 string hello_blank_fragment
 string lang
 string large_text
+string logoutAlert
 string messages_header
+string newPasswordHint
 string prefTopics
 string project_id
 string redirect
 string reply_title
+string reportEmailBody
+string reportEmailSubject
 string signature_title
 string sorry
 string sync_header

@@ -59,6 +59,9 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   @NonNull
+  public final TextView topics;
+
+  @NonNull
   public final Button twitterConnect;
 
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
@@ -67,7 +70,7 @@ public final class ActivityAccountBinding implements ViewBinding {
       @NonNull TextView emailDecoration, @NonNull Button googleConnect, @NonNull TextView language,
       @NonNull TextView nameDecoration, @NonNull TextView passwordReset,
       @NonNull Spinner spinnerLanguages, @NonNull MaterialToolbar toolbarAccount,
-      @NonNull Button twitterConnect) {
+      @NonNull TextView topics, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
@@ -81,6 +84,7 @@ public final class ActivityAccountBinding implements ViewBinding {
     this.passwordReset = passwordReset;
     this.spinnerLanguages = spinnerLanguages;
     this.toolbarAccount = toolbarAccount;
+    this.topics = topics;
     this.twitterConnect = twitterConnect;
   }
 
@@ -183,6 +187,12 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topics;
+      TextView topics = ViewBindings.findChildViewById(rootView, id);
+      if (topics == null) {
+        break missingId;
+      }
+
       id = R.id.twitter_connect;
       Button twitterConnect = ViewBindings.findChildViewById(rootView, id);
       if (twitterConnect == null) {
@@ -191,7 +201,7 @@ public final class ActivityAccountBinding implements ViewBinding {
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
           connectSocials, decorationPasswordReset, deleteAccount, emailDecoration, googleConnect,
-          language, nameDecoration, passwordReset, spinnerLanguages, toolbarAccount,
+          language, nameDecoration, passwordReset, spinnerLanguages, toolbarAccount, topics,
           twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);

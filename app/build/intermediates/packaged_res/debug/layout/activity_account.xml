@@ -13,8 +13,8 @@
         android:background="@color/white"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ToolbarTheme"
-        app:menu="@menu/top_bar"
         app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/top_bar"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
         app:title="Feed You"
         app:titleCentered="true"
@@ -91,10 +91,6 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
         <TextView
             android:id="@+id/language"
             android:layout_width="match_parent"
@@ -105,7 +101,7 @@
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
-            android:text="Change Language"
+            android:text="Language"
             android:textColor="#35424A"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -118,6 +114,27 @@
             android:entries="@array/langs"
             android:padding="10dp"
             android:paddingStart="240dp" />
+
+        <TextView
+            android:id="@+id/topics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_topic_24"
+            android:drawablePadding="10dp"
+            android:focusable="true"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Topics"
+            android:textColor="#35424A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/connect_socials"
@@ -160,7 +177,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/password_reset"
@@ -181,7 +198,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/delete_account"

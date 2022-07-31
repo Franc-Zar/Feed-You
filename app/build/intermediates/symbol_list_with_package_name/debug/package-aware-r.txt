@@ -2631,6 +2631,7 @@ drawable ic_baseline_person_add_24
 drawable ic_baseline_remove_circle_24
 drawable ic_baseline_search_24
 drawable ic_baseline_settings_24
+drawable ic_baseline_topic_24
 drawable ic_baseline_visibility_18
 drawable ic_baseline_visibility_off_18
 drawable ic_baseline_vpn_key_18
@@ -3218,6 +3219,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3239,6 +3241,7 @@ id toolbar_main
 id toolbar_password_change
 id top
 id topPanel
+id topics
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3389,7 +3392,7 @@ layout activity_settings
 layout activity_sign_up
 layout activity_simple_sign_in
 layout activity_twitter
-layout alert_social
+layout alert_feed_you
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3610,6 +3613,7 @@ string item_view_role_description
 string label
 string lang
 string large_text
+string logoutAlert
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium
@@ -3682,6 +3686,7 @@ string mtrl_picker_toggle_to_day_selection
 string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string mtrl_timepicker_confirm
+string newPasswordHint
 string not_set
 string password_toggle_content_description
 string path_password_eye
@@ -3693,6 +3698,8 @@ string preference_copied
 string project_id
 string redirect
 string reply_title
+string reportEmailBody
+string reportEmailSubject
 string search_menu_title
 string signature_title
 string sorry
