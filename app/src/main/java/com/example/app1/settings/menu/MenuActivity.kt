@@ -25,7 +25,8 @@ import com.example.app1.utilities.config.Companion.domain
 import com.example.app1.utilities.config.Companion.inviteLink
 import com.example.app1.utilities.config.Companion.reportEmailBody
 import com.example.app1.utilities.config.Companion.reportEmailSubject
-
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 
 class MenuActivity : AppCompatActivity() {
 
@@ -119,7 +120,7 @@ class MenuActivity : AppCompatActivity() {
 
         logout.setOnClickListener {
 
-            createAlert()
+            logoutAlert()
 
         }
     }
@@ -136,7 +137,7 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
-    private fun createAlert() {
+    private fun logoutAlert() {
 
         val alertDialog = AlertDialog.Builder(this).create()
 
@@ -163,6 +164,17 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun logout() {
+
+        if(isSocialLinked(GoogleAuthProvider.PROVIDER_ID)) {
+
+            val gso = GoogleSignInOptions.Builder()
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+
+            GoogleSignIn.getClient(this, gso).signOut()
+
+        }
 
         Firebase.auth.signOut()
 

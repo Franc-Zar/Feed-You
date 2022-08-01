@@ -48,10 +48,6 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_account.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_settings.xml",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_settings.xml"
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_twitter.xml",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_twitter.xml"
     },

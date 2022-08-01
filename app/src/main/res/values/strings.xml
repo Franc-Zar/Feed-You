@@ -19,7 +19,7 @@
         At least: 6 characters length, 1 capital letter, 1 number, 1 special character.  </string>
     <string name="reportEmailSubject">Write here some keywords representing the problem...</string>
     <string name="reportEmailBody">Write here a brief description of the problem you experienced, including everything you consider helpful for us to help you!</string>
-    <string name="logoutAlert">Are you really sure?</string>
+    <string name="logoutAlert">Are you really sure you want to logout?</string>
     <string name="aboutUs">
 
         Welcome to Feed You! v1.0 \n\n

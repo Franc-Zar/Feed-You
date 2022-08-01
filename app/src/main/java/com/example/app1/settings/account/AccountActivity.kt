@@ -95,8 +95,9 @@ class AccountActivity : AppCompatActivity() {
                 dialog, which -> dialog.dismiss()
         }
 
+        when(alertType) {
 
-        if(alertType == "social") {
+            "social" -> {
 
             alertDialog.setButton(
                 AlertDialog.BUTTON_POSITIVE, "Unlink"
@@ -112,7 +113,9 @@ class AccountActivity : AppCompatActivity() {
             else if (socialProviderID == TwitterAuthProvider.PROVIDER_ID)
                 alertMessage?.setText(R.string.twitterAlert)
 
-        } else if(alertType == "delete") {
+            }
+
+            "delete" -> {
 
             alertDialog.setButton(
                 AlertDialog.BUTTON_POSITIVE, "Delete"
@@ -125,6 +128,7 @@ class AccountActivity : AppCompatActivity() {
             val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
             alertMessage?.setText(R.string.deleteAlert)
 
+            }
         }
     }
 

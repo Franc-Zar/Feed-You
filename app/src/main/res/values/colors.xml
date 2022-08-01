@@ -15,4 +15,9 @@
     <color name="green_pea">#FF4c7a34</color>
     <color name="darker_grey">#FF232323</color>
     <color name="dark_blue">#FF1c0c4f</color>
+    <color name="feedyou_azure_light">#00c8f8</color>
+    <color name="feedyou_azure_dark">#248b9c</color>
+    <color name="feedyou_azure_background">#A8D0E6</color>
+    <color name="feedyou_grey">#989EB1</color>
+    <color name="feedyou_grey_darker">#35424A</color>
 </resources>

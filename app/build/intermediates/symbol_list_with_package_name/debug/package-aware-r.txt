@@ -1373,6 +1373,11 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color feedyou_azure_background
+color feedyou_azure_dark
+color feedyou_azure_light
+color feedyou_grey
+color feedyou_grey_darker
 color foreground_material_dark
 color foreground_material_light
 color green_pea
@@ -2625,6 +2630,7 @@ drawable ic_baseline_manage_accounts_24
 drawable ic_baseline_menu_24
 drawable ic_baseline_not_interested_24
 drawable ic_baseline_notifications_active_24
+drawable ic_baseline_password_24
 drawable ic_baseline_people_alt_24
 drawable ic_baseline_person_24
 drawable ic_baseline_person_add_24
@@ -3388,7 +3394,6 @@ layout activity_news
 layout activity_password_change
 layout activity_password_recovery
 layout activity_preference
-layout activity_settings
 layout activity_sign_up
 layout activity_simple_sign_in
 layout activity_twitter

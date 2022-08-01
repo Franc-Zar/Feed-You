@@ -72,7 +72,7 @@ class LoginActivity : AppCompatActivity() {
 
             //cambio activity --> signup
             switch_activity = Intent(this, SignUpActivity::class.java)
-            switch_activity.putExtra("requestType","simpleSignin")
+            switch_activity.putExtra("requestType","simpleSignIn")
             startActivity(switch_activity)
 
         }

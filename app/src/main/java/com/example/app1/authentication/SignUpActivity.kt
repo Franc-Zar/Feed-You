@@ -2,12 +2,13 @@ package com.example.app1.authentication
 
 import android.animation.ObjectAnimator
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.OnFocusChangeListener
 import android.view.Window
 import android.view.WindowManager
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import com.example.app1.R
 import com.example.app1.settings.account.AccountActivity
 import com.example.app1.utilities.AccountUtilities.Companion.isValidPassword
@@ -15,18 +16,24 @@ import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+
 class SignUpActivity : AppCompatActivity() {
 
     private lateinit var switch_activity: Intent
+    private lateinit var progressBar: ProgressBar
 
-    private fun progress() {
 
-        val progress_bar = findViewById<ProgressBar>(R.id.password_reset_progress)
-        val animation = ObjectAnimator.ofInt(progress_bar, "progress", 0, 50)
+    private fun accountCreationProgress(increase: Int) {
 
-        animation.setDuration(500)
-        animation.setInterpolator(DecelerateInterpolator())
-        animation.start()
+        val animation = ObjectAnimator.ofInt(
+                progressBar,
+                "progress",
+                progressBar.progress + increase
+            )
+
+            animation.setDuration(500)
+            animation.setInterpolator(DecelerateInterpolator())
+            animation.start()
 
     }
 
@@ -42,7 +49,7 @@ class SignUpActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_sign_up)
 
-        progress()
+        progressBar = findViewById(R.id.password_reset_progress)
 
         val email = findViewById<EditText>(R.id.email_decoration)
         val password = findViewById<EditText>(R.id.password)
@@ -51,68 +58,116 @@ class SignUpActivity : AppCompatActivity() {
         val signIn = findViewById<TextView>(R.id.sign_in)
         val terminiCondizioni = findViewById<CheckedTextView>(R.id.termini_condizioni)
 
-        signIn.setOnClickListener {
 
-            super.finish()
+        email.setOnFocusChangeListener(OnFocusChangeListener { v, hasFocus ->
 
-        }
+            if (!hasFocus) {
+                // code to execute when EditText loses focus
+                if (email.text.isEmpty())
+                    accountCreationProgress(-40)
+                else
+                    accountCreationProgress(40)
 
-        terminiCondizioni.setOnClickListener {
+                }
+            })
 
-            terminiCondizioni.toggle()
+        password.setOnFocusChangeListener(OnFocusChangeListener { v, hasFocus ->
 
-        }
+            if (!hasFocus) {
+                // code to execute when EditText loses focus
+                if (password.text.isEmpty())
+                    accountCreationProgress(-40)
+                else
+                    accountCreationProgress(40)
 
-        signUp.setOnClickListener {
+                }
+            })
 
-            val email_chosen = email.text.toString().trim()
-            val password_chosen = password.text.toString().trim()
 
-            if (email_chosen != "" && password_chosen != "") {
+            signIn.setOnClickListener {
 
-                if (terminiCondizioni.isChecked) {
+                val requestType = intent.extras!!.getString("requestType").toString()
 
-                    if(password_chosen.isValidPassword()) {
+                when(requestType) {
 
-                        val requestType = intent.extras!!.getString("requestType").toString()
+                    "createAccountRedirect" -> {
 
-                        if(requestType == "createAccountRedirect") {
+                        finish()
+                        switch_activity = Intent(this, LoginActivity::class.java)
+                        startActivity(switch_activity)
 
-                            createAccountForAnonymous(email_chosen, password_chosen)
+                    }
+
+                    "simpleSignIn" ->
+                        finish()
+
+                }
+            }
+
+
+            terminiCondizioni.setOnClickListener {
+
+                terminiCondizioni.toggle()
+
+                if(terminiCondizioni.isChecked)
+                    accountCreationProgress(20)
+                else
+                    accountCreationProgress(-20)
+
+            }
+
+
+            signUp.setOnClickListener {
+
+                val email_chosen = email.text.toString()
+                val password_chosen = password.text.toString()
+
+                if (email_chosen != "" && password_chosen != "") {
+
+                    if (terminiCondizioni.isChecked) {
+
+                        if (password_chosen.isValidPassword()) {
+
+                            val requestType = intent.extras!!.getString("requestType").toString()
+
+                            when(requestType) {
+
+                                "createAccountRedirect" ->
+                                    createAccountForAnonymous(email_chosen, password_chosen)
+
+
+                                "simpleSignIn" ->
+                                    simpleCreateAccount(email_chosen, password_chosen)
+
+                                }
 
                         } else {
 
-                            simpleCreateAccount(email_chosen, password_chosen)
-
+                            Toast.makeText(
+                                baseContext, "Password too weak!",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
 
                     } else {
 
                         Toast.makeText(
-                            baseContext, "Password too weak!",
+                            baseContext, "You must accept terms and policy!",
                             Toast.LENGTH_SHORT
                         ).show()
+
                     }
 
                 } else {
 
                     Toast.makeText(
-                        baseContext, "You must accept terms and policy!",
+                        baseContext, "Email and/or password missing!",
                         Toast.LENGTH_SHORT
                     ).show()
 
                 }
-
-            } else {
-
-                Toast.makeText(
-                    baseContext, "Email and/or password missing!",
-                    Toast.LENGTH_SHORT
-                ).show()
-
             }
         }
-    }
 
     private fun createAccountForAnonymous(email: String, password: String) {
 
