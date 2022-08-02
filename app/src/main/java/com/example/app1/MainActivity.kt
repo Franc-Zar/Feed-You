@@ -5,10 +5,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.app1.model.FeederPreferences
 import com.example.app1.model.User
 import com.example.app1.settings.menu.MenuActivity
 import com.google.android.material.appbar.MaterialToolbar
@@ -42,35 +44,37 @@ class MainActivity : AppCompatActivity() {
             val user = User(current_user.email, current_user.email)
             database.child(getString(R.string.firebase_users)).child(current_user.uid).setValue(user)
 
-            val prefs = database.child(getString(R.string.firebase_users)).child(current_user.uid)
-                .child("prefs")
-            val localPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
-            prefs.get().addOnSuccessListener {
-                with(localPref.edit()) {
-                    putString(getString(R.string.prefTopics), it.value?.toString())
+            val langPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
+                .child("lang")
+            val langLocalPref = getSharedPreferences(getString(R.string.lang), Context.MODE_PRIVATE)
+            langPref.get().addOnSuccessListener {
+                with(langLocalPref.edit()) {
+                    putString(getString(com.example.app1.R.string.lang), it.value.toString())
                     apply()
                 }
             }
+            val topicPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
+                .child("topics")
+            val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
 
-            prefs.addValueEventListener(object : ValueEventListener {
+            topicPref.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-                    val value = dataSnapshot.getValue<String>()
+                    val value = dataSnapshot.getValue()
                     Log.d("DATA UPDATED", "Value is: $value")
-
-                    with(localPref.edit()) {
-                        putString(getString(R.string.prefTopics), value)
+                    with(topicLocalPref.edit()) {
+                        putString(getString(R.string.prefTopics), value.toString())
                         apply()
                     }
+                    val feederPreferences = FeederPreferences(context = baseContext)
+                    feederPreferences?.setFavouriteTopics(value as MutableList<Int>)
                 }
-
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
                     Log.w("ERROR UPDATING DATA", "Failed to read value.", error.toException())
                 }
             })
-            /**val bounds = database.child(getString(R.string.firebase_users)).child(current_user.uid).child("bounds").get()**/
         }
 
 
