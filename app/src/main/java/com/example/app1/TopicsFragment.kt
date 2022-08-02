@@ -8,6 +8,9 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.app1.model.FeederPreferences
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 
 class TopicsFragment : Fragment() {
@@ -31,6 +34,11 @@ class TopicsFragment : Fragment() {
             }
 
             if (indexes.isNotEmpty()){
+                val current_user = Firebase.auth.currentUser!!
+                if (! current_user.isAnonymous){
+                    Firebase.database.reference.child(getString(R.string.firebase_users))
+                        .child(current_user.uid).child("topics").setValue(indexes)
+                }
                 if (pref != null) {
                     with(pref.edit()) {
                         putString(getString(R.string.topics), indexes.toString())
