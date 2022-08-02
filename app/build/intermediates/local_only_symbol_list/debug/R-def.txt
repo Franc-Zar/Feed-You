@@ -129,6 +129,7 @@ id spinner_themes
 id swiperefresh
 id termini_condizioni
 id textView
+id textView2
 id title
 id toolbar
 id toolbar_about_us
@@ -179,6 +180,10 @@ string continua
 string default_web_client_id
 string deleteAccount
 string deleteAlert
+string firebase_lang
+string firebase_prefs
+string firebase_users
+string firstLoadWarning
 string forgotPassword
 string gcm_defaultSenderId
 string googleAlert
@@ -189,7 +194,6 @@ string google_storage_bucket
 string have_account
 string hello_blank_fragment
 string lang
-string large_text
 string logoutAlert
 string messages_header
 string newPasswordHint
