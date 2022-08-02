@@ -33,7 +33,7 @@
             android:name="com.example.app1.settings.menu.AboutActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app1.settings.PasswordChangeActivity"
+            android:name="com.example.app1.settings.account.PasswordChangeActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.settings.menu.MenuActivity"
