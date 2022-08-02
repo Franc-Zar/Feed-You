@@ -1,20 +1,16 @@
 package com.example.app1
 
-import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.app.Dialog
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.Window
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.appbar.MaterialToolbar
 
 
 class NewsActivity : AppCompatActivity() {
@@ -30,7 +26,6 @@ class NewsActivity : AppCompatActivity() {
         webView.settings.mixedContentMode = MIXED_CONTENT_COMPATIBILITY_MODE
         webView.loadUrl(intent.getStringExtra("HTML_CONTENT")!!)
         //TODO: risontrollare il fallback nel caso in cui il link non è passato(oppure metterlo non nullable)
-        //TODO Controllo del comportamento di WebView in assenza di rete o Url malformato...(alle volte link non ha http all'inizio...)
 
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
@@ -47,7 +42,7 @@ class NewsActivity : AppCompatActivity() {
                 error: WebResourceError?
             ) {
                 if (error?.errorCode == ERROR_CONNECT || error?.errorCode == ERROR_TIMEOUT ){
-                    // TODO, se ci va, schermata errore personalizzata
+                    // TODO schermata errore personalizzata
                 }
                 super.onReceivedError(view, request, error)
             }

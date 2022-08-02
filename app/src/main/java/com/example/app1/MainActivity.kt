@@ -81,7 +81,6 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-
         if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or
             getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
