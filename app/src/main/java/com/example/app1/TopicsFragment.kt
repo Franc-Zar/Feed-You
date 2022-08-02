@@ -10,16 +10,6 @@ import androidx.fragment.app.Fragment
 import com.example.app1.model.FeederPreferences
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [TopicsFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class TopicsFragment : Fragment() {
     private var checkboxes = ArrayList<CheckBox>()
 

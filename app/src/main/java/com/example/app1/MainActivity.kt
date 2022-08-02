@@ -9,11 +9,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.app1.model.User
 import com.example.app1.settings.menu.MenuActivity
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CancellationException
 import kotlin.system.exitProcess
@@ -32,7 +37,42 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        database = Firebase.database.reference
+        if (!current_user.isAnonymous) {
+            database = Firebase.database.reference
+            val user = User(current_user.email, current_user.email)
+            database.child(getString(R.string.firebase_users)).child(current_user.uid).setValue(user)
+
+            val prefs = database.child(getString(R.string.firebase_users)).child(current_user.uid)
+                .child("prefs")
+            val localPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
+            prefs.get().addOnSuccessListener {
+                with(localPref.edit()) {
+                    putString(getString(R.string.prefTopics), it.value?.toString())
+                    apply()
+                }
+            }
+
+            prefs.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    // This method is called once with the initial value and again
+                    // whenever data at this location is updated.
+                    val value = dataSnapshot.getValue<String>()
+                    Log.d("DATA UPDATED", "Value is: $value")
+
+                    with(localPref.edit()) {
+                        putString(getString(R.string.prefTopics), value)
+                        apply()
+                    }
+                }
+
+                override fun onCancelled(error: DatabaseError) {
+                    // Failed to read value
+                    Log.w("ERROR UPDATING DATA", "Failed to read value.", error.toException())
+                }
+            })
+            /**val bounds = database.child(getString(R.string.firebase_users)).child(current_user.uid).child("bounds").get()**/
+        }
+
 
         if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)

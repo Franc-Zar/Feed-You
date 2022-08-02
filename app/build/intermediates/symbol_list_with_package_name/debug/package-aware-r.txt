@@ -3226,6 +3226,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3603,6 +3604,10 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_lang
+string firebase_prefs
+string firebase_users
+string firstLoadWarning
 string forgotPassword
 string gcm_defaultSenderId
 string googleAlert
@@ -3617,7 +3622,6 @@ string icon_content_description
 string item_view_role_description
 string label
 string lang
-string large_text
 string logoutAlert
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

@@ -24,53 +24,36 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/activity_news.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/activity_preference.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/fragment_lang.xml" value="0.25" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/fragment_topics.xml" value="0.1" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/fragment_topics.xml" value="0.2" />
         <entry key="..\:/Users/User/AndroidStudioProjects/Feed-You-2/app/src/main/res/layout/rv_row.xml" value="0.152" />
-        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_18.xml" value="0.3325" />
-        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.338" />
-        <entry key="app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.242" />
-        <entry key="app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_18.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.338" />
-        <entry key="app/src/main/res/drawable/ic_baseline_manage_accounts_24.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_baseline_password_24.xml" value="0.338" />
-        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/ic_baseline_topic_24.xml" value="0.338" />
-        <entry key="app/src/main/res/drawable/ic_baseline_visibility_off_18.xml" value="0.338" />
         <entry key="app/src/main/res/drawable/ic_baseline_vpn_key_18.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/ic_icons8_google.xml" value="0.2635" />
         <entry key="app/src/main/res/drawable/ic_icons8_twitter.xml" value="0.2635" />
-        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="app/src/main/res/drawable/twitter_classic.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_about.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_account.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_email_account.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_account.xml" value="0.2730263157894737" />
+        <entry key="app/src/main/res/layout/activity_email_account.xml" value="0.16337386018237082" />
         <entry key="app/src/main/res/layout/activity_google.xml" value="0.3359375" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/activity_login2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_news.xml" value="0.13858695652173914" />
-        <entry key="app/src/main/res/layout/activity_password_change.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_password_change.xml" value="0.2974910394265233" />
         <entry key="app/src/main/res/layout/activity_password_recover.xml" value="0.31979166666666664" />
         <entry key="app/src/main/res/layout/activity_password_recovery.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_preference.xml" value="0.13858695652173914" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.24010416666666667" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_simple_sign_in.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_twitter.xml" value="0.24010416666666667" />
-        <entry key="app/src/main/res/layout/alert_feedYou.xml" value="0.14356884057971014" />
-        <entry key="app/src/main/res/layout/alert_social.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.3359375" />
-        <entry key="app/src/main/res/layout/fragment_lang.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_lang.xml" value="0.13858695652173914" />
         <entry key="app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/rv_row.xml" value="0.13858695652173914" />
         <entry key="app/src/main/res/menu/top_bar.xml" value="0.24010416666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.177" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.189" />
-        <entry key="app/src/main/res/mipmap-anydpi-v26/logo_round.xml" value="0.1" />
         <entry key="app/src/main/res/xml/countries.xml" value="0.2427536231884058" />
       </map>
     </option>

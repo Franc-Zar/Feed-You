@@ -28,13 +28,18 @@ public final class FragmentTopicsBinding implements ViewBinding {
   public final ScrollView scrollTopics;
 
   @NonNull
+  public final TextView textView2;
+
+  @NonNull
   public final TextView tvFragTitle;
 
   private FragmentTopicsBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout layoutTopics,
-      @NonNull ScrollView scrollTopics, @NonNull TextView tvFragTitle) {
+      @NonNull ScrollView scrollTopics, @NonNull TextView textView2,
+      @NonNull TextView tvFragTitle) {
     this.rootView = rootView;
     this.layoutTopics = layoutTopics;
     this.scrollTopics = scrollTopics;
+    this.textView2 = textView2;
     this.tvFragTitle = tvFragTitle;
   }
 
@@ -77,6 +82,12 @@ public final class FragmentTopicsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView2;
+      TextView textView2 = ViewBindings.findChildViewById(rootView, id);
+      if (textView2 == null) {
+        break missingId;
+      }
+
       id = R.id.tv_frag_title;
       TextView tvFragTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvFragTitle == null) {
@@ -84,7 +95,7 @@ public final class FragmentTopicsBinding implements ViewBinding {
       }
 
       return new FragmentTopicsBinding((FrameLayout) rootView, layoutTopics, scrollTopics,
-          tvFragTitle);
+          textView2, tvFragTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

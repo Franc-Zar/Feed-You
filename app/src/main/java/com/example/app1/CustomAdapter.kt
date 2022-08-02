@@ -51,21 +51,27 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
         val item = mList[position]
         val text = MutableLiveData(item.title)
 
-        holder.cv_news.setOnTouchListener(
+        /**holder.cv_news.setOnTouchListener(
             View.OnTouchListener { view, event ->
                 // variables to store current configuration of quote card.
                 val displayMetrics = context.resources.displayMetrics
                 val cardWidth = holder.cv_news.width
                 val cardStart = (displayMetrics.widthPixels.toFloat() / 2) - (cardWidth / 2)
                 val newX = event.rawX
-                val minDistance = context.resources.getInteger(R.integer.minDistance)
+                var cardGrip = cardWidth/2f
 
                 when (event.action) {
+                    MotionEvent.ACTION_DOWN ->{
+                        cardGrip = newX //punto centrare card sotto il dito dell'user
+                    }
+
+
                     //inizio gesture
                     MotionEvent.ACTION_MOVE -> {
                         // TODO: Handle ACTION_MOVE
+
                         if (newX - cardWidth < cardStart) { // or newX < cardStart + cardWidth
-                            holder.cv_news.animate().x(minOf(cardStart, newX - (cardWidth / 2)))
+                            holder.cv_news.animate().x(newX - cardGrip)
                                 .setDuration(0)
                                 .start()
                         }
@@ -75,10 +81,10 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                         var currentX = holder.cv_news.x
                         holder.cv_news.animate()
                             .x(cardStart)
-                            .setDuration(50)
+                            .setDuration(0)
                             .setListener(object : AnimatorListenerAdapter() {
                                 override fun onAnimationEnd(animation: Animator) {
-                                    if (currentX < -5f) {
+                                    if (currentX < 60f || currentX > 80f) {
                                             //cambiamento dei dati visualizzati
                                             if (holder.tv_title.currentTextColor == ContextCompat.getColor(
                                                     context,
@@ -123,7 +129,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
                 // required to by-pass lint warning
                 return@OnTouchListener true
             }
-        )
+        )**/
 
         (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             Html.fromHtml(item.title, Html.FROM_HTML_MODE_COMPACT)
