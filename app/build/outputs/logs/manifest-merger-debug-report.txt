@@ -252,12 +252,12 @@ ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidM
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:21:13-37
 	android:name
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:20:13-56
-activity#com.example.app1.settings.PasswordChangeActivity
+activity#com.example.app1.settings.account.PasswordChangeActivity
 ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-60
+		ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-68
 activity#com.example.app1.settings.menu.MenuActivity
 ADDED from /home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:25:9-38:20
 	android:exported

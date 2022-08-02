@@ -61,8 +61,8 @@
 34-->/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:21:13-37
 35        <activity
 35-->/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:22:9-24:40
-36            android:name="com.example.app1.settings.PasswordChangeActivity"
-36-->/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-60
+36            android:name="com.example.app1.settings.account.PasswordChangeActivity"
+36-->/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:23:13-68
 37            android:exported="false" />
 37-->/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/AndroidManifest.xml:24:13-37
 38        <activity

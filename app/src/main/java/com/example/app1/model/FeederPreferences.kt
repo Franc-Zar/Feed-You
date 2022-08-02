@@ -14,7 +14,7 @@ class FeederPreferences (private val context: Context){
     init{
         pref = context.getSharedPreferences(context.getString(R.string.prefTopics), Context.MODE_PRIVATE)
         val values = pref.all[context.getString(R.string.prefTopics)]
-        val json = if (values != null) JSONArray(values.toString()) else JSONArray("[]")
+        val json = if (values != "null") JSONArray(values.toString()) else JSONArray("[]")
 
         if(json.length() != 0) {
             for (i in 0 until json.length()) {

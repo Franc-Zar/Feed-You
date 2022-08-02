@@ -182,7 +182,8 @@ class AccountActivity : AppCompatActivity() {
 
             accountEmail.setText(Firebase.auth.currentUser!!.email)
 
-            if(Firebase.auth.currentUser!!.displayName == null) {
+            if(Firebase.auth.currentUser!!.displayName == null ||
+                Firebase.auth.currentUser!!.displayName == "") {
 
                 accountName.setVisibility(View.GONE)
                 nameDecoration.setVisibility(View.GONE)

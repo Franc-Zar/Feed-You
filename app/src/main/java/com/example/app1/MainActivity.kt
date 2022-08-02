@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                         apply()
                     }
                     val feederPreferences = FeederPreferences(context = baseContext)
-                    feederPreferences?.setFavouriteTopics(value as MutableList<Int>)
+                    feederPreferences.setFavouriteTopics(value as MutableList<Int>)
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
