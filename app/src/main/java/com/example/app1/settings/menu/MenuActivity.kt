@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -49,10 +50,18 @@ class MenuActivity : AppCompatActivity() {
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
+        val themes = findViewById<Spinner>(R.id.spinner_themes)
 
         toolbar.setNavigationOnClickListener {
 
             finish()
+
+        }
+
+        themes.setOnItemClickListener { adapterView, view, i, l ->
+
+            if(themes.selectedItem.toString() == "FeedYou-Light")
+                setTheme(android.R.style.Theme)
 
         }
 
@@ -160,7 +169,6 @@ class MenuActivity : AppCompatActivity() {
 
         alertMessage?.setText(R.string.logoutAlert)
 
-
     }
 
     private fun logout() {
@@ -183,5 +191,4 @@ class MenuActivity : AppCompatActivity() {
         startActivity(switch_activity)
 
     }
-
 }

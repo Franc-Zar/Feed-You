@@ -15,8 +15,7 @@
     <string name="twitterAlert">Your Twitter Account is already linked. Do you want to unlink it?</string>
     <string name="deleteAccount">Delete my Account</string>
     <string name="deleteAlert">Are you sure you want to delete your Feed You account? Operation can\'t be undone.</string>
-    <string name="newPasswordHint">*Pss* i\'m the spirit of your new password, remember to make me strong! \n\n
-        At least: 6 characters length, 1 capital letter, 1 number, 1 special character.  </string>
+    <string name="newPasswordHint">Password should contain at least: 6 characters length, 1 capital letter, 1 number, 1 special character.  </string>
     <string name="reportEmailSubject">Write here some keywords representing the problem...</string>
     <string name="reportEmailBody">Write here a brief description of the problem you experienced, including everything you consider helpful for us to help you!</string>
     <string name="logoutAlert">Are you really sure you want to logout?</string>

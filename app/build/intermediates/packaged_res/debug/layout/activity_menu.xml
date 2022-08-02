@@ -14,10 +14,11 @@
         android:theme="@style/ToolbarTheme"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:navigationIconTint="?attr/colorPrimaryVariant"
         app:title="Feed You"
         app:titleCentered="true"
         app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:titleTextColor="#248B9C"
+        app:titleTextColor="?attr/colorPrimaryVariant"
         tools:layout_editor_absoluteX="1dp" />
 
     <TextView
@@ -27,6 +28,7 @@
         android:layout_marginStart="15dp"
         android:fontFamily="@font/quicksand_bold"
         android:text="Menu"
+        android:textColor="?attr/colorOnSecondary"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,12 +48,13 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_notifications_active_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:paddingEnd="40dp"
             android:text="Push Notifications"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -65,11 +68,12 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_color_lens_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Theme"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -77,7 +81,7 @@
             android:id="@+id/spinner_themes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#248B9C"
+            android:backgroundTint="?attr/colorPrimaryVariant"
             android:entries="@array/app_themes"
             android:padding="10dp"
             android:paddingStart="200dp" />
@@ -94,12 +98,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_not_interested_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Blocked Sources"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -115,12 +120,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_people_alt_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Invite Friends"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -136,12 +142,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_info_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="About Feed You"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -157,12 +164,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_bug_report_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Report Problems"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -178,12 +186,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_manage_accounts_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Account"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -200,12 +209,13 @@
             android:clickable="true"
             android:drawableStart="@drawable/ic_baseline_logout_24"
             android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
             android:focusable="true"
             android:fontFamily="@font/asap"
             android:padding="10dp"
             android:paddingStart="20dp"
             android:text="Logout"
-            android:textColor="#35424A"
+            android:textColor="?attr/colorSecondary"
             android:textSize="18dp"
             android:textStyle="bold" />
 

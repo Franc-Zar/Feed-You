@@ -11,16 +11,16 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar_main"
-            android:theme="@style/ToolbarTheme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:logo="@drawable/logo"
+            android:theme="@style/ToolbarTheme"
             app:menu="@menu/top_bar"
             app:navigationIcon="@drawable/ic_baseline_menu_24"
+            app:navigationIconTint="?attr/colorPrimaryVariant"
             app:title="Feed You"
             app:titleCentered="true"
             app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
-            app:titleTextColor="@color/main" />
+            app:titleTextColor="?attr/colorPrimaryVariant" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

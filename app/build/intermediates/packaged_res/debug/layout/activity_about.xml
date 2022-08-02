@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:navigationIconTint="?attr/colorPrimaryVariant"
         tools:layout_editor_absoluteX="1dp" />
 
 
@@ -30,16 +31,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="155dp"
         android:layout_marginEnd="155dp"
-        android:layout_marginBottom="30dp"
         android:fontFamily="@font/rock_salt"
         android:text="Feed You"
-        android:textColor="#248B9C"
+        android:textColor="?attr/colorPrimaryVariant"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/About_us_text"
@@ -50,7 +49,7 @@
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/asap"
         android:text="@string/aboutUs"
-        android:textColor="#989EB1"
+        android:textColor="?attr/colorSecondary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

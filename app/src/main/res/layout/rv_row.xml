@@ -13,6 +13,7 @@
         android:id="@+id/cv_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?attr/colorSecondaryVariant"
         android:gravity="bottom">
 
         <TextView
@@ -22,8 +23,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
+            android:backgroundTint="?attr/colorSecondaryVariant"
             android:maxLength="140"
-            android:textColor="@color/main"
+            android:textColor="?attr/colorPrimaryVariant"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

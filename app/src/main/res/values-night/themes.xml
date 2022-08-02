@@ -2,17 +2,19 @@
     <!-- Base application theme. -->
     <style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/feedyou_azure_dark</item>
+        <item name="colorPrimary">@color/feedyou_azure_light</item>
         <item name="colorPrimaryVariant">@color/feedyou_azure_light</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondary">@color/feedyou_grey_lighter</item>
+        <item name="colorSecondaryVariant">@color/feedyou_news_dark</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/feedyou_dark_background</item>
         <!-- Customize your theme here. -->
-        <item name="android:background">@color/black</item>
+        <item name="android:background">@color/feedyou_dark_background</item>
+        <item name="android:textColorHint">?attr/colorSecondary</item>
+        <item name="android:colorControlActivated">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.App1.NoActionBar">
@@ -26,7 +28,10 @@
 
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily">@font/rock_salt</item>
-        <item name="android:background">@color/black</item>
+        <item name="android:background">@color/feedyou_dark_background</item>
+        <item name="colorControlNormal">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorSecondary">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">

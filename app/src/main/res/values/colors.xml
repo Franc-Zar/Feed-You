@@ -18,6 +18,8 @@
     <color name="feedyou_azure_light">#00c8f8</color>
     <color name="feedyou_azure_dark">#248b9c</color>
     <color name="feedyou_azure_background">#A8D0E6</color>
-    <color name="feedyou_grey">#989EB1</color>
-    <color name="feedyou_grey_darker">#35424A</color>
+    <color name="feedyou_grey">#313131</color>
+    <color name="feedyou_grey_lighter">#e3e3e3</color>
+    <color name="feedyou_dark_background">#191E29</color>
+    <color name="feedyou_news_dark">#1b2d42</color>
 </resources>

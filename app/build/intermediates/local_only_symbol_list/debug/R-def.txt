@@ -21,8 +21,10 @@ color darker_grey
 color feedyou_azure_background
 color feedyou_azure_dark
 color feedyou_azure_light
+color feedyou_dark_background
 color feedyou_grey
-color feedyou_grey_darker
+color feedyou_grey_lighter
+color feedyou_news_dark
 color green_pea
 color main
 color pink

@@ -17,8 +17,8 @@
     </array>
 
     <string-array name="app_themes">
-        <item>Feed You-Light</item>
-        <item>Feed You-Dark</item>
+        <item>FeedYou-Light</item>
+        <item>FeedYou-Dark</item>
         <item>High-Contrast</item>
     </string-array>
 
