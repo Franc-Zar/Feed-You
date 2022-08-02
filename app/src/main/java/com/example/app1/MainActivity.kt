@@ -48,9 +48,11 @@ class MainActivity : AppCompatActivity() {
                 .child("lang")
             val langLocalPref = getSharedPreferences(getString(R.string.lang), Context.MODE_PRIVATE)
             langPref.get().addOnSuccessListener {
-                with(langLocalPref.edit()) {
-                    putString(getString(com.example.app1.R.string.lang), it.value.toString())
-                    apply()
+                if (it.value != null) {
+                    with(langLocalPref.edit()) {
+                        putString(getString(R.string.lang), it.value.toString())
+                        apply()
+                    }
                 }
             }
             val topicPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
@@ -67,8 +69,15 @@ class MainActivity : AppCompatActivity() {
                         putString(getString(R.string.prefTopics), value.toString())
                         apply()
                     }
+<<<<<<< HEAD
                     val feederPreferences = FeederPreferences(context = baseContext)
                     feederPreferences.setFavouriteTopics(value as MutableList<Int>)
+=======
+                    if (value != null) {
+                        val feederPreferences = FeederPreferences(context = baseContext)
+                        feederPreferences.setFavouriteTopics(value as MutableList<Int>)
+                    }
+>>>>>>> 944d451f2db67bbbd61d97b6b76d984c35d07581
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
@@ -78,7 +87,8 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
+        if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or
+            getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }

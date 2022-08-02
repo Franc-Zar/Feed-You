@@ -2,6 +2,7 @@ package com.example.app1.model
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
 import com.example.app1.R
 import org.json.JSONArray
 import kotlin.random.Random
@@ -16,19 +17,18 @@ class FeederPreferences (private val context: Context){
         val values = pref.all[context.getString(R.string.prefTopics)]
         val json = if (values != "null") JSONArray(values.toString()) else JSONArray("[]")
 
-        if(json.length() != 0) {
-            for (i in 0 until json.length()) {
-                preferences.add(json.get(i) as Double)
-                boundaries.add(0.0)
-                setBounds()
-            }
-        }else {
-            for (i in 0 until context.resources.getStringArray(R.array.topics_it).size) {
-                preferences.add(0.0)
-                boundaries.add(0.0)
-            }
+        for (i in 0 until context.resources.getStringArray(R.array.topics_it).size) {
+            preferences.add(0.0)
+            boundaries.add(0.0)
         }
-
+        if(json.length() != 0) {
+            val indexes = mutableListOf<Int>()
+            for (i in 0 until json.length()) {
+                indexes.add(json.getInt(i))
+            }
+            setFavouriteTopics(indexes)
+            //setBounds()
+        }
     }
 
     //Per adesso la logica è molto semplice, ma può ovviamente essere cambiata
@@ -48,7 +48,7 @@ class FeederPreferences (private val context: Context){
             preferences[i] = (if (i in indexes) inTopic else offTopic)
         }
         savePreferences()
-        setBounds()
+        //setBounds()
     }
 
 
@@ -64,8 +64,9 @@ class FeederPreferences (private val context: Context){
     }
 
     fun savePreferences(){
-        with(pref.edit()){
-            putString(context.getString(R.string.prefTopics), preferences.toString())
+        val save = context.getSharedPreferences(context.getString(R.string.topics), Context.MODE_PRIVATE)
+        with(save.edit()){
+            putString( context.getString(R.string.topics), preferences.toString())
             apply()
         }
         setBounds()
@@ -89,6 +90,10 @@ class FeederPreferences (private val context: Context){
         while(rand > boundaries[i]){
             i++
             if (i>=boundaries.size){break}
+        }
+        if (i >= boundaries.size){
+            Log.d("BOUND", "Boundaries sbagliati")
+            return boundaries.size -1
         }
         return i
     }

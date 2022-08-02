@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Tue Aug 02 16:38:51 CEST 2022
+=======
+#Tue Aug 02 16:00:55 CEST 2022
+>>>>>>> 944d451f2db67bbbd61d97b6b76d984c35d07581
 path.4=2/classes.dex
 path.3=14/classes.dex
 path.2=13/classes.dex
