@@ -19,7 +19,7 @@
     <string-array name="app_themes">
         <item>FeedYou-Light</item>
         <item>FeedYou-Dark</item>
-        <item>High-Contrast</item>
+        <item>Follow System</item>
     </string-array>
 
     <string-array name="topics_it">

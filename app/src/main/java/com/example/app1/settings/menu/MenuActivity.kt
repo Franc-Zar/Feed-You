@@ -4,30 +4,34 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
+import android.widget.AdapterView
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.R
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
 import com.example.app1.settings.account.AccountActivity
 import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
+import com.example.app1.utilities.config.Companion.assistanceMail
+import com.example.app1.utilities.config.Companion.domain
+import com.example.app1.utilities.config.Companion.inviteLink
+import com.example.app1.utilities.config.Companion.reportEmailBody
+import com.example.app1.utilities.config.Companion.reportEmailSubject
 import com.example.app1.utilities.linkUtilities.Companion.generateContentLink
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.EmailAuthProvider
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.TwitterAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import com.example.app1.utilities.config.Companion.assistanceMail
-import com.example.app1.utilities.config.Companion.domain
-import com.example.app1.utilities.config.Companion.inviteLink
-import com.example.app1.utilities.config.Companion.reportEmailBody
-import com.example.app1.utilities.config.Companion.reportEmailSubject
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+
 
 class MenuActivity : AppCompatActivity() {
 
@@ -58,11 +62,22 @@ class MenuActivity : AppCompatActivity() {
 
         }
 
-        themes.setOnItemClickListener { adapterView, view, i, l ->
 
-            if(themes.selectedItem.toString() == "FeedYou-Light")
-                setTheme(android.R.style.Theme)
+        themes.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
 
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+
+                when (themes.selectedItem.toString()) {
+
+                    "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    "Follow System" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+
+                }
+            }
         }
 
         reportProblem.setOnClickListener {

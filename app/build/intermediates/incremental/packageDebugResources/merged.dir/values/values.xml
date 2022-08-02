@@ -3,7 +3,7 @@
     <string-array name="app_themes">
         <item>FeedYou-Light</item>
         <item>FeedYou-Dark</item>
-        <item>High-Contrast</item>
+        <item>Follow System</item>
     </string-array>
     <array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>

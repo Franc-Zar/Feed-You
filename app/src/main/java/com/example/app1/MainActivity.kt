@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
             val topicPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
                 .child("topics")
             val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
@@ -63,21 +64,17 @@ class MainActivity : AppCompatActivity() {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-                    val value = dataSnapshot.getValue()
+                    val value = dataSnapshot.getValue<MutableList<Int>>()
                     Log.d("DATA UPDATED", "Value is: $value")
                     with(topicLocalPref.edit()) {
                         putString(getString(R.string.prefTopics), value.toString())
                         apply()
                     }
-<<<<<<< HEAD
-                    val feederPreferences = FeederPreferences(context = baseContext)
-                    feederPreferences.setFavouriteTopics(value as MutableList<Int>)
-=======
+
                     if (value != null) {
                         val feederPreferences = FeederPreferences(context = baseContext)
-                        feederPreferences.setFavouriteTopics(value as MutableList<Int>)
+                        feederPreferences.setFavouriteTopics(value)
                     }
->>>>>>> 944d451f2db67bbbd61d97b6b76d984c35d07581
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
