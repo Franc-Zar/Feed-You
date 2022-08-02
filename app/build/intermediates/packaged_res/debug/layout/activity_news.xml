@@ -17,22 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <!--androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?attr/colorPrimary"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme" /-->
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:logo="@drawable/logo"
                 app:title="Feed You"
+                app:navigationIconTint="@color/white"
                 app:titleCentered="true"
                 app:titleTextAppearance="@style/TextAppearance.AppCompat.Body2"
-                app:titleTextColor="?attr/colorPrimaryVariant" />
+                app:titleTextColor="@color/white" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
