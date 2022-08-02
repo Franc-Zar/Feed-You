@@ -12,7 +12,6 @@ import com.example.app1.R
 import com.example.app1.authentication.GoogleActivity
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.TwitterActivity
-import com.example.app1.settings.PasswordChangeActivity
 import com.example.app1.utilities.AccountUtilities.Companion.getTwitterName
 import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
 import com.google.android.material.appbar.MaterialToolbar
