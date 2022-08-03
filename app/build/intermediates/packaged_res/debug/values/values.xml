@@ -160,11 +160,16 @@
     <string name="sorry">Purtroppo non è stato possibile caricare la pagina...</string>
     <string name="sync_header">Sync</string>
     <string name="sync_title">Sync email periodically</string>
+    <string name="theme" translatable="false">theme</string>
     <string name="title_activity_news">NewsActivity</string>
     <string name="title_lang">Select language</string>
     <string name="title_topics">Select the topics you\'re interested in</string>
     <string name="topics" translatable="false">topics</string>
     <string name="twitterAlert">Your Twitter Account is already linked. Do you want to unlink it?</string>
+    <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:colorControlActivated">@color/feedyou_azure_dark</item>
+        <item name="android:colorControlNormal">@color/feedyou_azure_dark</item>
+    </style>
     <style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/main</item>

@@ -96,7 +96,6 @@ id decoration_password_reset
 id decoration_useSocial
 id decoration_welcome
 id delete_account
-id email_decoration
 id forgot_password
 id fragment
 id google_connect
@@ -125,11 +124,11 @@ id sign_in
 id sign_up
 id spinner_lang
 id spinner_languages
-id spinner_themes
 id swiperefresh
 id termini_condizioni
 id textView
 id textView2
+id themes
 id title
 id toolbar
 id toolbar_about_us
@@ -207,11 +206,13 @@ string signature_title
 string sorry
 string sync_header
 string sync_title
+string theme
 string title_activity_news
 string title_lang
 string title_topics
 string topics
 string twitterAlert
+style DialogTheme
 style Theme.App1
 style Theme.App1.AppBarOverlay
 style Theme.App1.NoActionBar

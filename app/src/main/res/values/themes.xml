@@ -38,4 +38,9 @@
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@android:style/Animation</item>
     </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:colorControlActivated">@color/feedyou_azure_dark</item>
+        <item name="android:colorControlNormal">@color/feedyou_azure_dark</item>
+    </style>
 </resources>

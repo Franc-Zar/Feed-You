@@ -38,9 +38,6 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView deleteAccount;
 
   @NonNull
-  public final TextView emailDecoration;
-
-  @NonNull
   public final Button googleConnect;
 
   @NonNull
@@ -56,6 +53,9 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final Spinner spinnerLanguages;
 
   @NonNull
+  public final TextView themes;
+
+  @NonNull
   public final MaterialToolbar toolbarAccount;
 
   @NonNull
@@ -67,22 +67,22 @@ public final class ActivityAccountBinding implements ViewBinding {
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
       @NonNull TextView accountName, @NonNull TextView connectSocials,
       @NonNull TextView decorationPasswordReset, @NonNull TextView deleteAccount,
-      @NonNull TextView emailDecoration, @NonNull Button googleConnect, @NonNull TextView language,
-      @NonNull TextView nameDecoration, @NonNull TextView passwordReset,
-      @NonNull Spinner spinnerLanguages, @NonNull MaterialToolbar toolbarAccount,
-      @NonNull TextView topics, @NonNull Button twitterConnect) {
+      @NonNull Button googleConnect, @NonNull TextView language, @NonNull TextView nameDecoration,
+      @NonNull TextView passwordReset, @NonNull Spinner spinnerLanguages, @NonNull TextView themes,
+      @NonNull MaterialToolbar toolbarAccount, @NonNull TextView topics,
+      @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.deleteAccount = deleteAccount;
-    this.emailDecoration = emailDecoration;
     this.googleConnect = googleConnect;
     this.language = language;
     this.nameDecoration = nameDecoration;
     this.passwordReset = passwordReset;
     this.spinnerLanguages = spinnerLanguages;
+    this.themes = themes;
     this.toolbarAccount = toolbarAccount;
     this.topics = topics;
     this.twitterConnect = twitterConnect;
@@ -145,12 +145,6 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_decoration;
-      TextView emailDecoration = ViewBindings.findChildViewById(rootView, id);
-      if (emailDecoration == null) {
-        break missingId;
-      }
-
       id = R.id.google_connect;
       Button googleConnect = ViewBindings.findChildViewById(rootView, id);
       if (googleConnect == null) {
@@ -181,6 +175,12 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.themes;
+      TextView themes = ViewBindings.findChildViewById(rootView, id);
+      if (themes == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar_account;
       MaterialToolbar toolbarAccount = ViewBindings.findChildViewById(rootView, id);
       if (toolbarAccount == null) {
@@ -200,8 +200,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
-          connectSocials, decorationPasswordReset, deleteAccount, emailDecoration, googleConnect,
-          language, nameDecoration, passwordReset, spinnerLanguages, toolbarAccount, topics,
+          connectSocials, decorationPasswordReset, deleteAccount, googleConnect, language,
+          nameDecoration, passwordReset, spinnerLanguages, themes, toolbarAccount, topics,
           twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);

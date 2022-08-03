@@ -70,7 +70,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/email_decoration"
+            android:id="@+id/themes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_email_18"

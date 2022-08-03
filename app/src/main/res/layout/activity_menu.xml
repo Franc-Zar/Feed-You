@@ -63,7 +63,7 @@
             android:layout_height="20dp" />
 
         <TextView
-            android:id="@+id/email_decoration"
+            android:id="@+id/themes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_color_lens_24"
@@ -76,15 +76,6 @@
             android:textColor="?attr/colorSecondary"
             android:textSize="18sp"
             android:textStyle="bold" />
-
-        <Spinner
-            android:id="@+id/spinner_themes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="?attr/colorPrimaryVariant"
-            android:entries="@array/app_themes"
-            android:padding="10dp"
-            android:paddingStart="200dp" />
 
         <Space
             android:layout_width="match_parent"

@@ -4,9 +4,6 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
-import android.view.View
-import android.widget.AdapterView
-import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -36,6 +33,7 @@ import com.google.firebase.ktx.Firebase
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var switch_activity: Intent
+    private lateinit var themePreferences: ThemePreferences
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
@@ -47,14 +45,15 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-
+        themePreferences = ThemePreferences(this)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
         val aboutUs = findViewById<TextView>(R.id.about_feed_you)
         val inviteFriends = findViewById<TextView>(R.id.connect_socials)
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
-        val themes = findViewById<Spinner>(R.id.spinner_themes)
+        val themes = findViewById<TextView>(R.id.themes)
+
 
         toolbar.setNavigationOnClickListener {
 
@@ -63,70 +62,17 @@ class MenuActivity : AppCompatActivity() {
         }
 
 
-        themes.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-
-            }
-
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
-                when (themes.selectedItem.toString()) {
-
-                    "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    "Follow System" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-
-                }
-            }
-        }
-
         reportProblem.setOnClickListener {
 
-            val reportBugIntent = Intent(Intent.ACTION_SEND)
-            reportBugIntent.type = "message/rfc822"
-            reportBugIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(assistanceMail))
-            reportBugIntent.putExtra(Intent.EXTRA_SUBJECT, reportEmailSubject)
-            reportBugIntent.putExtra(Intent.EXTRA_TEXT, reportEmailBody)
-            reportBugIntent.putExtra(Intent.EXTRA_TITLE, "Choose an e-mail application")
+            reportProblem()
 
-            try {
-
-                startActivity(Intent.createChooser(reportBugIntent, "Send mail..."))
-
-            } catch (ex: ActivityNotFoundException) {
-
-                Toast.makeText(
-                    this,
-                    "Operation failed: there are no email clients installed.",
-                    Toast.LENGTH_SHORT
-                ).show()
-
-            }
         }
 
 
         accountSettings.setOnClickListener {
 
-            if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID) ||
-                isSocialLinked(GoogleAuthProvider.PROVIDER_ID) ||
-                    isSocialLinked(EmailAuthProvider.PROVIDER_ID)
-            ) {
+            accountSettingsHandle()
 
-                switch_activity = Intent(this, AccountActivity::class.java)
-                startActivity(switch_activity)
-
-            } else {
-
-                Toast.makeText(
-                    baseContext, "You first need to create a Feed You Account.",
-                    Toast.LENGTH_SHORT
-                ).show()
-
-                switch_activity = Intent(this, SignUpActivity::class.java)
-                switch_activity.putExtra("requestType", "createAccountRedirect")
-                startActivity(switch_activity)
-
-            }
         }
 
         aboutUs.setOnClickListener {
@@ -144,7 +90,13 @@ class MenuActivity : AppCompatActivity() {
 
         logout.setOnClickListener {
 
-            logoutAlert()
+            createAlert("logout")
+
+        }
+
+        themes.setOnClickListener {
+
+            createAlert("theme")
 
         }
     }
@@ -161,29 +113,71 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
-    private fun logoutAlert() {
 
-        val alertDialog = AlertDialog.Builder(this).create()
+    private fun createAlert(alertType: String) {
 
-        alertDialog.setView(layoutInflater.inflate(R.layout.alert_feed_you,null))
+        when(alertType) {
 
-        alertDialog.setButton(
-            AlertDialog.BUTTON_NEUTRAL, "Cancel"
-        ) {
-                dialog, which -> dialog.dismiss()
+            "logout" -> {
+
+                val alertDialog = AlertDialog.Builder(this).create()
+
+                alertDialog.setView(layoutInflater.inflate(R.layout.alert_feed_you,null))
+
+                alertDialog.setButton(
+                    AlertDialog.BUTTON_NEUTRAL, "Cancel"
+                ) {
+                        dialog, which -> dialog.dismiss()
+                }
+
+                alertDialog.setButton(
+                    AlertDialog.BUTTON_POSITIVE, "Logout"
+                ) { dialog, which -> logout()
+                }
+
+                alertDialog.show()
+                val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
+
+                alertMessage?.setText(R.string.logoutAlert)
+
+            }
+
+            "theme" -> {
+
+                val themes = this.resources.getStringArray(R.array.app_themes)
+                var themeSelected = themes[themePreferences.getThemeSelectedIndex()]
+
+                AlertDialog.Builder(this, R.style.DialogTheme)
+                    .setSingleChoiceItems(themes, themePreferences.getThemeSelectedIndex()) { dialog_, which ->
+
+                        themeSelected = themes[which]
+
+                    }.setPositiveButton("Ok") { dialog, which ->
+
+                        when(themeSelected) {
+
+                            "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(
+                                AppCompatDelegate.MODE_NIGHT_NO)
+
+                            "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(
+                                AppCompatDelegate.MODE_NIGHT_YES)
+
+                            "Follow System" -> AppCompatDelegate.setDefaultNightMode(
+                                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+
+                        }
+
+                        themePreferences.saveThemeSelected(themeSelected)
+
+                        switch_activity = Intent(this, MenuActivity::class.java)
+                        startActivity(switch_activity)
+                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+
+
+                    }.show()
+
+            }
         }
-
-        alertDialog.setButton(
-            AlertDialog.BUTTON_POSITIVE, "Logout"
-        ) {
-                dialog, which -> logout()
-        }
-
-        alertDialog.show()
-        val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
-
-        alertMessage?.setText(R.string.logoutAlert)
-
     }
 
     private fun logout() {
@@ -205,5 +199,54 @@ class MenuActivity : AppCompatActivity() {
         switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(switch_activity)
 
+    }
+
+    private fun reportProblem() {
+
+        val reportBugIntent = Intent(Intent.ACTION_SEND)
+        reportBugIntent.type = "message/rfc822"
+        reportBugIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf(assistanceMail))
+        reportBugIntent.putExtra(Intent.EXTRA_SUBJECT, reportEmailSubject)
+        reportBugIntent.putExtra(Intent.EXTRA_TEXT, reportEmailBody)
+        reportBugIntent.putExtra(Intent.EXTRA_TITLE, "Choose an e-mail application")
+
+        try {
+
+            startActivity(Intent.createChooser(reportBugIntent, "Send mail..."))
+
+        } catch (ex: ActivityNotFoundException) {
+
+            Toast.makeText(
+                this,
+                "Operation failed: there are no email clients installed.",
+                Toast.LENGTH_SHORT
+            ).show()
+
+        }
+
+    }
+
+    private fun accountSettingsHandle() {
+
+        if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID) ||
+            isSocialLinked(GoogleAuthProvider.PROVIDER_ID) ||
+            isSocialLinked(EmailAuthProvider.PROVIDER_ID)
+        ) {
+
+            switch_activity = Intent(this, AccountActivity::class.java)
+            startActivity(switch_activity)
+
+        } else {
+
+            Toast.makeText(
+                baseContext, "You first need to create a Feed You Account.",
+                Toast.LENGTH_SHORT
+            ).show()
+
+            switch_activity = Intent(this, SignUpActivity::class.java)
+            switch_activity.putExtra("requestType", "createAccountRedirect")
+            startActivity(switch_activity)
+
+        }
     }
 }

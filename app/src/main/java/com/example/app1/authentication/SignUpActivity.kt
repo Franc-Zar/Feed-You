@@ -51,7 +51,7 @@ class SignUpActivity : AppCompatActivity() {
 
         progressBar = findViewById(R.id.password_reset_progress)
 
-        val email = findViewById<EditText>(R.id.email_decoration)
+        val email = findViewById<EditText>(R.id.themes)
         val password = findViewById<EditText>(R.id.password)
 
         val signUp = findViewById<Button>(R.id.sign_up)

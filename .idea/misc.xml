@@ -50,6 +50,8 @@
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_simple_sign_in.xml" value="0.2427536231884058" />
         <entry key="app/src/main/res/layout/activity_twitter.xml" value="0.24010416666666667" />
+        <entry key="app/src/main/res/layout/alert_feed_you.xml" value="0.2409090909090909" />
+        <entry key="app/src/main/res/layout/alert_themes.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/fragment_lang.xml" value="0.13858695652173914" />
         <entry key="app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/rv_row.xml" value="0.13858695652173914" />

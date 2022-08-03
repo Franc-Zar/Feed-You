@@ -2921,7 +2921,6 @@ id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
-id email_decoration
 id end
 id endToStart
 id end_padder
@@ -3176,7 +3175,6 @@ id special_effects_controller_view_tag
 id spinner
 id spinner_lang
 id spinner_languages
-id spinner_themes
 id spline
 id split_action_bar
 id spread
@@ -3238,6 +3236,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id themes
 id time
 id title
 id titleDividerNoCustom
@@ -3718,6 +3717,7 @@ string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string sync_header
 string sync_title
+string theme
 string title_activity_news
 string title_lang
 string title_topics
@@ -3998,6 +3998,7 @@ style BasePreferenceThemeOverlay
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogTheme
 style EmptyTheme
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text

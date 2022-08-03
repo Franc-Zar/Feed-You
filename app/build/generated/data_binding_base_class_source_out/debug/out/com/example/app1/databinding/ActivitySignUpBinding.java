@@ -34,9 +34,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView decorationWelcome;
 
   @NonNull
-  public final EditText emailDecoration;
-
-  @NonNull
   public final TextView haveAnAccount;
 
   @NonNull
@@ -57,17 +54,18 @@ public final class ActivitySignUpBinding implements ViewBinding {
   @NonNull
   public final CheckedTextView terminiCondizioni;
 
+  @NonNull
+  public final EditText themes;
+
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
       @NonNull TextView decorationPasswordReset, @NonNull TextView decorationWelcome,
-      @NonNull EditText emailDecoration, @NonNull TextView haveAnAccount, @NonNull ImageView logo,
-      @NonNull EditText password, @NonNull ProgressBar passwordResetProgress,
-      @NonNull TextView signIn, @NonNull Button signUp,
-      @NonNull CheckedTextView terminiCondizioni) {
+      @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull EditText password,
+      @NonNull ProgressBar passwordResetProgress, @NonNull TextView signIn, @NonNull Button signUp,
+      @NonNull CheckedTextView terminiCondizioni, @NonNull EditText themes) {
     this.rootView = rootView;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
     this.decorationWelcome = decorationWelcome;
-    this.emailDecoration = emailDecoration;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.password = password;
@@ -75,6 +73,7 @@ public final class ActivitySignUpBinding implements ViewBinding {
     this.signIn = signIn;
     this.signUp = signUp;
     this.terminiCondizioni = terminiCondizioni;
+    this.themes = themes;
   }
 
   @Override
@@ -122,12 +121,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_decoration;
-      EditText emailDecoration = ViewBindings.findChildViewById(rootView, id);
-      if (emailDecoration == null) {
-        break missingId;
-      }
-
       id = R.id.have_an_account;
       TextView haveAnAccount = ViewBindings.findChildViewById(rootView, id);
       if (haveAnAccount == null) {
@@ -170,9 +163,15 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.themes;
+      EditText themes = ViewBindings.findChildViewById(rootView, id);
+      if (themes == null) {
+        break missingId;
+      }
+
       return new ActivitySignUpBinding((ConstraintLayout) rootView, appName,
-          decorationPasswordReset, decorationWelcome, emailDecoration, haveAnAccount, logo,
-          password, passwordResetProgress, signIn, signUp, terminiCondizioni);
+          decorationPasswordReset, decorationWelcome, haveAnAccount, logo, password,
+          passwordResetProgress, signIn, signUp, terminiCondizioni, themes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

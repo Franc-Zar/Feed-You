@@ -39,9 +39,6 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView decorationUseSocial;
 
   @NonNull
-  public final EditText emailDecoration;
-
-  @NonNull
   public final TextView forgotPassword;
 
   @NonNull
@@ -60,27 +57,30 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView signUp;
 
   @NonNull
+  public final EditText themes;
+
+  @NonNull
   public final Button twitterConnect;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull TextView AboutUsText,
       @NonNull AppCompatImageButton anonymousLogin, @NonNull TextView appName,
       @NonNull TextView decorationPasswordReset, @NonNull TextView decorationUseSocial,
-      @NonNull EditText emailDecoration, @NonNull TextView forgotPassword,
-      @NonNull Button googleConnect, @NonNull ImageView logo, @NonNull EditText password,
-      @NonNull Button signIn, @NonNull TextView signUp, @NonNull Button twitterConnect) {
+      @NonNull TextView forgotPassword, @NonNull Button googleConnect, @NonNull ImageView logo,
+      @NonNull EditText password, @NonNull Button signIn, @NonNull TextView signUp,
+      @NonNull EditText themes, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.AboutUsText = AboutUsText;
     this.anonymousLogin = anonymousLogin;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
     this.decorationUseSocial = decorationUseSocial;
-    this.emailDecoration = emailDecoration;
     this.forgotPassword = forgotPassword;
     this.googleConnect = googleConnect;
     this.logo = logo;
     this.password = password;
     this.signIn = signIn;
     this.signUp = signUp;
+    this.themes = themes;
     this.twitterConnect = twitterConnect;
   }
 
@@ -141,12 +141,6 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_decoration;
-      EditText emailDecoration = ViewBindings.findChildViewById(rootView, id);
-      if (emailDecoration == null) {
-        break missingId;
-      }
-
       id = R.id.forgot_password;
       TextView forgotPassword = ViewBindings.findChildViewById(rootView, id);
       if (forgotPassword == null) {
@@ -183,6 +177,12 @@ public final class ActivityLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.themes;
+      EditText themes = ViewBindings.findChildViewById(rootView, id);
+      if (themes == null) {
+        break missingId;
+      }
+
       id = R.id.twitter_connect;
       Button twitterConnect = ViewBindings.findChildViewById(rootView, id);
       if (twitterConnect == null) {
@@ -190,8 +190,8 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, AboutUsText, anonymousLogin,
-          appName, decorationPasswordReset, decorationUseSocial, emailDecoration, forgotPassword,
-          googleConnect, logo, password, signIn, signUp, twitterConnect);
+          appName, decorationPasswordReset, decorationUseSocial, forgotPassword, googleConnect,
+          logo, password, signIn, signUp, themes, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,12 +7,14 @@ import android.util.Log
 import android.view.Menu
 import android.widget.Spinner
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.app1.model.FeederPreferences
 import com.example.app1.model.User
 import com.example.app1.settings.menu.MenuActivity
+import com.example.app1.settings.menu.ThemePreferences
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DataSnapshot
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
     private val current_user = Firebase.auth.currentUser!!
+    private lateinit var themePreferences: ThemePreferences
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.top_bar, menu)
@@ -39,6 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         if (!current_user.isAnonymous) {
             database = Firebase.database.reference
             val user = User(current_user.email, current_user.email)

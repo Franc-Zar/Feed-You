@@ -32,9 +32,6 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   public final TextView decorationPasswordReset;
 
   @NonNull
-  public final EditText emailDecoration;
-
-  @NonNull
   public final TextView haveAnAccount;
 
   @NonNull
@@ -46,20 +43,23 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
   @NonNull
   public final TextView signIn;
 
+  @NonNull
+  public final EditText themes;
+
   private ActivityPasswordRecoveryBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView AboutUsText, @NonNull TextView appName,
-      @NonNull TextView decorationPasswordReset, @NonNull EditText emailDecoration,
-      @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull Button resetPassword,
-      @NonNull TextView signIn) {
+      @NonNull TextView decorationPasswordReset, @NonNull TextView haveAnAccount,
+      @NonNull ImageView logo, @NonNull Button resetPassword, @NonNull TextView signIn,
+      @NonNull EditText themes) {
     this.rootView = rootView;
     this.AboutUsText = AboutUsText;
     this.appName = appName;
     this.decorationPasswordReset = decorationPasswordReset;
-    this.emailDecoration = emailDecoration;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.resetPassword = resetPassword;
     this.signIn = signIn;
+    this.themes = themes;
   }
 
   @Override
@@ -107,12 +107,6 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.email_decoration;
-      EditText emailDecoration = ViewBindings.findChildViewById(rootView, id);
-      if (emailDecoration == null) {
-        break missingId;
-      }
-
       id = R.id.have_an_account;
       TextView haveAnAccount = ViewBindings.findChildViewById(rootView, id);
       if (haveAnAccount == null) {
@@ -137,8 +131,14 @@ public final class ActivityPasswordRecoveryBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.themes;
+      EditText themes = ViewBindings.findChildViewById(rootView, id);
+      if (themes == null) {
+        break missingId;
+      }
+
       return new ActivityPasswordRecoveryBinding((ConstraintLayout) rootView, AboutUsText, appName,
-          decorationPasswordReset, emailDecoration, haveAnAccount, logo, resetPassword, signIn);
+          decorationPasswordReset, haveAnAccount, logo, resetPassword, signIn, themes);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

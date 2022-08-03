@@ -6,6 +6,7 @@
     <string name="have_account">Have an Account?</string>
     <string name="lang" translatable="false">SELECTED_LANGUAGE</string>
     <string name="topics" translatable="false">topics</string>
+    <string name="theme" translatable="false">theme</string>
     <string name="title_lang">Select language</string>
     <string name="title_topics">Select the topics you\'re interested in</string>
     <string name="prefTopics" translatable="false">prefTopics</string>

@@ -240,7 +240,7 @@ class AccountActivity : AppCompatActivity() {
         accountEmail = findViewById(R.id.account_email)
         twitterConnect = findViewById(R.id.twitter_connect)
         googleConnect = findViewById(R.id.google_connect)
-        emailDecoration = findViewById(R.id.email_decoration)
+        emailDecoration = findViewById(R.id.themes)
         connectSocials = findViewById(R.id.connect_socials)
         accountName = findViewById(R.id.account_name)
         nameDecoration = findViewById(R.id.name_decoration)
