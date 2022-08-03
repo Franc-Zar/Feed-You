@@ -77,11 +77,20 @@ class CustomFeeder(var context: Context){
     fun setFeed(rv: RecyclerView, load: ProgressBar) {
         val news = mutableListOf<MutableList<NewsData>>()
         val links = getLinksByTopic()
+        val blockedLinks = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
 
         CoroutineScope(Dispatchers.IO).launch {
             for (i in links.indices){
                 news.add(mutableListOf())
                 for (j in 0 until links[i].size){
+                    var blocked = false
+                    for(link in blockedLinks){
+                        if(link.value == links[i][j])
+                        blocked = true
+                    }
+                    if (blocked){
+                        break
+                    }
                     try {
                         val result = Reader.coRead<RssStandardChannelData>(links[i][j])
                         val icon = getIcon(result.items!![0].link.toString())

@@ -74,7 +74,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            val topicPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
+            val topicPref = database.child(getString(R.string.firebase_users))
+                .child(current_user.uid)
                 .child("topics")
             val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
 
@@ -82,17 +83,18 @@ class MainActivity : AppCompatActivity() {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-                    val value = dataSnapshot.getValue<MutableList<Int>>()
-                    Log.d("DATA UPDATED", "Value is: $value")
-                    with(topicLocalPref.edit()) {
-                        putString(getString(R.string.prefTopics), value.toString())
-                        apply()
+                    val value = dataSnapshot.getValue()
+                    if (value != null){
+                        Log.d("DATA UPDATED", "Value is: $value")
+                        with(topicLocalPref.edit()) {
+                            putString(getString(R.string.prefTopics), value.toString())
+                            apply()
+                        }
                     }
-
-                    if (value != null) {
+                    /**if (value != null) {
                         val feederPreferences = FeederPreferences(context = baseContext)
-                        feederPreferences.setFavouriteTopics(value)
-                    }
+                        //feederPreferences.setFavouriteTopics(value)
+                    }**/
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
@@ -101,8 +103,7 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-        if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or
-            getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty()){
+        if(getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }
@@ -116,17 +117,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(switch_activity)
         }
 
-
-        /*
-        toolbar.setOnMenuItemClickListener {
-            when (it.itemId) {
-                R.id.app_bar_search -> {
-                    ;
-                }
-                else -> false
-            }
-        }
-        */
     }
 
     override fun onStart() {

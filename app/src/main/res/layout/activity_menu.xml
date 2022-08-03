@@ -91,7 +91,7 @@
             android:layout_height="20dp" />
 
         <TextView
-            android:id="@+id/password_reset"
+            android:id="@+id/btn_block"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"

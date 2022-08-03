@@ -32,12 +32,20 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_account.xml"
     },
     {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\topic_links_list.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\topic_links_list.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_google.xml",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_google.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_preference.xml",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_preference.xml"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_block.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_block.xml"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_menu.xml",

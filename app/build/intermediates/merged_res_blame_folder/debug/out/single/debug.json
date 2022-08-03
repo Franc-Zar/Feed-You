@@ -28,6 +28,10 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_search_24.xml"
     },
     {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_topic_links_list.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\topic_links_list.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_account_circle_18.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\drawable\\ic_baseline_account_circle_18.xml"
     },
@@ -156,6 +160,10 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_block.xml.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\layout\\activity_block.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -252,12 +260,12 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_icons8_twitter.png"
     },
     {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_logo_round.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\logo_round.png"
-    },
-    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_baseline_people_alt_24.png.flat",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_people_alt_24.png"
+    },
+    {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_logo_round.png.flat",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\src\\main\\res\\mipmap-xhdpi\\logo_round.png"
     },
     {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-2\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_logo_round.png.flat",

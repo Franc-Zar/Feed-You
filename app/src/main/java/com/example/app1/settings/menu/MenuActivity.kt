@@ -12,6 +12,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.app1.BlockActivity
+import com.example.app1.PreferenceActivity
 import com.example.app1.R
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
@@ -55,13 +57,11 @@ class MenuActivity : AppCompatActivity() {
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
         val themes = findViewById<Spinner>(R.id.spinner_themes)
+        val block = findViewById<TextView>(R.id.btn_block)
 
         toolbar.setNavigationOnClickListener {
-
             finish()
-
         }
-
 
         themes.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {
@@ -78,6 +78,11 @@ class MenuActivity : AppCompatActivity() {
 
                 }
             }
+        }
+
+        block.setOnClickListener {
+            val blockIntent = Intent(this, BlockActivity::class.java)
+            startActivity(blockIntent)
         }
 
         reportProblem.setOnClickListener {
