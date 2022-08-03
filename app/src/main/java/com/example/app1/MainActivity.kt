@@ -116,7 +116,9 @@ class MainActivity : AppCompatActivity() {
             // This method performs the actual data-refresh operation.
             // The method calls setRefreshing(false) when it's finished.
             myUpdateOperation()
+            refreshLayout.isRefreshing = false
         }
+
         myUpdateOperation()
     }
 
