@@ -131,6 +131,7 @@ class CustomAdapter(var mList: List<NewsData>, private val context: Context) : R
             val intent = Intent(holder.itemView.context, NewsActivity::class.java).apply {
                 putExtra("TITLE", item.title)
                 putExtra("HTML_CONTENT", item.link)
+                putExtra("FEED", item.feed)
             }
             holder.itemView.context.startActivity(intent)
         }

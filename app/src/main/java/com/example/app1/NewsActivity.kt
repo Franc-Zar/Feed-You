@@ -1,6 +1,7 @@
 package com.example.app1
 
 import android.app.AlertDialog
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
@@ -10,7 +11,10 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 
 
 class NewsActivity : AppCompatActivity() {
@@ -21,6 +25,22 @@ class NewsActivity : AppCompatActivity() {
         toolbar?.title = intent.getStringExtra("TITLE")
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        val btnBlock = findViewById<ImageButton>(R.id.btn_block)
+        btnBlock.setOnClickListener{
+            val blockedLinks = getSharedPreferences(getString(R.string.blocked), Context.MODE_PRIVATE)
+            with(blockedLinks.edit()) {
+                putString(
+                    (blockedLinks.all.size + 1).toString(),
+                    intent.getStringExtra("FEED")!!
+                )
+                apply()
+            }
+            Toast.makeText(
+                baseContext, getString(R.string.linkBlocked),
+                Toast.LENGTH_LONG
+            ).show()
+        }
 
         val webView = findViewById<WebView>(R.id.web_view)
         webView.settings.mixedContentMode = MIXED_CONTENT_COMPATIBILITY_MODE

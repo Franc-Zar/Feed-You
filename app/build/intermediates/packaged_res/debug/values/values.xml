@@ -148,6 +148,7 @@
     <string name="have_account">Have an Account?</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lang" translatable="false">SELECTED_LANGUAGE</string>
+    <string name="linkBlocked">Hai bloccato questa fonte, puoi sbloccarla nel menu</string>
     <string name="logoutAlert">Are you really sure you want to logout?</string>
     <string name="messages_header">Messages</string>
     <string name="newPasswordHint">Password should contain at least: 6 characters length, 1 capital letter, 1 number, 1 special character.  </string>

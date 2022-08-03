@@ -88,7 +88,6 @@ id app_name
 id appbar
 id btn_block
 id btn_link
-id button
 id change_password
 id confirm_password
 id connect_socials
@@ -201,6 +200,7 @@ string google_storage_bucket
 string have_account
 string hello_blank_fragment
 string lang
+string linkBlocked
 string logoutAlert
 string messages_header
 string newPasswordHint

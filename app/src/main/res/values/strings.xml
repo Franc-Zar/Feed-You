@@ -56,4 +56,5 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="blocked">blockedLinks</string>
+    <string name="linkBlocked">Hai bloccato questa fonte, puoi sbloccarla nel menu.</string>
 </resources>

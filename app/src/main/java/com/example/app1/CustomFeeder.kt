@@ -64,7 +64,8 @@ class CustomFeeder(var context: Context){
             val result = Reader.coRead<RssStandardChannelData>(link)
             val icon  = getIcon(result.items!![0].link.toString())
             result.items!!.forEach {
-                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1, it.guid, icon))
+                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1,
+                    it.guid, icon, link))
             }
             withContext(Dispatchers.Main){
                 val adapter = CustomAdapter(news, context)
@@ -96,7 +97,7 @@ class CustomFeeder(var context: Context){
                         val icon = getIcon(result.items!![0].link.toString())
                         result.items!!.forEach {
                             news[i].add(NewsData(it.title!!,it.description ?: "...",
-                                        it.link!!, i, it.guid, icon))}
+                                        it.link!!, i, it.guid, icon, links[i][j]))}
                     }catch (e : Exception){
                         e.printStackTrace()
                     }

@@ -2846,7 +2846,6 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_block
 id btn_link
-id button
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3650,6 +3649,7 @@ string icon_content_description
 string item_view_role_description
 string label
 string lang
+string linkBlocked
 string logoutAlert
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

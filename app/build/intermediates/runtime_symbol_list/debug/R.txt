@@ -2845,7 +2845,6 @@ int id browser_actions_menu_items 0x7f0a0076
 int id browser_actions_menu_view 0x7f0a0077
 int id btn_block 0x7f0a0078
 int id btn_link 0x7f0a0079
-int id button 0x7f0a007a
 int id buttonPanel 0x7f0a007b
 int id cache_measures 0x7f0a007c
 int id callMeasure 0x7f0a007d
@@ -3649,6 +3648,7 @@ int string icon_content_description 0x7f12005a
 int string item_view_role_description 0x7f12005b
 int string label 0x7f12005c
 int string lang 0x7f12005d
+int string linkBlocked 0x7f1200c3
 int string logoutAlert 0x7f12005e
 int string m3_ref_typeface_brand_medium 0x7f12005f
 int string m3_ref_typeface_brand_regular 0x7f120060
