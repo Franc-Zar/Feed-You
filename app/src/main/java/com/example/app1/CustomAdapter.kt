@@ -1,10 +1,7 @@
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
-import android.graphics.BitmapFactory
 import android.os.Build
 import android.text.Html
 import android.view.LayoutInflater
@@ -12,8 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app1.NewsActivity
 import com.example.app1.R
@@ -21,24 +20,9 @@ import com.example.app1.model.NewsData
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.MaterialShapeDrawable
 import com.google.android.material.shape.ShapeAppearanceModel
-import org.jsoup.Jsoup
-import java.net.URL
-import android.graphics.Bitmap
-import android.util.Log
-import android.view.MotionEvent
-import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.findViewTreeLifecycleOwner
-import androidx.lifecycle.lifecycleScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import java.lang.Float.min
-import kotlin.system.measureTimeMillis
 
 
-class CustomAdapter(private val mList: List<NewsData>, private val context: Context) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(var mList: List<NewsData>, private val context: Context) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     // costruisce gli elementi della recyclerview sulla base della view rv_row
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -147,6 +131,7 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
             val intent = Intent(holder.itemView.context, NewsActivity::class.java).apply {
                 putExtra("TITLE", item.title)
                 putExtra("HTML_CONTENT", item.link)
+                putExtra("FEED", item.feed)
             }
             holder.itemView.context.startActivity(intent)
         }
@@ -183,7 +168,13 @@ class CustomAdapter(private val mList: List<NewsData>, private val context: Cont
         val iv_favicon: ImageView = itemView.findViewById(R.id.iv_favicon)
         val tv_category: TextView = itemView.findViewById(R.id.tv_category)
     }
+
+    fun filterList(filterllist: MutableList<NewsData>) {
+        // below line is to add our filtered
+        // list in our course array list.
+        mList = filterllist
+        // below line is to notify our adapter
+        // as change in recycler view data.
+        notifyDataSetChanged()
+    }
 }
-
-
-

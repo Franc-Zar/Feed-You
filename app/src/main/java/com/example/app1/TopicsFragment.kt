@@ -34,16 +34,11 @@ class TopicsFragment : Fragment() {
             }
 
             if (indexes.isNotEmpty()){
-                val current_user = Firebase.auth.currentUser!!
-                if (! current_user.isAnonymous){
-                    Firebase.database.reference.child(getString(R.string.firebase_users))
-                        .child(current_user.uid).child("topics").setValue(indexes)
-                }
                 if (pref != null) {
-                    with(pref.edit()) {
+                    /**with(pref.edit()) {
                         putString(getString(R.string.topics), indexes.toString())
                         apply()
-                    }
+                    }**/
                     val feederPreferences = context?.let { FeederPreferences(it) }
                     feederPreferences?.setFavouriteTopics(indexes)
                 }

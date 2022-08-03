@@ -64,7 +64,8 @@ class CustomFeeder(var context: Context){
             val result = Reader.coRead<RssStandardChannelData>(link)
             val icon  = getIcon(result.items!![0].link.toString())
             result.items!!.forEach {
-                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1, it.guid, icon))
+                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1,
+                    it.guid, icon, link))
             }
             withContext(Dispatchers.Main){
                 val adapter = CustomAdapter(news, context)
@@ -77,17 +78,26 @@ class CustomFeeder(var context: Context){
     fun setFeed(rv: RecyclerView, load: ProgressBar) {
         val news = mutableListOf<MutableList<NewsData>>()
         val links = getLinksByTopic()
+        val blockedLinks = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
 
         CoroutineScope(Dispatchers.IO).launch {
             for (i in links.indices){
                 news.add(mutableListOf())
                 for (j in 0 until links[i].size){
+                    var blocked = false
+                    for(link in blockedLinks){
+                        if(link.value == links[i][j])
+                        blocked = true
+                    }
+                    if (blocked){
+                        break
+                    }
                     try {
                         val result = Reader.coRead<RssStandardChannelData>(links[i][j])
                         val icon = getIcon(result.items!![0].link.toString())
                         result.items!!.forEach {
                             news[i].add(NewsData(it.title!!,it.description ?: "...",
-                                        it.link!!, i, it.guid, icon))}
+                                        it.link!!, i, it.guid, icon, links[i][j]))}
                     }catch (e : Exception){
                         e.printStackTrace()
                     }
@@ -95,12 +105,14 @@ class CustomFeeder(var context: Context){
                 news[i].shuffle()
             }
 
+            val list = shuffler(news)
             withContext(Dispatchers.Main) {
-                val adapter = CustomAdapter(shuffler(news), context)
+                val adapter = CustomAdapter(list, context)
                 rv.adapter = adapter
                 load.visibility = View.INVISIBLE
             }
         }
+
     }
 
     fun shuffler(news: List<MutableList<NewsData>>): List<NewsData> {

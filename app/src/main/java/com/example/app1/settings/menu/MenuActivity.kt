@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.app1.BlockActivity
+import com.example.app1.PreferenceActivity
 import com.example.app1.R
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
@@ -52,15 +54,42 @@ class MenuActivity : AppCompatActivity() {
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
+<<<<<<< HEAD
         val themes = findViewById<TextView>(R.id.themes)
 
+=======
+        val themes = findViewById<Spinner>(R.id.spinner_themes)
+        val block = findViewById<TextView>(R.id.btn_block)
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
         toolbar.setNavigationOnClickListener {
-
             finish()
-
         }
 
+<<<<<<< HEAD
+=======
+        themes.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+
+                when (themes.selectedItem.toString()) {
+
+                    "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    "Follow System" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+
+                }
+            }
+        }
+
+        block.setOnClickListener {
+            val blockIntent = Intent(this, BlockActivity::class.java)
+            startActivity(blockIntent)
+        }
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
         reportProblem.setOnClickListener {
 

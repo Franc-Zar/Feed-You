@@ -1,17 +1,23 @@
 package com.example.app1
 
+import CustomAdapter
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
-import android.widget.Spinner
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatDelegate
+=======
+import android.widget.SearchView
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.app1.model.FeederPreferences
+import com.example.app1.model.NewsData
 import com.example.app1.model.User
 import com.example.app1.settings.menu.MenuActivity
 import com.example.app1.settings.menu.ThemePreferences
@@ -27,15 +33,33 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.CancellationException
 import kotlin.system.exitProcess
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
     private val current_user = Firebase.auth.currentUser!!
+<<<<<<< HEAD
     private lateinit var themePreferences: ThemePreferences
+=======
+    private lateinit var rv : RecyclerView
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.top_bar, menu)
         val menuItem = menu?.findItem(R.id.app_bar_search)
+        val searchView: SearchView = menuItem?.getActionView() as SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                // inside on query text change method we are
+                // calling a method to filter our recycler view.
+                newText?.let { filter(it) }
+                return false
+            }
+        })
         return super.onCreateOptionsMenu(menu)
 
     }
@@ -60,7 +84,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            val topicPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
+            val topicPref = database.child(getString(R.string.firebase_users))
+                .child(current_user.uid)
                 .child("topics")
             val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
 
@@ -68,17 +93,18 @@ class MainActivity : AppCompatActivity() {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-                    val value = dataSnapshot.getValue<MutableList<Int>>()
-                    Log.d("DATA UPDATED", "Value is: $value")
-                    with(topicLocalPref.edit()) {
-                        putString(getString(R.string.prefTopics), value.toString())
-                        apply()
+                    val value = dataSnapshot.getValue()
+                    if (value != null){
+                        Log.d("DATA UPDATED", "Value is: $value")
+                        with(topicLocalPref.edit()) {
+                            putString(getString(R.string.prefTopics), value.toString())
+                            apply()
+                        }
                     }
-
-                    if (value != null) {
+                    /**if (value != null) {
                         val feederPreferences = FeederPreferences(context = baseContext)
-                        feederPreferences.setFavouriteTopics(value)
-                    }
+                        //feederPreferences.setFavouriteTopics(value)
+                    }**/
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value
@@ -87,8 +113,7 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-        if(getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty() or
-            getSharedPreferences(getString(R.string.topics),MODE_PRIVATE).all.isEmpty()){
+        if(getSharedPreferences(getString(R.string.prefTopics),MODE_PRIVATE).all.isEmpty()){
             val preferenceIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(preferenceIntent)
         }
@@ -101,16 +126,7 @@ class MainActivity : AppCompatActivity() {
             switch_activity = Intent(this, MenuActivity::class.java)
             startActivity(switch_activity)
         }
-        /*
-        toolbar.setOnMenuItemClickListener {
-            when (it.itemId) {
-                R.id.app_bar_search -> {
-                    ;
-                }
-                else -> false
-            }
-        }
-        */
+
     }
 
     override fun onStart() {
@@ -120,7 +136,9 @@ class MainActivity : AppCompatActivity() {
             // This method performs the actual data-refresh operation.
             // The method calls setRefreshing(false) when it's finished.
             myUpdateOperation()
+            refreshLayout.isRefreshing = false
         }
+
         myUpdateOperation()
     }
 
@@ -129,7 +147,7 @@ class MainActivity : AppCompatActivity() {
         if(pref.all.isNotEmpty()){
             if (!pref.all.getValue(getString(R.string.prefTopics))?.equals("[]")!!) {
                 val feeder = CustomFeeder(this)
-                val rv = findViewById<RecyclerView>(R.id.rv)
+                rv = findViewById<RecyclerView>(R.id.rv)
                 rv.setHasFixedSize(true)
                 //Non servirebbe, il linear layout è quello di default
                 rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -144,6 +162,29 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun filter(text: String) {
+        // creating a new array list to filter our data.
+        val filteredlist = mutableListOf<NewsData>()
+        val news = (rv.adapter as CustomAdapter).mList
+        // running a for loop to compare elements.
+        for (item in news) { // news array
+            // checking if the entered string matched with any item of our recycler view.
+            if (item.title.lowercase().contains(text.lowercase())) {
+                // if the item is matched we are
+                // adding it to our filtered list.
+                filteredlist.add(item)
+            }
+        }
+        if (filteredlist.isEmpty()) {
+            // if no item is added in filtered list we are
+            // displaying a toast message as no data found.
+            Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
+        } else {
+            (rv.adapter as CustomAdapter).filterList(filteredlist)
+        }
+    }
+
 
     override fun onBackPressed() {
         moveTaskToBack(true);

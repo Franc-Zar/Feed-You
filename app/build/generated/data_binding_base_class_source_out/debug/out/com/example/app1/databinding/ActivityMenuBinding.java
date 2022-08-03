@@ -28,6 +28,9 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView accountSettings;
 
   @NonNull
+  public final TextView btnBlock;
+
+  @NonNull
   public final TextView connectSocials;
 
   @NonNull
@@ -35,9 +38,6 @@ public final class ActivityMenuBinding implements ViewBinding {
 
   @NonNull
   public final TextView logout;
-
-  @NonNull
-  public final TextView passwordReset;
 
   @NonNull
   public final Switch pushNotifications;
@@ -52,18 +52,26 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
+<<<<<<< HEAD
       @NonNull TextView accountSettings, @NonNull TextView connectSocials,
       @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
       @NonNull TextView passwordReset, @NonNull Switch pushNotifications,
       @NonNull TextView reportProblems, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount) {
+=======
+      @NonNull TextView accountSettings, @NonNull TextView btnBlock,
+      @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
+      @NonNull TextView emailDecoration, @NonNull TextView logout,
+      @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
+      @NonNull Spinner spinnerThemes, @NonNull MaterialToolbar toolbarAccount) {
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
+    this.btnBlock = btnBlock;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
-    this.passwordReset = passwordReset;
     this.pushNotifications = pushNotifications;
     this.reportProblems = reportProblems;
     this.themes = themes;
@@ -109,6 +117,12 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_block;
+      TextView btnBlock = ViewBindings.findChildViewById(rootView, id);
+      if (btnBlock == null) {
+        break missingId;
+      }
+
       id = R.id.connect_socials;
       TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
       if (connectSocials == null) {
@@ -124,12 +138,6 @@ public final class ActivityMenuBinding implements ViewBinding {
       id = R.id.logout;
       TextView logout = ViewBindings.findChildViewById(rootView, id);
       if (logout == null) {
-        break missingId;
-      }
-
-      id = R.id.password_reset;
-      TextView passwordReset = ViewBindings.findChildViewById(rootView, id);
-      if (passwordReset == null) {
         break missingId;
       }
 
@@ -158,8 +166,13 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
+<<<<<<< HEAD
           connectSocials, decorationPasswordReset, logout, passwordReset, pushNotifications,
           reportProblems, themes, toolbarAccount);
+=======
+          btnBlock, connectSocials, decorationPasswordReset, emailDecoration, logout,
+          pushNotifications, reportProblems, spinnerThemes, toolbarAccount);
+>>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

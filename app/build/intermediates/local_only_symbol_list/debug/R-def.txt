@@ -86,7 +86,8 @@ id app_bar
 id app_bar_search
 id app_name
 id appbar
-id button
+id btn_block
+id btn_link
 id change_password
 id confirm_password
 id connect_socials
@@ -103,9 +104,11 @@ id have_an_account
 id imageView
 id iv_favicon
 id language
+id lay_links
 id layout_app
 id layout_topics
 id linearLayout
+id linkList
 id loading_icon
 id logo
 id logout
@@ -113,7 +116,6 @@ id name_decoration
 id new_password
 id old_password
 id password
-id password_reset
 id password_reset_progress
 id push_notifications
 id report_problems
@@ -138,6 +140,7 @@ id toolbar_password_change
 id topics
 id tv_category
 id tv_frag_title
+id tv_link
 id tv_sorry
 id tv_title
 id twitter_connect
@@ -146,6 +149,7 @@ integer minDistance
 layout activity_about
 layout activity_account
 layout activity_anonymous
+layout activity_block
 layout activity_error
 layout activity_google
 layout activity_login
@@ -162,6 +166,7 @@ layout alert_feed_you
 layout fragment_lang
 layout fragment_topics
 layout rv_row
+layout topic_links_list
 menu top_bar
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -175,6 +180,7 @@ string askConfirm
 string attachment_summary_off
 string attachment_summary_on
 string attachment_title
+string blocked
 string continua
 string default_web_client_id
 string deleteAccount
@@ -193,6 +199,7 @@ string google_storage_bucket
 string have_account
 string hello_blank_fragment
 string lang
+string linkBlocked
 string logoutAlert
 string messages_header
 string newPasswordHint
