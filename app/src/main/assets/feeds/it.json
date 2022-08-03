@@ -19,6 +19,8 @@
         "https://www.ilsole24ore.com/rss/cultura.xml"
     ],
     "6": [
-        "https://www.ultimouomo.com/feed"
+        "https://www.ultimouomo.com/feed",
+        "https://www.gazzetta.it/rss/home.xml",
+        "https://www.corrieredellosport.it/rss"
     ]
 }

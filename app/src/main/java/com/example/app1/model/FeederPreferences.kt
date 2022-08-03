@@ -27,7 +27,6 @@ class FeederPreferences (private val context: Context){
                 indexes.add(json.getInt(i))
             }
             setFavouriteTopics(indexes)
-            //setBounds()
         }
     }
 
