@@ -95,12 +95,14 @@ class CustomFeeder(var context: Context){
                 news[i].shuffle()
             }
 
+            val list = shuffler(news)
             withContext(Dispatchers.Main) {
-                val adapter = CustomAdapter(shuffler(news), context)
+                val adapter = CustomAdapter(list, context)
                 rv.adapter = adapter
                 load.visibility = View.INVISIBLE
             }
         }
+
     }
 
     fun shuffler(news: List<MutableList<NewsData>>): List<NewsData> {
