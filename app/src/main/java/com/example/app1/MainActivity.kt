@@ -162,24 +162,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun filter(text: String) {
-        // creating a new array list to filter our data.
-        val filteredlist = mutableListOf<NewsData>()
-        val news = (rv.adapter as CustomAdapter).mList
-        // running a for loop to compare elements.
-        for (item in news) { // news array
-            // checking if the entered string matched with any item of our recycler view.
-            if (item.title.lowercase().contains(text.lowercase())) {
-                // if the item is matched we are
-                // adding it to our filtered list.
-                filteredlist.add(item)
+        try {
+            val news = (rv.adapter as CustomAdapter).mList
+            // creating a new array list to filter our data.
+            val filteredlist = mutableListOf<NewsData>()
+            // running a for loop to compare elements.
+            for (item in news) { // news array
+                // checking if the entered string matched with any item of our recycler view.
+                if (item.title.lowercase().contains(text.lowercase())) {
+                    // if the item is matched we are
+                    // adding it to our filtered list.
+                    filteredlist.add(item)
+                }
             }
-        }
-        if (filteredlist.isEmpty()) {
-            // if no item is added in filtered list we are
-            // displaying a toast message as no data found.
+            if (filteredlist.isEmpty()) {
+                // if no item is added in filtered list we are
+                // displaying a toast message as no data found.
+                Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
+            } else {
+                (rv.adapter as CustomAdapter).filterList(filteredlist)
+            }
+        }catch (e:Exception){
             Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
-        } else {
-            (rv.adapter as CustomAdapter).filterList(filteredlist)
         }
     }
 
