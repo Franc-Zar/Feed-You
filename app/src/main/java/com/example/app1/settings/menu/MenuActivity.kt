@@ -178,8 +178,6 @@ class MenuActivity : AppCompatActivity() {
                         overridePendingTransition(android.R.anim.accelerate_interpolator, android.R.anim.fade_out)
 
                     }.show()
-                
-                themeDialog.setco
 
             }
         }
