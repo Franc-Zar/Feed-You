@@ -2845,6 +2845,7 @@ int id browser_actions_menu_items 0x7f0a0076
 int id browser_actions_menu_view 0x7f0a0077
 int id btn_block 0x7f0a0078
 int id btn_link 0x7f0a0079
+int id btn_pref 0x7f0a024a
 int id buttonPanel 0x7f0a007a
 int id cache_measures 0x7f0a007b
 int id callMeasure 0x7f0a007c

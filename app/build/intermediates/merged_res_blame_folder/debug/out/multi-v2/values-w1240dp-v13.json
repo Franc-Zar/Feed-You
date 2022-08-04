@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w1240dp-v13\\values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w1240dp/dimens.xml",
+                    "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
-                        "startOffsets": "16",
+                        "startOffsets": "17",
                         "endColumns": "42",
-                        "endOffsets": "54"
+                        "endOffsets": "55"
                     },
                     "to": {
                         "startLines": "2",

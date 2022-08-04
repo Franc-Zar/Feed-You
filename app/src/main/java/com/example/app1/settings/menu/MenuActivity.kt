@@ -57,6 +57,7 @@ class MenuActivity : AppCompatActivity() {
         val themes = findViewById<TextView>(R.id.themes)
 
         val block = findViewById<TextView>(R.id.btn_block)
+        val pref = findViewById<TextView>(R.id.btn_pref)
 
         toolbar.setNavigationOnClickListener {
             finish()
@@ -68,6 +69,10 @@ class MenuActivity : AppCompatActivity() {
         block.setOnClickListener {
             val blockIntent = Intent(this, BlockActivity::class.java)
             startActivity(blockIntent)
+        }
+        pref.setOnClickListener {
+            val prefIntent = Intent(this, PreferenceActivity::class.java)
+            startActivity(prefIntent)
         }
 
         reportProblem.setOnClickListener {
