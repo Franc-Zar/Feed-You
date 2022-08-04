@@ -89,6 +89,8 @@ id appbar
 id btn_block
 id btn_link
 id btn_pref
+id btn_reset
+id btn_singleFeed
 id change_password
 id confirm_password
 id connect_socials
@@ -162,6 +164,7 @@ layout activity_password_recovery
 layout activity_preference
 layout activity_sign_up
 layout activity_simple_sign_in
+layout activity_single_feed
 layout activity_twitter
 layout alert_feed_you
 layout fragment_lang
@@ -181,11 +184,13 @@ string askConfirm
 string attachment_summary_off
 string attachment_summary_on
 string attachment_title
+string back_to_normal
 string blocked
 string continua
 string default_web_client_id
 string deleteAccount
 string deleteAlert
+string feedLink
 string firebase_lang
 string firebase_prefs
 string firebase_users
@@ -218,6 +223,8 @@ string theme
 string title_activity_news
 string title_lang
 string title_topics
+string toMultiFeed
+string toSingleFeed
 string topics
 string twitterAlert
 style DialogTheme

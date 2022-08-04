@@ -2847,6 +2847,8 @@ id browser_actions_menu_view
 id btn_block
 id btn_link
 id btn_pref
+id btn_reset
+id btn_singleFeed
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3422,6 +3424,7 @@ layout activity_password_recovery
 layout activity_preference
 layout activity_sign_up
 layout activity_simple_sign_in
+layout activity_single_feed
 layout activity_twitter
 layout alert_feed_you
 layout browser_actions_context_menu_page
@@ -3591,6 +3594,7 @@ string askConfirm
 string attachment_summary_off
 string attachment_summary_on
 string attachment_title
+string back_to_normal
 string blocked
 string bottom_sheet_behavior
 string bottomsheet_action_expand_halfway
@@ -3631,6 +3635,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string feedLink
 string firebase_lang
 string firebase_prefs
 string firebase_users
@@ -3748,6 +3753,8 @@ string theme
 string title_activity_news
 string title_lang
 string title_topics
+string toMultiFeed
+string toSingleFeed
 string topics
 string twitterAlert
 string v7_preference_off

@@ -58,4 +58,8 @@
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="blocked">blockedLinks</string>
     <string name="linkBlocked">Hai bloccato questa fonte, puoi sbloccarla nel menu.</string>
+    <string name="feedLink">feedLink</string>
+    <string name="back_to_normal">Restore Normal Mode</string>
+    <string name="toMultiFeed">Single Feed Mode disattivata</string>
+    <string name="toSingleFeed">Single Feed Mode attivata</string>
 </resources>

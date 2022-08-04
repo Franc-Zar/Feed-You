@@ -34,6 +34,9 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView btnPref;
 
   @NonNull
+  public final TextView btnSingleFeed;
+
+  @NonNull
   public final TextView connectSocials;
 
   @NonNull
@@ -56,14 +59,16 @@ public final class ActivityMenuBinding implements ViewBinding {
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
       @NonNull TextView accountSettings, @NonNull TextView btnBlock, @NonNull TextView btnPref,
-      @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
-      @NonNull TextView logout, @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
-      @NonNull TextView themes, @NonNull MaterialToolbar toolbarAccount) {
+      @NonNull TextView btnSingleFeed, @NonNull TextView connectSocials,
+      @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
+      @NonNull Switch pushNotifications, @NonNull TextView reportProblems, @NonNull TextView themes,
+      @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
     this.btnBlock = btnBlock;
     this.btnPref = btnPref;
+    this.btnSingleFeed = btnSingleFeed;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
@@ -124,6 +129,12 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_singleFeed;
+      TextView btnSingleFeed = ViewBindings.findChildViewById(rootView, id);
+      if (btnSingleFeed == null) {
+        break missingId;
+      }
+
       id = R.id.connect_socials;
       TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
       if (connectSocials == null) {
@@ -167,8 +178,8 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          btnBlock, btnPref, connectSocials, decorationPasswordReset, logout, pushNotifications,
-          reportProblems, themes, toolbarAccount);
+          btnBlock, btnPref, btnSingleFeed, connectSocials, decorationPasswordReset, logout,
+          pushNotifications, reportProblems, themes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

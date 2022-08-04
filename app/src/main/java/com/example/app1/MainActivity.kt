@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -145,8 +146,12 @@ class MainActivity : AppCompatActivity() {
                 //Non servirebbe, il linear layout è quello di default
                 rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
                 try {
-                    //feeder.setFeedFromLink("https://www.ultimouomo.com/feed", rv, findViewById<ProgressBar>(R.id.loading_icon))
-                    feeder.setFeed(rv, findViewById(R.id.loading_icon))
+                    val link = getSharedPreferences(getString(R.string.feedLink), Context.MODE_PRIVATE).all
+                    if(link.isEmpty()){
+                        feeder.setFeed(rv, findViewById(R.id.loading_icon))
+                    }else{
+                        feeder.setFeedFromLink(link[getString(R.string.feedLink)].toString(), rv, findViewById<ProgressBar>(R.id.loading_icon))
+                    }
                 } catch (e: CancellationException) {
                     Log.d("Coroutine failure", e.stackTrace.toString())
                     val intent = Intent(this, ErrorActivity::class.java)
@@ -157,24 +162,28 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun filter(text: String) {
-        // creating a new array list to filter our data.
-        val filteredlist = mutableListOf<NewsData>()
-        val news = (rv.adapter as CustomAdapter).mList
-        // running a for loop to compare elements.
-        for (item in news) { // news array
-            // checking if the entered string matched with any item of our recycler view.
-            if (item.title.lowercase().contains(text.lowercase())) {
-                // if the item is matched we are
-                // adding it to our filtered list.
-                filteredlist.add(item)
+        try {
+            val news = (rv.adapter as CustomAdapter).mList
+            // creating a new array list to filter our data.
+            val filteredlist = mutableListOf<NewsData>()
+            // running a for loop to compare elements.
+            for (item in news) { // news array
+                // checking if the entered string matched with any item of our recycler view.
+                if (item.title.lowercase().contains(text.lowercase())) {
+                    // if the item is matched we are
+                    // adding it to our filtered list.
+                    filteredlist.add(item)
+                }
             }
-        }
-        if (filteredlist.isEmpty()) {
-            // if no item is added in filtered list we are
-            // displaying a toast message as no data found.
+            if (filteredlist.isEmpty()) {
+                // if no item is added in filtered list we are
+                // displaying a toast message as no data found.
+                Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
+            } else {
+                (rv.adapter as CustomAdapter).filterList(filteredlist)
+            }
+        }catch (e:Exception){
             Toast.makeText(this, "No Data Found..", Toast.LENGTH_SHORT).show()
-        } else {
-            (rv.adapter as CustomAdapter).filterList(filteredlist)
         }
     }
 
