@@ -162,20 +162,21 @@ class MenuActivity : AppCompatActivity() {
                 val themes = this.resources.getStringArray(R.array.app_themes)
                 var themeSelected = themes[themePreferences.getThemeSelectedIndex()]
 
-                val themeDialog = AlertDialog.Builder(this, R.style.DialogTheme)
-                    .setView(R.layout.alert_feed_you)
+                AlertDialog.Builder(this, R.style.DialogTheme)
+                    .setTitle("Change Theme")
+                    .setIcon(R.drawable.logo)
                     .setSingleChoiceItems(themes, themePreferences.getThemeSelectedIndex()) { dialog, which ->
 
                         themeSelected = themes[which]
 
-                    }.setPositiveButton("Set Theme") { dialog, which ->
+                    }.setPositiveButton("Apply") { dialog, which ->
 
                         dialog.dismiss()
                         themePreferences.saveThemeSelected(themeSelected)
                         switch_activity = Intent(this, LoginActivity::class.java)
                         switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                         startActivity(switch_activity)
-                        overridePendingTransition(android.R.anim.accelerate_interpolator, android.R.anim.fade_out)
+                        overridePendingTransition(android.R.anim.accelerate_decelerate_interpolator, android.R.anim.fade_out)
 
                     }.show()
 

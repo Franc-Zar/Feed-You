@@ -4,7 +4,11 @@
         <item name="android:colorControlActivated">@color/feedyou_azure_light</item>
         <item name="android:colorControlNormal">@color/feedyou_azure_light</item>
         <item name="android:textColor">@color/feedyou_azure_light</item>
-        <item name="android:positiveButtonText">@color/feedyou_azure_light</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/feedyou_azure_light</item>
+        <item name="android:fontFamily">@font/asap</item>
     </style>
     <style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->

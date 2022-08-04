@@ -221,6 +221,7 @@ string title_topics
 string topics
 string twitterAlert
 style DialogTheme
+style PositiveButtonStyle
 style Theme.App1
 style Theme.App1.AppBarOverlay
 style Theme.App1.NoActionBar

@@ -4060,6 +4060,7 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style PositiveButtonStyle
 style Preference
 style Preference_Category
 style Preference_Category_Material
