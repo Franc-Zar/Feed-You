@@ -31,6 +31,9 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView btnBlock;
 
   @NonNull
+  public final TextView btnPref;
+
+  @NonNull
   public final TextView connectSocials;
 
   @NonNull
@@ -52,7 +55,7 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-      @NonNull TextView accountSettings, @NonNull TextView btnBlock,
+      @NonNull TextView accountSettings, @NonNull TextView btnBlock, @NonNull TextView btnPref,
       @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
       @NonNull TextView logout, @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
       @NonNull TextView themes, @NonNull MaterialToolbar toolbarAccount) {
@@ -60,6 +63,7 @@ public final class ActivityMenuBinding implements ViewBinding {
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
     this.btnBlock = btnBlock;
+    this.btnPref = btnPref;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
@@ -114,6 +118,12 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_pref;
+      TextView btnPref = ViewBindings.findChildViewById(rootView, id);
+      if (btnPref == null) {
+        break missingId;
+      }
+
       id = R.id.connect_socials;
       TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
       if (connectSocials == null) {
@@ -157,7 +167,7 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          btnBlock, connectSocials, decorationPasswordReset, logout, pushNotifications,
+          btnBlock, btnPref, connectSocials, decorationPasswordReset, logout, pushNotifications,
           reportProblems, themes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);

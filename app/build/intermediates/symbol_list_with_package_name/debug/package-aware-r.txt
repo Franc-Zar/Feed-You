@@ -2846,6 +2846,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_block
 id btn_link
+id btn_pref
 id buttonPanel
 id cache_measures
 id callMeasure
