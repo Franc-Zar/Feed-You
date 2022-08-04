@@ -63,8 +63,24 @@ class CustomFeeder(var context: Context){
         CoroutineScope(Dispatchers.IO).launch {
             val result = Reader.coRead<RssStandardChannelData>(link)
             val icon  = getIcon(result.items!![0].link.toString())
+            var category = -1
+            val links = getLinksByTopic()
+            var inTopic = false
+            for (i in 0 until links.size){
+                for (feed in links[i]){
+                    if (link==feed){
+                        inTopic = true
+                        break
+                    }
+                }
+                if(inTopic){
+                    category=i
+                    break
+                }
+            }
+
             result.items!!.forEach {
-                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, 1,
+                news.add(NewsData(it.title!!, it.description ?: "...", it.link!!, category,
                     it.guid, icon, link))
             }
             withContext(Dispatchers.Main){

@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -145,8 +146,12 @@ class MainActivity : AppCompatActivity() {
                 //Non servirebbe, il linear layout è quello di default
                 rv.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
                 try {
-                    //feeder.setFeedFromLink("https://www.ultimouomo.com/feed", rv, findViewById<ProgressBar>(R.id.loading_icon))
-                    feeder.setFeed(rv, findViewById(R.id.loading_icon))
+                    val link = getSharedPreferences(getString(R.string.feedLink), Context.MODE_PRIVATE).all
+                    if(link.isEmpty()){
+                        feeder.setFeed(rv, findViewById(R.id.loading_icon))
+                    }else{
+                        feeder.setFeedFromLink(link[getString(R.string.feedLink)].toString(), rv, findViewById<ProgressBar>(R.id.loading_icon))
+                    }
                 } catch (e: CancellationException) {
                     Log.d("Coroutine failure", e.stackTrace.toString())
                     val intent = Intent(this, ErrorActivity::class.java)
