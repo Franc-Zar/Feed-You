@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\User\.gradle\caches\transforms-3\719baf7fcb693bfb10511561d8fee294\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] C:\Users\User\.gradle\caches\transforms-3\220df5c2b8bf7cf475960e8425741579\transformed\android-v2.1.2\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.preference:preference:1.2.0] C:\Users\User\.gradle\caches\transforms-3\f156edea9eb3e9090ad9882f9f50f97d\transformed\preference-1.2.0\AndroidManifest.xml:17:1-24:12
@@ -98,20 +98,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\User\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\User\.gradle\caches\transforms-3\ea56e0c42ecefd47a0235d5bf822a8fc\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\User\.gradle\caches\transforms-3\512d0e85758193a7b74d73bd1cf3e226\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\User\.gradle\caches\transforms-3\656293d799ea8e321930bb7cab01e3a7\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
-INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
+INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
 	package
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-96:12
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:1-99:12
 		INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:2:11-69
@@ -152,7 +152,7 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.1.0] C:
 	android:name
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:8:5-94:19
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:8:5-97:19
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] C:\Users\User\.gradle\caches\transforms-3\220df5c2b8bf7cf475960e8425741579\transformed\android-v2.1.2\AndroidManifest.xml:12:5-22:19
 MERGED from [com.github.ivanisidrowu.KtRssReader:android:v2.1.2] C:\Users\User\.gradle\caches\transforms-3\220df5c2b8bf7cf475960e8425741579\transformed\android-v2.1.2\AndroidManifest.xml:12:5-22:19
 MERGED from [androidx.window:window:1.0.0] C:\Users\User\.gradle\caches\transforms-3\a939d5dd6351385a0efee3c28a853a06\transformed\window-1.0.0\AndroidManifest.xml:24:5-31:19
@@ -241,156 +241,162 @@ MERGED from [androidx.room:room-runtime:2.2.6] C:\Users\User\.gradle\caches\tran
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:14:9-42
 	android:usesCleartextTraffic
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:15:9-44
-activity#com.example.app1.BlockActivity
+activity#com.example.app1.SingleFeedActivity
 ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:17:13-42
-activity#com.example.app1.settings.account.AccountActivity
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:17:13-47
+activity#com.example.app1.BlockActivity
 ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:20:13-61
-activity#com.example.app1.settings.menu.AboutActivity
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:20:13-42
+activity#com.example.app1.settings.account.AccountActivity
 ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:23:13-56
-activity#com.example.app1.settings.account.PasswordChangeActivity
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:23:13-61
+activity#com.example.app1.settings.menu.AboutActivity
 ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:26:13-68
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:26:13-56
+activity#com.example.app1.settings.account.PasswordChangeActivity
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:28:9-30:40
+	android:exported
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:29:13-68
 activity#com.example.app1.settings.menu.MenuActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:28:9-41:20
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:31:9-44:20
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:33:13-36
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:29:13-55
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:32:13-55
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:example.com+data:scheme:https
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:31:13-40:29
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:34:13-43:29
 action#android.intent.action.VIEW
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.DEFAULT
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:34:17-76
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:37:17-76
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:34:27-73
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:37:27-73
 category#android.intent.category.BROWSABLE
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:35:17-78
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:38:17-78
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:35:27-75
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:38:27-75
 data
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:37:17-39:46
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:40:17-42:46
 	android:host
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:38:21-47
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:41:21-47
 	android:scheme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:39:21-43
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:42:21-43
 activity#com.example.app1.authentication.AnonymousActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:42:9-45:66
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:45:9-48:66
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:47:13-37
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:45:13-63
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:48:13-63
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:43:13-61
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:46:13-61
 activity#com.example.app1.authentication.SimpleSignInActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:46:9-49:66
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:49:9-52:66
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:51:13-37
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:49:13-63
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:52:13-63
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:47:13-64
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:50:13-64
 activity#com.example.app1.authentication.TwitterActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:50:9-53:66
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:53:9-56:66
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:52:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:55:13-37
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:53:13-63
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:56:13-63
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:51:13-59
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:54:13-59
 activity#com.example.app1.authentication.GoogleActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:54:9-57:66
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:57:9-60:66
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:59:13-37
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:57:13-63
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:60:13-63
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:55:13-58
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:58:13-58
 activity#com.example.app1.authentication.PasswordRecoveryActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:58:9-61:61
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:61:9-64:61
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:63:13-37
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:61:13-58
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:64:13-58
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:59:13-68
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:62:13-68
 activity#com.example.app1.authentication.SignUpActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:62:9-64:40
-	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:64:13-37
-	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:63:13-58
-activity#com.example.app1.MainActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:65:9-68:61
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:65:9-67:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:67:13-37
-	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:68:13-58
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:66:13-41
-activity#com.example.app1.PreferenceActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:69:9-71:40
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:66:13-58
+activity#com.example.app1.MainActivity
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:68:9-71:61
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:71:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:70:13-37
+	android:theme
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:71:13-58
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:70:13-47
-activity#com.example.app1.NewsActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:72:9-76:61
-	android:label
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:75:13-56
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:69:13-41
+activity#com.example.app1.PreferenceActivity
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:72:9-74:40
 	android:exported
 		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:74:13-37
-	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:76:13-58
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:73:13-41
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:73:13-47
+activity#com.example.app1.NewsActivity
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:75:9-79:61
+	android:label
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:78:13-56
+	android:exported
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:77:13-37
+	android:theme
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:79:13-58
+	android:name
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:76:13-41
 activity#com.example.app1.ErrorActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:77:9-79:40
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:80:9-82:40
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:79:13-37
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:78:13-42
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:81:13-42
 activity#com.example.app1.authentication.LoginActivity
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:80:9-89:20
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:83:9-92:20
 	android:exported
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:82:13-36
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:85:13-36
 	android:theme
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:83:13-58
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:86:13-58
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:81:13-57
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:84:13-57
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:84:13-88:29
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:87:13-91:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:85:17-69
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:88:17-69
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:85:25-66
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:88:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:87:17-77
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:90:17-77
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:87:27-74
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:90:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:91:9-93:57
+ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:94:9-96:57
 	android:resource
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:93:13-54
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:96:13-54
 	android:name
-		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:92:13-43
+		ADDED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml:95:13-43
 uses-sdk
 INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\User\AndroidStudioProjects\Feed-You-3\app\src\main\AndroidManifest.xml

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".SingleFeedActivity"
+            android:exported="false" />
+        <activity
             android:name=".BlockActivity"
             android:exported="false" />
         <activity

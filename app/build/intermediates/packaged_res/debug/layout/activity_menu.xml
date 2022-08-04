@@ -105,6 +105,50 @@
             android:layout_height="20dp" />
 
         <TextView
+            android:id="@+id/btn_pref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_person_add_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
+            android:focusable="true"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Change Preferences"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/btn_singleFeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_baseline_topic_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="?attr/colorPrimaryVariant"
+            android:focusable="true"
+            android:fontFamily="@font/asap"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:text="Single Feed Mode"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
             android:id="@+id/connect_socials"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

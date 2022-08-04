@@ -68,6 +68,10 @@
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\layout\\activity_preference.xml"
     },
     {
+        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_single_feed.xml",
+        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\layout\\activity_single_feed.xml"
+    },
+    {
         "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_account.xml",
         "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\layout\\activity_account.xml"
     },

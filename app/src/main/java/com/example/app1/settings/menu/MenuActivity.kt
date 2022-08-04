@@ -10,9 +10,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.BlockActivity
-import com.example.app1.MainActivity
 import com.example.app1.PreferenceActivity
 import com.example.app1.R
+import com.example.app1.SingleFeedActivity
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
 import com.example.app1.settings.account.AccountActivity
@@ -48,8 +48,7 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-
-        themePreferences = ThemePreferences(applicationContext)
+        themePreferences = ThemePreferences(this)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
         val aboutUs = findViewById<TextView>(R.id.about_feed_you)
         val inviteFriends = findViewById<TextView>(R.id.connect_socials)
@@ -60,6 +59,7 @@ class MenuActivity : AppCompatActivity() {
 
         val block = findViewById<TextView>(R.id.btn_block)
         val pref = findViewById<TextView>(R.id.btn_pref)
+        val singleFeed = findViewById<TextView>(R.id.btn_singleFeed)
 
         toolbar.setNavigationOnClickListener {
             finish()
@@ -75,6 +75,10 @@ class MenuActivity : AppCompatActivity() {
         pref.setOnClickListener {
             val prefIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(prefIntent)
+        }
+        singleFeed.setOnClickListener {
+            val singleFeedIntent = Intent(this, SingleFeedActivity::class.java)
+            startActivity(singleFeedIntent)
         }
 
         reportProblem.setOnClickListener {
