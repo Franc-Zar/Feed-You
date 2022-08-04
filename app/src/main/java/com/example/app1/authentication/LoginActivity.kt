@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageButton
 import com.example.app1.MainActivity
 import com.example.app1.R
+import com.example.app1.settings.menu.ThemePreferences
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -22,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var switch_activity: Intent
     private lateinit var email: EditText
     private lateinit var password: EditText
+    private lateinit var themePreferences: ThemePreferences
 
     public override fun onResume() {
         super.onResume()
@@ -33,22 +35,18 @@ class LoginActivity : AppCompatActivity() {
 
     public override fun onStart() {
         super.onStart()
-        // Check if user is signed in (non-null) and update UI accordingly.
-        if (Firebase.auth.currentUser != null) {
+        isloggedIn()
 
-            switch_activity = Intent(this, MainActivity::class.java)
-            startActivity(switch_activity)
-
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        themePreferences = ThemePreferences(applicationContext)
+        themePreferences.setThemeSelected(themePreferences.getThemeSelected()!!)
+
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_login)
-        auth = Firebase.auth
-
         email = findViewById(R.id.themes)
         password = findViewById(R.id.password)
 
@@ -112,6 +110,16 @@ class LoginActivity : AppCompatActivity() {
             switch_activity.putExtra("email_chosen", email_chosen)
             switch_activity.putExtra("password_chosen", password_chosen)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(switch_activity)
+
+        }
+    }
+
+    private fun isloggedIn() {
+
+        if (Firebase.auth.currentUser != null) {
+
+            switch_activity = Intent(this, MainActivity::class.java)
             startActivity(switch_activity)
 
         }

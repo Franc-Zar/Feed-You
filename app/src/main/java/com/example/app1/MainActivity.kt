@@ -35,9 +35,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
     private val current_user = Firebase.auth.currentUser!!
-
-    private lateinit var themePreferences: ThemePreferences
-
     private lateinit var rv : RecyclerView
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

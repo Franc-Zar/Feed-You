@@ -10,6 +10,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.BlockActivity
+import com.example.app1.MainActivity
 import com.example.app1.PreferenceActivity
 import com.example.app1.R
 import com.example.app1.authentication.LoginActivity
@@ -47,7 +48,8 @@ class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
-        themePreferences = ThemePreferences(this)
+
+        themePreferences = ThemePreferences(applicationContext)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
         val aboutUs = findViewById<TextView>(R.id.about_feed_you)
         val inviteFriends = findViewById<TextView>(R.id.connect_socials)
@@ -155,35 +157,24 @@ class MenuActivity : AppCompatActivity() {
                 val themes = this.resources.getStringArray(R.array.app_themes)
                 var themeSelected = themes[themePreferences.getThemeSelectedIndex()]
 
-                AlertDialog.Builder(this, R.style.DialogTheme)
-                    .setSingleChoiceItems(themes, themePreferences.getThemeSelectedIndex()) { dialog_, which ->
+                val themeDialog = AlertDialog.Builder(this, R.style.DialogTheme)
+                    .setView(R.layout.alert_feed_you)
+                    .setSingleChoiceItems(themes, themePreferences.getThemeSelectedIndex()) { dialog, which ->
 
                         themeSelected = themes[which]
 
-                    }.setPositiveButton("Ok") { dialog, which ->
+                    }.setPositiveButton("Set Theme") { dialog, which ->
 
-                        when(themeSelected) {
-
-                            "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(
-                                AppCompatDelegate.MODE_NIGHT_NO)
-
-                            "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(
-                                AppCompatDelegate.MODE_NIGHT_YES)
-
-                            "Follow System" -> AppCompatDelegate.setDefaultNightMode(
-                                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-
-                        }
-
+                        dialog.dismiss()
                         themePreferences.saveThemeSelected(themeSelected)
-
-                        switch_activity = Intent(this, MenuActivity::class.java)
+                        switch_activity = Intent(this, LoginActivity::class.java)
                         switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                         startActivity(switch_activity)
-                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-
+                        overridePendingTransition(android.R.anim.accelerate_interpolator, android.R.anim.fade_out)
 
                     }.show()
+                
+                themeDialog.setco
 
             }
         }
@@ -207,6 +198,7 @@ class MenuActivity : AppCompatActivity() {
         switch_activity = Intent(this, LoginActivity::class.java)
         switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(switch_activity)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 
     }
 

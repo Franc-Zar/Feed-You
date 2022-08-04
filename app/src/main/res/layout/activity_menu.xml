@@ -66,6 +66,7 @@
             android:id="@+id/themes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
             android:drawableStart="@drawable/ic_baseline_color_lens_24"
             android:drawablePadding="10dp"
             android:drawableTint="?attr/colorPrimaryVariant"

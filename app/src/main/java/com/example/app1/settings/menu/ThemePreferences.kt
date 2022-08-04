@@ -30,5 +30,24 @@ class ThemePreferences(var context: Context) {
 
     }
 
+    fun setThemeSelected(themeSelected: String) {
+
+        when(themeSelected) {
+
+            "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_NO)
+
+            "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_YES)
+
+            "Follow System" -> AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+
+        }
+
+        saveThemeSelected(themeSelected)
+
+    }
+
 }
 
