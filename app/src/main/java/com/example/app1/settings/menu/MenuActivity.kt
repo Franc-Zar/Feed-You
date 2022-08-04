@@ -54,42 +54,21 @@ class MenuActivity : AppCompatActivity() {
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
-<<<<<<< HEAD
         val themes = findViewById<TextView>(R.id.themes)
 
-=======
-        val themes = findViewById<Spinner>(R.id.spinner_themes)
         val block = findViewById<TextView>(R.id.btn_block)
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
         toolbar.setNavigationOnClickListener {
             finish()
         }
 
-<<<<<<< HEAD
-=======
-        themes.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(parent: AdapterView<*>?) {
 
-            }
 
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
-                when (themes.selectedItem.toString()) {
-
-                    "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    "Follow System" -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-
-                }
-            }
-        }
 
         block.setOnClickListener {
             val blockIntent = Intent(this, BlockActivity::class.java)
             startActivity(blockIntent)
         }
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
         reportProblem.setOnClickListener {
 
@@ -199,6 +178,7 @@ class MenuActivity : AppCompatActivity() {
                         themePreferences.saveThemeSelected(themeSelected)
 
                         switch_activity = Intent(this, MenuActivity::class.java)
+                        switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                         startActivity(switch_activity)
                         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 

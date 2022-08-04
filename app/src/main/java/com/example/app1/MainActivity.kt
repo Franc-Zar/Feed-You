@@ -8,11 +8,8 @@ import android.util.Log
 import android.view.Menu
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatDelegate
-=======
 import android.widget.SearchView
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -38,11 +35,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
     private val current_user = Firebase.auth.currentUser!!
-<<<<<<< HEAD
+
     private lateinit var themePreferences: ThemePreferences
-=======
+
     private lateinit var rv : RecyclerView
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.top_bar, menu)

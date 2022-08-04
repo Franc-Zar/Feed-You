@@ -52,19 +52,10 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-<<<<<<< HEAD
-      @NonNull TextView accountSettings, @NonNull TextView connectSocials,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
-      @NonNull TextView passwordReset, @NonNull Switch pushNotifications,
-      @NonNull TextView reportProblems, @NonNull TextView themes,
-      @NonNull MaterialToolbar toolbarAccount) {
-=======
       @NonNull TextView accountSettings, @NonNull TextView btnBlock,
       @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
-      @NonNull TextView emailDecoration, @NonNull TextView logout,
-      @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
-      @NonNull Spinner spinnerThemes, @NonNull MaterialToolbar toolbarAccount) {
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
+      @NonNull TextView logout, @NonNull Switch pushNotifications, @NonNull TextView reportProblems,
+      @NonNull TextView themes, @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
@@ -166,13 +157,8 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-<<<<<<< HEAD
-          connectSocials, decorationPasswordReset, logout, passwordReset, pushNotifications,
+          btnBlock, connectSocials, decorationPasswordReset, logout, pushNotifications,
           reportProblems, themes, toolbarAccount);
-=======
-          btnBlock, connectSocials, decorationPasswordReset, emailDecoration, logout,
-          pushNotifications, reportProblems, spinnerThemes, toolbarAccount);
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

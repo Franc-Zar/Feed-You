@@ -67,13 +67,8 @@ public final class ActivityAccountBinding implements ViewBinding {
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
       @NonNull TextView accountName, @NonNull TextView btnBlock, @NonNull TextView connectSocials,
       @NonNull TextView decorationPasswordReset, @NonNull TextView deleteAccount,
-<<<<<<< HEAD
       @NonNull Button googleConnect, @NonNull TextView language, @NonNull TextView nameDecoration,
-      @NonNull TextView passwordReset, @NonNull Spinner spinnerLanguages, @NonNull TextView themes,
-=======
-      @NonNull TextView emailDecoration, @NonNull Button googleConnect, @NonNull TextView language,
-      @NonNull TextView nameDecoration, @NonNull Spinner spinnerLanguages,
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
+      @NonNull Spinner spinnerLanguages, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount, @NonNull TextView topics,
       @NonNull Button twitterConnect) {
     this.rootView = rootView;
@@ -205,14 +200,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
-<<<<<<< HEAD
-          connectSocials, decorationPasswordReset, deleteAccount, googleConnect, language,
-          nameDecoration, passwordReset, spinnerLanguages, themes, toolbarAccount, topics,
-=======
-          btnBlock, connectSocials, decorationPasswordReset, deleteAccount, emailDecoration,
-          googleConnect, language, nameDecoration, spinnerLanguages, toolbarAccount, topics,
->>>>>>> 9ce22cb1f9938d440f9b7e58d88dd9c590314bee
-          twitterConnect);
+          btnBlock, connectSocials, decorationPasswordReset, deleteAccount, googleConnect, language,
+          nameDecoration, spinnerLanguages, themes, toolbarAccount, topics, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

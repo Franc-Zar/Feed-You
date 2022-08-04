@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -25,15 +26,19 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final AppBarLayout appbar;
 
   @NonNull
+  public final ImageButton btnBlock;
+
+  @NonNull
   public final MaterialToolbar toolbar;
 
   @NonNull
   public final WebView webView;
 
   private ActivityNewsBinding(@NonNull CoordinatorLayout rootView, @NonNull AppBarLayout appbar,
-      @NonNull MaterialToolbar toolbar, @NonNull WebView webView) {
+      @NonNull ImageButton btnBlock, @NonNull MaterialToolbar toolbar, @NonNull WebView webView) {
     this.rootView = rootView;
     this.appbar = appbar;
+    this.btnBlock = btnBlock;
     this.toolbar = toolbar;
     this.webView = webView;
   }
@@ -71,6 +76,12 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btn_block;
+      ImageButton btnBlock = ViewBindings.findChildViewById(rootView, id);
+      if (btnBlock == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       MaterialToolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -83,7 +94,8 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewsBinding((CoordinatorLayout) rootView, appbar, toolbar, webView);
+      return new ActivityNewsBinding((CoordinatorLayout) rootView, appbar, btnBlock, toolbar,
+          webView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
