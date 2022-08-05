@@ -14,7 +14,8 @@ import android.webkit.WebViewClient
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.button.MaterialButton
+import com.example.app1.model.FeederPreferences
+import java.lang.Thread
 
 
 class NewsActivity : AppCompatActivity() {
@@ -66,6 +67,20 @@ class NewsActivity : AppCompatActivity() {
                 }
                 super.onReceivedError(view, request, error)
             }
+        }
+
+        val thread = Thread {
+            reading()
+        }
+        thread.start()
+    }
+
+    fun reading() {
+        //Aggiorna le preferenze se leggo un articolo per almeno un tot di millisecondi(20.000)
+        Thread.sleep(resources.getInteger(R.integer.readingTimer).toLong())
+        if (! this.isDestroyed) {
+            val feeder = FeederPreferences(baseContext)
+            feeder.update(intent.getIntExtra("CATEGORY", -1))
         }
     }
 

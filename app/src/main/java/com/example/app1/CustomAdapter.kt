@@ -132,6 +132,7 @@ class CustomAdapter(var mList: List<NewsData>, private val context: Context) : R
                 putExtra("TITLE", item.title)
                 putExtra("HTML_CONTENT", item.link)
                 putExtra("FEED", item.feed)
+                putExtra("CATEGORY", item.category)
             }
             holder.itemView.context.startActivity(intent)
         }
