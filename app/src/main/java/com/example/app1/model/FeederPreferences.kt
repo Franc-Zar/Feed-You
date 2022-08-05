@@ -63,11 +63,14 @@ class FeederPreferences (private val context: Context){
 
 
     fun update(topic : Int){
+        if (topic == -1){
+            return
+        }
         for (i in 0 until preferences.size){
             if (i==topic){
                 preferences[topic] = ((preferences[topic] + 0.01)/1.01)
             }else {
-                preferences[topic] = (preferences[topic] / 1.01)
+                preferences[i] = (preferences[i] / 1.01)
             }
         }
         savePreferences()

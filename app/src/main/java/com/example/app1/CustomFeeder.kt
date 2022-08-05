@@ -17,17 +17,16 @@ import tw.ktrssreader.kotlin.model.channel.RssStandardChannelData
 import java.io.IOException
 import java.io.InputStream
 import java.net.URL
-import kotlin.system.measureTimeMillis
 
 
 class CustomFeeder(var context: Context){
     private val preferences = FeederPreferences(context)
 
-    protected fun getLinksByTopic(): List<List<String>> {
+    private fun getLinksByTopic(): List<List<String>> {
         var content = ""
         try {
             val lang = context.getSharedPreferences(context.getString(R.string.lang), Context.MODE_PRIVATE).all[context.getString(R.string.lang)]
-            val inputStream: InputStream = context.assets.open("feeds/"+lang+".json")
+            val inputStream: InputStream = context.assets.open("feeds/$lang.json")
             val size: Int = inputStream.available()
             val buffer = ByteArray(size)
             inputStream.read(buffer)
@@ -146,7 +145,6 @@ class CustomFeeder(var context: Context){
         var icon : org.jsoup.nodes.Element? = null
         var image : Bitmap? = null
         try {
-            //TODO ristudiare il reindirizzamento, soluzione temporanea è google.com
             val doc = URL(link).readText()
 
             icon = try {
