@@ -121,6 +121,8 @@ class LoginActivity : AppCompatActivity() {
 
             switch_activity = Intent(this, MainActivity::class.java)
             startActivity(switch_activity)
+            overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
+
 
         }
     }

@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -29,7 +28,7 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView accountName;
 
   @NonNull
-  public final TextView btnBlock;
+  public final TextView changePassword;
 
   @NonNull
   public final TextView connectSocials;
@@ -44,13 +43,7 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final Button googleConnect;
 
   @NonNull
-  public final TextView language;
-
-  @NonNull
   public final TextView nameDecoration;
-
-  @NonNull
-  public final Spinner spinnerLanguages;
 
   @NonNull
   public final TextView themes;
@@ -59,32 +52,25 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   @NonNull
-  public final TextView topics;
-
-  @NonNull
   public final Button twitterConnect;
 
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
-      @NonNull TextView accountName, @NonNull TextView btnBlock, @NonNull TextView connectSocials,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView deleteAccount,
-      @NonNull Button googleConnect, @NonNull TextView language, @NonNull TextView nameDecoration,
-      @NonNull Spinner spinnerLanguages, @NonNull TextView themes,
-      @NonNull MaterialToolbar toolbarAccount, @NonNull TextView topics,
-      @NonNull Button twitterConnect) {
+      @NonNull TextView accountName, @NonNull TextView changePassword,
+      @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
+      @NonNull TextView deleteAccount, @NonNull Button googleConnect,
+      @NonNull TextView nameDecoration, @NonNull TextView themes,
+      @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
-    this.btnBlock = btnBlock;
+    this.changePassword = changePassword;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.deleteAccount = deleteAccount;
     this.googleConnect = googleConnect;
-    this.language = language;
     this.nameDecoration = nameDecoration;
-    this.spinnerLanguages = spinnerLanguages;
     this.themes = themes;
     this.toolbarAccount = toolbarAccount;
-    this.topics = topics;
     this.twitterConnect = twitterConnect;
   }
 
@@ -127,9 +113,9 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_block;
-      TextView btnBlock = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlock == null) {
+      id = R.id.change_password;
+      TextView changePassword = ViewBindings.findChildViewById(rootView, id);
+      if (changePassword == null) {
         break missingId;
       }
 
@@ -157,21 +143,9 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.language;
-      TextView language = ViewBindings.findChildViewById(rootView, id);
-      if (language == null) {
-        break missingId;
-      }
-
       id = R.id.name_decoration;
       TextView nameDecoration = ViewBindings.findChildViewById(rootView, id);
       if (nameDecoration == null) {
-        break missingId;
-      }
-
-      id = R.id.spinner_languages;
-      Spinner spinnerLanguages = ViewBindings.findChildViewById(rootView, id);
-      if (spinnerLanguages == null) {
         break missingId;
       }
 
@@ -187,12 +161,6 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.topics;
-      TextView topics = ViewBindings.findChildViewById(rootView, id);
-      if (topics == null) {
-        break missingId;
-      }
-
       id = R.id.twitter_connect;
       Button twitterConnect = ViewBindings.findChildViewById(rootView, id);
       if (twitterConnect == null) {
@@ -200,8 +168,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
-          btnBlock, connectSocials, decorationPasswordReset, deleteAccount, googleConnect, language,
-          nameDecoration, spinnerLanguages, themes, toolbarAccount, topics, twitterConnect);
+          changePassword, connectSocials, decorationPasswordReset, deleteAccount, googleConnect,
+          nameDecoration, themes, toolbarAccount, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -97,56 +97,6 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/language"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:drawableStart="@drawable/ic_baseline_language_24"
-            android:drawablePadding="10dp"
-            android:drawableTint="?attr/colorPrimaryVariant"
-            android:fontFamily="@font/asap"
-            android:padding="10dp"
-            android:paddingStart="20dp"
-            android:text="Language"
-            android:textColor="?attr/colorSecondary"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Spinner
-            android:id="@+id/spinner_languages"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="?attr/colorPrimaryVariant"
-            android:entries="@array/langs"
-            android:minHeight="48dp"
-            android:padding="8dp"
-            android:paddingStart="240dp" />
-
-        <TextView
-            android:id="@+id/topics"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackground"
-            android:clickable="true"
-            android:contentDescription="Review and modify your preferences"
-            android:drawableStart="@drawable/ic_baseline_topic_24"
-            android:drawablePadding="10dp"
-            android:drawableTint="?attr/colorPrimaryVariant"
-            android:focusable="true"
-            android:fontFamily="@font/asap"
-            android:minHeight="48dp"
-            android:padding="12dp"
-            android:paddingStart="20dp"
-            android:text="Change Topics"
-            android:textColor="?attr/colorSecondary"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp" />
-
-        <TextView
             android:id="@+id/connect_socials"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -192,7 +142,7 @@
             android:layout_height="10dp" />
 
         <TextView
-            android:id="@+id/btn_block"
+            android:id="@+id/change_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"

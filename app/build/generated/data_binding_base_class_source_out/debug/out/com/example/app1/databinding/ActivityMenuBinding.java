@@ -28,13 +28,13 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView accountSettings;
 
   @NonNull
-  public final TextView btnBlock;
-
-  @NonNull
   public final TextView btnPref;
 
   @NonNull
   public final TextView btnSingleFeed;
+
+  @NonNull
+  public final TextView changePassword;
 
   @NonNull
   public final TextView connectSocials;
@@ -58,17 +58,17 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final MaterialToolbar toolbarAccount;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-      @NonNull TextView accountSettings, @NonNull TextView btnBlock, @NonNull TextView btnPref,
-      @NonNull TextView btnSingleFeed, @NonNull TextView connectSocials,
+      @NonNull TextView accountSettings, @NonNull TextView btnPref, @NonNull TextView btnSingleFeed,
+      @NonNull TextView changePassword, @NonNull TextView connectSocials,
       @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
       @NonNull Switch pushNotifications, @NonNull TextView reportProblems, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
-    this.btnBlock = btnBlock;
     this.btnPref = btnPref;
     this.btnSingleFeed = btnSingleFeed;
+    this.changePassword = changePassword;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
@@ -117,12 +117,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_block;
-      TextView btnBlock = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlock == null) {
-        break missingId;
-      }
-
       id = R.id.btn_pref;
       TextView btnPref = ViewBindings.findChildViewById(rootView, id);
       if (btnPref == null) {
@@ -132,6 +126,12 @@ public final class ActivityMenuBinding implements ViewBinding {
       id = R.id.btn_singleFeed;
       TextView btnSingleFeed = ViewBindings.findChildViewById(rootView, id);
       if (btnSingleFeed == null) {
+        break missingId;
+      }
+
+      id = R.id.change_password;
+      TextView changePassword = ViewBindings.findChildViewById(rootView, id);
+      if (changePassword == null) {
         break missingId;
       }
 
@@ -178,7 +178,7 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          btnBlock, btnPref, btnSingleFeed, connectSocials, decorationPasswordReset, logout,
+          btnPref, btnSingleFeed, changePassword, connectSocials, decorationPasswordReset, logout,
           pushNotifications, reportProblems, themes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -8,7 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.BlockActivity
 import com.example.app1.PreferenceActivity
 import com.example.app1.R
@@ -57,7 +56,7 @@ class MenuActivity : AppCompatActivity() {
         val reportProblem = findViewById<TextView>(R.id.report_problems)
         val themes = findViewById<TextView>(R.id.themes)
 
-        val block = findViewById<TextView>(R.id.btn_block)
+        val block = findViewById<TextView>(R.id.change_password)
         val pref = findViewById<TextView>(R.id.btn_pref)
         val singleFeed = findViewById<TextView>(R.id.btn_singleFeed)
 
@@ -67,15 +66,16 @@ class MenuActivity : AppCompatActivity() {
 
 
 
-
         block.setOnClickListener {
             val blockIntent = Intent(this, BlockActivity::class.java)
             startActivity(blockIntent)
         }
+
         pref.setOnClickListener {
             val prefIntent = Intent(this, PreferenceActivity::class.java)
             startActivity(prefIntent)
         }
+
         singleFeed.setOnClickListener {
             val singleFeedIntent = Intent(this, SingleFeedActivity::class.java)
             startActivity(singleFeedIntent)
@@ -124,11 +124,11 @@ class MenuActivity : AppCompatActivity() {
     private fun onShareClicked(url: String, domain: String) {
         val link = generateContentLink(url, domain)
 
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_TEXT, link.toString())
+        val share = Intent(Intent.ACTION_SEND)
+        share.type = "text/plain"
+        share.putExtra(Intent.EXTRA_TEXT, link.toString())
 
-        startActivity(Intent.createChooser(intent, "Share Link"))
+        startActivity(Intent.createChooser(share, "Share Link"))
 
     }
 
@@ -173,14 +173,19 @@ class MenuActivity : AppCompatActivity() {
 
                         themeSelected = themes[which]
 
-                    }.setPositiveButton("Apply") { dialog, which ->
+                    }.setNegativeButton("Cancel") { dialog, which ->
+
+                        dialog.dismiss()
+
+                    }
+                    .setPositiveButton("Apply") { dialog, which ->
 
                         dialog.dismiss()
                         themePreferences.saveThemeSelected(themeSelected)
                         switch_activity = Intent(this, LoginActivity::class.java)
                         switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                         startActivity(switch_activity)
-                        overridePendingTransition(android.R.anim.accelerate_decelerate_interpolator, android.R.anim.fade_out)
+                        overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
 
                     }.show()
 

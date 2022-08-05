@@ -6,6 +6,8 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
@@ -14,19 +16,57 @@ import android.webkit.WebViewClient
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.button.MaterialButton
+import com.example.app1.utilities.config.Companion.domain
+import com.example.app1.utilities.config.Companion.inviteLink
+import com.example.app1.utilities.linkUtilities.Companion.generateContentLink
+import com.google.android.material.appbar.MaterialToolbar
 
 
 class NewsActivity : AppCompatActivity() {
+
+    private fun shareNews() {
+
+        val shareLink = generateContentLink(inviteLink, domain)
+        val shareNews = Intent(Intent.ACTION_SEND)
+        val shareContent = intent.getStringExtra("HTML_CONTENT")!!.toString() + "\n\nShared via FeedYou: " + shareLink
+
+        shareNews.type = "text/plain"
+        shareNews.putExtra(Intent.EXTRA_TITLE, "Share this News!")
+        shareNews.putExtra(Intent.EXTRA_TEXT, shareContent)
+
+        startActivity(Intent.createChooser(shareNews, "Share News"))
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.news, menu)
+        menu?.findItem(R.id.shareButton)
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId) {
+
+            R.id.shareButton -> shareNews()
+
+        }
+
+        return super.onOptionsItemSelected(item)
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
-        val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
+        val toolbar = findViewById<MaterialToolbar>(R.id.toolbar)
         toolbar?.title = intent.getStringExtra("TITLE")
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val btnBlock = findViewById<ImageButton>(R.id.btn_block)
+
+        val btnBlock = findViewById<ImageButton>(R.id.change_password)
         btnBlock.setOnClickListener{
             val blockedLinks = getSharedPreferences(getString(R.string.blocked), Context.MODE_PRIVATE)
             with(blockedLinks.edit()) {
@@ -71,7 +111,8 @@ class NewsActivity : AppCompatActivity() {
 
     private fun showDialog(url: String) {
         val dialog = AlertDialog.Builder(this)
-        dialog.setTitle(getString(R.string.redirect))
+            dialog.setTitle(getString(R.string.redirect))
+            .setView(R.layout.alert_feed_you)
             .setMessage(getString(R.string.askConfirm))
             .setIcon(android.R.drawable.ic_dialog_alert)
             .setPositiveButton(android.R.string.ok,

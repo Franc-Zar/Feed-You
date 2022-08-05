@@ -30,6 +30,14 @@
         <item name="android:textColorSecondary">?attr/colorPrimaryVariant</item>
     </style>
 
+    <style name="ToolbarNews" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/asap</item>
+        <item name="android:background">@color/design_default_color_on_primary</item>
+        <item name="colorControlNormal">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorSecondary">?attr/colorPrimaryVariant</item>
+    </style>
+
     <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
         <item name="android:background">#33646464</item> <!-- Or any transparency or color you need -->
         <item name="android:windowNoTitle">true</item>
@@ -42,10 +50,13 @@
     <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
         <item name="android:colorControlActivated">@color/feedyou_azure_dark</item>
         <item name="android:colorControlNormal">@color/feedyou_azure_dark</item>
-        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonStyle</item>
+
     </style>
-    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
         <item name="android:textColor">@color/feedyou_azure_dark</item>
         <item name="android:fontFamily">@font/asap</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

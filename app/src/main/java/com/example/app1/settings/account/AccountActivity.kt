@@ -49,6 +49,7 @@ class AccountActivity : AppCompatActivity() {
                     switch_activity = Intent(this, LoginActivity::class.java)
                     switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     startActivity(switch_activity)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 
                 } else {
 
@@ -236,7 +237,7 @@ class AccountActivity : AppCompatActivity() {
 
         val deleteAccount = findViewById<TextView>(R.id.delete_account)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
-        passwordReset = findViewById(R.id.btn_block)
+        passwordReset = findViewById(R.id.change_password)
         accountEmail = findViewById(R.id.account_email)
         twitterConnect = findViewById(R.id.twitter_connect)
         googleConnect = findViewById(R.id.google_connect)

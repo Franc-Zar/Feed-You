@@ -21,16 +21,8 @@
     <string name="reportEmailBody">Write here a brief description of the problem you experienced, including everything you consider helpful for us to help you!</string>
     <string name="logoutAlert">Are you really sure you want to logout?</string>
     <string name="aboutUs">
-
-        Welcome to Feed You! v1.0 \n\n
-
-        Thank you for joining us, \n
-
-        Feed You is a simple app that will provide you with RSS Feeds coming from the most important international Newspapers. \n\n
-        We\'ll walk with you during your day, keeping you informed about what\'s happening meanwhile in the world,
-        in accordance with your personal preferences and choices. \n\n
-        Our main goal is to give to all of our users the best mobile reading experience.
-
+        Welcome to Feed You! v1.0\n\nThank you for joining us,\nFeed You is a simple app that will provide you with RSS Feeds coming from the most important international Newspapers.\n\nWe\'ll walk with you during your day, keeping you informed about what\'s happening meanwhile in the world,
+        in accordance with your personal preferences and choices.\n\nOur main goal is to give to all of our users the best mobile reading experience.
     </string>
     <string name="firstLoadWarning">Il primo avvio dell\'app può richiedere tempo per sincronizzare il profilo.</string>
 

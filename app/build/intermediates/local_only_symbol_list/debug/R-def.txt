@@ -60,6 +60,7 @@ drawable ic_baseline_person_add_24
 drawable ic_baseline_remove_circle_24
 drawable ic_baseline_search_24
 drawable ic_baseline_settings_24
+drawable ic_baseline_share_24
 drawable ic_baseline_topic_24
 drawable ic_baseline_visibility_18
 drawable ic_baseline_visibility_off_18
@@ -86,7 +87,6 @@ id app_bar
 id app_bar_search
 id app_name
 id appbar
-id btn_block
 id btn_link
 id btn_pref
 id btn_reset
@@ -106,7 +106,6 @@ id google_connect
 id have_an_account
 id imageView
 id iv_favicon
-id language
 id lay_links
 id layout_app
 id layout_topics
@@ -125,10 +124,10 @@ id report_problems
 id reset_password
 id rv
 id scroll_topics
+id shareButton
 id sign_in
 id sign_up
 id spinner_lang
-id spinner_languages
 id swiperefresh
 id termini_condizioni
 id textView
@@ -140,7 +139,6 @@ id toolbar_about_us
 id toolbar_account
 id toolbar_main
 id toolbar_password_change
-id topics
 id tv_category
 id tv_frag_title
 id tv_link
@@ -171,6 +169,7 @@ layout fragment_lang
 layout fragment_topics
 layout rv_row
 layout topic_links_list
+menu news
 menu top_bar
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -227,12 +226,13 @@ string toMultiFeed
 string toSingleFeed
 string topics
 string twitterAlert
+style ButtonStyle
 style DialogTheme
-style PositiveButtonStyle
 style Theme.App1
 style Theme.App1.AppBarOverlay
 style Theme.App1.NoActionBar
 style Theme.App1.PopupOverlay
 style Theme.AppCompat.Translucent
+style ToolbarNews
 style ToolbarTheme
 xml root_preferences

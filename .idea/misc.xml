@@ -35,18 +35,21 @@
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_18.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_18.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.338" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.279" />
+        <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.279" />
         <entry key="app/src/main/res/drawable/ic_baseline_vpn_key_18.xml" value="0.3325" />
         <entry key="app/src/main/res/drawable/ic_icons8_google.xml" value="0.2635" />
         <entry key="app/src/main/res/drawable/ic_icons8_twitter.xml" value="0.2635" />
         <entry key="app/src/main/res/layout/activity_about.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_account.xml" value="0.2730263157894737" />
+        <entry key="app/src/main/res/layout/activity_account.xml" value="0.17966101694915254" />
+        <entry key="app/src/main/res/layout/activity_block.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/activity_email_account.xml" value="0.16337386018237082" />
         <entry key="app/src/main/res/layout/activity_google.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/activity_login2.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_news.xml" value="0.13858695652173914" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1962962962962963" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.14887640449438203" />
+        <entry key="app/src/main/res/layout/activity_news.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_password_change.xml" value="0.2974910394265233" />
         <entry key="app/src/main/res/layout/activity_password_recover.xml" value="0.31979166666666664" />
         <entry key="app/src/main/res/layout/activity_password_recovery.xml" value="0.25" />
@@ -54,12 +57,15 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_simple_sign_in.xml" value="0.2427536231884058" />
+        <entry key="app/src/main/res/layout/activity_single_feed.xml" value="0.20463320463320464" />
         <entry key="app/src/main/res/layout/activity_twitter.xml" value="0.24010416666666667" />
         <entry key="app/src/main/res/layout/alert_feed_you.xml" value="0.2409090909090909" />
         <entry key="app/src/main/res/layout/alert_themes.xml" value="0.3359375" />
         <entry key="app/src/main/res/layout/fragment_lang.xml" value="0.13858695652173914" />
         <entry key="app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/rv_row.xml" value="0.13858695652173914" />
+        <entry key="app/src/main/res/layout/topic_links_list.xml" value="0.17320261437908496" />
+        <entry key="app/src/main/res/menu/news.xml" value="0.3063583815028902" />
         <entry key="app/src/main/res/menu/top_bar.xml" value="0.24010416666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.177" />
         <entry key="app/src/main/res/xml/countries.xml" value="0.2427536231884058" />
