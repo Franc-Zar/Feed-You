@@ -147,6 +147,7 @@ id tv_title
 id twitter_connect
 id web_view
 integer minDistance
+integer readingTimer
 layout activity_about
 layout activity_account
 layout activity_anonymous

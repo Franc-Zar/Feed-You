@@ -1,4 +1,4 @@
-package com.example.app1
+package com.example.app1.settings.menu
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.cardview.widget.CardView
+import com.example.app1.R
 import org.json.JSONObject
-import org.w3c.dom.Text
 import java.io.IOException
 import java.io.InputStream
 

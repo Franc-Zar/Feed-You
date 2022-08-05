@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatImageButton
 import com.example.app1.MainActivity
 import com.example.app1.R
-import com.example.app1.settings.menu.ThemePreferences
+import com.example.app1.utilities.ThemePreferences
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

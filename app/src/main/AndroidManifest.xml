@@ -14,10 +14,10 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".SingleFeedActivity"
+            android:name=".settings.menu.SingleFeedActivity"
             android:exported="false" />
         <activity
-            android:name=".BlockActivity"
+            android:name=".settings.menu.BlockActivity"
             android:exported="false" />
         <activity
             android:name=".settings.account.AccountActivity"

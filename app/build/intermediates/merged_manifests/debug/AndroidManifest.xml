@@ -27,10 +27,10 @@
         android:theme="@style/Theme.App1"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.app1.SingleFeedActivity"
+            android:name="com.example.app1.settings.menu.SingleFeedActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.app1.BlockActivity"
+            android:name="com.example.app1.settings.menu.BlockActivity"
             android:exported="false" />
         <activity
             android:name="com.example.app1.settings.account.AccountActivity"
@@ -141,6 +141,9 @@
                 android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
@@ -154,9 +157,6 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"

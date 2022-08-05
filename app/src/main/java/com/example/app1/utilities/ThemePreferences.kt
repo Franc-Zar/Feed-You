@@ -1,4 +1,4 @@
-package com.example.app1.settings.menu
+package com.example.app1.utilities
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate
@@ -19,7 +19,7 @@ class ThemePreferences(var context: Context) {
 
     fun getThemeSelected(): String? {
 
-        return theme.getString(context.getString(R.string.theme), "FeedYou-Light")
+        return theme.getString(context.getString(R.string.theme), "Follow System")
 
     }
 

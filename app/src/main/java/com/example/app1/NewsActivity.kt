@@ -14,18 +14,15 @@ import android.webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-<<<<<<< HEAD
 import com.example.app1.utilities.config.Companion.domain
 import com.example.app1.utilities.config.Companion.inviteLink
 import com.example.app1.utilities.linkUtilities.Companion.generateContentLink
 import com.google.android.material.appbar.MaterialToolbar
-=======
 import com.example.app1.model.FeederPreferences
 import java.lang.Thread
->>>>>>> ebba876b0540e869b15d2399d73461c195df102e
-
 
 class NewsActivity : AppCompatActivity() {
 
@@ -129,24 +126,33 @@ class NewsActivity : AppCompatActivity() {
     }
 
     private fun showDialog(url: String) {
-        val dialog = AlertDialog.Builder(this)
-            dialog.setTitle(getString(R.string.redirect))
-            .setView(R.layout.alert_feed_you)
-            .setMessage(getString(R.string.askConfirm))
-            .setIcon(android.R.drawable.ic_dialog_alert)
-            .setPositiveButton(android.R.string.ok,
-                DialogInterface.OnClickListener { d, whichButton ->
-                    d.dismiss()
-                    val i = Intent(Intent.ACTION_VIEW)
-                    i.data = Uri.parse(url)
-                    startActivity(i)
-                })
-            .setNegativeButton(android.R.string.cancel,
-                DialogInterface.OnClickListener { d, whichButton ->
-                    d.dismiss()
-                    //onBackPressed()
-                })
-        dialog.show()
+
+        val alertDialog = AlertDialog.Builder(this).create()
+
+        alertDialog.setView(layoutInflater.inflate(R.layout.alert_feed_you,null))
+
+        alertDialog.setButton(
+            androidx.appcompat.app.AlertDialog.BUTTON_NEUTRAL, "Cancel"
+        ) {
+                dialog, which -> dialog.dismiss()
+        }
+
+        alertDialog.setButton(
+            androidx.appcompat.app.AlertDialog.BUTTON_POSITIVE, "Ok"
+        ) {
+                dialog, which ->  dialog.dismiss()
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            startActivity(i)
+        }
+
+        alertDialog.show()
+
+        val alertMessage = alertDialog.findViewById<TextView>(R.id.alertMessage)
+
+        alertMessage?.setText(R.string.askConfirm)
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

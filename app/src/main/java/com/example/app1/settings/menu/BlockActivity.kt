@@ -1,4 +1,4 @@
-package com.example.app1
+package com.example.app1.settings.menu
 
 import android.content.Context
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.example.app1.R
 import org.json.JSONObject
 import java.io.IOException
 import java.io.InputStream
@@ -23,7 +24,9 @@ class BlockActivity : AppCompatActivity() {
 
         var content = ""
         try {
-            val lang = getSharedPreferences(getString(R.string.lang), Context.MODE_PRIVATE).all[getString(R.string.lang)]
+            val lang = getSharedPreferences(getString(R.string.lang), Context.MODE_PRIVATE).all[getString(
+                R.string.lang
+            )]
             val inputStream: InputStream = application.assets.open("feeds/"+lang+".json")
             val size: Int = inputStream.available()
             val buffer = ByteArray(size)

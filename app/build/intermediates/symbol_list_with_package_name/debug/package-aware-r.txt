@@ -3366,6 +3366,7 @@ integer mtrl_view_invisible
 integer mtrl_view_visible
 integer preferences_detail_pane_weight
 integer preferences_header_pane_weight
+integer readingTimer
 integer show_password_duration
 integer status_bar_notification_info_maxnum
 interpolator btn_checkbox_checked_mtrl_animation_interpolator_0

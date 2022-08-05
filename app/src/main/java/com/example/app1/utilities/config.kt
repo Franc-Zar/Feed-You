@@ -1,7 +1,5 @@
 package com.example.app1.utilities
 
-import com.example.app1.R
-
 class config {
 
     companion object {

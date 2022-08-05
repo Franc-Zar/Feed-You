@@ -8,14 +8,13 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.example.app1.BlockActivity
 import com.example.app1.PreferenceActivity
 import com.example.app1.R
-import com.example.app1.SingleFeedActivity
 import com.example.app1.authentication.LoginActivity
 import com.example.app1.authentication.SignUpActivity
 import com.example.app1.settings.account.AccountActivity
 import com.example.app1.utilities.AccountUtilities.Companion.isSocialLinked
+import com.example.app1.utilities.ThemePreferences
 import com.example.app1.utilities.config.Companion.assistanceMail
 import com.example.app1.utilities.config.Companion.domain
 import com.example.app1.utilities.config.Companion.inviteLink
