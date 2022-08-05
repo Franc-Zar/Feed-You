@@ -7,24 +7,18 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.widget.ProgressBar
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.example.app1.model.FeederPreferences
 import com.example.app1.model.NewsData
-import com.example.app1.model.User
+import com.example.app1.model.Response
 import com.example.app1.settings.menu.MenuActivity
-import com.example.app1.settings.menu.ThemePreferences
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
@@ -61,44 +55,53 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (!current_user.isAnonymous) {
-            database = Firebase.database.reference
-            val user = User(current_user.email, current_user.email)
-            database.child(getString(R.string.firebase_users)).child(current_user.uid).setValue(user)
+        if (!current_user.isAnonymous and !intent.hasExtra("INITIALIZED")) {
+            //nome db: feed-you-ca52a-default-rtdb
+            database = FirebaseDatabase.getInstance("https://feed-you-ca52a-default-rtdb.europe-west1.firebasedatabase.app/")
+                .getReference().child("users").child(current_user.uid) //.child(getString(R.string.firebase_users))
 
-            val langPref = database.child(getString(R.string.firebase_users)).child(current_user.uid)
-                .child("lang")
-            val langLocalPref = getSharedPreferences(getString(R.string.lang), Context.MODE_PRIVATE)
+            val langPref = database.child("lang")
+            val langLocalPref = getSharedPreferences(getString(R.string.lang), MODE_PRIVATE)
+
             langPref.get().addOnSuccessListener {
-                if (it.value != null) {
+                val lang = it.value
+                if (lang != null) {
                     with(langLocalPref.edit()) {
-                        putString(getString(R.string.lang), it.value.toString())
+                        putString(getString(R.string.lang), lang.toString())
                         apply()
                     }
                 }
             }
 
-            val topicPref = database.child(getString(R.string.firebase_users))
-                .child(current_user.uid)
-                .child("topics")
-            val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), Context.MODE_PRIVATE)
+            val topicPref = database.child("topics")
+            val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), MODE_PRIVATE)
+            topicPref.get().addOnSuccessListener {
+                val topic = it.value
+                if (topic != null) {
+                    with(topicLocalPref.edit()) {
+                        putString(getString(R.string.prefTopics), topic.toString())
+                        apply()
+                    }
+                }
+            }
 
             topicPref.addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     // This method is called once with the initial value and again
                     // whenever data at this location is updated.
-                    val value = dataSnapshot.getValue()
+                    val value = dataSnapshot.value
                     if (value != null){
                         Log.d("DATA UPDATED", "Value is: $value")
+                        database.child("topics").setValue(value)
                         with(topicLocalPref.edit()) {
                             putString(getString(R.string.prefTopics), value.toString())
                             apply()
                         }
+                        val intent = Intent(baseContext, MainActivity::class.java).apply {
+                            putExtra("INITIALIZED", true)
+                        }
+                        startActivity(intent)
                     }
-                    /**if (value != null) {
-                        val feederPreferences = FeederPreferences(context = baseContext)
-                        //feederPreferences.setFavouriteTopics(value)
-                    }**/
                 }
                 override fun onCancelled(error: DatabaseError) {
                     // Failed to read value

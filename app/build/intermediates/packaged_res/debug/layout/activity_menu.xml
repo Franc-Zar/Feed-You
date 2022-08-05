@@ -127,8 +127,6 @@
             android:layout_height="20dp" />
 
         <TextView
-<<<<<<< HEAD
-=======
             android:id="@+id/btn_singleFeed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -151,7 +149,6 @@
             android:layout_height="20dp" />
 
         <TextView
->>>>>>> 3fb4cd075aab678b3564c55088867c2dbfa9d4b1
             android:id="@+id/connect_socials"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
