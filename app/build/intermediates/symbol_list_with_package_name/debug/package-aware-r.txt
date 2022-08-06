@@ -3133,7 +3133,6 @@ id preferences_header
 id preferences_sliding_pane_layout
 id progress_circular
 id progress_horizontal
-id push_notifications
 id radio
 id ratio
 id rectangles

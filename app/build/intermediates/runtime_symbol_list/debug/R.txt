@@ -3132,7 +3132,6 @@ int id preferences_header 0x7f0a0194
 int id preferences_sliding_pane_layout 0x7f0a0195
 int id progress_circular 0x7f0a0196
 int id progress_horizontal 0x7f0a0197
-int id push_notifications 0x7f0a0198
 int id radio 0x7f0a0199
 int id ratio 0x7f0a019a
 int id rectangles 0x7f0a019b

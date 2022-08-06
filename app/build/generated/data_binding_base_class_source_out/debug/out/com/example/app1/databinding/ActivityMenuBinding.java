@@ -4,7 +4,6 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,9 +45,6 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView logout;
 
   @NonNull
-  public final Switch pushNotifications;
-
-  @NonNull
   public final TextView reportProblems;
 
   @NonNull
@@ -61,7 +57,7 @@ public final class ActivityMenuBinding implements ViewBinding {
       @NonNull TextView accountSettings, @NonNull TextView btnPref, @NonNull TextView btnSingleFeed,
       @NonNull TextView changePassword, @NonNull TextView connectSocials,
       @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
-      @NonNull Switch pushNotifications, @NonNull TextView reportProblems, @NonNull TextView themes,
+      @NonNull TextView reportProblems, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
@@ -72,7 +68,6 @@ public final class ActivityMenuBinding implements ViewBinding {
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
-    this.pushNotifications = pushNotifications;
     this.reportProblems = reportProblems;
     this.themes = themes;
     this.toolbarAccount = toolbarAccount;
@@ -153,12 +148,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.push_notifications;
-      Switch pushNotifications = ViewBindings.findChildViewById(rootView, id);
-      if (pushNotifications == null) {
-        break missingId;
-      }
-
       id = R.id.report_problems;
       TextView reportProblems = ViewBindings.findChildViewById(rootView, id);
       if (reportProblems == null) {
@@ -179,7 +168,7 @@ public final class ActivityMenuBinding implements ViewBinding {
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
           btnPref, btnSingleFeed, changePassword, connectSocials, decorationPasswordReset, logout,
-          pushNotifications, reportProblems, themes, toolbarAccount);
+          reportProblems, themes, toolbarAccount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

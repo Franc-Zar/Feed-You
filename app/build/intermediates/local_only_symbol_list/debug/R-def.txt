@@ -119,7 +119,6 @@ id new_password
 id old_password
 id password
 id password_reset_progress
-id push_notifications
 id report_problems
 id reset_password
 id rv
