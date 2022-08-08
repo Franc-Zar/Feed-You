@@ -35,10 +35,6 @@ class TopicsFragment : Fragment() {
 
             if (indexes.isNotEmpty()){
                 if (pref != null) {
-                    /**with(pref.edit()) {
-                        putString(getString(R.string.topics), indexes.toString())
-                        apply()
-                    }**/
                     val feederPreferences = context?.let { FeederPreferences(it) }
                     feederPreferences?.setFavouriteTopics(indexes)
                 }

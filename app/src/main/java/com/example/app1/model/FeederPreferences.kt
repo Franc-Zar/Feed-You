@@ -11,8 +11,8 @@ import org.json.JSONArray
 import kotlin.random.Random
 
 class FeederPreferences (private val context: Context){
-    private var preferences =  mutableListOf<Double>()
-    private var boundaries =  mutableListOf<Double>()
+    var preferences =  mutableListOf<Double>()
+    var boundaries =  mutableListOf<Double>()
     private val pref : SharedPreferences
 
     init{
@@ -22,7 +22,6 @@ class FeederPreferences (private val context: Context){
 
 
         if(json.length() != 0) {
-            val indexes = mutableListOf<Int>()
             for (i in 0 until context.resources.getStringArray(R.array.topics_it).size) {
                 if (i<json.length()) {
                     preferences.add(json.getDouble(i))
@@ -54,11 +53,11 @@ class FeederPreferences (private val context: Context){
             indexes.size == numTopics -> {0.0}
             else -> {(0.2 / (numTopics - indexes.size))}
         }
+        preferences.clear()
         for (i in 0 until numTopics) {
-            preferences[i] = (if (i in indexes) inTopic else offTopic)
+            preferences.add(i,(if (i in indexes) inTopic else offTopic))
         }
         savePreferences()
-        //setBounds()
     }
 
 
@@ -110,7 +109,7 @@ class FeederPreferences (private val context: Context){
             if (i>=boundaries.size){break}
         }
         if (i >= boundaries.size){
-            Log.d("BOUND", "Boundaries sbagliati")
+            Log.d("FEEDERPREFERENCES", "Boundaries sbagliati")
             return boundaries.size -1
         }
         return i
