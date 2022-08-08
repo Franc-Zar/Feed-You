@@ -5,6 +5,7 @@ import android.content.SharedPreferences
 import android.util.Log
 import com.example.app1.R
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import org.json.JSONArray
@@ -79,8 +80,10 @@ class FeederPreferences (private val context: Context){
         val save = context.getSharedPreferences(context.getString(R.string.prefTopics), Context.MODE_PRIVATE)
         val current_user = Firebase.auth.currentUser!!
         if (! current_user.isAnonymous){
-            Firebase.database.reference.child(context.getString(R.string.firebase_users))
-                .child(current_user.uid).child("topics").setValue(preferences)
+            FirebaseDatabase
+                .getInstance("https://feed-you-ca52a-default-rtdb.europe-west1.firebasedatabase.app/")
+                .getReference().child("users").child(current_user.uid)
+                .child("topics").setValue(preferences)
         }
         with(save.edit()){
             putString( context.getString(R.string.prefTopics), preferences.toString())

@@ -4,6 +4,7 @@ package com.example.app1.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,13 +40,13 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView connectSocials;
 
   @NonNull
-  public final TextView decorationPasswordReset;
-
-  @NonNull
   public final TextView logout;
 
   @NonNull
   public final TextView reportProblems;
+
+  @NonNull
+  public final ScrollView svMenu;
 
   @NonNull
   public final TextView themes;
@@ -53,12 +54,14 @@ public final class ActivityMenuBinding implements ViewBinding {
   @NonNull
   public final MaterialToolbar toolbarAccount;
 
+  @NonNull
+  public final TextView tvMenu;
+
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
       @NonNull TextView accountSettings, @NonNull TextView btnPref, @NonNull TextView btnSingleFeed,
-      @NonNull TextView changePassword, @NonNull TextView connectSocials,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView logout,
-      @NonNull TextView reportProblems, @NonNull TextView themes,
-      @NonNull MaterialToolbar toolbarAccount) {
+      @NonNull TextView changePassword, @NonNull TextView connectSocials, @NonNull TextView logout,
+      @NonNull TextView reportProblems, @NonNull ScrollView svMenu, @NonNull TextView themes,
+      @NonNull MaterialToolbar toolbarAccount, @NonNull TextView tvMenu) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
@@ -66,11 +69,12 @@ public final class ActivityMenuBinding implements ViewBinding {
     this.btnSingleFeed = btnSingleFeed;
     this.changePassword = changePassword;
     this.connectSocials = connectSocials;
-    this.decorationPasswordReset = decorationPasswordReset;
     this.logout = logout;
     this.reportProblems = reportProblems;
+    this.svMenu = svMenu;
     this.themes = themes;
     this.toolbarAccount = toolbarAccount;
+    this.tvMenu = tvMenu;
   }
 
   @Override
@@ -136,12 +140,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_password_reset;
-      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPasswordReset == null) {
-        break missingId;
-      }
-
       id = R.id.logout;
       TextView logout = ViewBindings.findChildViewById(rootView, id);
       if (logout == null) {
@@ -151,6 +149,12 @@ public final class ActivityMenuBinding implements ViewBinding {
       id = R.id.report_problems;
       TextView reportProblems = ViewBindings.findChildViewById(rootView, id);
       if (reportProblems == null) {
+        break missingId;
+      }
+
+      id = R.id.sv_menu;
+      ScrollView svMenu = ViewBindings.findChildViewById(rootView, id);
+      if (svMenu == null) {
         break missingId;
       }
 
@@ -166,9 +170,15 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_menu;
+      TextView tvMenu = ViewBindings.findChildViewById(rootView, id);
+      if (tvMenu == null) {
+        break missingId;
+      }
+
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          btnPref, btnSingleFeed, changePassword, connectSocials, decorationPasswordReset, logout,
-          reportProblems, themes, toolbarAccount);
+          btnPref, btnSingleFeed, changePassword, connectSocials, logout, reportProblems, svMenu,
+          themes, toolbarAccount, tvMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

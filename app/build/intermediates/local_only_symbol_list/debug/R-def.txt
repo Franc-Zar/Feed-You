@@ -127,6 +127,7 @@ id shareButton
 id sign_in
 id sign_up
 id spinner_lang
+id sv_menu
 id swiperefresh
 id termini_condizioni
 id textView
@@ -141,6 +142,7 @@ id toolbar_password_change
 id tv_category
 id tv_frag_title
 id tv_link
+id tv_menu
 id tv_sorry
 id tv_title
 id twitter_connect
