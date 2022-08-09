@@ -87,16 +87,11 @@ id app_bar_search
 id app_name
 id appbar
 id btn_block
-<<<<<<< HEAD
-=======
-id btn_blocked
 id btn_continue
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
 id btn_link
 id btn_pref
 id btn_reset
 id btn_singleFeed
-id change_password
 id confirm_password
 id connect_socials
 id cv_layout
@@ -130,7 +125,6 @@ id report_problems
 id reset_password
 id rv
 id scroll_topics
-id select
 id shareButton
 id sign_in
 id sign_up

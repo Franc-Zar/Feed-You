@@ -23,12 +23,9 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-<<<<<<< HEAD
-=======
-  public final Button changePassword;
+  public final Button btnContinue;
 
   @NonNull
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
   public final EditText confirmPassword;
 
   @NonNull
@@ -41,33 +38,21 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final EditText oldPassword;
 
   @NonNull
-  public final Button select;
-
-  @NonNull
   public final TextView textView;
 
   @NonNull
   public final MaterialToolbar toolbarPasswordChange;
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
-<<<<<<< HEAD
-      @NonNull EditText confirmPassword, @NonNull TextView decoration,
-      @NonNull EditText newPassword, @NonNull EditText oldPassword, @NonNull Button select,
-      @NonNull TextView textView, @NonNull MaterialToolbar toolbarPasswordChange) {
-    this.rootView = rootView;
-=======
-      @NonNull Button changePassword, @NonNull EditText confirmPassword,
-      @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
-      @NonNull EditText oldPassword, @NonNull TextView textView,
+      @NonNull Button btnContinue, @NonNull EditText confirmPassword, @NonNull TextView decoration,
+      @NonNull EditText newPassword, @NonNull EditText oldPassword, @NonNull TextView textView,
       @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
-    this.changePassword = changePassword;
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
+    this.btnContinue = btnContinue;
     this.confirmPassword = confirmPassword;
     this.decoration = decoration;
     this.newPassword = newPassword;
     this.oldPassword = oldPassword;
-    this.select = select;
     this.textView = textView;
     this.toolbarPasswordChange = toolbarPasswordChange;
   }
@@ -99,15 +84,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-<<<<<<< HEAD
-=======
-      id = R.id.change_password;
-      Button changePassword = ViewBindings.findChildViewById(rootView, id);
-      if (changePassword == null) {
+      id = R.id.btn_continue;
+      Button btnContinue = ViewBindings.findChildViewById(rootView, id);
+      if (btnContinue == null) {
         break missingId;
       }
 
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
       id = R.id.confirm_password;
       EditText confirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmPassword == null) {
@@ -132,12 +114,6 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.select;
-      Button select = ViewBindings.findChildViewById(rootView, id);
-      if (select == null) {
-        break missingId;
-      }
-
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
@@ -150,14 +126,8 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
-<<<<<<< HEAD
-      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, confirmPassword,
-          decoration, newPassword, oldPassword, select, textView, toolbarPasswordChange);
-=======
-      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, changePassword,
-          confirmPassword, decorationPasswordReset, newPassword, oldPassword, textView,
-          toolbarPasswordChange);
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
+      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, btnContinue,
+          confirmPassword, decoration, newPassword, oldPassword, textView, toolbarPasswordChange);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

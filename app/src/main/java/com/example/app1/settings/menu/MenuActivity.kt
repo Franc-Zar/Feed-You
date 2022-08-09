@@ -38,8 +38,10 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var themePreferences: ThemePreferences
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
         menuInflater.inflate(R.menu.top_bar, menu)
         return super.onCreateOptionsMenu(menu)
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -54,7 +56,7 @@ class MenuActivity : AppCompatActivity() {
         val reportProblem = findViewById<TextView>(R.id.report_problems)
         val themes = findViewById<TextView>(R.id.email)
 
-        val block = findViewById<TextView>(R.id.select)
+        val block = findViewById<TextView>(R.id.btn_continue)
         val pref = findViewById<TextView>(R.id.btn_pref)
         val singleFeed = findViewById<TextView>(R.id.btn_singleFeed)
 

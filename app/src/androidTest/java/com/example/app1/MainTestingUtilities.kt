@@ -6,13 +6,12 @@ import com.example.app1.R
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
 import org.hamcrest.Matcher
-import org.hamcrest.core.AllOf
 
 
 class MainPage : Page() {
 
     override fun verify(): MainPage {
-        Thread.sleep(10000)
+        Thread.sleep(15000)
 
         onView(withId(R.id.rv))
             .check(matches(isDisplayed()))
@@ -114,7 +113,6 @@ class BlockPage: Page() {
     }
 }
 
-<<<<<<< HEAD
 class LoginPage: Page() {
     override fun verify(): LoginPage {
         onView(withId(R.id.decoration_useSocial)).check(matches(isDisplayed()))
@@ -203,35 +201,12 @@ class PasswordRecoveryPage: Page() {
 class PreferencePage: Page() {
     override fun verify(): PreferencePage {
         Thread.sleep(1000)
-        onView(withId(R.id.select)).check(matches(isDisplayed()))
-        return this
-    }
-
-    fun tapOnSelect(): PreferencePage {
-        onView(firstView(withId(R.id.select))).perform(ViewActions.click())
-=======
-class AboutPage: Page() {
-    override fun verify(): AboutPage {
-        onView(withId(R.id.About_us_text)).check(matches(isDisplayed()))
-        return this
-    }
-}
-
-class PrefPage: Page() {
-    override fun verify(): PrefPage {
         onView(withId(R.id.btn_continue)).check(matches(isDisplayed()))
         return this
     }
 
-    fun tapOnContinue(): PrefPage {
-        onView(withId(R.id.btn_continue)).perform(ViewActions.click())
-        return this
-    }
-
-    fun selectTopics(): PrefPage {
-        Thread.sleep(2000)
-        onView(withId(R.id.scroll_topics)).perform(ViewActions.click())
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
+    fun tapOnSelect(): PreferencePage {
+        onView(firstView(withId(R.id.btn_continue))).perform(ViewActions.click())
         return this
     }
 }

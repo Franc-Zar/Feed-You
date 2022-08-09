@@ -64,17 +64,16 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_twitter_classic.png.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxxhdpi/twitter_classic.png"
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_icons8_twitter.png.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icons8_twitter.png"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_alert_feed_you.xml.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/alert_feed_you.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxhdpi_ic_icons8_twitter.png.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icons8_twitter.png"
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-xxxhdpi_twitter_classic.png.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-xxxhdpi/twitter_classic.png"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_icons8_google.xml.flat",
@@ -83,18 +82,6 @@
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_visibility_18.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\drawable\\ic_baseline_visibility_18.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_icons8_twitter.png.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_icons8_twitter.png"
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_vpn_key_24.xml.flat",
@@ -157,26 +144,16 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/layout/activity_account.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_bug_report_24.xml.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_bug_report_24.xml"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_menu.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\layout\\activity_menu.xml"
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-<<<<<<< HEAD
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable_ic_baseline_bug_report_24.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_bug_report_24.xml"
+    },
+    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-hdpi_ic_baseline_people_alt_24.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-hdpi/ic_baseline_people_alt_24.png"
-=======
-        "merged": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_manage_accounts_24.xml.flat",
-        "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\drawable\\ic_baseline_manage_accounts_24.xml"
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -219,12 +196,12 @@
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml"
     },
     {
-        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_twitter_classic.xml.flat",
-        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-anydpi-v24/twitter_classic.xml"
-    },
-    {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-hdpi_twitter_classic.png.flat",
         "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-hdpi/twitter_classic.png"
+    },
+    {
+        "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_twitter_classic.xml.flat",
+        "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/generated/res/pngs/debug/drawable-anydpi-v24/twitter_classic.xml"
     },
     {
         "merged": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/merged_res/debug/layout_activity_single_feed.xml.flat",

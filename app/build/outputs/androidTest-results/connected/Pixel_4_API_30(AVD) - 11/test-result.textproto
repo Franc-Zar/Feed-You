@@ -1,20 +1,20 @@
-# 2022-08-09T22:09:23.033Z:
+# 2022-08-09T23:02:20.740Z:
 test_suite_meta_data {
-  scheduled_test_case_count: 1
+  scheduled_test_case_count: 5
 }
 test_status: PASSED
 test_result {
   test_case {
-    test_class: "AuthenticationTest"
+    test_class: "NavigationTest"
     test_package: "com.example.app1"
-    test_method: "signUpAndSignInSuccessful"
+    test_method: "readNews"
     start_time {
-      seconds: 1660082944
-      nanos: 754000000
+      seconds: 1660086037
+      nanos: 322000000
     }
     end_time {
-      seconds: 1660082961
-      nanos: 21000000
+      seconds: 1660086057
+      nanos: 430000000
     }
   }
   test_status: PASSED
@@ -24,7 +24,215 @@ test_result {
       namespace: "android"
     }
     source_path {
-      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.AuthenticationTest-signUpAndSignInSuccessful.txt"
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.NavigationTest-readNews.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NavigationTest"
+    test_package: "com.example.app1"
+    test_method: "openSingleFeedMode"
+    start_time {
+      seconds: 1660086058
+      nanos: 375000000
+    }
+    end_time {
+      seconds: 1660086077
+      nanos: 565000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.NavigationTest-openSingleFeedMode.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NavigationTest"
+    test_package: "com.example.app1"
+    test_method: "blockFromMenu"
+    start_time {
+      seconds: 1660086078
+      nanos: 523000000
+    }
+    end_time {
+      seconds: 1660086097
+      nanos: 775000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.NavigationTest-blockFromMenu.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NavigationTest"
+    test_package: "com.example.app1"
+    test_method: "blockFromNews"
+    start_time {
+      seconds: 1660086098
+      nanos: 918000000
+    }
+    end_time {
+      seconds: 1660086117
+      nanos: 964000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.NavigationTest-blockFromNews.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "NavigationTest"
+    test_package: "com.example.app1"
+    test_method: "resetSingleFeed"
+    start_time {
+      seconds: 1660086119
+      nanos: 74000000
+    }
+    end_time {
+      seconds: 1660086138
+      nanos: 305000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/outputs/androidTest-results/connected/Pixel_4_API_30(AVD) - 11/logcat-com.example.app1.NavigationTest-resetSingleFeed.txt"
     }
   }
   output_artifact {

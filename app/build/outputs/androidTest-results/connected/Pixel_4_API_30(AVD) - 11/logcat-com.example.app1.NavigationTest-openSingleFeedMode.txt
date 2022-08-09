@@ -1,0 +1,363 @@
+08-10 01:00:57.739 23340 23368 I TestRunner: started: openSingleFeedMode(com.example.app1.NavigationTest)
+08-10 01:00:57.743   496   527 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 01:00:57.749 23340 23372 W System  : Ignoring header X-Firebase-Locale because its value was null.
+08-10 01:00:57.760   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+08-10 01:00:57.760   496  2269 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.761   496  2269 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:00:57.790 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: PRE_ON_CREATE
+08-10 01:00:57.793   294   294 D goldfish-address-space: claimShared: Ask to claim region [0x3f0965000 0x3f12ca000]
+08-10 01:00:57.796 23340 23366 V FA      : onActivityCreated
+08-10 01:00:57.918 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: CREATED
+08-10 01:00:57.924 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: STARTED
+08-10 01:00:57.926 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: RESUMED
+08-10 01:00:57.927 23340 23370 V FA      : Activity resumed, time: 15799422
+08-10 01:00:57.958   294   294 D goldfish-address-space: claimShared: Ask to claim region [0x3f319a000 0x3f3aff000]
+08-10 01:00:57.960   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f1c2f000 0x3f2594000]
+08-10 01:00:57.961   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f8965000 0x3f92ca000]
+08-10 01:00:57.971 23340 23340 E RecyclerView: No adapter attached; skipping layout
+08-10 01:00:57.995   496   532 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.app1/1/com.example.app1.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+08-10 01:00:57.996   496   532 I ActivityTaskManager: Displayed com.example.app1/.MainActivity: +251ms
+08-10 01:00:57.998   496   527 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+08-10 01:00:58.213  8992 22135 I PBSessionCacheImpl: Deleted sessionId[39548894299070219] from persistence.
+08-10 01:00:58.263 10668 22608 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=NewsActivity, ga_previous_id(_pi)=-5805263733067076469, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-5805263733067076468}]
+08-10 01:00:58.267  8992  9060 W SearchServiceCore: Abort, client detached.
+08-10 01:00:58.285 10668 22608 V FA-SVC  : Upload scheduled in approximately ms: 3572615
+08-10 01:00:58.286 10668 22608 V FA-SVC  : Unscheduling upload
+08-10 01:00:58.288 10668 22608 V FA-SVC  : Scheduling upload, millis: 3572615
+08-10 01:00:58.290 10668 22608 V FA-SVC  : Background event processing time, ms: 27
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: Error inserting flex_time=3572000 job_id=-1 period=7146000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660086058294 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:00:58.296  8857 23306 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:00:58.312 23340 23340 I chromium: [INFO:CONSOLE(0)] "The resource https://www.ilsole24ore.com/static/img/ilsole24ore-o-2021.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.", source:  (0)
+08-10 01:00:58.959 23340 23352 I om.example.app: Background concurrent copying GC freed 77576(4305KB) AllocSpace objects, 52(6096KB) LOS objects, 49% free, 10084KB/19MB, paused 182us total 197.508ms
+08-10 01:00:59.089 23340 23354 W System  : A resource failed to call end.
+08-10 01:00:59.792 23340 23393 W System.err: java.io.FileNotFoundException: https://st.ilfattoquotidiano.it/wp-content/themes/ifq-2019/assets/img/ifq-logo-squared.png
+08-10 01:00:59.792 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+08-10 01:00:59.792 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+08-10 01:00:59.792 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+08-10 01:00:59.792 23340 23393 W System.err: 	at com.example.app1.CustomFeeder.getIcon(CustomFeeder.kt:173)
+08-10 01:00:59.792 23340 23393 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:112)
+08-10 01:00:59.792 23340 23393 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+08-10 01:00:59.793 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+08-10 01:01:00.077 23340 23354 W System  : A resource failed to call end.
+08-10 01:01:00.078 23340 23354 I chatty  : uid=10155(com.example.app1) FinalizerDaemon identical 1 line
+08-10 01:01:00.202 23340 23354 W System  : A resource failed to call end.
+08-10 01:01:01.826 23340 23393 W System.err: java.io.FileNotFoundException: https://api-msfnews.mediaset.net/tgcom24/redirect/27493679
+08-10 01:01:01.826 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+08-10 01:01:01.826 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+08-10 01:01:01.826 23340 23393 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+08-10 01:01:01.826 23340 23393 W System.err: 	at java.net.URL.openStream(URL.java:1072)
+08-10 01:01:01.826 23340 23393 W System.err: 	at kotlin.io.TextStreamsKt.readBytes(ReadWrite.kt:150)
+08-10 01:01:01.826 23340 23393 W System.err: 	at com.example.app1.CustomFeeder.getIcon(CustomFeeder.kt:148)
+08-10 01:01:01.827 23340 23393 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:112)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+08-10 01:01:01.827 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+08-10 01:01:02.784 23340 23352 I om.example.app: Background young concurrent copying GC freed 64241(2687KB) AllocSpace objects, 39(4848KB) LOS objects, 41% free, 10MB/17MB, paused 5.008ms total 121.003ms
+08-10 01:01:02.787 23340 23354 W System  : A resource failed to call end.
+08-10 01:01:02.855  8857 22160 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:4 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:02.940  8857 23306 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:4 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:02.953  8857 23306 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:4 result: 3 elapsed_millis: 154 uptime_millis: 154 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:02.953  8857 22411 V NFC     : this device does not have NFC support
+08-10 01:01:02.954  8857 22411 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+08-10 01:01:02.954  8857 22411 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:150)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at bits.<init>(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@222615040@22.26.15 (150700-461192076):5)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@222615040@22.26.15 (150700-461192076):4)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at anvy.call(:com.google.android.gms@222615040@22.26.15 (150700-461192076):4)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:02.954  8857 22411 W TapAndPay: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:01:03.037  8857 22411 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:4 result: 3 elapsed_millis: 164 uptime_millis: 164 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:03.054  8857 22411 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.EventLogService started execution. cause:5 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:03.058 10668 20586 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+08-10 01:01:03.058 10668 20586 I Checkin : [EventLogChimeraService] Aggregate from 1660084272927 (log), 1660084272927 (data)
+08-10 01:01:03.287 23340 23370 V FA      : Inactivity, disconnecting from the service
+08-10 01:01:03.534 23340 23352 I om.example.app: Background concurrent copying GC freed 98246(3582KB) AllocSpace objects, 73(6772KB) LOS objects, 49% free, 8831KB/17MB, paused 143us total 222.901ms
+08-10 01:01:03.780  8857 23306 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.EventLogService finished executing. cause:5 result: 1 elapsed_millis: 771 uptime_millis: 771 exec_start_elapsed_seconds: 15804 [CONTEXT service_id=218 ]
+08-10 01:01:04.682   424   424 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
+08-10 01:01:04.688   424   424 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+08-10 01:01:05.752 23340 23354 W System  : A resource failed to call end.
+08-10 01:01:06.038   426   426 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+08-10 01:01:06.040   426   426 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+08-10 01:01:06.274 23340 23393 W System.err: org.xmlpull.v1.XmlPullParserException: name expected (position:START_TAG <a.length>@48:85 in java.io.InputStreamReader@b5f7e67)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.android.org.kxml2.io.KXmlParser.checkRelaxed(KXmlParser.java:305)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.android.org.kxml2.io.KXmlParser.readName(KXmlParser.java:1548)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.android.org.kxml2.io.KXmlParser.parseStartTag(KXmlParser.java:1091)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:372)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:313)
+08-10 01:01:06.274 23340 23393 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.skip(AndroidParserBase.kt:145)
+08-10 01:01:06.274 23340 23393 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.access$skip(AndroidParserBase.kt:69)
+08-10 01:01:06.274 23340 23393 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.parseStandardChannel(AndroidParserBase.kt:466)
+08-10 01:01:06.274 23340 23393 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:27)
+08-10 01:01:06.274 23340 23393 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:22)
+08-10 01:01:06.274 23340 23393 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:255)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+08-10 01:01:06.274 23340 23393 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+08-10 01:01:08.306 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 01:01:12.771 23340 23340 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362216/com.example.app1:id/rv>
+08-10 01:01:13.283 23340 23340 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131361885/com.example.app1:id/app_bar_search>
+08-10 01:01:13.790 23340 23340 I ViewInteraction: Performing 'single click' action on view view.getContentDescription() is "btn_menu"
+08-10 01:01:13.854   496   527 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+08-10 01:01:13.869   496  2269 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:13.869   496  1542 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:13.874   496  2269 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:13.878   377   377 I perfetto: ing_service_impl.cc:758 Configured tracing session 108, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+08-10 01:01:13.881   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 01:01:13.883   375   375 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=108)
+08-10 01:01:13.884 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: PAUSED
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.886   496  2269 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887   496  2269 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:13.887 23340 23370 V FA      : Recording user engagement, ms: 15959
+08-10 01:01:13.942 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: PRE_ON_CREATE
+08-10 01:01:13.945 23340 23366 V FA      : onActivityCreated
+08-10 01:01:13.957   375   375 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+08-10 01:01:13.983 23340 23370 V FA      : Connecting to remote service
+08-10 01:01:13.989 23340 23370 V FA      : Connection attempt already in progress
+08-10 01:01:13.989 23340 23370 V FA      : Activity paused, time: 15815381
+08-10 01:01:13.989 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 01:01:13.989 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 01:01:14.011   496   560 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:14.022  8857  9433 I FontLog : Received query name=Quicksand&weight=700, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 01:01:14.022  8857  9433 I FontLog : Query [name=Quicksand&weight=700] resolved to {Quicksand, wdth 100.0, wght 700, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 01:01:14.028  8857  9433 I FontLog : Fetch {Quicksand, wdth 100.0, wght 700, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 01:01:14.047  8857 10483 I FontLog : Pulling font file for id = 268, cache size = 6 [CONTEXT service_id=132 ]
+08-10 01:01:14.083 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: CREATED
+08-10 01:01:14.087 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: STARTED
+08-10 01:01:14.089 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: RESUMED
+08-10 01:01:14.090 23340 23370 V FA      : Activity resumed, time: 15815585
+08-10 01:01:14.098  8857 10483 I FontLog : Received query Asap, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 01:01:14.103  8857 10483 I FontLog : Query [Asap] resolved to {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 01:01:14.114  8857 10483 I FontLog : Fetch {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 01:01:14.123  8857 10483 I FontLog : Pulling font file for id = 269, cache size = 7 [CONTEXT service_id=132 ]
+08-10 01:01:14.128 23340 23370 V FA      : Connection attempt already in progress
+08-10 01:01:14.128 23340 23370 V FA      : Connection attempt already in progress
+08-10 01:01:14.205   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f0965000]
+08-10 01:01:14.213   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f0965000 0x3f12ca000]
+08-10 01:01:14.214   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f12ca000 0x3f1c2f000]
+08-10 01:01:14.289   496   532 I ActivityTaskManager: Displayed com.example.app1/.settings.menu.MenuActivity: +428ms
+08-10 01:01:14.338 23340 23370 D FA      : Connected to remote service
+08-10 01:01:14.345 23340 23370 V FA      : Processing queued up service tasks: 4
+08-10 01:01:14.400 10668 22608 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=15959, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-5805263733067076468}]
+08-10 01:01:14.424 10668 22608 V FA-SVC  : Upload scheduled in approximately ms: 3556476
+08-10 01:01:14.424 10668 22608 V FA-SVC  : Unscheduling upload
+08-10 01:01:14.427 10668 22608 V FA-SVC  : Scheduling upload, millis: 3556476
+08-10 01:01:14.429 10668 22608 V FA-SVC  : Background event processing time, ms: 29
+08-10 01:01:14.436 10668 22608 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=MainActivity, ga_previous_id(_pi)=-5805263733067076468, ga_screen_class(_sc)=MenuActivity, ga_screen_id(_si)=-5805263733067076467}]
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: Error inserting flex_time=3556000 job_id=-1 period=7113000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660086074436 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:14.440  8857 22411 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:01:14.444 10668 22608 V FA-SVC  : Upload scheduled in approximately ms: 3556456
+08-10 01:01:14.444 10668 22608 V FA-SVC  : Unscheduling upload
+08-10 01:01:14.446 10668 22608 V FA-SVC  : Scheduling upload, millis: 3556456
+08-10 01:01:14.458 10668 22608 V FA-SVC  : Background event processing time, ms: 23
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: Error inserting flex_time=3556000 job_id=-1 period=7113000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660086074459 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:14.461  8857 22411 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:01:14.600 23340 23340 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362288/com.example.app1:id/sv_menu>
+08-10 01:01:14.742 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@c274497 in: STOPPED
+08-10 01:01:15.106 23340 23340 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131361916/com.example.app1:id/btn_singleFeed>
+08-10 01:01:15.175   496   527 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 01:01:15.180   377   377 I perfetto: ing_service_impl.cc:758 Configured tracing session 109, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
+08-10 01:01:15.193   496  2381 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:15.195 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: PAUSED
+08-10 01:01:15.195   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 01:01:15.195   496  1542 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   496  1542 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 01:01:15.196   375   375 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=109)
+08-10 01:01:15.228 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.SingleFeedActivity@3b515fe in: PRE_ON_CREATE
+08-10 01:01:15.231 23340 23370 V FA      : Recording user engagement, ms: 1105
+08-10 01:01:15.233 23340 23366 V FA      : onActivityCreated
+08-10 01:01:15.316 10668 22608 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=1105, ga_screen_class(_sc)=MenuActivity, ga_screen_id(_si)=-5805263733067076467}]
+08-10 01:01:15.322 23340 23370 V FA      : Activity paused, time: 15816690
+08-10 01:01:15.323   496  1542 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:15.350 10668 22608 V FA-SVC  : Upload scheduled in approximately ms: 3555550
+08-10 01:01:15.350 10668 22608 V FA-SVC  : Unscheduling upload
+08-10 01:01:15.366 10668 22608 V FA-SVC  : Scheduling upload, millis: 3555550
+08-10 01:01:15.378 10668 22608 V FA-SVC  : Background event processing time, ms: 62
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: Error inserting flex_time=3555000 job_id=-1 period=7112000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660086075387 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:15.408  8857 22160 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:01:15.430 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.SingleFeedActivity@3b515fe in: CREATED
+08-10 01:01:15.434 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.SingleFeedActivity@3b515fe in: STARTED
+08-10 01:01:15.435 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.SingleFeedActivity@3b515fe in: RESUMED
+08-10 01:01:15.436 23340 23370 V FA      : Activity resumed, time: 15816930
+08-10 01:01:15.551   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f319a000 0x3f3aff000]
+08-10 01:01:15.563   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f1c2f000 0x3f2594000]
+08-10 01:01:15.576   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f4965000]
+08-10 01:01:15.638   496   532 I ActivityTaskManager: Displayed com.example.app1/.settings.menu.SingleFeedActivity: +463ms
+08-10 01:01:15.649 23340 23352 I om.example.app: Background young concurrent copying GC freed 41801(2241KB) AllocSpace objects, 63(2412KB) LOS objects, 25% free, 11MB/15MB, paused 312us total 272.773ms
+08-10 01:01:15.761 10668 22608 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=MenuActivity, ga_previous_id(_pi)=-5805263733067076467, ga_screen_class(_sc)=SingleFeedActivity, ga_screen_id(_si)=-5805263733067076466}]
+08-10 01:01:15.773 10668 22608 V FA-SVC  : Upload scheduled in approximately ms: 3555127
+08-10 01:01:15.773 10668 22608 V FA-SVC  : Unscheduling upload
+08-10 01:01:15.782 10668 22608 V FA-SVC  : Scheduling upload, millis: 3555127
+08-10 01:01:15.784 10668 22608 V FA-SVC  : Background event processing time, ms: 23
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: Error inserting flex_time=3555000 job_id=-1 period=7111000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660086075789 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 01:01:15.791  8857 22411 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 01:01:16.111 23340 23340 D LifecycleMonitor: Lifecycle status change: com.example.app1.settings.menu.MenuActivity@2f34463 in: STOPPED
+08-10 01:01:16.129 23340 23340 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131361915/com.example.app1:id/btn_reset>
+08-10 01:01:16.631 23340 23340 I ViewInteraction: Performing 'single click' action on view should return first matching item
+08-10 01:01:16.686 23340 23340 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10155; state: ENABLED
+08-10 01:01:16.712   496  1542 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:16.753   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f3aff000 0x3f3b4c000]
+08-10 01:01:16.760   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f3b4c000 0x3f3b99000]
+08-10 01:01:16.772   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f3b99000 0x3f3be6000]
+08-10 01:01:16.842   496  1542 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 01:01:16.922 23340 23368 I TestRunner: finished: openSingleFeedMode(com.example.app1.NavigationTest)

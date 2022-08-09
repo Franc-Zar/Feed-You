@@ -20,11 +20,7 @@ class PreferenceActivity : AppCompatActivity() {
         transaction.replace(R.id.fragment, fragment1)
         transaction.commit()
 
-<<<<<<< HEAD
-        val button = findViewById<Button>(R.id.select)
-=======
         val button = findViewById<Button>(R.id.btn_continue)
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
         button?.setOnClickListener {
             val f: Fragment =
                 supportFragmentManager.findFragmentById(R.id.fragment) as Fragment

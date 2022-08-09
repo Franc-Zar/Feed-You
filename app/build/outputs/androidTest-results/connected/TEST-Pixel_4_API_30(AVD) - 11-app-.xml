@@ -1,9 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.app1.AuthenticationTest" tests="1" failures="0" errors="0" skipped="0" time="18.073" timestamp="2022-08-09T22:09:22" hostname="localhost">
+<testsuite name="com.example.app1.NavigationTest" tests="5" failures="0" errors="0" skipped="0" time="103.276" timestamp="2022-08-09T23:02:20" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_4_API_30(AVD) - 11" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="signUpAndSignInSuccessful" classname="com.example.app1.AuthenticationTest" time="16.133" />
+  <testcase name="readNews" classname="com.example.app1.NavigationTest" time="20.033" />
+  <testcase name="openSingleFeedMode" classname="com.example.app1.NavigationTest" time="19.198" />
+  <testcase name="blockFromMenu" classname="com.example.app1.NavigationTest" time="19.264" />
+  <testcase name="blockFromNews" classname="com.example.app1.NavigationTest" time="19.045" />
+  <testcase name="resetSingleFeed" classname="com.example.app1.NavigationTest" time="19.24" />
 </testsuite>

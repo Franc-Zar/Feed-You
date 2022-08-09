@@ -142,11 +142,7 @@
             android:layout_height="10dp" />
 
         <TextView
-<<<<<<< HEAD
-            android:id="@+id/select"
-=======
-            android:id="@+id/change_password"
->>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
+            android:id="@+id/btn_continue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"
