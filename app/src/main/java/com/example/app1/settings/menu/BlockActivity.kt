@@ -20,7 +20,7 @@ class BlockActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val layout = findViewById<LinearLayout>(R.id.lay_links)
+        val layout = findViewById<LinearLayout>(R.id.lay_blockedLinks)
 
         var content = ""
         try {

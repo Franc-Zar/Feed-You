@@ -2845,6 +2845,8 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_block
+id btn_blocked
 id btn_link
 id btn_pref
 id btn_reset
@@ -2863,7 +2865,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id change_password
 id checkbox
 id checked
 id chip
@@ -3007,6 +3008,7 @@ id iv_favicon
 id jumpToEnd
 id jumpToStart
 id labeled
+id lay_blockedLinks
 id lay_links
 id layout
 id layout_app

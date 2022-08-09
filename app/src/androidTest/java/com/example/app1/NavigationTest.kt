@@ -1,5 +1,6 @@
 package com.example.app1
 
+import BlockPage
 import MainPage
 import MenuPage
 import NewsPage
@@ -40,7 +41,39 @@ class NavigationTest {
     }
 
     @Test
+    fun blockFromNews(){
+        val oldBlocked = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
+        Page.on<MainPage>()
+            .tapOnNews()
+            .on<NewsPage>()
+            .tapOnBlock()
+            .verify()
+        val newBlocked = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
+        assert(newBlocked.size > oldBlocked.size)
+    }
+
+    @Test
+    fun blockFromMenu(){
+        val oldBlocked = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
+        Page.on<MainPage>()
+            .on<TopBarPage>()
+            .tapOnMenu()
+            .on<MenuPage>()
+            .tapOnOption(R.id.btn_blocked)
+            .on<BlockPage>()
+            .tapOnFeed()
+        val newBlocked = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all
+        assert(newBlocked.size != oldBlocked.size)  //Non semplicemente minore, poiché se già bloccato con la stessa azione lo sblocco
+    }
+
+    @Test
     fun openSingleFeedMode(){
+        val pref = context.getSharedPreferences(context.getString(R.string.feedLink), Context.MODE_PRIVATE)
+        with(pref.edit()){
+            clear()
+            apply()
+        }
+
         val lang = context.getSharedPreferences(
             context.getString(R.string.lang),
             Context.MODE_PRIVATE).all[context.getString(R.string.lang)]
@@ -59,13 +92,19 @@ class NavigationTest {
             .tapOnOption(R.id.btn_singleFeed)
             .on<SingleFeedPage>()
             .tapOnFeed()
-            .back()
-            .on<MenuPage>()
-            .back()
-            .on<MainPage>()
-            .verify()
-
-        assert(context.getSharedPreferences(context.getString(R.string.feedLink), Context.MODE_PRIVATE).all.isNotEmpty())
+        assert(pref.all[context.getString(R.string.feedLink)]?.equals(feedLink) ?: false)
     }
 
+    @Test
+    fun resetSingleFeed(){
+        Page.on<MainPage>()
+            .on<TopBarPage>()
+            .tapOnMenu()
+            .on<MenuPage>()
+            .tapOnOption(R.id.btn_singleFeed)
+            .on<SingleFeedPage>()
+            .tapOnReset()
+        val pref = context.getSharedPreferences(context.getString(R.string.feedLink), Context.MODE_PRIVATE)
+        assert(pref.all.isEmpty())
+    }
 }

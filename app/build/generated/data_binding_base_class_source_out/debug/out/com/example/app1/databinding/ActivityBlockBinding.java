@@ -22,7 +22,7 @@ public final class ActivityBlockBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final LinearLayout layLinks;
+  public final LinearLayout layBlockedLinks;
 
   @NonNull
   public final ScrollView linkList;
@@ -30,10 +30,11 @@ public final class ActivityBlockBinding implements ViewBinding {
   @NonNull
   public final MaterialToolbar toolbar;
 
-  private ActivityBlockBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout layLinks,
-      @NonNull ScrollView linkList, @NonNull MaterialToolbar toolbar) {
+  private ActivityBlockBinding(@NonNull ConstraintLayout rootView,
+      @NonNull LinearLayout layBlockedLinks, @NonNull ScrollView linkList,
+      @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
-    this.layLinks = layLinks;
+    this.layBlockedLinks = layBlockedLinks;
     this.linkList = linkList;
     this.toolbar = toolbar;
   }
@@ -65,9 +66,9 @@ public final class ActivityBlockBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.lay_links;
-      LinearLayout layLinks = ViewBindings.findChildViewById(rootView, id);
-      if (layLinks == null) {
+      id = R.id.lay_blockedLinks;
+      LinearLayout layBlockedLinks = ViewBindings.findChildViewById(rootView, id);
+      if (layBlockedLinks == null) {
         break missingId;
       }
 
@@ -83,7 +84,8 @@ public final class ActivityBlockBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityBlockBinding((ConstraintLayout) rootView, layLinks, linkList, toolbar);
+      return new ActivityBlockBinding((ConstraintLayout) rootView, layBlockedLinks, linkList,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
