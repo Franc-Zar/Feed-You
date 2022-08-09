@@ -1,19 +1,23 @@
 package com.example.app1
 
+import AboutPage
 import BlockPage
 import MainPage
 import MenuPage
 import NewsPage
 import Page
+import PrefPage
 import SingleFeedPage
 import TopBarPage
 import android.content.Context
 import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
+import android.util.Log
 import androidx.core.content.ContextCompat.startActivity
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import org.json.JSONObject
+import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -30,6 +34,19 @@ class NavigationTest {
         }
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK)
         startActivity(context,intent, null)
+    }
+
+    @After
+    fun clear(){
+        with(context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).edit()){
+            clear()
+            apply()
+        }
+        with(context.getSharedPreferences(context.getString(R.string.feedLink), Context.MODE_PRIVATE).edit()){
+            clear()
+            apply()
+        }
+
     }
 
     @Test
@@ -106,5 +123,34 @@ class NavigationTest {
             .tapOnReset()
         val pref = context.getSharedPreferences(context.getString(R.string.feedLink), Context.MODE_PRIVATE)
         assert(pref.all.isEmpty())
+    }
+
+    @Test
+    fun verifyAboutUs(){
+        Page.on<MainPage>()
+            .on<TopBarPage>()
+            .tapOnMenu()
+            .on<MenuPage>()
+            .tapOnOption(R.id.about_feed_you)
+            .on<AboutPage>()
+            .verify()
+    }
+
+    @Test
+    fun changePrefs(){
+        Page.on<MainPage>()
+            .on<TopBarPage>()
+            .tapOnMenu()
+            .on<MenuPage>()
+            .tapOnOption(R.id.btn_pref)
+            .on<PrefPage>()
+            .tapOnContinue()
+            .selectTopics()
+            .tapOnContinue()
+
+        val lang = context.getSharedPreferences(context.getString(R.string.lang), Context.MODE_PRIVATE).all
+        assert(lang[context.getString(R.string.lang)]?.equals("it") ?: false )
+        val topics = context.getSharedPreferences(context.getString(R.string.prefTopics), Context.MODE_PRIVATE).all
+        assert(topics.isNotEmpty())
     }
 }

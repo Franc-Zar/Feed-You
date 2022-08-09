@@ -48,7 +48,11 @@ class PasswordChangeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_password_change)
 
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_password_change)
+<<<<<<< HEAD
         val change_password = findViewById<Button>(R.id.select)
+=======
+        val change_password = findViewById<Button>(R.id.change_password)
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
         val confirm_password = findViewById<EditText>(R.id.confirm_password)
         val new_password = findViewById<EditText>(R.id.new_password)
         val old_password = findViewById<EditText>(R.id.old_password)

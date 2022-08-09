@@ -23,6 +23,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
+=======
+  public final Button changePassword;
+
+  @NonNull
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
   public final EditText confirmPassword;
 
   @NonNull
@@ -44,10 +50,19 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final MaterialToolbar toolbarPasswordChange;
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
+<<<<<<< HEAD
       @NonNull EditText confirmPassword, @NonNull TextView decoration,
       @NonNull EditText newPassword, @NonNull EditText oldPassword, @NonNull Button select,
       @NonNull TextView textView, @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
+=======
+      @NonNull Button changePassword, @NonNull EditText confirmPassword,
+      @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
+      @NonNull EditText oldPassword, @NonNull TextView textView,
+      @NonNull MaterialToolbar toolbarPasswordChange) {
+    this.rootView = rootView;
+    this.changePassword = changePassword;
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     this.confirmPassword = confirmPassword;
     this.decoration = decoration;
     this.newPassword = newPassword;
@@ -84,6 +99,15 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
+=======
+      id = R.id.change_password;
+      Button changePassword = ViewBindings.findChildViewById(rootView, id);
+      if (changePassword == null) {
+        break missingId;
+      }
+
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
       id = R.id.confirm_password;
       EditText confirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmPassword == null) {
@@ -126,8 +150,14 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, confirmPassword,
           decoration, newPassword, oldPassword, select, textView, toolbarPasswordChange);
+=======
+      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, changePassword,
+          confirmPassword, decorationPasswordReset, newPassword, oldPassword, textView,
+          toolbarPasswordChange);
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

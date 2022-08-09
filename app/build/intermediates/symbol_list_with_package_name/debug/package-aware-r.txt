@@ -2845,6 +2845,11 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_block
+<<<<<<< HEAD
+=======
+id btn_blocked
+id btn_continue
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
 id btn_link
 id btn_pref
 id btn_reset
@@ -2863,6 +2868,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id change_password
 id checkbox
 id checked
 id chip

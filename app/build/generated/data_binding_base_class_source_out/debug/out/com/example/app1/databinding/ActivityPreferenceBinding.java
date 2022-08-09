@@ -22,6 +22,12 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
+=======
+  public final Button btnContinue;
+
+  @NonNull
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
   public final FragmentContainerView fragment;
 
   @NonNull
@@ -33,10 +39,18 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   @NonNull
   public final TextView title;
 
+<<<<<<< HEAD
   private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView,
+=======
+  private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnContinue,
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
       @NonNull FragmentContainerView fragment, @NonNull ConstraintLayout linearLayout,
       @NonNull Button select, @NonNull TextView title) {
     this.rootView = rootView;
+<<<<<<< HEAD
+=======
+    this.btnContinue = btnContinue;
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     this.fragment = fragment;
     this.linearLayout = linearLayout;
     this.select = select;
@@ -70,6 +84,15 @@ public final class ActivityPreferenceBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
+=======
+      id = R.id.btn_continue;
+      Button btnContinue = ViewBindings.findChildViewById(rootView, id);
+      if (btnContinue == null) {
+        break missingId;
+      }
+
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
       id = R.id.fragment;
       FragmentContainerView fragment = ViewBindings.findChildViewById(rootView, id);
       if (fragment == null) {
@@ -90,8 +113,13 @@ public final class ActivityPreferenceBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new ActivityPreferenceBinding((ConstraintLayout) rootView, fragment, linearLayout,
           select, title);
+=======
+      return new ActivityPreferenceBinding((ConstraintLayout) rootView, btnContinue, fragment,
+          linearLayout, title);
+>>>>>>> 5e13186e000cba08d17c5c45d48ebac32bc1cb2e
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
