@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\cea5219afbea85407514f878daee2035\\transformed\\core-1.8.0\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/francesco/.gradle/caches/transforms-3/cea5219afbea85407514f878daee2035/transformed/core-1.8.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\84d24a4c6dc76995a4eb1626d782b0ef\\transformed\\appcompat-1.4.2\\res\\values-v16\\values-v16.xml",
+                    "source": "/home/francesco/.gradle/caches/transforms-3/84d24a4c6dc76995a4eb1626d782b0ef/transformed/appcompat-1.4.2/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

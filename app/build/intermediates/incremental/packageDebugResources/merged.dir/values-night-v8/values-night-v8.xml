@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/feedyou_azure_light</item>
+        <item name="android:fontFamily">@font/asap</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:colorControlActivated">@color/feedyou_azure_light</item>
+        <item name="android:colorControlNormal">@color/feedyou_azure_light</item>
+        <item name="android:textColor">@color/feedyou_azure_light</item>
+        <item name="buttonBarPositiveButtonStyle">@style/ButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonStyle</item>
+
+    </style>
+    <style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/feedyou_azure_light</item>
+        <item name="colorPrimaryVariant">@color/feedyou_azure_light</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/feedyou_grey_lighter</item>
+        <item name="colorSecondaryVariant">@color/feedyou_news_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/feedyou_dark_background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/feedyou_dark_background</item>
+        <item name="android:textColorHint">?attr/colorSecondary</item>
+        <item name="android:colorControlActivated">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="Theme.App1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.App1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.App1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">#33646464</item> <!-- Or any transparency or color you need -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="ToolbarNews" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/asap</item>
+        <item name="android:background">@color/feedyou_dark_background</item>
+        <item name="colorControlNormal">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorSecondary">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/rock_salt</item>
+        <item name="android:background">@color/feedyou_dark_background</item>
+        <item name="colorControlNormal">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorPrimary">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorSecondary">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

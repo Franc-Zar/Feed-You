@@ -1,6 +1,6 @@
 package com.example.app1.authentication
 
-import android.content.Intent
+ import android.content.Intent
 import android.content.IntentSender
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,12 +21,15 @@ import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+/** Activity di sign-in/sign-up tramite account Google (il primo sign-in crea un account dell'applicazione associato alle
+ * credenziali dell'account fornito)
+ */
 class GoogleActivity : AppCompatActivity() {
 
     private lateinit var oneTapClient: SignInClient
     private lateinit var signInRequest: BeginSignInRequest
     private lateinit var googleSignInClient: GoogleSignInClient
-    private lateinit var switch_activity: Intent
+    private lateinit var switchActivity: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +39,8 @@ class GoogleActivity : AppCompatActivity() {
 
     }
 
+    /** metodo di set-up degli oggetti necessari a fornire all'utente la funzionalità di autenticazione Google
+     */
     private fun setUp() {
 
         oneTapClient = Identity.getSignInClient(this)
@@ -57,6 +62,8 @@ class GoogleActivity : AppCompatActivity() {
 
     }
 
+    /** metodo di inizio e gestione autenticazione Google
+     */
     private fun startAuthProcess() {
 
         oneTapClient.beginSignIn(signInRequest)
@@ -101,6 +108,8 @@ class GoogleActivity : AppCompatActivity() {
 
     }
 
+    /** metodo di collegamento account applicazione esistente con un account Google
+     */
     private fun linkAccountWithGoogle(idToken: String) {
 
         val credential = GoogleAuthProvider.getCredential(idToken, null)
@@ -129,7 +138,7 @@ class GoogleActivity : AppCompatActivity() {
                             overridePendingTransition(0, 0)
 
                             Toast.makeText(
-                                baseContext, "Provided Google Account is already associated.",
+                                baseContext, "Provided Google Account is already associated",
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -141,7 +150,7 @@ class GoogleActivity : AppCompatActivity() {
                             overridePendingTransition(0, 0)
 
                             Toast.makeText(
-                                baseContext, "User has already been linked to a Google Account.",
+                                baseContext, "User has already been linked to a Google Account",
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -154,7 +163,7 @@ class GoogleActivity : AppCompatActivity() {
                             overridePendingTransition(0, 0)
 
                             Toast.makeText(
-                                baseContext, "Something went wrong, please try again.",
+                                baseContext, "Something went wrong, please try again",
                                 Toast.LENGTH_SHORT
                             ).show()
 
@@ -165,7 +174,8 @@ class GoogleActivity : AppCompatActivity() {
     }
 
 
-    // [START auth_with_google]
+    /** metodo di sign-in tramite account Google fornito
+     */
     private fun signInWithGoogle(idToken: String) {
 
         val credential = GoogleAuthProvider.getCredential(idToken, null)
@@ -183,8 +193,8 @@ class GoogleActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    switch_activity = Intent(this, MainActivity::class.java)
-                    startActivity(switch_activity)
+                    switchActivity = Intent(this, MainActivity::class.java)
+                    startActivity(switchActivity)
 
                     } else {
                         // If sign in fails, display a message to the user.
@@ -200,7 +210,9 @@ class GoogleActivity : AppCompatActivity() {
                 }
         }
 
-        @Deprecated("Deprecated in Java")
+    /** metodo di gestione del risultato derivante dalla richiesta dell'utente fornita tramite oneTapUI (scelta e conferma account Google)
+     */
+    @Deprecated("Deprecated in Java")
         override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
             super.onActivityResult(requestCode, resultCode, data)
 

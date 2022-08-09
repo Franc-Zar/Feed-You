@@ -30,10 +30,11 @@ import com.google.firebase.auth.TwitterAuthProvider
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-
+/** Activity del menu: il menu offre varie funzionalità di personalizzazione dell'esperienza utente
+ */
 class MenuActivity : AppCompatActivity() {
 
-    private lateinit var switch_activity: Intent
+    private lateinit var switchActivity: Intent
     private lateinit var themePreferences: ThemePreferences
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -95,8 +96,8 @@ class MenuActivity : AppCompatActivity() {
 
         aboutUs.setOnClickListener {
 
-            switch_activity = Intent(this, AboutActivity::class.java)
-            startActivity(switch_activity)
+            switchActivity = Intent(this, AboutActivity::class.java)
+            startActivity(switchActivity)
 
         }
 
@@ -119,7 +120,8 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
-
+    /** metodo di creazione di interfaccia di condivisione link, dato url e domain
+     */
     private fun onShareClicked(url: String, domain: String) {
         val link = generateContentLink(url, domain)
 
@@ -131,7 +133,8 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
-
+    /** metodo di creazione di alertDialog personalizzati
+     */
     private fun createAlert(alertType: String) {
 
         when(alertType) {
@@ -181,9 +184,9 @@ class MenuActivity : AppCompatActivity() {
 
                         dialog.dismiss()
                         themePreferences.saveThemeSelected(themeSelected)
-                        switch_activity = Intent(this, LoginActivity::class.java)
-                        switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                        startActivity(switch_activity)
+                        switchActivity = Intent(this, LoginActivity::class.java)
+                        switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                        startActivity(switchActivity)
                         overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
 
                     }.show()
@@ -192,6 +195,8 @@ class MenuActivity : AppCompatActivity() {
         }
     }
 
+    /** metodo di logout dell'utente dall'applicazione
+     */
     private fun logout() {
 
         if(isSocialLinked(GoogleAuthProvider.PROVIDER_ID)) {
@@ -207,13 +212,17 @@ class MenuActivity : AppCompatActivity() {
 
         Firebase.auth.signOut()
 
-        switch_activity = Intent(this, LoginActivity::class.java)
-        switch_activity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        startActivity(switch_activity)
+        switchActivity = Intent(this, LoginActivity::class.java)
+        switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        startActivity(switchActivity)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
 
     }
 
+    /** metodo di creazione interfaccia per la segnalazione di problemi: l'utente viene reindirizzato ad un'applicazione esterna
+     * di gestione e-mail, viene precompilata una e-mail da inviare al servizio di assistenza dell'applicazione, da personalizzare con
+     * le informazioni relative allo specifico problema riscontrato
+     */
     private fun reportProblem() {
 
         val reportBugIntent = Intent(Intent.ACTION_SEND)
@@ -239,6 +248,9 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
+    /** metodo di reindirizzamento alla sezione contenente informazioni relative all'account: in caso di utente anonimo, questi viene
+     * reindirizzato alla activity di sign-up
+     */
     private fun accountSettingsHandle() {
 
         if(isSocialLinked(TwitterAuthProvider.PROVIDER_ID) ||
@@ -246,8 +258,8 @@ class MenuActivity : AppCompatActivity() {
             isSocialLinked(EmailAuthProvider.PROVIDER_ID)
         ) {
 
-            switch_activity = Intent(this, AccountActivity::class.java)
-            startActivity(switch_activity)
+            switchActivity = Intent(this, AccountActivity::class.java)
+            startActivity(switchActivity)
 
         } else {
 
@@ -256,9 +268,9 @@ class MenuActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
 
-            switch_activity = Intent(this, SignUpActivity::class.java)
-            switch_activity.putExtra("requestType", "createAccountRedirect")
-            startActivity(switch_activity)
+            switchActivity = Intent(this, SignUpActivity::class.java)
+            switchActivity.putExtra("requestType", "createAccountRedirect")
+            startActivity(switchActivity)
 
         }
     }

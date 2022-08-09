@@ -5,6 +5,8 @@ import android.os.Bundle
 import com.example.app1.R
 import com.google.android.material.appbar.MaterialToolbar
 
+/** Activity riportante una breve descrizione dell'applicazione (about us)
+ */
 class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

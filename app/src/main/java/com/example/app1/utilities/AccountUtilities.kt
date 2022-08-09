@@ -1,17 +1,12 @@
 package com.example.app1.utilities
 
-import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
-import com.example.app1.R
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import java.util.regex.Pattern
 
+/** Classe di funzionalità utili per la gestione degli account
+ */
 class AccountUtilities {
 
     companion object {
@@ -19,9 +14,11 @@ class AccountUtilities {
         /** la password deve avere almeno una cifra, almeno un carattere minuscolo, almeno un carattere maiuscolo, almeno un carattere speciale,
         almeno una lunghezza di 6 caratteri
         */
-        private val password_regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[{}@#$%^&+=*?'_ç£!<>])(?=\\S+$).{6,}$"
-        private val pattern = Pattern.compile(password_regex)
+        private val passwordRegex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[{}@#$%^&+=*?'_ç£!<>])(?=\\S+$).{6,}$"
+        private val pattern = Pattern.compile(passwordRegex)
 
+        /** metodo di verifica del rispetto della password policy
+         */
         fun String.isValidPassword(): Boolean {
 
             val matcher = pattern.matcher(this)
@@ -29,6 +26,8 @@ class AccountUtilities {
 
         }
 
+        /** metodo di restituzione del nome associato all'account Twitter
+         */
         fun getTwitterName(): String? {
 
             for(provider in Firebase.auth.currentUser!!.providerData)
@@ -39,7 +38,8 @@ class AccountUtilities {
 
         }
 
-
+        /** metodo di verifica del collegamento di un dato tipo di account social all'account dell'applicazione
+         */
         fun isSocialLinked(socialProviderID: String): Boolean {
 
             val userProviders = checkUserProviders()
@@ -51,6 +51,8 @@ class AccountUtilities {
 
         }
 
+        /** metodo di restituzione delle tipologie di social account associate all'account dell'appllicazione
+         */
         private fun checkUserProviders(): ArrayList<String> {
 
             val userProviders = ArrayList<String>()

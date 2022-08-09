@@ -12,13 +12,14 @@ import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-
+/** Activity di sign-in/sign-up tramite account Twitter (il primo sign-in crea un account dell'applicazione associato alle
+ * credenziali dell'account fornito)
+ */
 class TwitterActivity : AppCompatActivity() {
 
-
-    private lateinit var switch_activity: Intent
+    private lateinit var switchActivity: Intent
     private val provider = OAuthProvider.newBuilder(TwitterAuthProvider.PROVIDER_ID)
-    private val pending_result: Task<AuthResult>? = Firebase.auth.pendingAuthResult
+    private val pendingResult: Task<AuthResult>? = Firebase.auth.pendingAuthResult
     private val currentUser = Firebase.auth.currentUser
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,9 +33,9 @@ class TwitterActivity : AppCompatActivity() {
 
         } else if(requestType == "signIn") {
 
-            if (pending_result != null) {
+            if (pendingResult != null) {
 
-                pending_result_handle()
+                pendingResultHandle()
 
             } else {
 
@@ -44,11 +45,12 @@ class TwitterActivity : AppCompatActivity() {
         }
     }
 
-
-    private fun pending_result_handle() {
+    /** metodo di gestione di richieste di autenticazione "pendenti", da ultimare prima di avviarne di nuove
+     */
+    private fun pendingResultHandle() {
 
         // There's something already here! Finish the sign-in for your user.
-        pending_result!!
+        pendingResult!!
             .addOnSuccessListener(
                 OnSuccessListener<AuthResult?> {
 
@@ -56,12 +58,12 @@ class TwitterActivity : AppCompatActivity() {
                     overridePendingTransition(0, 0)
 
                     Toast.makeText(
-                        baseContext, "Login Successful.",
+                        baseContext, "Login Successful",
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    switch_activity = Intent(this, MainActivity::class.java)
-                    startActivity(switch_activity)
+                    switchActivity = Intent(this, MainActivity::class.java)
+                    startActivity(switchActivity)
 
                 })
             .addOnFailureListener(
@@ -71,16 +73,15 @@ class TwitterActivity : AppCompatActivity() {
                     overridePendingTransition(0, 0)
 
                     Toast.makeText(
-                        baseContext, "Something went wrong, please try again.",
+                        baseContext, "Something went wrong, please try again",
                         Toast.LENGTH_SHORT
                     ).show()
                 })
     }
 
+    /** metodo di collegamento account applicazione esistente con un account Twitter
+     */
     private fun linkTwitterAccount() {
-
-        // The user is already signed-in.
-        // The user is already signed-in.
 
         currentUser!!
             .startActivityForLinkWithProvider( /* activity= */this, provider.build())
@@ -148,7 +149,8 @@ class TwitterActivity : AppCompatActivity() {
     }
 
 
-
+    /** metodo di sign-in tramite account Twitter fornito
+     */
     private fun twitterSignIn() {
 
         // There's no pending result so you need to start the sign-in flow.
@@ -174,8 +176,8 @@ class TwitterActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
-                    switch_activity = Intent(this, MainActivity::class.java)
-                    startActivity(switch_activity)
+                    switchActivity = Intent(this, MainActivity::class.java)
+                    startActivity(switchActivity)
 
                 } else {
 

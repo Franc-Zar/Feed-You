@@ -1,5 +1,7 @@
 package com.example.app1.utilities
 
+/** classe di configurazione parametri relativi dynamic links e varie variabili di utilità
+ */
 class config {
 
     companion object {

@@ -193,7 +193,7 @@ class SignUpActivity : AppCompatActivity() {
                     finish()
 
                     Toast.makeText(
-                        baseContext, "Account created successfully, but redirect failed.",
+                        baseContext, "Account created successfully, but redirect failed",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -232,7 +232,7 @@ class SignUpActivity : AppCompatActivity() {
 
                             Toast.makeText(
                                 baseContext,
-                                "Password should be at least 6 characters!",
+                                "Password should contain at least: 6 characters, 1 uppercase letter, 1 special character, 1 number!",
                                 Toast.LENGTH_SHORT
                             ).show()
 

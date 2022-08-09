@@ -12,14 +12,13 @@ import androidx.appcompat.widget.AppCompatImageButton
 import com.example.app1.MainActivity
 import com.example.app1.R
 import com.example.app1.utilities.ThemePreferences
-import com.google.firebase.auth.*
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
-
+/** Activity di presentazione e reindirizzamento delle funzionalità di sign-in all'utente
+ */
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
     private lateinit var switch_activity: Intent
     private lateinit var email: EditText
     private lateinit var password: EditText
@@ -35,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
 
     public override fun onStart() {
         super.onStart()
-        isloggedIn()
+        isSignedIn()
 
     }
 
@@ -50,15 +49,16 @@ class LoginActivity : AppCompatActivity() {
         email = findViewById(R.id.themes)
         password = findViewById(R.id.password)
 
-        val simple_sign_in = findViewById<Button>(R.id.sign_in)
-        val sign_up = findViewById<TextView>(R.id.sign_up)
-        val twitter_login = findViewById<Button>(R.id.twitter_connect)
-        val google_login = findViewById<Button>(R.id.google_connect)
-        val forgot_password = findViewById<TextView>(R.id.forgot_password)
-        val anonymous_login = findViewById<AppCompatImageButton>(R.id.anonymous_login)
+        val simpleSignIn = findViewById<Button>(R.id.sign_in)
+        val signUp = findViewById<TextView>(R.id.sign_up)
+        val twitterSignIn = findViewById<Button>(R.id.twitter_connect)
+        val googleSignIn = findViewById<Button>(R.id.google_connect)
+        val forgotPassword = findViewById<TextView>(R.id.forgot_password)
+        val anonymousLogin = findViewById<AppCompatImageButton>(R.id.anonymous_login)
 
-
-        anonymous_login.setOnClickListener{
+        /** Reindirizzamento a sign-in anonimo
+         */
+        anonymousLogin.setOnClickListener{
 
             switch_activity = Intent(this, AnonymousActivity::class.java)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
@@ -66,16 +66,19 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        sign_up.setOnClickListener {
+        /** Reindirizzamento a sign-up
+         */
+        signUp.setOnClickListener {
 
-            //cambio activity --> signup
             switch_activity = Intent(this, SignUpActivity::class.java)
             switch_activity.putExtra("requestType","simpleSignIn")
             startActivity(switch_activity)
 
         }
 
-        twitter_login.setOnClickListener {
+        /** Reindirizzamento a sign-in tramite account Twitter
+         */
+        twitterSignIn.setOnClickListener {
 
             switch_activity = Intent(this, TwitterActivity::class.java)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
@@ -84,7 +87,9 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        google_login.setOnClickListener {
+        /** Reindirizzamento a sign-in tramite account Google
+         */
+        googleSignIn.setOnClickListener {
 
             switch_activity = Intent(this, GoogleActivity::class.java)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
@@ -93,36 +98,40 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        forgot_password.setOnClickListener {
+        /** Reindirizzamento a recupero password
+         */
+        forgotPassword.setOnClickListener {
             //devo creare la activity per rinviare la password all'email scelta --> fatto
             switch_activity = Intent(this, PasswordRecoveryActivity::class.java)
             startActivity(switch_activity)
 
         }
 
-        //login email + password
-        simple_sign_in.setOnClickListener {
+        /** Reindirizzamento a sign-in email/password
+         */
+        simpleSignIn.setOnClickListener {
 
-            val email_chosen = email.text.toString()
-            val password_chosen = password.text.toString()
+            val emailChosen = email.text.toString()
+            val passwordChosen = password.text.toString()
 
             switch_activity = Intent(this, SimpleSignInActivity::class.java)
-            switch_activity.putExtra("email_chosen", email_chosen)
-            switch_activity.putExtra("password_chosen", password_chosen)
+            switch_activity.putExtra("emailChosen", emailChosen)
+            switch_activity.putExtra("passwordChosen", passwordChosen)
             switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(switch_activity)
 
         }
     }
 
-    private fun isloggedIn() {
+    /** metodo di verifica se l'utente è già loggato --> passaggio automatico a mainActivity
+     */
+    private fun isSignedIn() {
 
         if (Firebase.auth.currentUser != null) {
 
             switch_activity = Intent(this, MainActivity::class.java)
             startActivity(switch_activity)
             overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
-
 
         }
     }

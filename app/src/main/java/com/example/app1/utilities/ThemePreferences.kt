@@ -4,10 +4,14 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.R
 
+/** Classe di utilità relative alla configurazione del tema visivo dell'applicazione
+ */
 class ThemePreferences(var context: Context) {
 
     private val theme = context.getSharedPreferences(context.getString(R.string.theme), Context.MODE_PRIVATE)
 
+    /** metodo di salvataggio del tema scelto tra quelli proposti
+     */
      fun saveThemeSelected(themeSelected: String) {
 
         with(theme.edit()) {
@@ -17,12 +21,16 @@ class ThemePreferences(var context: Context) {
         }
     }
 
+    /** metodo di reperimento del tema selezionato
+     */
     fun getThemeSelected(): String? {
 
         return theme.getString(context.getString(R.string.theme), "Follow System")
 
     }
 
+    /** metodo di reperimento dell'indice del tema selezionato, nell'array dei temi
+     */
     fun getThemeSelectedIndex(): Int {
 
         val themes = context.resources.getStringArray(R.array.app_themes)
@@ -30,6 +38,8 @@ class ThemePreferences(var context: Context) {
 
     }
 
+    /** metodo di setting, entro l'applicazione, del tema selezionato
+     */
     fun setThemeSelected(themeSelected: String) {
 
         when(themeSelected) {
@@ -48,6 +58,5 @@ class ThemePreferences(var context: Context) {
         saveThemeSelected(themeSelected)
 
     }
-
 }
 
