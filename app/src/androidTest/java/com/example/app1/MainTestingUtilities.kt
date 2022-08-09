@@ -1,9 +1,12 @@
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
-import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.example.app1.R
 import androidx.test.espresso.assertion.ViewAssertions.matches
+import androidx.test.espresso.matcher.ViewMatchers.*
+import com.example.app1.R
+import org.hamcrest.BaseMatcher
+import org.hamcrest.Description
+import org.hamcrest.Matcher
+
 
 class MainPage : Page() {
 
@@ -19,6 +22,7 @@ class MainPage : Page() {
         onView(withId(R.id.rv)).perform(ViewActions.click())
         return this
     }
+
 }
 
 class TopBarPage: Page(){
@@ -29,7 +33,7 @@ class TopBarPage: Page(){
     }
 
     fun tapOnMenu() : TopBarPage {
-        onView(withId(R.id.toolbar_main)).perform(ViewActions.click())
+        onView(withContentDescription("btn_menu")).perform(ViewActions.click())
         return this
     }
 }
@@ -65,8 +69,26 @@ class SingleFeedPage: Page(){
         return this
     }
 
-    fun tapOnFeed() : SingleFeedPage{
-        onView(withId(R.id.linkList)).perform(ViewActions.click())
+    fun tapOnFeed(): SingleFeedPage{
+        onView(firstView(withId(R.id.btn_link)))
+            .perform(ViewActions.click())
         return this
+    }
+}
+
+private fun <T> firstView(matcher: Matcher<T>): Matcher<T>? {
+    return object : BaseMatcher<T>() {
+        var isFirst = true
+        override fun matches(item: Any): Boolean {
+            if (isFirst && matcher.matches(item)) {
+                isFirst = false
+                return true
+            }
+            return false
+        }
+
+        override fun describeTo(description: Description) {
+            description.appendText("should return first matching item")
+        }
     }
 }
