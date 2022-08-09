@@ -135,28 +135,7 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\3acc0f3e72c7a57ec5ae4e3011231125\\transformed\\lifecycle-runtime-2.5.1\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "42",
-                        "endOffsets": "93"
-                    },
-                    "to": {
-                        "startLines": "1651",
-                        "startColumns": "4",
-                        "startOffsets": "101159",
-                        "endColumns": "42",
-                        "endOffsets": "101197"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\f454c2e6bbd1fd95b5a83d5bafa6a557\\transformed\\lifecycle-viewmodel-2.3.1\\res\\values\\values.xml",
-=======
                     "source": "/home/francesco/.gradle/caches/transforms-3/de90fd99d0a8c8698a915cbc560088a3/transformed/startup-runtime-1.0.0/res/values/values.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -336,9 +315,6 @@
                     }
                 },
                 {
-<<<<<<< Updated upstream
-                    "source": "C:\\Users\\User\\.gradle\\caches\\transforms-3\\de90fd99d0a8c8698a915cbc560088a3\\transformed\\startup-runtime-1.0.0\\res\\values\\values.xml",
-=======
                     "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/colors.xml",
                     "from": {
                         "startLines": "11,8,16,10,15,19,18,17,22,20,21,23,14,6,12,2,3,4,13,5,7,9",
@@ -357,7 +333,6 @@
                 },
                 {
                     "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values/dimens.xml",
->>>>>>> Stashed changes
                     "from": {
                         "startLines": "1,4,2,3",
                         "startColumns": "4,4,4,4",

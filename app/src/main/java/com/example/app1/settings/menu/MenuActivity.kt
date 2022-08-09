@@ -54,9 +54,9 @@ class MenuActivity : AppCompatActivity() {
         val accountSettings = findViewById<TextView>(R.id.account_settings)
         val logout = findViewById<TextView>(R.id.logout)
         val reportProblem = findViewById<TextView>(R.id.report_problems)
-        val themes = findViewById<TextView>(R.id.themes)
+        val themes = findViewById<TextView>(R.id.email)
 
-        val block = findViewById<TextView>(R.id.btn_blocked)
+        val block = findViewById<TextView>(R.id.select)
         val pref = findViewById<TextView>(R.id.btn_pref)
         val singleFeed = findViewById<TextView>(R.id.btn_singleFeed)
 

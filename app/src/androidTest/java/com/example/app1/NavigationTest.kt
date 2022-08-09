@@ -59,7 +59,7 @@ class NavigationTest {
             .on<TopBarPage>()
             .tapOnMenu()
             .on<MenuPage>()
-            .tapOnOption(R.id.btn_blocked)
+            .tapOnOption(R.id.select)
             .on<BlockPage>()
             .tapOnFeed()
         val newBlocked = context.getSharedPreferences(context.getString(R.string.blocked), Context.MODE_PRIVATE).all

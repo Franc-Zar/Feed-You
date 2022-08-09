@@ -22,10 +22,10 @@ public final class ActivityAboutBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final TextView AboutUsText;
+  public final TextView appName;
 
   @NonNull
-  public final TextView appName;
+  public final TextView decorationText;
 
   @NonNull
   public final ImageView logo;
@@ -33,11 +33,12 @@ public final class ActivityAboutBinding implements ViewBinding {
   @NonNull
   public final MaterialToolbar toolbarAboutUs;
 
-  private ActivityAboutBinding(@NonNull ConstraintLayout rootView, @NonNull TextView AboutUsText,
-      @NonNull TextView appName, @NonNull ImageView logo, @NonNull MaterialToolbar toolbarAboutUs) {
+  private ActivityAboutBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
+      @NonNull TextView decorationText, @NonNull ImageView logo,
+      @NonNull MaterialToolbar toolbarAboutUs) {
     this.rootView = rootView;
-    this.AboutUsText = AboutUsText;
     this.appName = appName;
+    this.decorationText = decorationText;
     this.logo = logo;
     this.toolbarAboutUs = toolbarAboutUs;
   }
@@ -69,15 +70,15 @@ public final class ActivityAboutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.About_us_text;
-      TextView AboutUsText = ViewBindings.findChildViewById(rootView, id);
-      if (AboutUsText == null) {
-        break missingId;
-      }
-
       id = R.id.app_name;
       TextView appName = ViewBindings.findChildViewById(rootView, id);
       if (appName == null) {
+        break missingId;
+      }
+
+      id = R.id.decoration_text;
+      TextView decorationText = ViewBindings.findChildViewById(rootView, id);
+      if (decorationText == null) {
         break missingId;
       }
 
@@ -93,7 +94,7 @@ public final class ActivityAboutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAboutBinding((ConstraintLayout) rootView, AboutUsText, appName, logo,
+      return new ActivityAboutBinding((ConstraintLayout) rootView, appName, decorationText, logo,
           toolbarAboutUs);
     }
     String missingId = rootView.getResources().getResourceName(id);

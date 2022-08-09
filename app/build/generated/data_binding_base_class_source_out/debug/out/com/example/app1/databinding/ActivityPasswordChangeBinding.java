@@ -23,13 +23,10 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnBlocked;
-
-  @NonNull
   public final EditText confirmPassword;
 
   @NonNull
-  public final TextView decorationPasswordReset;
+  public final TextView decoration;
 
   @NonNull
   public final EditText newPassword;
@@ -38,22 +35,24 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final EditText oldPassword;
 
   @NonNull
+  public final Button select;
+
+  @NonNull
   public final TextView textView;
 
   @NonNull
   public final MaterialToolbar toolbarPasswordChange;
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnBlocked, @NonNull EditText confirmPassword,
-      @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
-      @NonNull EditText oldPassword, @NonNull TextView textView,
-      @NonNull MaterialToolbar toolbarPasswordChange) {
+      @NonNull EditText confirmPassword, @NonNull TextView decoration,
+      @NonNull EditText newPassword, @NonNull EditText oldPassword, @NonNull Button select,
+      @NonNull TextView textView, @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
-    this.btnBlocked = btnBlocked;
     this.confirmPassword = confirmPassword;
-    this.decorationPasswordReset = decorationPasswordReset;
+    this.decoration = decoration;
     this.newPassword = newPassword;
     this.oldPassword = oldPassword;
+    this.select = select;
     this.textView = textView;
     this.toolbarPasswordChange = toolbarPasswordChange;
   }
@@ -85,21 +84,15 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_blocked;
-      Button btnBlocked = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlocked == null) {
-        break missingId;
-      }
-
       id = R.id.confirm_password;
       EditText confirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (confirmPassword == null) {
         break missingId;
       }
 
-      id = R.id.decoration_password_reset;
-      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPasswordReset == null) {
+      id = R.id.decoration;
+      TextView decoration = ViewBindings.findChildViewById(rootView, id);
+      if (decoration == null) {
         break missingId;
       }
 
@@ -115,6 +108,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.select;
+      Button select = ViewBindings.findChildViewById(rootView, id);
+      if (select == null) {
+        break missingId;
+      }
+
       id = R.id.textView;
       TextView textView = ViewBindings.findChildViewById(rootView, id);
       if (textView == null) {
@@ -127,9 +126,8 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, btnBlocked,
-          confirmPassword, decorationPasswordReset, newPassword, oldPassword, textView,
-          toolbarPasswordChange);
+      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, confirmPassword,
+          decoration, newPassword, oldPassword, select, textView, toolbarPasswordChange);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -28,16 +28,16 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView accountName;
 
   @NonNull
-  public final TextView btnBlocked;
-
-  @NonNull
   public final TextView connectSocials;
 
   @NonNull
-  public final TextView decorationPasswordReset;
+  public final TextView decoration;
 
   @NonNull
   public final TextView deleteAccount;
+
+  @NonNull
+  public final TextView email;
 
   @NonNull
   public final Button googleConnect;
@@ -46,7 +46,7 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView nameDecoration;
 
   @NonNull
-  public final TextView themes;
+  public final TextView select;
 
   @NonNull
   public final MaterialToolbar toolbarAccount;
@@ -55,20 +55,20 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final Button twitterConnect;
 
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
-      @NonNull TextView accountName, @NonNull TextView btnBlocked, @NonNull TextView connectSocials,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView deleteAccount,
-      @NonNull Button googleConnect, @NonNull TextView nameDecoration, @NonNull TextView themes,
+      @NonNull TextView accountName, @NonNull TextView connectSocials, @NonNull TextView decoration,
+      @NonNull TextView deleteAccount, @NonNull TextView email, @NonNull Button googleConnect,
+      @NonNull TextView nameDecoration, @NonNull TextView select,
       @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
-    this.btnBlocked = btnBlocked;
     this.connectSocials = connectSocials;
-    this.decorationPasswordReset = decorationPasswordReset;
+    this.decoration = decoration;
     this.deleteAccount = deleteAccount;
+    this.email = email;
     this.googleConnect = googleConnect;
     this.nameDecoration = nameDecoration;
-    this.themes = themes;
+    this.select = select;
     this.toolbarAccount = toolbarAccount;
     this.twitterConnect = twitterConnect;
   }
@@ -112,27 +112,27 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_blocked;
-      TextView btnBlocked = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlocked == null) {
-        break missingId;
-      }
-
       id = R.id.connect_socials;
       TextView connectSocials = ViewBindings.findChildViewById(rootView, id);
       if (connectSocials == null) {
         break missingId;
       }
 
-      id = R.id.decoration_password_reset;
-      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPasswordReset == null) {
+      id = R.id.decoration;
+      TextView decoration = ViewBindings.findChildViewById(rootView, id);
+      if (decoration == null) {
         break missingId;
       }
 
       id = R.id.delete_account;
       TextView deleteAccount = ViewBindings.findChildViewById(rootView, id);
       if (deleteAccount == null) {
+        break missingId;
+      }
+
+      id = R.id.email;
+      TextView email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
         break missingId;
       }
 
@@ -148,9 +148,9 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.themes;
-      TextView themes = ViewBindings.findChildViewById(rootView, id);
-      if (themes == null) {
+      id = R.id.select;
+      TextView select = ViewBindings.findChildViewById(rootView, id);
+      if (select == null) {
         break missingId;
       }
 
@@ -167,8 +167,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
-          btnBlocked, connectSocials, decorationPasswordReset, deleteAccount, googleConnect,
-          nameDecoration, themes, toolbarAccount, twitterConnect);
+          connectSocials, decoration, deleteAccount, email, googleConnect, nameDecoration, select,
+          toolbarAccount, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

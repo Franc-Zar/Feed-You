@@ -22,24 +22,24 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnBlocked;
-
-  @NonNull
   public final FragmentContainerView fragment;
 
   @NonNull
   public final ConstraintLayout linearLayout;
 
   @NonNull
+  public final Button select;
+
+  @NonNull
   public final TextView title;
 
-  private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnBlocked,
+  private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView,
       @NonNull FragmentContainerView fragment, @NonNull ConstraintLayout linearLayout,
-      @NonNull TextView title) {
+      @NonNull Button select, @NonNull TextView title) {
     this.rootView = rootView;
-    this.btnBlocked = btnBlocked;
     this.fragment = fragment;
     this.linearLayout = linearLayout;
+    this.select = select;
     this.title = title;
   }
 
@@ -70,12 +70,6 @@ public final class ActivityPreferenceBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_blocked;
-      Button btnBlocked = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlocked == null) {
-        break missingId;
-      }
-
       id = R.id.fragment;
       FragmentContainerView fragment = ViewBindings.findChildViewById(rootView, id);
       if (fragment == null) {
@@ -84,14 +78,20 @@ public final class ActivityPreferenceBinding implements ViewBinding {
 
       ConstraintLayout linearLayout = (ConstraintLayout) rootView;
 
+      id = R.id.select;
+      Button select = ViewBindings.findChildViewById(rootView, id);
+      if (select == null) {
+        break missingId;
+      }
+
       id = R.id.title;
       TextView title = ViewBindings.findChildViewById(rootView, id);
       if (title == null) {
         break missingId;
       }
 
-      return new ActivityPreferenceBinding((ConstraintLayout) rootView, btnBlocked, fragment,
-          linearLayout, title);
+      return new ActivityPreferenceBinding((ConstraintLayout) rootView, fragment, linearLayout,
+          select, title);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

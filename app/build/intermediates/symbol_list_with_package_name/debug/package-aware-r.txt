@@ -2726,7 +2726,6 @@ font asap
 font quicksand_bold
 font rock_salt
 id ALT
-id About_us_text
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
@@ -2846,7 +2845,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_block
-id btn_blocked
 id btn_link
 id btn_pref
 id btn_reset
@@ -2904,7 +2902,8 @@ id date_picker_actions
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
-id decoration_password_reset
+id decoration
+id decoration_text
 id decoration_useSocial
 id decoration_welcome
 id default_activity_button
@@ -2943,6 +2942,7 @@ id edit_query
 id edittext_dropdown_editable
 id edittext_dropdown_noneditable
 id elastic
+id email
 id end
 id endToStart
 id end_padder
@@ -3121,7 +3121,6 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id password
-id password_reset_progress
 id password_toggle
 id path
 id pathRelative
@@ -3173,6 +3172,7 @@ id search_src_text
 id search_voice_btn
 id seekbar
 id seekbar_value
+id select
 id select_dialog_listview
 id selected
 id selection_type
@@ -3185,6 +3185,7 @@ id showHome
 id showTitle
 id sign_in
 id sign_up
+id sign_up_progress
 id sin
 id skipCollapsed
 id skipped
@@ -3237,7 +3238,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id termini_condizioni
+id terms_policy
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -3260,7 +3261,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id themes
 id time
 id title
 id titleDividerNoCustom

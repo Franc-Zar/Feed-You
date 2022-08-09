@@ -20,6 +20,7 @@ import org.junit.Before
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 class PreferenceTests {
+
     private lateinit var feederPreferences: FeederPreferences
     private val context = InstrumentationRegistry.getInstrumentation().targetContext
     private val numTopic = context.resources.getStringArray(R.array.topics_it).size

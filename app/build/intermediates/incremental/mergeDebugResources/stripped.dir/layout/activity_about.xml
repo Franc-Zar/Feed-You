@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/About_us_text"
+        android:id="@+id/decoration_text"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"

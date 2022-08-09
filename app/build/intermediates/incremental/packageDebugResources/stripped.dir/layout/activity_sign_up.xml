@@ -7,7 +7,7 @@
     tools:context=".authentication.SignUpActivity">
 
     <EditText
-        android:id="@+id/themes"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="43dp"
         android:layout_marginStart="45dp"
@@ -45,11 +45,11 @@
         android:fontFamily="@font/asap"
         android:hint="Password"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/termini_condizioni"
+        app:layout_constraintBottom_toTopOf="@+id/terms_policy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/themes" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/sign_up"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/termini_condizioni"
+        app:layout_constraintTop_toBottomOf="@+id/terms_policy"
         app:strokeColor="?attr/colorPrimaryVariant" />
 
     <ImageView
@@ -79,7 +79,7 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/decoration_password_reset"
+        android:id="@+id/decoration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
@@ -125,14 +125,14 @@
         android:textColor="?attr/colorSecondary"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/themes"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset" />
+        app:layout_constraintTop_toBottomOf="@+id/decoration" />
 
     <ProgressBar
-        android:id="@+id/password_reset_progress"
+        android:id="@+id/sign_up_progress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="230dp"
         android:layout_height="25dp"
@@ -145,7 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/have_an_account" />
 
     <CheckedTextView
-        android:id="@+id/termini_condizioni"
+        android:id="@+id/terms_policy"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"

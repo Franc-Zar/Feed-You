@@ -28,10 +28,13 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final TextView appName;
 
   @NonNull
-  public final TextView decorationPasswordReset;
+  public final TextView decoration;
 
   @NonNull
   public final TextView decorationWelcome;
+
+  @NonNull
+  public final EditText email;
 
   @NonNull
   public final TextView haveAnAccount;
@@ -43,37 +46,34 @@ public final class ActivitySignUpBinding implements ViewBinding {
   public final EditText password;
 
   @NonNull
-  public final ProgressBar passwordResetProgress;
-
-  @NonNull
   public final TextView signIn;
 
   @NonNull
   public final Button signUp;
 
   @NonNull
-  public final CheckedTextView terminiCondizioni;
+  public final ProgressBar signUpProgress;
 
   @NonNull
-  public final EditText themes;
+  public final CheckedTextView termsPolicy;
 
   private ActivitySignUpBinding(@NonNull ConstraintLayout rootView, @NonNull TextView appName,
-      @NonNull TextView decorationPasswordReset, @NonNull TextView decorationWelcome,
+      @NonNull TextView decoration, @NonNull TextView decorationWelcome, @NonNull EditText email,
       @NonNull TextView haveAnAccount, @NonNull ImageView logo, @NonNull EditText password,
-      @NonNull ProgressBar passwordResetProgress, @NonNull TextView signIn, @NonNull Button signUp,
-      @NonNull CheckedTextView terminiCondizioni, @NonNull EditText themes) {
+      @NonNull TextView signIn, @NonNull Button signUp, @NonNull ProgressBar signUpProgress,
+      @NonNull CheckedTextView termsPolicy) {
     this.rootView = rootView;
     this.appName = appName;
-    this.decorationPasswordReset = decorationPasswordReset;
+    this.decoration = decoration;
     this.decorationWelcome = decorationWelcome;
+    this.email = email;
     this.haveAnAccount = haveAnAccount;
     this.logo = logo;
     this.password = password;
-    this.passwordResetProgress = passwordResetProgress;
     this.signIn = signIn;
     this.signUp = signUp;
-    this.terminiCondizioni = terminiCondizioni;
-    this.themes = themes;
+    this.signUpProgress = signUpProgress;
+    this.termsPolicy = termsPolicy;
   }
 
   @Override
@@ -109,15 +109,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.decoration_password_reset;
-      TextView decorationPasswordReset = ViewBindings.findChildViewById(rootView, id);
-      if (decorationPasswordReset == null) {
+      id = R.id.decoration;
+      TextView decoration = ViewBindings.findChildViewById(rootView, id);
+      if (decoration == null) {
         break missingId;
       }
 
       id = R.id.decoration_welcome;
       TextView decorationWelcome = ViewBindings.findChildViewById(rootView, id);
       if (decorationWelcome == null) {
+        break missingId;
+      }
+
+      id = R.id.email;
+      EditText email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
         break missingId;
       }
 
@@ -139,12 +145,6 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.password_reset_progress;
-      ProgressBar passwordResetProgress = ViewBindings.findChildViewById(rootView, id);
-      if (passwordResetProgress == null) {
-        break missingId;
-      }
-
       id = R.id.sign_in;
       TextView signIn = ViewBindings.findChildViewById(rootView, id);
       if (signIn == null) {
@@ -157,21 +157,21 @@ public final class ActivitySignUpBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.termini_condizioni;
-      CheckedTextView terminiCondizioni = ViewBindings.findChildViewById(rootView, id);
-      if (terminiCondizioni == null) {
+      id = R.id.sign_up_progress;
+      ProgressBar signUpProgress = ViewBindings.findChildViewById(rootView, id);
+      if (signUpProgress == null) {
         break missingId;
       }
 
-      id = R.id.themes;
-      EditText themes = ViewBindings.findChildViewById(rootView, id);
-      if (themes == null) {
+      id = R.id.terms_policy;
+      CheckedTextView termsPolicy = ViewBindings.findChildViewById(rootView, id);
+      if (termsPolicy == null) {
         break missingId;
       }
 
-      return new ActivitySignUpBinding((ConstraintLayout) rootView, appName,
-          decorationPasswordReset, decorationWelcome, haveAnAccount, logo, password,
-          passwordResetProgress, signIn, signUp, terminiCondizioni, themes);
+      return new ActivitySignUpBinding((ConstraintLayout) rootView, appName, decoration,
+          decorationWelcome, email, haveAnAccount, logo, password, signIn, signUp, signUpProgress,
+          termsPolicy);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

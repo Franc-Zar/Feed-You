@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteX="1dp" />
 
     <TextView
-        android:id="@+id/decoration_password_reset"
+        android:id="@+id/decoration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
@@ -40,7 +40,7 @@
         android:layout_height="638dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset"
+        app:layout_constraintTop_toBottomOf="@+id/decoration"
         tools:layout_editor_absoluteX="147dp">
 
         <TextView
@@ -70,7 +70,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/themes"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_baseline_email_18"
@@ -142,7 +142,7 @@
             android:layout_height="10dp" />
 
         <TextView
-            android:id="@+id/btn_blocked"
+            android:id="@+id/select"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackground"

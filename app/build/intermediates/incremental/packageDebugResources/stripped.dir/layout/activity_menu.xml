@@ -40,7 +40,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="96dp"
         android:scrollbarThumbVertical="?attr/colorPrimaryVariant"
-        app:layout_constraintTop_toBottomOf="@+id/decoration_password_reset">
+        app:layout_constraintTop_toBottomOf="@+id/decoration">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/themes"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"
@@ -69,7 +69,7 @@
                 android:layout_height="20dp" />
 
             <TextView
-                android:id="@+id/btn_blocked"
+                android:id="@+id/select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackground"

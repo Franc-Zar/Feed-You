@@ -28,9 +28,6 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView accountSettings;
 
   @NonNull
-  public final TextView btnBlocked;
-
-  @NonNull
   public final TextView btnPref;
 
   @NonNull
@@ -40,16 +37,19 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView connectSocials;
 
   @NonNull
+  public final TextView email;
+
+  @NonNull
   public final TextView logout;
 
   @NonNull
   public final TextView reportProblems;
 
   @NonNull
-  public final ScrollView svMenu;
+  public final TextView select;
 
   @NonNull
-  public final TextView themes;
+  public final ScrollView svMenu;
 
   @NonNull
   public final MaterialToolbar toolbarAccount;
@@ -58,21 +58,21 @@ public final class ActivityMenuBinding implements ViewBinding {
   public final TextView tvMenu;
 
   private ActivityMenuBinding(@NonNull ConstraintLayout rootView, @NonNull TextView aboutFeedYou,
-      @NonNull TextView accountSettings, @NonNull TextView btnBlocked, @NonNull TextView btnPref,
-      @NonNull TextView btnSingleFeed, @NonNull TextView connectSocials, @NonNull TextView logout,
-      @NonNull TextView reportProblems, @NonNull ScrollView svMenu, @NonNull TextView themes,
+      @NonNull TextView accountSettings, @NonNull TextView btnPref, @NonNull TextView btnSingleFeed,
+      @NonNull TextView connectSocials, @NonNull TextView email, @NonNull TextView logout,
+      @NonNull TextView reportProblems, @NonNull TextView select, @NonNull ScrollView svMenu,
       @NonNull MaterialToolbar toolbarAccount, @NonNull TextView tvMenu) {
     this.rootView = rootView;
     this.aboutFeedYou = aboutFeedYou;
     this.accountSettings = accountSettings;
-    this.btnBlocked = btnBlocked;
     this.btnPref = btnPref;
     this.btnSingleFeed = btnSingleFeed;
     this.connectSocials = connectSocials;
+    this.email = email;
     this.logout = logout;
     this.reportProblems = reportProblems;
+    this.select = select;
     this.svMenu = svMenu;
-    this.themes = themes;
     this.toolbarAccount = toolbarAccount;
     this.tvMenu = tvMenu;
   }
@@ -116,12 +116,6 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_blocked;
-      TextView btnBlocked = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlocked == null) {
-        break missingId;
-      }
-
       id = R.id.btn_pref;
       TextView btnPref = ViewBindings.findChildViewById(rootView, id);
       if (btnPref == null) {
@@ -140,6 +134,12 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.email;
+      TextView email = ViewBindings.findChildViewById(rootView, id);
+      if (email == null) {
+        break missingId;
+      }
+
       id = R.id.logout;
       TextView logout = ViewBindings.findChildViewById(rootView, id);
       if (logout == null) {
@@ -152,15 +152,15 @@ public final class ActivityMenuBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sv_menu;
-      ScrollView svMenu = ViewBindings.findChildViewById(rootView, id);
-      if (svMenu == null) {
+      id = R.id.select;
+      TextView select = ViewBindings.findChildViewById(rootView, id);
+      if (select == null) {
         break missingId;
       }
 
-      id = R.id.themes;
-      TextView themes = ViewBindings.findChildViewById(rootView, id);
-      if (themes == null) {
+      id = R.id.sv_menu;
+      ScrollView svMenu = ViewBindings.findChildViewById(rootView, id);
+      if (svMenu == null) {
         break missingId;
       }
 
@@ -177,8 +177,8 @@ public final class ActivityMenuBinding implements ViewBinding {
       }
 
       return new ActivityMenuBinding((ConstraintLayout) rootView, aboutFeedYou, accountSettings,
-          btnBlocked, btnPref, btnSingleFeed, connectSocials, logout, reportProblems, svMenu,
-          themes, toolbarAccount, tvMenu);
+          btnPref, btnSingleFeed, connectSocials, email, logout, reportProblems, select, svMenu,
+          toolbarAccount, tvMenu);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

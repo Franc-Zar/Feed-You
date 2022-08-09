@@ -1,4 +1,3 @@
-import android.view.View
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -12,7 +11,7 @@ import org.hamcrest.Matcher
 class MainPage : Page() {
 
     override fun verify(): MainPage {
-        Thread.sleep(20000)
+        Thread.sleep(10000)
 
         onView(withId(R.id.rv))
             .check(matches(isDisplayed()))
@@ -23,10 +22,9 @@ class MainPage : Page() {
         onView(withId(R.id.rv)).perform(ViewActions.click())
         return this
     }
-
 }
 
-class TopBarPage: Page(){
+class TopBarPage: Page() {
     override fun verify(): TopBarPage {
         onView(withId(R.id.app_bar_search))
             .check(matches(isDisplayed()))
@@ -38,7 +36,6 @@ class TopBarPage: Page(){
         return this
     }
 }
-
 
 
 class NewsPage: Page() {
@@ -112,6 +109,104 @@ class BlockPage: Page() {
 
     fun tapOnFeed(): BlockPage {
         onView(firstView(withId(R.id.btn_link))).perform(ViewActions.click())
+        return this
+    }
+}
+
+class LoginPage: Page() {
+    override fun verify(): LoginPage {
+        onView(withId(R.id.decoration_useSocial)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun typeEmail(email: String): LoginPage {
+        onView(firstView(withId(R.id.email))).perform(ViewActions.typeText(email))
+        return this
+    }
+
+    fun typePassword(password: String): LoginPage {
+        onView(firstView(withId(R.id.password))).perform(ViewActions.typeText(password))
+        return this
+    }
+
+    fun tapOnSignIn(): LoginPage {
+        onView(withId(R.id.sign_in)).perform(ViewActions.closeSoftKeyboard())
+        onView(withId(R.id.sign_in)).perform(ViewActions.click())
+        return this
+    }
+
+    fun tapOnSignUp(): LoginPage {
+        onView(firstView(withId(R.id.sign_up))).perform(ViewActions.click())
+        Thread.sleep(100)
+        return this
+    }
+
+    fun tapOnForgotPassword(): LoginPage {
+        onView(firstView(withId(R.id.forgot_password))).perform(ViewActions.click())
+        return this
+    }
+}
+
+
+class SignUpPage: Page() {
+    override fun verify(): SignUpPage {
+        onView(withId(R.id.sign_up)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnSignIn(): SignUpPage {
+        onView(firstView(withId(R.id.sign_in))).perform(ViewActions.click())
+        return this
+    }
+
+    fun tapOnSignUp(): SignUpPage {
+        onView(withId(R.id.sign_up)).perform(ViewActions.closeSoftKeyboard())
+        onView(firstView(withId(R.id.sign_up))).perform(ViewActions.click())
+        Thread.sleep(100)
+        return this
+    }
+
+    fun typeEmail(email: String): SignUpPage {
+        onView(firstView(withId(R.id.email))).perform(ViewActions.typeText(email))
+        return this
+    }
+
+    fun checkTermsPolicy(): SignUpPage {
+        onView(withId(R.id.terms_policy)).perform(ViewActions.closeSoftKeyboard())
+        onView(firstView(withId(R.id.terms_policy))).perform(ViewActions.click())
+        return this
+    }
+
+    fun typePassword(password: String): SignUpPage {
+        onView(firstView(withId(R.id.password))).perform(ViewActions.typeText(password))
+        return this
+    }
+
+}
+
+
+class PasswordRecoveryPage: Page() {
+    override fun verify(): PasswordRecoveryPage {
+        onView(withId(R.id.reset_password)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnSignIn(): PasswordRecoveryPage {
+        onView(firstView(withId(R.id.sign_in))).perform(ViewActions.click())
+        return this
+    }
+
+}
+
+class PreferencePage: Page() {
+    override fun verify(): PreferencePage {
+        Thread.sleep(1000)
+        onView(withId(R.id.select)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnSelect(): PreferencePage {
+        onView(firstView(withId(R.id.select))).perform(ViewActions.click())
         return this
     }
 }

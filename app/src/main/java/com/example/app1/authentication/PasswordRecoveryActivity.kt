@@ -29,7 +29,7 @@ class PasswordRecoveryActivity : AppCompatActivity() {
 
         val signIn = findViewById<TextView>(R.id.sign_in)
         val resetPassword = findViewById<Button>(R.id.reset_password)
-        email = findViewById(R.id.themes)
+        email = findViewById(R.id.email)
 
         resetPassword.setOnClickListener {
 
@@ -63,7 +63,7 @@ class PasswordRecoveryActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
 
-                        super.finish()
+                        finish()
 
                     } else {
 
