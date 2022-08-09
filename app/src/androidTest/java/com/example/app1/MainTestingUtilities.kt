@@ -1,3 +1,4 @@
+import android.view.View
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -47,6 +48,11 @@ class NewsPage: Page() {
             .check(matches(isDisplayed()))
         return this
     }
+
+    fun tapOnBlock() : NewsPage {
+        onView(withId(R.id.btn_block)).perform(ViewActions.click())
+        return this
+    }
 }
 
 class MenuPage: Page() {
@@ -74,6 +80,11 @@ class SingleFeedPage: Page(){
             .perform(ViewActions.click())
         return this
     }
+
+    fun tapOnReset(): SingleFeedPage{
+        onView(firstView(withId(R.id.btn_reset))).perform(ViewActions.click())
+        return this
+    }
 }
 
 private fun <T> firstView(matcher: Matcher<T>): Matcher<T>? {
@@ -90,5 +101,17 @@ private fun <T> firstView(matcher: Matcher<T>): Matcher<T>? {
         override fun describeTo(description: Description) {
             description.appendText("should return first matching item")
         }
+    }
+}
+
+class BlockPage: Page() {
+    override fun verify(): BlockPage {
+        onView(withId(R.id.lay_blockedLinks)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnFeed(): BlockPage {
+        onView(firstView(withId(R.id.btn_link))).perform(ViewActions.click())
+        return this
     }
 }

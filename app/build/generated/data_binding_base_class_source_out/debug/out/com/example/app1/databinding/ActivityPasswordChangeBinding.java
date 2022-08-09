@@ -23,7 +23,7 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button changePassword;
+  public final Button btnBlocked;
 
   @NonNull
   public final EditText confirmPassword;
@@ -44,12 +44,12 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
   public final MaterialToolbar toolbarPasswordChange;
 
   private ActivityPasswordChangeBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button changePassword, @NonNull EditText confirmPassword,
+      @NonNull Button btnBlocked, @NonNull EditText confirmPassword,
       @NonNull TextView decorationPasswordReset, @NonNull EditText newPassword,
       @NonNull EditText oldPassword, @NonNull TextView textView,
       @NonNull MaterialToolbar toolbarPasswordChange) {
     this.rootView = rootView;
-    this.changePassword = changePassword;
+    this.btnBlocked = btnBlocked;
     this.confirmPassword = confirmPassword;
     this.decorationPasswordReset = decorationPasswordReset;
     this.newPassword = newPassword;
@@ -85,9 +85,9 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.change_password;
-      Button changePassword = ViewBindings.findChildViewById(rootView, id);
-      if (changePassword == null) {
+      id = R.id.btn_blocked;
+      Button btnBlocked = ViewBindings.findChildViewById(rootView, id);
+      if (btnBlocked == null) {
         break missingId;
       }
 
@@ -127,7 +127,7 @@ public final class ActivityPasswordChangeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, changePassword,
+      return new ActivityPasswordChangeBinding((ConstraintLayout) rootView, btnBlocked,
           confirmPassword, decorationPasswordReset, newPassword, oldPassword, textView,
           toolbarPasswordChange);
     }

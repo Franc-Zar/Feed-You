@@ -26,7 +26,7 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final AppBarLayout appbar;
 
   @NonNull
-  public final ImageButton changePassword;
+  public final ImageButton btnBlock;
 
   @NonNull
   public final MaterialToolbar toolbar;
@@ -35,11 +35,10 @@ public final class ActivityNewsBinding implements ViewBinding {
   public final WebView webView;
 
   private ActivityNewsBinding(@NonNull CoordinatorLayout rootView, @NonNull AppBarLayout appbar,
-      @NonNull ImageButton changePassword, @NonNull MaterialToolbar toolbar,
-      @NonNull WebView webView) {
+      @NonNull ImageButton btnBlock, @NonNull MaterialToolbar toolbar, @NonNull WebView webView) {
     this.rootView = rootView;
     this.appbar = appbar;
-    this.changePassword = changePassword;
+    this.btnBlock = btnBlock;
     this.toolbar = toolbar;
     this.webView = webView;
   }
@@ -77,9 +76,9 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.change_password;
-      ImageButton changePassword = ViewBindings.findChildViewById(rootView, id);
-      if (changePassword == null) {
+      id = R.id.btn_block;
+      ImageButton btnBlock = ViewBindings.findChildViewById(rootView, id);
+      if (btnBlock == null) {
         break missingId;
       }
 
@@ -95,7 +94,7 @@ public final class ActivityNewsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityNewsBinding((CoordinatorLayout) rootView, appbar, changePassword, toolbar,
+      return new ActivityNewsBinding((CoordinatorLayout) rootView, appbar, btnBlock, toolbar,
           webView);
     }
     String missingId = rootView.getResources().getResourceName(id);

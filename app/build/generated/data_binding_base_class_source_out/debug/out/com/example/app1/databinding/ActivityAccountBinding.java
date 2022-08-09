@@ -28,7 +28,7 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView accountName;
 
   @NonNull
-  public final TextView changePassword;
+  public final TextView btnBlocked;
 
   @NonNull
   public final TextView connectSocials;
@@ -55,15 +55,14 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final Button twitterConnect;
 
   private ActivityAccountBinding(@NonNull ConstraintLayout rootView, @NonNull TextView accountEmail,
-      @NonNull TextView accountName, @NonNull TextView changePassword,
-      @NonNull TextView connectSocials, @NonNull TextView decorationPasswordReset,
-      @NonNull TextView deleteAccount, @NonNull Button googleConnect,
-      @NonNull TextView nameDecoration, @NonNull TextView themes,
+      @NonNull TextView accountName, @NonNull TextView btnBlocked, @NonNull TextView connectSocials,
+      @NonNull TextView decorationPasswordReset, @NonNull TextView deleteAccount,
+      @NonNull Button googleConnect, @NonNull TextView nameDecoration, @NonNull TextView themes,
       @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
-    this.changePassword = changePassword;
+    this.btnBlocked = btnBlocked;
     this.connectSocials = connectSocials;
     this.decorationPasswordReset = decorationPasswordReset;
     this.deleteAccount = deleteAccount;
@@ -113,9 +112,9 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.change_password;
-      TextView changePassword = ViewBindings.findChildViewById(rootView, id);
-      if (changePassword == null) {
+      id = R.id.btn_blocked;
+      TextView btnBlocked = ViewBindings.findChildViewById(rootView, id);
+      if (btnBlocked == null) {
         break missingId;
       }
 
@@ -168,7 +167,7 @@ public final class ActivityAccountBinding implements ViewBinding {
       }
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
-          changePassword, connectSocials, decorationPasswordReset, deleteAccount, googleConnect,
+          btnBlocked, connectSocials, decorationPasswordReset, deleteAccount, googleConnect,
           nameDecoration, themes, toolbarAccount, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);

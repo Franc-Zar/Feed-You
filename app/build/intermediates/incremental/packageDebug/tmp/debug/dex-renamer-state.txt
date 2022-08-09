@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 #Tue Aug 09 09:05:13 CEST 2022
 =======
 #Mon Aug 08 12:04:51 CEST 2022
 >>>>>>> Stashed changes
+=======
+#Tue Aug 09 11:05:04 CEST 2022
+>>>>>>> ffde87ddba3a88c244198530080e4f7f7cf2fd66
 path.4=2/classes.dex
 path.3=14/classes.dex
 path.2=13/classes.dex

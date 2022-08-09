@@ -87,11 +87,12 @@ id app_bar
 id app_bar_search
 id app_name
 id appbar
+id btn_block
+id btn_blocked
 id btn_link
 id btn_pref
 id btn_reset
 id btn_singleFeed
-id change_password
 id confirm_password
 id connect_socials
 id cv_layout
@@ -106,6 +107,7 @@ id google_connect
 id have_an_account
 id imageView
 id iv_favicon
+id lay_blockedLinks
 id lay_links
 id layout_app
 id layout_topics

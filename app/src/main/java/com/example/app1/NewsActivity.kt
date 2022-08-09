@@ -68,7 +68,7 @@ class NewsActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
-        val btnBlock = findViewById<ImageButton>(R.id.change_password)
+        val btnBlock = findViewById<ImageButton>(R.id.btn_block)
         btnBlock.setOnClickListener{
             val blockedLinks = getSharedPreferences(getString(R.string.blocked), Context.MODE_PRIVATE)
             with(blockedLinks.edit()) {
