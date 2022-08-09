@@ -22,7 +22,7 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnBlocked;
+  public final Button btnContinue;
 
   @NonNull
   public final FragmentContainerView fragment;
@@ -33,11 +33,11 @@ public final class ActivityPreferenceBinding implements ViewBinding {
   @NonNull
   public final TextView title;
 
-  private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnBlocked,
+  private ActivityPreferenceBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnContinue,
       @NonNull FragmentContainerView fragment, @NonNull ConstraintLayout linearLayout,
       @NonNull TextView title) {
     this.rootView = rootView;
-    this.btnBlocked = btnBlocked;
+    this.btnContinue = btnContinue;
     this.fragment = fragment;
     this.linearLayout = linearLayout;
     this.title = title;
@@ -70,9 +70,9 @@ public final class ActivityPreferenceBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_blocked;
-      Button btnBlocked = ViewBindings.findChildViewById(rootView, id);
-      if (btnBlocked == null) {
+      id = R.id.btn_continue;
+      Button btnContinue = ViewBindings.findChildViewById(rootView, id);
+      if (btnContinue == null) {
         break missingId;
       }
 
@@ -90,7 +90,7 @@ public final class ActivityPreferenceBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPreferenceBinding((ConstraintLayout) rootView, btnBlocked, fragment,
+      return new ActivityPreferenceBinding((ConstraintLayout) rootView, btnContinue, fragment,
           linearLayout, title);
     }
     String missingId = rootView.getResources().getResourceName(id);

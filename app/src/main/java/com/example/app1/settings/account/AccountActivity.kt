@@ -237,7 +237,7 @@ class AccountActivity : AppCompatActivity() {
 
         val deleteAccount = findViewById<TextView>(R.id.delete_account)
         val toolbar = findViewById<MaterialToolbar>(R.id.toolbar_account)
-        passwordReset = findViewById(R.id.btn_blocked)
+        passwordReset = findViewById(R.id.change_password)
         accountEmail = findViewById(R.id.account_email)
         twitterConnect = findViewById(R.id.twitter_connect)
         googleConnect = findViewById(R.id.google_connect)

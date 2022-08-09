@@ -37,10 +37,8 @@ class MenuActivity : AppCompatActivity() {
     private lateinit var themePreferences: ThemePreferences
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-
         menuInflater.inflate(R.menu.top_bar, menu)
         return super.onCreateOptionsMenu(menu)
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

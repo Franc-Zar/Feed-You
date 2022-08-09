@@ -89,10 +89,12 @@ id app_name
 id appbar
 id btn_block
 id btn_blocked
+id btn_continue
 id btn_link
 id btn_pref
 id btn_reset
 id btn_singleFeed
+id change_password
 id confirm_password
 id connect_socials
 id cv_layout
