@@ -134,8 +134,10 @@ import org.junit.runner.RunWith
             .typePassword("Passw0rd#")
             .checkTermsPolicy()
             .tapOnSignUp()
-            .tapOnSignIn()
-            .on<LoginPage>()
+
+        Espresso.pressBack()
+
+        Page.on<LoginPage>()
             .typeEmail("malformed_email")
             .typePassword("Passw0rd#")
             .tapOnSignIn()
@@ -154,8 +156,10 @@ import org.junit.runner.RunWith
             .typePassword("weak")
             .checkTermsPolicy()
             .tapOnSignUp()
-            .tapOnSignIn()
-            .on<LoginPage>()
+
+        Espresso.pressBack()
+
+        Page.on<LoginPage>()
             .typeEmail("email@email.com")
             .typePassword("weak")
             .tapOnSignIn()

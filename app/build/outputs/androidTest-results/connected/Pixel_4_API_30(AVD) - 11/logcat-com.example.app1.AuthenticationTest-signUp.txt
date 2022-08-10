@@ -1,0 +1,83 @@
+08-10 11:06:33.403  5713  5740 I TestRunner: started: signUp(com.example.app1.AuthenticationTest)
+08-10 11:06:33.406  5713  5740 D FirebaseAuth: Notifying id token listeners about a sign-out event.
+08-10 11:06:33.406  5713  5740 D FirebaseAuth: Notifying auth state listeners about a sign-out event.
+08-10 11:06:33.409   522   547 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 11:06:33.430   522   547 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.433   522  2040 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.434   522  2040 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:33.454  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: PRE_ON_CREATE
+08-10 11:06:33.509   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f1e1c000 0x3f2781000]
+08-10 11:06:33.607  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: CREATED
+08-10 11:06:33.624  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: STARTED
+08-10 11:06:33.652  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: RESUMED
+08-10 11:06:33.779   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f08b1000]
+08-10 11:06:33.829   283   332 D goldfish-address-space: claimShared: Ask to claim region [0x3f34cb000 0x3f3e30000]
+08-10 11:06:33.863  1228  1291 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+08-10 11:06:33.864  1228  1291 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+08-10 11:06:33.887   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f8000000 0x3f88b1000]
+08-10 11:06:34.031   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f88b1000 0x3f9162000]
+08-10 11:06:34.202   522   554 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.app1/1/com.example.app1.authentication.LoginActivity/compiled_traces/compiled_trace.pb doesn't exist
+08-10 11:06:34.203   522   554 I ActivityTaskManager: Displayed com.example.app1/.authentication.LoginActivity: +793ms
+08-10 11:06:34.220   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f9162000 0x3f9ac7000]
+08-10 11:06:34.235   522   547 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+08-10 11:06:34.451  5713  5713 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362094/com.example.app1:id/logo>
+08-10 11:06:34.556  2590  2858 I PBSessionCacheImpl: Deleted sessionId[11392600585725287] from persistence.
+08-10 11:06:34.737  2590  2702 W SearchServiceCore: Abort, client detached.
+08-10 11:06:34.955  5713  5713 I ViewInteraction: Performing 'single click' action on view should return first matching item
+08-10 11:06:35.064   522   547 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+08-10 11:06:35.082   522  1396 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 11:06:35.083   522  1396 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 11:06:35.159   522   547 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 11:06:35.183  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: PAUSED
+08-10 11:06:35.192   522  2040 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.193   522  2040 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.195   522  2040 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 11:06:35.233   522  1528 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 11:06:35.269  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@3e92788 in: PRE_ON_CREATE
+08-10 11:06:35.522  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@3e92788 in: CREATED
+08-10 11:06:35.527  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@3e92788 in: STARTED
+08-10 11:06:35.531  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@3e92788 in: RESUMED
+08-10 11:06:35.616   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f34cb000 0x3f3d7c000]
+08-10 11:06:35.626   283   283 D goldfish-address-space: claimShared: Ask to claim region [0x3f1e1c000 0x3f26cd000]
+08-10 11:06:35.641   283   332 D goldfish-address-space: claimShared: Ask to claim region [0x3f0eb4000 0x3f1765000]
+08-10 11:06:35.723   522   554 I ActivityTaskManager: Displayed com.example.app1/.authentication.SignUpActivity: +641ms
+08-10 11:06:36.152  5713  5713 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@b6e0ba8 in: STOPPED
+08-10 11:06:36.205  5713  5713 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+08-10 11:06:36.404  1340  1340 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+08-10 11:06:36.709  5713  5713 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+08-10 11:06:36.710  5713  5740 I TestRunner: finished: signUp(com.example.app1.AuthenticationTest)

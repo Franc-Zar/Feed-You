@@ -123,7 +123,7 @@ class GoogleActivity : AppCompatActivity() {
 
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(
-                        baseContext, "Google Account linked successfully.",
+                        baseContext, "Google Account linked successfully",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -189,7 +189,7 @@ class GoogleActivity : AppCompatActivity() {
 
                     // Sign in success, update UI with the signed-in user's information
                     Toast.makeText(
-                        baseContext, "Login Successful.",
+                        baseContext, "Login Successful",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -202,7 +202,7 @@ class GoogleActivity : AppCompatActivity() {
                         overridePendingTransition(0, 0)
 
                         Toast.makeText(
-                            baseContext, "Something went wrong, please try again.",
+                            baseContext, "Something went wrong, please try again",
                             Toast.LENGTH_SHORT
                         ).show()
 
@@ -239,7 +239,7 @@ class GoogleActivity : AppCompatActivity() {
                         // Google Sign In failed, update UI appropriately
 
                         Toast.makeText(
-                            baseContext, "Something went wrong, please try again.",
+                            baseContext, "Something went wrong, please try again",
                             Toast.LENGTH_SHORT
                         ).show()
 
