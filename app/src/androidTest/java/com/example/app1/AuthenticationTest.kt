@@ -306,6 +306,6 @@ import org.junit.runner.RunWith
             .verify()
         assert(Firebase.auth.currentUser == null)
 
-    }
+        }
 
     }
