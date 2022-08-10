@@ -63,6 +63,81 @@ class MenuPage: Page() {
         onView(withId(option)).perform(ViewActions.click())
         return this
     }
+
+    fun tapOnAccount(): MenuPage {
+        onView(withId(R.id.account_settings)).perform(ViewActions.click())
+        return this
+    }
+
+    fun tapOnLogOut(): MenuPage {
+        onView(withId(R.id.logout)).perform(ViewActions.click())
+        return this
+    }
+}
+
+class AccountPage: Page() {
+    override fun verify(): AccountPage {
+        onView(withId(R.id.decoration))
+            .check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnDeleteAccount(): AccountPage {
+        onView(withId(R.id.delete_account)).perform(ViewActions.click())
+        return this
+    }
+
+    fun tapOnChangePassword(): AccountPage {
+        onView(withId(R.id.btn_continue)).perform(ViewActions.click())
+        return this
+    }
+}
+
+class ChangePasswordPage: Page() {
+    override fun verify(): ChangePasswordPage {
+        onView(withId(R.id.btn_continue))
+            .check(matches(isDisplayed()))
+        return this
+    }
+
+    fun typeOldPassword(oldPassword: String): ChangePasswordPage {
+        onView(firstView(withId(R.id.old_password))).perform(ViewActions.typeText(oldPassword))
+        return this
+    }
+
+    fun typeNewPassword(newPassword: String): ChangePasswordPage {
+        onView(firstView(withId(R.id.new_password))).perform(ViewActions.typeText(newPassword))
+        return this
+    }
+
+    fun typeConfirmNewPassword(confirmNewPassword: String): ChangePasswordPage {
+        onView(firstView(withId(R.id.confirm_password))).perform(ViewActions.typeText(confirmNewPassword))
+        return this
+    }
+
+    fun tapOnChangePassword(): ChangePasswordPage {
+        onView(withId(R.id.btn_continue)).perform(ViewActions.closeSoftKeyboard())
+        onView(withId(R.id.btn_continue)).perform(ViewActions.click())
+        return this
+    }
+}
+
+class AlertDialogPage: Page() {
+    override fun verify(): AlertDialogPage {
+        onView(withId(R.id.logo))
+            .check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapAlertPositive(): AlertDialogPage {
+        onView(withId(android.R.id.button1)).perform(ViewActions.click());
+        return this
+    }
+
+    fun tapAlertNegative(): AlertDialogPage {
+        onView(withId(android.R.id.button2)).perform(ViewActions.click());
+        return this
+    }
 }
 
 class SingleFeedPage: Page(){
@@ -115,7 +190,8 @@ class BlockPage: Page() {
 
 class LoginPage: Page() {
     override fun verify(): LoginPage {
-        onView(withId(R.id.decoration_useSocial)).check(matches(isDisplayed()))
+        Thread.sleep(1000)
+        onView(withId(R.id.logo)).check(matches(isDisplayed()))
         return this
     }
 

@@ -24,9 +24,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var password: EditText
     private lateinit var themePreferences: ThemePreferences
 
-    public override fun onResume() {
-        super.onResume()
-
+    public override fun onRestart() {
+        super.onRestart()
         email.setText("")
         password.setText("")
 
@@ -71,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
         signUp.setOnClickListener {
 
             switch_activity = Intent(this, SignUpActivity::class.java)
-            switch_activity.putExtra("requestType","simpleSignIn")
+            switch_activity.putExtra("requestType","simpleSignUp")
             startActivity(switch_activity)
 
         }

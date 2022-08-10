@@ -16,6 +16,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import org.json.JSONObject
+import org.junit.After
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -33,6 +34,12 @@ class NavigationTest {
         }
         intent.addFlags(FLAG_ACTIVITY_NEW_TASK)
         startActivity(context,intent, null)
+    }
+
+    @After
+    fun finish() {
+        Firebase.auth.currentUser!!.delete()
+
     }
 
     @Test

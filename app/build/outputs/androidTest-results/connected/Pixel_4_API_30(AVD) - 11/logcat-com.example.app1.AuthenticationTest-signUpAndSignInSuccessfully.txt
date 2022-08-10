@@ -1,0 +1,720 @@
+08-10 03:36:58.388  1412  1443 I TestRunner: started: signUpAndSignInSuccessfully(com.example.app1.AuthenticationTest)
+08-10 03:36:58.394  1412  1443 D FirebaseAuth: Notifying id token listeners about a sign-out event.
+08-10 03:36:58.394  1412  1443 D FirebaseAuth: Notifying auth state listeners about a sign-out event.
+08-10 03:36:58.404   496   527 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 03:36:58.423   496   788 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.423   496   788 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.424   496   788 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.425   496   788 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:36:58.431   377   377 I perfetto: ing_service_impl.cc:758 Configured tracing session 273, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+08-10 03:36:58.433   375   375 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=273)
+08-10 03:36:58.445   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+08-10 03:36:58.532   375   375 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+08-10 03:36:58.549   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f18cd000 0x3f2232000]
+08-10 03:36:58.619  1412  1456 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-10 03:36:58.623  1412  1456 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-10 03:36:58.629  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: PRE_ON_CREATE
+08-10 03:36:58.647  1412  1441 V FA      : onActivityCreated
+08-10 03:36:58.711  1412  1456 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-10 03:36:58.818  1412  1412 W om.example.app: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+08-10 03:36:58.820  1412  1412 W om.example.app: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+08-10 03:36:58.928  1412  1445 W om.example.app: Verification of void com.google.android.gms.internal.measurement.zzot.<init>() took 165.747ms (114.63 bytecodes/s) (1016B approximate peak alloc)
+08-10 03:36:59.603  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: CREATED
+08-10 03:36:59.609  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: STARTED
+08-10 03:36:59.624  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: RESUMED
+08-10 03:36:59.897  8857  8890 I FontLog : Received query Asap, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:36:59.897  8857  8890 I FontLog : Query [Asap] resolved to {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:36:59.919  8857  8867 I .gms.persisten: Background young concurrent copying GC freed 168223(8753KB) AllocSpace objects, 17(576KB) LOS objects, 40% free, 13MB/22MB, paused 100us total 1.519s
+08-10 03:36:59.998  8857  8890 I FontLog : Fetch {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:00.056  1412  1455 D HostConnection: HostConnection::get() New Host Connection established 0xf653f860, tid 1455
+08-10 03:37:00.071   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f28c7000 0x3f322c000]
+08-10 03:37:00.072  1412  1455 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+08-10 03:37:00.073   155   155 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+08-10 03:37:00.074  1412  1455 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-10 03:37:00.075  1412  1455 D EGL_emulation: eglCreateContext: 0xf653f5c0: maj 3 min 0 rcv 3
+08-10 03:37:00.076  1412  1455 D EGL_emulation: eglMakeCurrent: 0xf653f5c0: ver 3 0 (tinfo 0xc4c418d0) (first time)
+08-10 03:37:00.108   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f322c000 0x3f3add000]
+08-10 03:37:00.110   155   155 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+08-10 03:37:00.110  1412  1455 I Gralloc4: mapper 4.x is not supported
+08-10 03:37:00.111  1412  1455 D HostConnection: createUnique: call
+08-10 03:37:00.111  1412  1455 D HostConnection: HostConnection::get() New Host Connection established 0xf653fda0, tid 1455
+08-10 03:37:00.111  1412  1455 D goldfish-address-space: allocate: Ask for block of size 0x100
+08-10 03:37:00.111  1412  1455 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3efffe000 size 0x2000
+08-10 03:37:00.217  1412  1455 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+08-10 03:37:00.219   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f7287000 0x3f7b38000]
+08-10 03:37:00.249   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f551c000 0x3f5dcd000]
+08-10 03:37:00.266  8857  8890 I FontLog : Pulling font file for id = 471, cache size = 9 [CONTEXT service_id=132 ]
+08-10 03:37:00.389  1412  1426 I om.example.app: Background young concurrent copying GC freed 60299(4047KB) AllocSpace objects, 14(344KB) LOS objects, 85% free, 4259KB/28MB, paused 14.591ms total 1.288s
+08-10 03:37:00.470  1412  1455 I OpenGLRenderer: Davey! duration=803ms; Flags=1, IntendedVsync=25161159072682, Vsync=25161192406014, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=25161202208343, AnimationStart=25161202213521, PerformTraversalsStart=25161202217172, DrawStart=25161716004077, SyncQueued=25161738314661, SyncStart=25161741390696, IssueDrawCommandsStart=25161741591906, SwapBuffers=25161939370264, FrameCompleted=25161965299355, DequeueBufferDuration=81225, QueueBufferDuration=5238646, GpuCompleted=72904454231491230,
+08-10 03:37:00.472  1412  1412 I Choreographer: Skipped 40 frames!  The application may be doing too much work on its main thread.
+08-10 03:37:00.529  1412  1455 I OpenGLRenderer: Davey! duration=729ms; Flags=0, IntendedVsync=25161292383246, Vsync=25161959049886, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=25161968467087, AnimationStart=25161968472828, PerformTraversalsStart=25161969271296, DrawStart=25161970029716, SyncQueued=25161971903121, SyncStart=25161975086480, IssueDrawCommandsStart=25162021331563, SwapBuffers=25162023004793, FrameCompleted=25162025111975, DequeueBufferDuration=119325, QueueBufferDuration=508931, GpuCompleted=43984843964424,
+08-10 03:37:00.533  8857  9433 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:37:00.534  8857  9433 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:37:00.543  8857  9433 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:00.576  8857  9433 I FontLog : Pulling font file for id = 472, cache size = 10 [CONTEXT service_id=132 ]
+08-10 03:37:00.589  8857  9433 I FontLog : Pulling font file for id = 472, cache size = 10 [CONTEXT service_id=132 ]
+08-10 03:37:00.627   496   532 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.app1/1/com.example.app1.authentication.LoginActivity/compiled_traces/compiled_trace.pb doesn't exist
+08-10 03:37:00.639   496   527 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+08-10 03:37:00.670   496   532 I ActivityTaskManager: Displayed com.example.app1/.authentication.LoginActivity: +2s227ms
+08-10 03:37:00.713  8992 31602 I PBSessionCacheImpl: Deleted sessionId[39548894299070447] from persistence.
+08-10 03:37:00.727  8992  9060 W SearchServiceCore: Abort, client detached.
+08-10 03:37:00.842   496   528 I Choreographer: Skipped 45 frames!  The application may be doing too much work on its main thread.
+08-10 03:37:00.906  1412  1445 V FA      : App measurement collection enabled
+08-10 03:37:00.907  1412  1445 V FA      : App measurement enabled for app package, google app id: com.example.app1, 1:170761880293:android:00392cc91ea95a1ec18a0c
+08-10 03:37:00.930  8857  9733 I FontLog : Received query name=Quicksand&weight=700, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:37:00.930  8857  9733 I FontLog : Query [name=Quicksand&weight=700] resolved to {Quicksand, wdth 100.0, wght 700, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:37:00.946  8857  9733 I FontLog : Fetch {Quicksand, wdth 100.0, wght 700, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:00.956  1412  1445 I FA      : App measurement initialized, version: 68000
+08-10 03:37:00.956  1412  1445 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+08-10 03:37:00.957  1412  1445 I FA      : To enable faster debug mode event logging run:
+08-10 03:37:00.957  1412  1445 I FA      :   adb shell setprop debug.firebase.analytics.app com.example.app1
+08-10 03:37:00.957  1412  1445 D FA      : Debug-level message logging enabled
+08-10 03:37:01.056  1412  1443 D EventInjectionStrategy: Creating injection strategy with input manager.
+08-10 03:37:01.056  1412  1443 W om.example.app: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+08-10 03:37:01.057  1412  1443 W om.example.app: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+08-10 03:37:01.057  1412  1443 W om.example.app: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+08-10 03:37:01.087  1412  1412 W om.example.app: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+08-10 03:37:01.087  1412  1412 W om.example.app: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+08-10 03:37:01.087  1412  1412 W om.example.app: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+08-10 03:37:01.091  1412  1412 W om.example.app: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+08-10 03:37:01.091  1412  1412 W om.example.app: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-10 03:37:01.092  1412  1412 W om.example.app: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-10 03:37:01.095  1412  1412 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362094/com.example.app1:id/logo>
+08-10 03:37:01.136  8857  9733 I FontLog : Pulling font file for id = 473, cache size = 10 [CONTEXT service_id=132 ]
+08-10 03:37:01.144  8857  9733 I FontLog : Received query Rock Salt, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:37:01.144  8857  9733 I FontLog : Query [Rock Salt] resolved to {Rock Salt, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:37:01.146  8857  9733 I FontLog : Fetch {Rock Salt, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:01.174  8857  8890 I FontLog : Pulling font file for id = 474, cache size = 11 [CONTEXT service_id=132 ]
+08-10 03:37:01.186  8857  8890 I FontLog : Received query Asap, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:37:01.186  8857  8890 I FontLog : Query [Asap] resolved to {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:37:01.187  8857  8890 I FontLog : Fetch {Asap, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:01.194  8857  9733 I FontLog : Pulling font file for id = 475, cache size = 11 [CONTEXT service_id=132 ]
+08-10 03:37:01.250  1412  1445 V FA      : Connecting to remote service
+08-10 03:37:01.275 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 03:37:01.275 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 03:37:01.282  1412  1445 V FA      : Connection attempt already in progress
+08-10 03:37:01.290  1412  1445 V FA      : Connection attempt already in progress
+08-10 03:37:01.290  1412  1445 V FA      : Activity resumed, time: 25161118
+08-10 03:37:01.291  1412  1445 I FA      : Tag Manager is not found and thus will not be used
+08-10 03:37:01.306  1412  1445 V FA      : Connection attempt already in progress
+08-10 03:37:01.306  1412  1445 V FA      : Connection attempt already in progress
+08-10 03:37:01.307  1412  1445 D FA      : Connected to remote service
+08-10 03:37:01.308  1412  1445 V FA      : Processing queued up service tasks: 5
+08-10 03:37:01.338 10668  1467 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_screen_class(_sc)=LoginActivity, ga_screen_id(_si)=-7451579132931121299}]
+08-10 03:37:01.346 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1443105
+08-10 03:37:01.346 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:01.349 10668  1467 V FA-SVC  : Scheduling upload, millis: 1443105
+08-10 03:37:01.351 10668  1467 V FA-SVC  : Background event processing time, ms: 14
+08-10 03:37:01.358 10668  1467 V FA-SVC  : Saving default event parameters, appId, data size: com.example.app1, 2
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: Error inserting flex_time=1443000 job_id=-1 period=2887000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095421360 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:01.371  8857  1031 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:01.607  1412  1443 W om.example.app: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+08-10 03:37:01.613  1412  1412 I ViewInteraction: Performing 'single click' action on view should return first matching item
+08-10 03:37:01.678   496   527 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+08-10 03:37:01.700   496  1918 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:01.701   496  1921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:01.710   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 03:37:01.726   377   377 I perfetto: ing_service_impl.cc:758 Configured tracing session 274, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
+08-10 03:37:01.726   375   375 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=274)
+08-10 03:37:01.726  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: PAUSED
+08-10 03:37:01.729  1412  1445 V FA      : Recording user engagement, ms: 2104
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.733   496  1918 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.734   496  1918 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.735   496  1918 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:01.813  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: PRE_ON_CREATE
+08-10 03:37:01.832  1412  1441 V FA      : onActivityCreated
+08-10 03:37:01.840   496   788 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:02.048 10668  1467 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=2104, ga_screen_class(_sc)=LoginActivity, ga_screen_id(_si)=-7451579132931121299}]
+08-10 03:37:02.053  1412  1445 V FA      : Activity paused, time: 25163223
+08-10 03:37:02.066 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1442385
+08-10 03:37:02.066 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:02.071 10668  1467 V FA-SVC  : Scheduling upload, millis: 1442385
+08-10 03:37:02.112 10668  1467 V FA-SVC  : Background event processing time, ms: 65
+08-10 03:37:02.114  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: CREATED
+08-10 03:37:02.117  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: STARTED
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: Error inserting flex_time=1442000 job_id=-1 period=2885000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095422115 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:02.117  8857  1351 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:02.119  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: RESUMED
+08-10 03:37:02.119  1412  1445 V FA      : Activity resumed, time: 25163614
+08-10 03:37:02.175   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f08b1000]
+08-10 03:37:02.180   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f08b1000 0x3f1162000]
+08-10 03:37:02.187   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f1162000 0x3f1a13000]
+08-10 03:37:02.223 10668  1467 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=LoginActivity, ga_previous_id(_pi)=-7451579132931121299, ga_screen_class(_sc)=SignUpActivity, ga_screen_id(_si)=-7451579132931121298}]
+08-10 03:37:02.246   496   532 I ActivityTaskManager: Displayed com.example.app1/.authentication.SignUpActivity: +565ms
+08-10 03:37:02.279 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1442172
+08-10 03:37:02.280 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:02.291 10668  1467 V FA-SVC  : Scheduling upload, millis: 1442172
+08-10 03:37:02.313 10668  1467 V FA-SVC  : Background event processing time, ms: 90
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: Error inserting flex_time=1442000 job_id=-1 period=2885000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095422324 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:02.327  8857  1351 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:02.609  1412  1412 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+08-10 03:37:02.672  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: STOPPED
+08-10 03:37:03.112  1412  1412 I ViewInteraction: Performing 'type text(newuser@mail.com)' action on view should return first matching item
+08-10 03:37:03.192  1412  1412 I AssistStructure: Flattened final assist data: 2492 bytes, containing 1 windows, 13 views
+08-10 03:37:03.225  3654  3654 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+08-10 03:37:03.226  3654  3654 I AndroidIME: AbstractIme.onActivate():84 LatinIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Email : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = DisabledMic : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+08-10 03:37:03.226  3654  3654 I Delight5Facilitator: Delight5Facilitator.initializeForIme():561 initializeForIme() : Locale = [en_US], layout = qwerty
+08-10 03:37:03.226  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+08-10 03:37:03.226  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+08-10 03:37:03.232  3654  3654 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+08-10 03:37:03.234  3654  4305 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():160 maybeScheduleAutoPackDownloadForFallback()
+08-10 03:37:03.235  3654  4305 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():197 maybeScheduleAutoPackDownload() for language tag en-US
+08-10 03:37:03.236  8857  8857 W qei     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+08-10 03:37:03.246 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+08-10 03:37:03.246 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+08-10 03:37:03.276  3654  3654 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+08-10 03:37:03.306  3654  3654 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{18c81fa V.E...... ......ID 0,0-1080,1977}
+08-10 03:37:03.306  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+08-10 03:37:03.306  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+08-10 03:37:03.307  3654  3654 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+08-10 03:37:03.307  3654  3654 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+08-10 03:37:03.315 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+08-10 03:37:03.315 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+08-10 03:37:03.323  1300  1300 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1732584820
+08-10 03:37:03.334   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f1a13000 0x3f22c4000]
+08-10 03:37:03.349   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f22c4000 0x3f2b75000]
+08-10 03:37:03.359   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f2b75000 0x3f3426000]
+08-10 03:37:03.434   375   375 I perfetto: probes_producer.cc:329  Producer stop (id=273)
+08-10 03:37:03.436   377   377 I perfetto: ng_service_impl.cc:1948 Tracing session 273 ended, total sessions:1
+08-10 03:37:03.459   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3426000 0x3f3cd7000]
+08-10 03:37:03.498   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f7287000 0x3f7b38000]
+08-10 03:37:03.504  1412  1412 D UiControllerImpl: Injecting string: "newuser@mail.com"
+08-10 03:37:03.560   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f08b1000]
+08-10 03:37:03.655 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.655 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.686 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.711 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.711 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.763 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:03.877  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:03.923  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4842<4853, inputStateId=3988, lastInputStateId=3988
+08-10 03:37:03.951  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:03.957  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4853<4855, inputStateId=3989, lastInputStateId=3989
+08-10 03:37:04.037  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4855<4858, inputStateId=3990, lastInputStateId=3991
+08-10 03:37:04.143  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:04.150  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4858<4861, inputStateId=3992, lastInputStateId=3992
+08-10 03:37:04.468  1412  1412 I ViewInteraction: Performing 'type text(Passw0rd#)' action on view should return first matching item
+08-10 03:37:04.523  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:04.523  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:04.524  3654  3654 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+08-10 03:37:04.524  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+08-10 03:37:04.524  3654  3654 I AndroidIME: AbstractIme.onDeactivate():161 LatinIme.onDeactivate()
+08-10 03:37:04.533  1412  1412 W IInputConnectionWrapper: beginBatchEdit on inactive InputConnection
+08-10 03:37:04.534  1412  1412 W IInputConnectionWrapper: endBatchEdit on inactive InputConnection
+08-10 03:37:04.556  3654  3654 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+08-10 03:37:04.557  3654  3654 I AndroidIME: AbstractIme.onActivate():84 PasswordIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Password : Learning = Disable : Suggestion = Hide : AutoCorrection = Disable : Microphone = Hide : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+08-10 03:37:04.564  3654  3654 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+08-10 03:37:04.620  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:04.626  3654  3654 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{18c81fa V.E...... ......ID 0,0-1080,1977}
+08-10 03:37:04.627  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+08-10 03:37:04.627  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+08-10 03:37:04.629  3654  3654 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-PasswordOrNumberOrDateInputType,}
+08-10 03:37:04.629  3654  3654 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+08-10 03:37:04.802   496   523 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:04.840  1412  1412 D UiControllerImpl: Injecting string: "Passw0rd#"
+08-10 03:37:04.945 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:04.945 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:04.971 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:04.993 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:04.993 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:04.999 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:05.363  1412  1412 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362305/com.example.app1:id/terms_policy>
+08-10 03:37:05.372  3654  3654 I AndroidIME: AbstractIme.onDeactivate():161 PasswordIme.onDeactivate()
+08-10 03:37:05.679  1412  1412 I ViewInteraction: Performing 'single click' action on view should return first matching item
+08-10 03:37:05.730   496  1918 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:05.730   496  1918 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:05.736   496   523 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:05.878   496   523 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:06.009  1412  1412 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+08-10 03:37:06.025  1412  1412 W CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+08-10 03:37:06.043  1412  1412 I ViewInteraction: Performing 'single click' action on view should return first matching item
+08-10 03:37:06.200   496  1541 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:06.233  1412  1489 W System  : Ignoring header X-Firebase-Locale because its value was null.
+08-10 03:37:06.323   496  1541 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:06.659  1412  1412 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view view.getRootView() to equal view
+08-10 03:37:06.670   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f08b1000 0x3f0eb4000]
+08-10 03:37:06.695  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: PAUSED
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.702   496   788 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.703   496   788 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.703   496   788 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.703   496   788 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:06.723  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: RESTARTED
+08-10 03:37:06.725  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: STARTED
+08-10 03:37:06.725  1412  1445 V FA      : Recording user engagement, ms: 4576
+08-10 03:37:06.726  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: RESUMED
+08-10 03:37:06.730   375   375 I perfetto: probes_producer.cc:329  Producer stop (id=274)
+08-10 03:37:06.744   375   375 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+08-10 03:37:06.748   496  4386 D HostConnection: HostConnection::get() New Host Connection established 0xa7f43420, tid 4386
+08-10 03:37:06.760   377   377 I perfetto: ng_service_impl.cc:1948 Tracing session 274 ended, total sessions:0
+08-10 03:37:06.768   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f0eb4000 0x3f1765000]
+08-10 03:37:06.773   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f1765000 0x3f2016000]
+08-10 03:37:06.784   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f2016000 0x3f28c7000]
+08-10 03:37:06.862   496  4386 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+08-10 03:37:06.863   496  4386 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-10 03:37:06.875   496  4386 D EGL_emulation: eglCreateContext: 0xa7f555c0: maj 3 min 0 rcv 3
+08-10 03:37:06.895   496  4386 D EGL_emulation: eglMakeCurrent: 0xa7f555c0: ver 3 0 (tinfo 0xbe06e5d0) (first time)
+08-10 03:37:07.089   696   710 I ndroid.systemu: NativeAlloc concurrent copying GC freed 9993(553KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7644KB/14MB, paused 94us total 400.654ms
+08-10 03:37:07.095  1412  1489 W System  : Ignoring header X-Firebase-Locale because its value was null.
+08-10 03:37:07.111   696   712 W System  : A resource failed to call release.
+08-10 03:37:07.197 10668  1467 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=4576, ga_screen_class(_sc)=SignUpActivity, ga_screen_id(_si)=-7451579132931121298}]
+08-10 03:37:07.212  1412  1445 V FA      : Activity paused, time: 25168203
+08-10 03:37:07.224 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1437227
+08-10 03:37:07.225 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:07.226  1412  1445 V FA      : Activity resumed, time: 25168222
+08-10 03:37:07.229 10668  1467 V FA-SVC  : Scheduling upload, millis: 1437227
+08-10 03:37:07.230 10668  1467 V FA-SVC  : Background event processing time, ms: 34
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: Error inserting flex_time=1437000 job_id=-1 period=2875000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095427259 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:07.269  8857  1055 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:07.326  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: STOPPED
+08-10 03:37:07.349  1412  1489 D FirebaseAuth: Notifying id token listeners about user ( SqSPRcyaTwcTTA7cRgK3HWytspq1 ).
+08-10 03:37:07.349  1412  1489 D FirebaseAuth: Notifying auth state listeners about user ( SqSPRcyaTwcTTA7cRgK3HWytspq1 ).
+08-10 03:37:07.365  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@469e051 in: DESTROYED
+08-10 03:37:07.427 10668  1467 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=SignUpActivity, ga_previous_id(_pi)=-7451579132931121298, ga_screen_class(_sc)=LoginActivity, ga_screen_id(_si)=-7451579132931121299}]
+08-10 03:37:07.436 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1437015
+08-10 03:37:07.436 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:07.438 10668  1467 V FA-SVC  : Scheduling upload, millis: 1437015
+08-10 03:37:07.444 10668  1467 V FA-SVC  : Background event processing time, ms: 17
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: Error inserting flex_time=1437000 job_id=-1 period=2875000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095427445 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:07.451  8857  1031 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:08.414  1412  1412 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362094/com.example.app1:id/logo>
+08-10 03:37:08.918  1412  1412 I ViewInteraction: Performing 'type text(newuser@mail.com)' action on view should return first matching item
+08-10 03:37:08.993  1412  1412 I AssistStructure: Flattened final assist data: 2552 bytes, containing 1 windows, 14 views
+08-10 03:37:09.033  3654  3654 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+08-10 03:37:09.034  3654  3654 I AndroidIME: AbstractIme.onActivate():84 LatinIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Email : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = DisabledMic : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+08-10 03:37:09.034  3654  3654 I Delight5Facilitator: Delight5Facilitator.initializeForIme():561 initializeForIme() : Locale = [en_US], layout = qwerty
+08-10 03:37:09.035  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+08-10 03:37:09.035  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+08-10 03:37:09.035  3654  4305 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():160 maybeScheduleAutoPackDownloadForFallback()
+08-10 03:37:09.035  3654  4305 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():197 maybeScheduleAutoPackDownload() for language tag en-US
+08-10 03:37:09.039  3654  3654 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+08-10 03:37:09.065  8857  8857 W qei     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+08-10 03:37:09.072  3654  3654 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+08-10 03:37:09.077  1300  1300 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1632708780
+08-10 03:37:09.099  3654  3654 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{18c81fa V.E...... ......ID 0,0-1080,1977}
+08-10 03:37:09.099  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+08-10 03:37:09.099  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+08-10 03:37:09.125  3654  3654 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+08-10 03:37:09.125  3654  3654 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+08-10 03:37:09.161   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f08b1000]
+08-10 03:37:09.204   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f28c7000 0x3f3178000]
+08-10 03:37:09.208   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3178000 0x3f3a29000]
+08-10 03:37:09.211 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.211 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.219 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.279   496   523 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:09.301  1412  1412 D UiControllerImpl: Injecting string: "newuser@mail.com"
+08-10 03:37:09.358 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.358 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.394 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:09.406   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f7287000 0x3f7b38000]
+08-10 03:37:09.435   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f551c000 0x3f5dcd000]
+08-10 03:37:09.459  3654  3654 W InputConnectionWrapper: InputConnectionWrapper.recordDuration():1447 IPC IC_GET_TEXT_BEFORE_CURSOR took 113 ms
+08-10 03:37:09.512   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f0eb4000 0x3f1765000]
+08-10 03:37:09.665  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:09.693  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4881<4885, inputStateId=4014, lastInputStateId=4014
+08-10 03:37:09.795  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:09.863  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:09.863  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4887<4890, inputStateId=4017, lastInputStateId=4018
+08-10 03:37:09.877  3654  3654 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():29 Acquire InputContextLock takes 8 ms, mainThreadForSure=true.
+08-10 03:37:09.877  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4889<4891, inputStateId=4018, lastInputStateId=4018
+08-10 03:37:09.950  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:09.980  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4891<4894, inputStateId=4019, lastInputStateId=4019
+08-10 03:37:10.088  3654  3873 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+08-10 03:37:10.100  3654  3654 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 4894<4897, inputStateId=4020, lastInputStateId=4020
+08-10 03:37:10.358  8504  8504 I Finsky  : [2] abyu.onStartJob(3): SCH: onJobSchedulerWakeup with jobId 9001
+08-10 03:37:10.358  1412  1412 I ViewInteraction: Performing 'type text(Passw0rd#)' action on view should return first matching item
+08-10 03:37:10.376  8504  8504 I Finsky  : [2] abtz.a(9): SCH: Scheduling fallback job with id: 9034, and delay: 43200000 ms
+08-10 03:37:10.379  8504  8504 I Finsky  : [2] abtz.b(9): SCH: Scheduling fallback in 64799999 (absolute: 89971873)
+08-10 03:37:10.418  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:10.419  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:10.421  3654  3654 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+08-10 03:37:10.421  3654  3654 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+08-10 03:37:10.421  3654  3654 I AndroidIME: AbstractIme.onDeactivate():161 LatinIme.onDeactivate()
+08-10 03:37:10.424   424   424 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
+08-10 03:37:10.424   424   424 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+08-10 03:37:10.425  8504  8504 I Finsky  : [2] abui.handleMessage(8): SCH: DeviceState: DeviceState{currentTime=1660095430420, isCharging=false, isIdle=false, netAny=true, netNotRoaming=true, netUnmetered=true, batteryPercent=100.0}
+08-10 03:37:10.435  1412  1412 W IInputConnectionWrapper: beginBatchEdit on inactive InputConnection
+08-10 03:37:10.436  1412  1412 W IInputConnectionWrapper: endBatchEdit on inactive InputConnection
+08-10 03:37:10.443  8504   965 I Finsky  : [1678] abwt.b(5): SCH: Jobs in database: 1-1337 2-48879 3-1 10-78 12-1 24-77777777 26-1414141414 31-305419896
+08-10 03:37:10.447  8504  8504 I Finsky  : [2] abuj.b(10): SCH: Running job: 12-1
+08-10 03:37:10.461  8504  8504 I Finsky  : [2] ContentSyncJob.r(1): [ContentSync] job started
+08-10 03:37:10.463  3654  3654 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+08-10 03:37:10.463  3654  3654 I AndroidIME: AbstractIme.onActivate():84 PasswordIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Password : Learning = Disable : Suggestion = Hide : AutoCorrection = Disable : Microphone = Hide : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+08-10 03:37:10.477  3654  3654 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+08-10 03:37:10.489  3654  3654 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+08-10 03:37:10.489  8504  8504 I Finsky  : [2] abui.handleMessage(68): SCH: RunningQueue size: 1, PendingQueue size: 0
+08-10 03:37:10.491  3654  3654 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{18c81fa V.E...... ......ID 0,0-1080,1977}
+08-10 03:37:10.491  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+08-10 03:37:10.491  3654  3654 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+08-10 03:37:10.492  3654  3654 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-PasswordOrNumberOrDateInputType,}
+08-10 03:37:10.492  3654  3654 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+08-10 03:37:10.492  8504  8504 I Finsky  : [2] abuj.p(3): SCH: Running queue: 12-1
+08-10 03:37:10.565 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.565 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.578 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.585 10668 10668 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.585 10668 10668 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.589 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+08-10 03:37:10.651  8504  1044 I Finsky  : [1685] glv.b(1): Completed 0 account content syncs with 0 successful.
+08-10 03:37:10.651  8504  8504 I Finsky  : [2] ContentSyncJob.a(1): [ContentSync] Installation state replication succeeded.
+08-10 03:37:10.651  8504  8504 I Finsky  : [2] abvs.n(4): SCH: jobFinished: 12-1. TimeElapsed: 191ms.
+08-10 03:37:10.652  8504  8504 I Finsky  : [2] abuj.e(4): SCH: Job 12-1 finished. Not rescheduling.
+08-10 03:37:10.652  8504  8504 I Finsky  : [2] abui.handleMessage(68): SCH: RunningQueue size: 0, PendingQueue size: 0
+08-10 03:37:10.653  8504  8504 I Finsky  : [2] abui.handleMessage(26): SCH: Executor finished
+08-10 03:37:10.664  8504  8504 I Finsky  : [2] abwt.b(5): SCH: Jobs in database: 1-1337 2-48879 3-1 10-78 24-77777777 26-1414141414 31-305419896
+08-10 03:37:10.666  8504  8504 I Finsky  : [2] abvf.d(37): SCH: ConstraintMapping: 24-77777777,  -> L: 0ms, D: 58526780ms, C: false, I: true, N: 0
+08-10 03:37:10.666  8504  8504 I Finsky  : [2] abvf.d(37): SCH: ConstraintMapping: 1-1337, 31-305419896,  -> L: 8680967ms, D: 53058940ms, C: false, I: false, N: 1
+08-10 03:37:10.666  8504  8504 I Finsky  : [2] abvf.d(37): SCH: ConstraintMapping: 10-78,  -> L: 0ms, D: 62072773ms, C: false, I: true, N: 1
+08-10 03:37:10.666  8504  8504 I Finsky  : [2] abvf.d(37): SCH: ConstraintMapping: 2-48879, 3-1,  -> L: 0ms, D: 62072744ms, C: true, I: true, N: 2
+08-10 03:37:10.667  8504  8504 I Finsky  : [2] abvf.d(37): SCH: ConstraintMapping: 26-1414141414,  -> L: 19827221ms, D: 20727221ms, C: false, I: false, N: 0
+08-10 03:37:10.672  1412  1412 D UiControllerImpl: Injecting string: "Passw0rd#"
+08-10 03:37:10.703  8504  8504 I Finsky  : [2] abvf.f(7): SCH: Cancelling existing jobscheduler jobs: 9000 9008 9009 9002
+08-10 03:37:10.704  8504  8504 I Finsky  : [2] abvf.e(8): SCH: Throttling wakeup for job 9003 (expected to run in 0 ms) due to recent wakeup
+08-10 03:37:10.704  8504  8504 I Finsky  : [2] abvf.e(23): SCH: Scheduling job Id: 9003, L: 30000, D: 58526780, C: false, I: true, N: 0
+08-10 03:37:10.713  8504  8504 I Finsky  : [2] abvf.e(23): SCH: Scheduling job Id: 9004, L: 8680967, D: 53058940, C: false, I: false, N: 1
+08-10 03:37:10.724  8504  8504 I Finsky  : [2] abvf.e(8): SCH: Throttling wakeup for job 9005 (expected to run in 0 ms) due to recent wakeup
+08-10 03:37:10.724  8504  8504 I Finsky  : [2] abvf.e(23): SCH: Scheduling job Id: 9005, L: 30000, D: 62072773, C: false, I: true, N: 1
+08-10 03:37:10.725  8504  8504 I Finsky  : [2] abvf.e(8): SCH: Throttling wakeup for job 9006 (expected to run in 0 ms) due to recent wakeup
+08-10 03:37:10.726  8504  8504 I Finsky  : [2] abvf.e(23): SCH: Scheduling job Id: 9006, L: 30000, D: 62072744, C: true, I: true, N: 2
+08-10 03:37:10.729  8504  8504 I Finsky  : [2] abvf.e(23): SCH: Scheduling job Id: 9007, L: 19827221, D: 20727221, C: false, I: false, N: 0
+08-10 03:37:10.829  3654  3667 I putmethod.lati: Background young concurrent copying GC freed 32707(1495KB) AllocSpace objects, 16(832KB) LOS objects, 46% free, 9871KB/17MB, paused 75us total 143.612ms
+08-10 03:37:11.061  1412  1412 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362250/com.example.app1:id/sign_in>
+08-10 03:37:11.077 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action:com.google.android.gms.feedback.internal.IFeedbackService cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+08-10 03:37:11.084  3654  3654 I AndroidIME: AbstractIme.onDeactivate():161 PasswordIme.onDeactivate()
+08-10 03:37:11.418  1412  1412 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131362250/com.example.app1:id/sign_in>
+08-10 03:37:11.480   496   788 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:11.480   496   527 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 03:37:11.495   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 03:37:11.511   496   788 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:11.537  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: PAUSED
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.539   496  1541 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.540   496  1541 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.541   496  1541 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.541   496  1541 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:11.576  1412  1445 V FA      : Recording user engagement, ms: 4803
+08-10 03:37:11.613   496   523 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:11.621  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: PRE_ON_CREATE
+08-10 03:37:11.627  1412  1441 V FA      : onActivityCreated
+08-10 03:37:11.653  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: CREATED
+08-10 03:37:11.662  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: STARTED
+08-10 03:37:11.678  1412  1489 W System  : Ignoring header X-Firebase-Locale because its value was null.
+08-10 03:37:11.688  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: RESUMED
+08-10 03:37:11.755   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f1765000 0x3f20ca000]
+08-10 03:37:11.774   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f20ca000 0x3f2a2f000]
+08-10 03:37:11.775   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a2f000 0x3f3394000]
+08-10 03:37:11.783 10668  1467 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=4803, ga_screen_class(_sc)=LoginActivity, ga_screen_id(_si)=-7451579132931121299}]
+08-10 03:37:11.785  1412  1445 V FA      : Activity paused, time: 25173056
+08-10 03:37:11.785  1412  1445 V FA      : Activity resumed, time: 25173182
+08-10 03:37:11.844   496   532 I ActivityTaskManager: Displayed com.example.app1/.authentication.SimpleSignInActivity: +364ms
+08-10 03:37:11.924 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1432527
+08-10 03:37:11.924 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:11.945 10668  1467 V FA-SVC  : Scheduling upload, millis: 1432527
+08-10 03:37:11.970   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f20ca000 0x3f2a2f000]
+08-10 03:37:11.978  1412  1489 W System  : Ignoring header X-Firebase-Locale because its value was null.
+08-10 03:37:11.980 10668  1467 V FA-SVC  : Background event processing time, ms: 197
+08-10 03:37:11.996   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3394000 0x3f3cf9000]
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: Error inserting flex_time=1432000 job_id=-1 period=2866000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095431986 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:12.040  8857  1031 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:12.059   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f1765000 0x3f20ca000]
+08-10 03:37:12.103 10668  1467 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=LoginActivity, ga_previous_id(_pi)=-7451579132931121299, ga_screen_class(_sc)=SimpleSignInActivity, ga_screen_id(_si)=-7451579132931121297}]
+08-10 03:37:12.124 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1432327
+08-10 03:37:12.124 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:12.128 10668  1467 V FA-SVC  : Scheduling upload, millis: 1432327
+08-10 03:37:12.136 10668  1467 V FA-SVC  : Background event processing time, ms: 33
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: Error inserting flex_time=1432000 job_id=-1 period=2865000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095432140 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:12.142  8857  1494 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:12.274  1412  1489 D FirebaseAuth: Notifying id token listeners about user ( SqSPRcyaTwcTTA7cRgK3HWytspq1 ).
+08-10 03:37:12.279   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a2f000 0x3f3032000]
+08-10 03:37:12.312  1412  1412 D CompatibilityChangeReporter: Compat change id reported: 147798919; UID 10155; state: ENABLED
+08-10 03:37:12.324   496   527 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+08-10 03:37:12.333  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: PAUSED
+08-10 03:37:12.335   496   527 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.340   496   523 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+08-10 03:37:12.373   426   426 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+08-10 03:37:12.373   426   426 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+08-10 03:37:12.392   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3cf9000 0x3f3d32000]
+08-10 03:37:12.397   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3d32000 0x3f3d6b000]
+08-10 03:37:12.409   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f3d6b000 0x3f3da4000]
+08-10 03:37:12.341  1412  1445 V FA      : Screen exposed for less than 1000 ms. Event not sent. time: 652
+08-10 03:37:12.427  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@b9357d7 in: PRE_ON_CREATE
+08-10 03:37:12.463  1412  1445 V FA      : Activity paused, time: 25173834
+08-10 03:37:12.465  1412  1441 V FA      : onActivityCreated
+08-10 03:37:12.645  1412  1517 W om.example.app: Verification of void com.google.firebase.database.core.Repo$2.onTokenChange() took 108.773ms (220.64 bytecodes/s) (1200B approximate peak alloc)
+08-10 03:37:12.813  8857  8890 I FontLog : Received query Rock Salt, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-10 03:37:12.813  8857  8890 I FontLog : Query [Rock Salt] resolved to {Rock Salt, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-10 03:37:12.840   951   960 I s.nexuslaunche: NativeAlloc concurrent copying GC freed 3963(263KB) AllocSpace objects, 2(124KB) LOS objects, 49% free, 4040KB/8081KB, paused 88us total 523.845ms
+08-10 03:37:12.854  8857  8890 I FontLog : Fetch {Rock Salt, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-10 03:37:12.929  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@b9357d7 in: CREATED
+08-10 03:37:12.955   696   710 I ndroid.systemu: NativeAlloc concurrent copying GC freed 5725(371KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7693KB/15MB, paused 76us total 638.589ms
+08-10 03:37:12.986  8857  9733 I FontLog : Pulling font file for id = 476, cache size = 12 [CONTEXT service_id=132 ]
+08-10 03:37:13.019  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@b9357d7 in: STARTED
+08-10 03:37:13.021  1412  1445 V FA      : Activity resumed, time: 25174516
+08-10 03:37:13.023  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@b9357d7 in: RESUMED
+08-10 03:37:13.087   294   361 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f4965000]
+08-10 03:37:13.090  1412  1412 E RecyclerView: No adapter attached; skipping layout
+08-10 03:37:13.094   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3fb2c7000 0x3fbc2c000]
+08-10 03:37:13.098   294  5735 D goldfish-address-space: claimShared: Ask to claim region [0x3f8965000 0x3f92ca000]
+08-10 03:37:13.245   496   532 I ActivityTaskManager: Displayed com.example.app1/.MainActivity: +921ms
+08-10 03:37:13.622 10668  1467 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_previous_class(_pc)=SimpleSignInActivity, ga_previous_id(_pi)=-7451579132931121297, ga_screen_class(_sc)=MainActivity, ga_screen_id(_si)=-7451579132931121296}]
+08-10 03:37:13.745  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@24c27b3 in: STOPPED
+08-10 03:37:13.762  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: STOPPED
+08-10 03:37:13.765  1412  1412 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@e85046e in: DESTROYED
+08-10 03:37:13.754 10668  1467 V FA-SVC  : Upload scheduled in approximately ms: 1430697
+08-10 03:37:13.780 10668  1467 V FA-SVC  : Unscheduling upload
+08-10 03:37:13.813 10668  1467 V FA-SVC  : Scheduling upload, millis: 1430697
+08-10 03:37:13.856 10668  1467 V FA-SVC  : Background event processing time, ms: 234
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: Error inserting flex_time=1430000 job_id=-1 period=2862000 source=16 requires_charging=0 preferred_network_type=1 target_class=com.google.android.gms.measurement.PackageMeasurementTaskService user_id=0 target_package=com.google.android.gms tag=Measurement.PackageMeasurementTaskService.UPLOAD_TASK_TAG task_type=0 required_idleness_state=0 service_kind=0 source_version=222615000 persistence_level=1 preferred_charging_state=1 required_network_type=0 runtime=1660095433880 retry_strategy={"maximum_backoff_seconds":{"3600":0},"initial_backoff_seconds":{"30":0},"retry_policy":{"0":0}} last_runtime=0 [CONTEXT service_id=218 ]
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: pending_ops.tag, pending_ops.target_class, pending_ops.target_package, pending_ops.user_id (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:938)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:790)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:88)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1701)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1596)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at bexn.g(:com.google.android.gms@222615040@22.26.15 (150700-461192076):52)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at bewg.n(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at bewg.u(:com.google.android.gms@222615040@22.26.15 (150700-461192076):20)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at bewg.h(:com.google.android.gms@222615040@22.26.15 (150700-461192076):3)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at berx.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):9)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at xoc.c(:com.google.android.gms@222615040@22.26.15 (150700-461192076):6)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at xoc.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):7)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at xth.run(:com.google.android.gms@222615040@22.26.15 (150700-461192076):0)
+08-10 03:37:13.887  8857  1494 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:923)
+08-10 03:37:14.579   496  1921 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+08-10 03:37:15.758  1412  1426 I om.example.app: Background concurrent copying GC freed 256626(11MB) AllocSpace objects, 128(10MB) LOS objects, 49% free, 7603KB/14MB, paused 61us total 215.493ms
+08-10 03:37:18.085  1412  1428 W System  : A resource failed to call end.
+08-10 03:37:18.641  1412  1445 V FA      : Inactivity, disconnecting from the service
+08-10 03:37:19.167  1412  1523 W System.err: org.xmlpull.v1.XmlPullParserException: name expected (position:START_TAG <a.length>@48:85 in java.io.InputStreamReader@2d8c700)
+08-10 03:37:19.168  1412  1523 W System.err: 	at com.android.org.kxml2.io.KXmlParser.checkRelaxed(KXmlParser.java:305)
+08-10 03:37:19.168  1412  1523 W System.err: 	at com.android.org.kxml2.io.KXmlParser.readName(KXmlParser.java:1548)
+08-10 03:37:19.168  1412  1523 W System.err: 	at com.android.org.kxml2.io.KXmlParser.parseStartTag(KXmlParser.java:1091)
+08-10 03:37:19.168  1412  1523 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:372)
+08-10 03:37:19.168  1412  1523 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:313)
+08-10 03:37:19.168  1412  1523 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.skip(AndroidParserBase.kt:145)
+08-10 03:37:19.168  1412  1523 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.access$skip(AndroidParserBase.kt:69)
+08-10 03:37:19.168  1412  1523 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.parseStandardChannel(AndroidParserBase.kt:466)
+08-10 03:37:19.168  1412  1523 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:27)
+08-10 03:37:19.169  1412  1523 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:22)
+08-10 03:37:19.169  1412  1523 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:255)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+08-10 03:37:19.169  1412  1523 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+08-10 03:37:19.391  1412  1423 I om.example.app: JIT allocated 74KB for compiled code of void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+08-10 03:37:23.648 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+08-10 03:37:24.167 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+08-10 03:37:25.650 10668 10668 D BoundBrokerSvc: onUnbind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+08-10 03:37:27.117  1412  1412 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362216/com.example.app1:id/rv>
+08-10 03:37:30.430  3654  3726 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdownVoiceInternal():95 shutdownVoiceInternal()
+08-10 03:37:35.809  8992   485 W GmsLocationProvider: Error removing location updates: 16
+08-10 03:37:42.629  1412  1412 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362216/com.example.app1:id/rv>
+08-10 03:37:42.632  1412  1443 I TestRunner: finished: signUpAndSignInSuccessfully(com.example.app1.AuthenticationTest)

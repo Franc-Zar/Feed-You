@@ -149,7 +149,7 @@ class SignUpActivity : AppCompatActivity() {
                             createAccountForAnonymous(emailChosen, passwordChosen)
 
 
-                        "simpleSignIn" ->
+                        "simpleSignUp" ->
                             simpleCreateAccount(emailChosen, passwordChosen)
 
                     }
@@ -228,6 +228,8 @@ class SignUpActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
 
+                    Firebase.auth.signOut()
+
                 } else {
 
                     when (task.exception) {
@@ -252,13 +254,13 @@ class SignUpActivity : AppCompatActivity() {
 
                             Toast.makeText(
                                 baseContext,
-                                "Malformed email.",
+                                "Malformed email",
                                 Toast.LENGTH_SHORT
                             ).show()
 
                         else -> Toast.makeText(
                             baseContext,
-                            "Something went wrong, please try again.",
+                            "Something went wrong, please try again",
                             Toast.LENGTH_SHORT
                         ).show()
 

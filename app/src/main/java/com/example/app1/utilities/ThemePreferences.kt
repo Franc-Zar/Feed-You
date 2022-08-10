@@ -3,6 +3,8 @@ package com.example.app1.utilities
 import android.content.Context
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.app1.R
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 /** Classe di utilità relative alla configurazione del tema visivo dell'applicazione
  */
@@ -42,20 +44,47 @@ class ThemePreferences(var context: Context) {
      */
     fun setThemeSelected(themeSelected: String) {
 
-        when(themeSelected) {
+        if(Firebase.auth.currentUser != null) {
 
-            "FeedYou-Light" -> AppCompatDelegate.setDefaultNightMode(
-                AppCompatDelegate.MODE_NIGHT_NO)
+            when (themeSelected) {
 
-            "FeedYou-Dark" -> AppCompatDelegate.setDefaultNightMode(
-                AppCompatDelegate.MODE_NIGHT_YES)
+                "FeedYou-Light" -> {
 
-            "Follow System" -> AppCompatDelegate.setDefaultNightMode(
-                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+                    AppCompatDelegate.setDefaultNightMode(
+                        AppCompatDelegate.MODE_NIGHT_NO
+                    )
+                    saveThemeSelected(themeSelected)
+
+                }
+
+                "FeedYou-Dark" -> {
+
+                    AppCompatDelegate.setDefaultNightMode(
+                        AppCompatDelegate.MODE_NIGHT_YES
+                    )
+                saveThemeSelected(themeSelected)
+
+                }
+
+                "Follow System" -> {
+
+                    AppCompatDelegate.setDefaultNightMode(
+                        AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                    )
+                    saveThemeSelected(themeSelected)
+                }
+            }
+
+        } else {
+
+            AppCompatDelegate.setDefaultNightMode(
+                AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+            )
+
+            saveThemeSelected("Follow System")
+
 
         }
-
-        saveThemeSelected(themeSelected)
 
     }
 }
