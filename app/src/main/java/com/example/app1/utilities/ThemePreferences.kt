@@ -42,9 +42,9 @@ class ThemePreferences(var context: Context) {
 
     /** metodo di setting, entro l'applicazione, del tema selezionato
      */
-    fun setThemeSelected(themeSelected: String) {
+    fun setThemeSelected(themeSelected: String?) {
 
-        if(Firebase.auth.currentUser != null) {
+        if(Firebase.auth.currentUser != null || themeSelected == null) {
 
             when (themeSelected) {
 
@@ -53,7 +53,6 @@ class ThemePreferences(var context: Context) {
                     AppCompatDelegate.setDefaultNightMode(
                         AppCompatDelegate.MODE_NIGHT_NO
                     )
-                    saveThemeSelected(themeSelected)
 
                 }
 
@@ -62,7 +61,6 @@ class ThemePreferences(var context: Context) {
                     AppCompatDelegate.setDefaultNightMode(
                         AppCompatDelegate.MODE_NIGHT_YES
                     )
-                saveThemeSelected(themeSelected)
 
                 }
 
@@ -71,7 +69,7 @@ class ThemePreferences(var context: Context) {
                     AppCompatDelegate.setDefaultNightMode(
                         AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
                     )
-                    saveThemeSelected(themeSelected)
+
                 }
             }
 
@@ -80,9 +78,6 @@ class ThemePreferences(var context: Context) {
             AppCompatDelegate.setDefaultNightMode(
                 AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
             )
-
-            saveThemeSelected("Follow System")
-
 
         }
 

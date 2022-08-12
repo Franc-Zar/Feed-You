@@ -185,9 +185,9 @@ class MenuActivity : AppCompatActivity() {
                         dialog.dismiss()
                         themePreferences.saveThemeSelected(themeSelected)
                         switchActivity = Intent(this, LoginActivity::class.java)
-                        switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                        switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NO_ANIMATION)
+                        overridePendingTransition(android.R.anim.anticipate_overshoot_interpolator, android.R.anim.anticipate_overshoot_interpolator)
                         startActivity(switchActivity)
-                        overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
 
                     }.show()
 

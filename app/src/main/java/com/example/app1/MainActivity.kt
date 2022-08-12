@@ -97,6 +97,7 @@ class MainActivity : AppCompatActivity() {
                         val intent = Intent(baseContext, MainActivity::class.java).apply {
                             putExtra("INITIALIZED", true)
                         }
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
                         startActivity(intent)
                     }
                 }

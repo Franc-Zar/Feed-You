@@ -19,27 +19,27 @@ import com.google.firebase.ktx.Firebase
  */
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var switch_activity: Intent
+    private lateinit var switchActivity: Intent
     private lateinit var email: EditText
     private lateinit var password: EditText
     private lateinit var themePreferences: ThemePreferences
 
     public override fun onRestart() {
-        super.onRestart()
+        isSignedIn()
         email.setText("")
         password.setText("")
+        super.onRestart()
 
     }
 
     public override fun onStart() {
-        super.onStart()
         isSignedIn()
-
+        super.onStart()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         themePreferences = ThemePreferences(applicationContext)
-        themePreferences.setThemeSelected(themePreferences.getThemeSelected()!!)
+        themePreferences.setThemeSelected(themePreferences.getThemeSelected())
 
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -59,9 +59,9 @@ class LoginActivity : AppCompatActivity() {
          */
         anonymousLogin.setOnClickListener{
 
-            switch_activity = Intent(this, AnonymousActivity::class.java)
-            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-            startActivity(switch_activity)
+            switchActivity = Intent(this, AnonymousActivity::class.java)
+            switchActivity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(switchActivity)
 
         }
 
@@ -69,9 +69,9 @@ class LoginActivity : AppCompatActivity() {
          */
         signUp.setOnClickListener {
 
-            switch_activity = Intent(this, SignUpActivity::class.java)
-            switch_activity.putExtra("requestType","simpleSignUp")
-            startActivity(switch_activity)
+            switchActivity = Intent(this, SignUpActivity::class.java)
+            switchActivity.putExtra("requestType","simpleSignUp")
+            startActivity(switchActivity)
 
         }
 
@@ -79,10 +79,10 @@ class LoginActivity : AppCompatActivity() {
          */
         twitterSignIn.setOnClickListener {
 
-            switch_activity = Intent(this, TwitterActivity::class.java)
-            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-            switch_activity.putExtra("requestType", "signIn")
-            startActivity(switch_activity)
+            switchActivity = Intent(this, TwitterActivity::class.java)
+            switchActivity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            switchActivity.putExtra("requestType", "signIn")
+            startActivity(switchActivity)
 
         }
 
@@ -90,10 +90,10 @@ class LoginActivity : AppCompatActivity() {
          */
         googleSignIn.setOnClickListener {
 
-            switch_activity = Intent(this, GoogleActivity::class.java)
-            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-            switch_activity.putExtra("requestType", "signIn")
-            startActivity(switch_activity)
+            switchActivity = Intent(this, GoogleActivity::class.java)
+            switchActivity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            switchActivity.putExtra("requestType", "signIn")
+            startActivity(switchActivity)
 
         }
 
@@ -101,8 +101,8 @@ class LoginActivity : AppCompatActivity() {
          */
         forgotPassword.setOnClickListener {
             //devo creare la activity per rinviare la password all'email scelta --> fatto
-            switch_activity = Intent(this, PasswordRecoveryActivity::class.java)
-            startActivity(switch_activity)
+            switchActivity = Intent(this, PasswordRecoveryActivity::class.java)
+            startActivity(switchActivity)
 
         }
 
@@ -113,11 +113,11 @@ class LoginActivity : AppCompatActivity() {
             val emailChosen = email.text.toString()
             val passwordChosen = password.text.toString()
 
-            switch_activity = Intent(this, SimpleSignInActivity::class.java)
-            switch_activity.putExtra("emailChosen", emailChosen)
-            switch_activity.putExtra("passwordChosen", passwordChosen)
-            switch_activity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-            startActivity(switch_activity)
+            switchActivity = Intent(this, SimpleSignInActivity::class.java)
+            switchActivity.putExtra("emailChosen", emailChosen)
+            switchActivity.putExtra("passwordChosen", passwordChosen)
+            switchActivity.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(switchActivity)
 
         }
     }
@@ -128,9 +128,10 @@ class LoginActivity : AppCompatActivity() {
 
         if (Firebase.auth.currentUser != null) {
 
-            switch_activity = Intent(this, MainActivity::class.java)
-            startActivity(switch_activity)
-            overridePendingTransition(android.R.anim.anticipate_interpolator, android.R.anim.fade_out)
+            switchActivity = Intent(this, MainActivity::class.java)
+            switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            //overridePendingTransition(android.R.anim.anticipate_overshoot_interpolator, 0)
+            startActivity(switchActivity)
 
         }
     }

@@ -104,7 +104,7 @@ class SignUpActivity : AppCompatActivity() {
 
                 }
 
-                "simpleSignIn" ->
+                "simpleSignUp" ->
                     finish()
 
             }
