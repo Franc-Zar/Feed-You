@@ -3,13 +3,11 @@ package com.example.app1
 import android.content.Context
 import android.util.Log
 import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.example.app1.model.FeederPreferences
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 import org.junit.Test
-import org.junit.runner.RunWith
 
 import org.junit.Assert.*
 import org.junit.Before

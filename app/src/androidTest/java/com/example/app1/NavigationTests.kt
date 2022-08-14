@@ -4,7 +4,7 @@ import BlockPage
 import MainPage
 import MenuPage
 import NewsPage
-import Page
+import com.example.app1.utilities.Page
 import SingleFeedPage
 import TopBarPage
 import android.content.Context
@@ -23,7 +23,7 @@ import org.junit.runner.RunWith
 import java.io.InputStream
 
 @RunWith(AndroidJUnit4::class)
-class NavigationTest {
+class NavigationTests {
     val context: Context = InstrumentationRegistry.getInstrumentation().targetContext
 
     @Before

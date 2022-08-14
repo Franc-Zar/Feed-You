@@ -1,21 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.app1.AuthenticationTest" tests="13" failures="0" errors="0" skipped="0" time="345.084" timestamp="2022-08-10T09:11:26" hostname="localhost">
+<testsuite name="com.example.app1.AuthenticationTests" tests="1" failures="0" errors="0" skipped="0" time="20.489" timestamp="2022-08-14T10:17:12" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_4_API_30(AVD) - 11" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="signInSuccessfully" classname="com.example.app1.AuthenticationTest" time="37.976" />
-  <testcase name="signInWithInexistentAccount" classname="com.example.app1.AuthenticationTest" time="5.698" />
-  <testcase name="signInFromSignUp" classname="com.example.app1.AuthenticationTest" time="5.944" />
-  <testcase name="signUp" classname="com.example.app1.AuthenticationTest" time="3.324" />
-  <testcase name="signInAndDeleteAccount" classname="com.example.app1.AuthenticationTest" time="39.494" />
-  <testcase name="signInAndChangePasswordWeakFail" classname="com.example.app1.AuthenticationTest" time="38.714" />
-  <testcase name="signUpMalformedEmail" classname="com.example.app1.AuthenticationTest" time="14.094" />
-  <testcase name="signInAndChangePasswordSuccessfully" classname="com.example.app1.AuthenticationTest" time="71.362" />
-  <testcase name="signInAndChangePasswordConfirmationFail" classname="com.example.app1.AuthenticationTest" time="46.437" />
-  <testcase name="forgotPassword" classname="com.example.app1.AuthenticationTest" time="3.005" />
-  <testcase name="signUpWeakPassword" classname="com.example.app1.AuthenticationTest" time="15.09" />
-  <testcase name="signInFromPasswordRecovery" classname="com.example.app1.AuthenticationTest" time="6.013" />
-  <testcase name="signUpAndSignInSuccessfully" classname="com.example.app1.AuthenticationTest" time="42.268" />
+  <testcase name="signInSuccessfully" classname="com.example.app1.AuthenticationTests" time="-1.660472211867E9" />
 </testsuite>

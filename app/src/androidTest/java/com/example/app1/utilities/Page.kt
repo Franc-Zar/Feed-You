@@ -1,7 +1,9 @@
+package com.example.app1.utilities
+
 import androidx.test.espresso.Espresso
 
 open class Page {
-    //pattern Page
+    //pattern com.example.app1.utilities.Page
 
     companion object {
         inline fun <reified T : Page> on(): T {

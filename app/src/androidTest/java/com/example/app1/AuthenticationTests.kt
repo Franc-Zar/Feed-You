@@ -6,9 +6,8 @@ import ChangePasswordPage
 import LoginPage
 import MainPage
 import MenuPage
-import Page
+import com.example.app1.utilities.Page
 import PasswordRecoveryPage
-import PreferencePage
 import SignUpPage
 import TopBarPage
 import android.content.Context
@@ -28,7 +27,7 @@ import org.junit.runner.RunWith
 /** Suite di test relativi alle funzionalità di autenticazione
  */
 @RunWith(AndroidJUnit4::class)
-    class AuthenticationTest {
+class AuthenticationTests {
 
     val context: Context = InstrumentationRegistry.getInstrumentation().targetContext
 
@@ -101,6 +100,8 @@ import org.junit.runner.RunWith
             .verify()
         assert(
             Firebase.auth.currentUser!!.email == "test@test.com")
+        Firebase.auth.currentUser!!.delete()
+
     }
 
     @Test
@@ -305,6 +306,27 @@ import org.junit.runner.RunWith
             .on<LoginPage>()
             .verify()
         assert(Firebase.auth.currentUser == null)
+
+        }
+
+    @Test
+    fun createAccountFromAnonymous() {
+        Page.on<LoginPage>()
+            .tapOnAnonymous()
+            .on<MainPage>()
+            .on<TopBarPage>()
+            .tapOnMenu()
+            .on<MenuPage>()
+            .tapOnAccount()
+            .on<SignUpPage>()
+            .typeEmail("test@test.com")
+            .typePassword("Test1#")
+            .checkTermsPolicy()
+            .tapOnSignUp()
+            .on<AccountPage>()
+            .verify()
+        assert(Firebase.auth.currentUser!!.email == "test@test.com")
+        Firebase.auth.currentUser!!.delete()
 
         }
 

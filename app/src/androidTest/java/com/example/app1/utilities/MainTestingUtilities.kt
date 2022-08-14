@@ -3,6 +3,7 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import com.example.app1.R
+import com.example.app1.utilities.Page
 import org.hamcrest.BaseMatcher
 import org.hamcrest.Description
 import org.hamcrest.Matcher
@@ -77,6 +78,7 @@ class MenuPage: Page() {
 
 class AccountPage: Page() {
     override fun verify(): AccountPage {
+        Thread.sleep(1000)
         onView(withId(R.id.decoration))
             .check(matches(isDisplayed()))
         return this
@@ -192,6 +194,11 @@ class LoginPage: Page() {
     override fun verify(): LoginPage {
         Thread.sleep(1000)
         onView(withId(R.id.logo)).check(matches(isDisplayed()))
+        return this
+    }
+
+    fun tapOnAnonymous(): LoginPage {
+        onView(firstView(withId(R.id.anonymous_login))).perform(ViewActions.click())
         return this
     }
 

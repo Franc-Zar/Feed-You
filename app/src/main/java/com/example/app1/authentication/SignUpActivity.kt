@@ -193,7 +193,7 @@ class SignUpActivity : AppCompatActivity() {
                     finish()
 
                     Toast.makeText(
-                        baseContext, "Account created successfully!",
+                        baseContext, "Account created or linked successfully!",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -205,7 +205,7 @@ class SignUpActivity : AppCompatActivity() {
                     finish()
 
                     Toast.makeText(
-                        baseContext, "Account created successfully, but redirect failed",
+                        baseContext, "Account created or linked successfully, but redirect failed",
                         Toast.LENGTH_SHORT
                     ).show()
 
