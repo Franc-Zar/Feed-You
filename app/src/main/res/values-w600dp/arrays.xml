@@ -3,8 +3,6 @@
     <string-array name="langs">
         <item>it: Italiano</item>
         <item>en: English</item>
-        <item>fr: Français</item>
-        <item>de: Deutsche</item>
     </string-array>
     <array name="topics_colors">
         <item>@color/dark_grey</item>
