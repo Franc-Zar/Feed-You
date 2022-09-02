@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -49,6 +50,9 @@ public final class ActivityAccountBinding implements ViewBinding {
   public final TextView nameDecoration;
 
   @NonNull
+  public final ScrollView svMenu;
+
+  @NonNull
   public final MaterialToolbar toolbarAccount;
 
   @NonNull
@@ -58,8 +62,8 @@ public final class ActivityAccountBinding implements ViewBinding {
       @NonNull TextView accountName, @NonNull TextView btnContinue,
       @NonNull TextView connectSocials, @NonNull TextView decoration,
       @NonNull TextView deleteAccount, @NonNull TextView email, @NonNull Button googleConnect,
-      @NonNull TextView nameDecoration, @NonNull MaterialToolbar toolbarAccount,
-      @NonNull Button twitterConnect) {
+      @NonNull TextView nameDecoration, @NonNull ScrollView svMenu,
+      @NonNull MaterialToolbar toolbarAccount, @NonNull Button twitterConnect) {
     this.rootView = rootView;
     this.accountEmail = accountEmail;
     this.accountName = accountName;
@@ -70,6 +74,7 @@ public final class ActivityAccountBinding implements ViewBinding {
     this.email = email;
     this.googleConnect = googleConnect;
     this.nameDecoration = nameDecoration;
+    this.svMenu = svMenu;
     this.toolbarAccount = toolbarAccount;
     this.twitterConnect = twitterConnect;
   }
@@ -155,6 +160,12 @@ public final class ActivityAccountBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.sv_menu;
+      ScrollView svMenu = ViewBindings.findChildViewById(rootView, id);
+      if (svMenu == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar_account;
       MaterialToolbar toolbarAccount = ViewBindings.findChildViewById(rootView, id);
       if (toolbarAccount == null) {
@@ -169,7 +180,7 @@ public final class ActivityAccountBinding implements ViewBinding {
 
       return new ActivityAccountBinding((ConstraintLayout) rootView, accountEmail, accountName,
           btnContinue, connectSocials, decoration, deleteAccount, email, googleConnect,
-          nameDecoration, toolbarAccount, twitterConnect);
+          nameDecoration, svMenu, toolbarAccount, twitterConnect);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

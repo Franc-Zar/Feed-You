@@ -1,17 +1,34 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w600dp-v13\\values-w600dp-v13.xml",
+            "outputFile": "/home/francesco/progetti_univpm/mobile/Feed-You/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\values-w600dp\\arrays.xml",
+                    "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/dimens.xml",
                     "from": {
-                        "startLines": "2,-1,-1,-1,-1,-1",
-                        "startColumns": "4,-1,-1,-1,-1,-1",
-                        "startOffsets": "57,-1,-1,-1,-1,-1",
-                        "endLines": "5,-1,-1,-1,-1,-1",
-                        "endColumns": "19,-1,-1,-1,-1,-1",
-                        "endOffsets": "174,-1,-1,-1,-1,-1"
+                        "startLines": "1,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,58",
+                        "endColumns": "41,42",
+                        "endOffsets": "53,96"
+                    },
+                    "to": {
+                        "startLines": "51,52",
+                        "startColumns": "4,4",
+                        "startOffsets": "1592,1634",
+                        "endColumns": "41,42",
+                        "endOffsets": "1629,1672"
+                    }
+                },
+                {
+                    "source": "/home/francesco/progetti_univpm/mobile/Feed-You/app/src/main/res/values-w600dp/arrays.xml",
+                    "from": {
+                        "startLines": "2,6,43,25,34,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,174,1314,753,1035,474",
+                        "endLines": "5,14,51,33,42,24",
+                        "endColumns": "19,12,19,19,19,19",
+                        "endOffsets": "169,468,1588,1030,1309,748"
                     },
                     "to": {
                         "startLines": "2,6,15,24,33,42",
@@ -20,21 +37,6 @@
                         "endLines": "5,14,23,32,41,50",
                         "endColumns": "19,12,19,19,19,19",
                         "endOffsets": "169,468,747,1029,1308,1587"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\User\\AndroidStudioProjects\\Feed-You-3\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
-                    "from": {
-                        "startLines": "-1,-1",
-                        "startColumns": "-1,-1",
-                        "startOffsets": "-1,-1"
-                    },
-                    "to": {
-                        "startLines": "51,52",
-                        "startColumns": "4,4",
-                        "startOffsets": "1592,1634",
-                        "endColumns": "41,42",
-                        "endOffsets": "1629,1672"
                     }
                 }
             ]

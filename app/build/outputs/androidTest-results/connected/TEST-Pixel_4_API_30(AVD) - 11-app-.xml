@@ -1,9 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<testsuite name="com.example.app1.AuthenticationTests" tests="1" failures="0" errors="0" skipped="0" time="20.489" timestamp="2022-08-14T10:17:12" hostname="localhost">
+<testsuite name="com.example.app1.AuthenticationTests" tests="14" failures="0" errors="0" skipped="0" time="661.871" timestamp="2022-09-01T21:37:11" hostname="localhost">
   <properties>
     <property name="device" value="Pixel_4_API_30(AVD) - 11" />
     <property name="flavor" value="" />
     <property name="project" value="app" />
   </properties>
-  <testcase name="signInSuccessfully" classname="com.example.app1.AuthenticationTests" time="-1.660472211867E9" />
+  <testcase name="signInSuccessfully" classname="com.example.app1.AuthenticationTests" time="96.425" />
+  <testcase name="signInWithInexistentAccount" classname="com.example.app1.AuthenticationTests" time="5.422" />
+  <testcase name="createAccountFromAnonymous" classname="com.example.app1.AuthenticationTests" time="52.331" />
+  <testcase name="signInFromSignUp" classname="com.example.app1.AuthenticationTests" time="6.649" />
+  <testcase name="signUp" classname="com.example.app1.AuthenticationTests" time="2.796" />
+  <testcase name="signInAndDeleteAccount" classname="com.example.app1.AuthenticationTests" time="58.475" />
+  <testcase name="signInAndChangePasswordWeakFail" classname="com.example.app1.AuthenticationTests" time="67.092" />
+  <testcase name="signUpMalformedEmail" classname="com.example.app1.AuthenticationTests" time="15.628" />
+  <testcase name="signInAndChangePasswordSuccessfully" classname="com.example.app1.AuthenticationTests" time="148.067" />
+  <testcase name="signInAndChangePasswordConfirmationFail" classname="com.example.app1.AuthenticationTests" time="70.455" />
+  <testcase name="forgotPassword" classname="com.example.app1.AuthenticationTests" time="2.687" />
+  <testcase name="signUpWeakPassword" classname="com.example.app1.AuthenticationTests" time="17.02" />
+  <testcase name="signInFromPasswordRecovery" classname="com.example.app1.AuthenticationTests" time="6.026" />
+  <testcase name="signUpAndSignInSuccessfully" classname="com.example.app1.AuthenticationTests" time="95.334" />
 </testsuite>

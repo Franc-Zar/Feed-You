@@ -8,10 +8,12 @@ import MainPage
 import MenuPage
 import com.example.app1.utilities.Page
 import PasswordRecoveryPage
+import PreferencePage
 import SignUpPage
 import TopBarPage
 import android.content.Context
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.test.espresso.Espresso
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -34,6 +36,15 @@ class AuthenticationTests {
     @Before
     fun start() {
         Firebase.auth.signOut()
+        val topics = context.getSharedPreferences(context.getString(R.string.prefTopics), Context.MODE_PRIVATE)
+
+        if(context.getSharedPreferences(context.getString(R.string.prefTopics), AppCompatActivity.MODE_PRIVATE).all.isEmpty()){
+            with(topics.edit()) {
+                putString(context.getString(R.string.prefTopics), "not_empty")
+                apply()
+            }
+        }
+
         val intent = Intent(context, LoginActivity::class.java).apply {
             putExtra("INITIALIZED", true)
         }
@@ -91,15 +102,15 @@ class AuthenticationTests {
 
     @Test
     fun signInSuccessfully() {
-        Firebase.auth.createUserWithEmailAndPassword("test@test.com", "Test1#")
+        Firebase.auth.createUserWithEmailAndPassword("test@testing.com", "Test1#")
         Page.on<LoginPage>()
-            .typeEmail("test@test.com")
+            .typeEmail("test@testing.com")
             .typePassword("Test1#")
             .tapOnSignIn()
             .on<MainPage>()
             .verify()
         assert(
-            Firebase.auth.currentUser!!.email == "test@test.com")
+            Firebase.auth.currentUser!!.email == "test@testing.com")
         Firebase.auth.currentUser!!.delete()
 
     }
@@ -319,13 +330,13 @@ class AuthenticationTests {
             .on<MenuPage>()
             .tapOnAccount()
             .on<SignUpPage>()
-            .typeEmail("test@test.com")
+            .typeEmail("new@account.com")
             .typePassword("Test1#")
             .checkTermsPolicy()
             .tapOnSignUp()
             .on<AccountPage>()
             .verify()
-        assert(Firebase.auth.currentUser!!.email == "test@test.com")
+        assert(Firebase.auth.currentUser!!.email == "new@account.com")
         Firebase.auth.currentUser!!.delete()
 
         }

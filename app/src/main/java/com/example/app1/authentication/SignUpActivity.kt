@@ -193,7 +193,7 @@ class SignUpActivity : AppCompatActivity() {
                     finish()
 
                     Toast.makeText(
-                        baseContext, "Account created or linked successfully!",
+                        baseContext, "Account linked successfully!",
                         Toast.LENGTH_SHORT
                     ).show()
 
@@ -201,14 +201,25 @@ class SignUpActivity : AppCompatActivity() {
                     startActivity(switchActivity)
 
                 } else {
+                    when(task.exception) {
 
-                    finish()
+                        is FirebaseAuthUserCollisionException -> {
 
-                    Toast.makeText(
-                        baseContext, "Account created or linked successfully, but redirect failed",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                            Toast.makeText(
+                                baseContext, "Account link failed: provided email address is already in use by another account!",
+                                Toast.LENGTH_SHORT
+                            ).show()
 
+                        }
+
+                        else -> {
+
+                            Toast.makeText(
+                                baseContext, "Something went wrong, please try again!",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
                 }
             }
     }

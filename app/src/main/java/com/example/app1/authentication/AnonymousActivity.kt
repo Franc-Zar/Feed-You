@@ -12,7 +12,7 @@ import com.google.firebase.ktx.Firebase
  */
 class AnonymousActivity : AppCompatActivity() {
 
-    private lateinit var switch_activity: Intent
+    private lateinit var switchActivity: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,8 +37,8 @@ class AnonymousActivity : AppCompatActivity() {
                         "Login Successful",
                         Toast.LENGTH_SHORT).show()
 
-                    switch_activity = Intent(this, MainActivity::class.java)
-                    startActivity(switch_activity)
+                    switchActivity = Intent(this, MainActivity::class.java)
+                    startActivity(switchActivity)
 
                 } else {
 

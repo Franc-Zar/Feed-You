@@ -97,6 +97,7 @@ class MainActivity : AppCompatActivity() {
                             putString(getString(R.string.prefTopics), value.toString())
                             apply()
                         }
+
                         val intent = Intent(baseContext, MainActivity::class.java).apply {
                             putExtra("INITIALIZED", true)
                         }
