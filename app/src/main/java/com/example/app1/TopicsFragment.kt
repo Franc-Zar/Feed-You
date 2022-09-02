@@ -66,12 +66,6 @@ class TopicsFragment : Fragment() {
             "en" -> {
                 resources.getStringArray(R.array.topics_en)
             }
-            "fr" -> {
-                resources.getStringArray(R.array.topics_fr)
-            }
-            "de" -> {
-                resources.getStringArray(R.array.topics_de)
-            }
             else -> {
                 resources.getStringArray(R.array.topics_it)
             }

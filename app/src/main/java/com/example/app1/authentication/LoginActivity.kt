@@ -130,7 +130,6 @@ class LoginActivity : AppCompatActivity() {
 
             switchActivity = Intent(this, MainActivity::class.java)
             switchActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NO_ANIMATION)
-            //overridePendingTransition(android.R.anim.anticipate_overshoot_interpolator, 0)
             startActivity(switchActivity)
 
         }

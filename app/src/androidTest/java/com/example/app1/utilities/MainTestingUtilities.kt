@@ -12,11 +12,12 @@ import org.hamcrest.Matcher
 class MainPage : Page() {
 
     override fun verify(): MainPage {
-        Thread.sleep(15000)
+        Thread.sleep(40000)
 
         onView(withId(R.id.rv))
             .check(matches(isDisplayed()))
         return this
+
     }
 
     fun tapOnNews(): MainPage {

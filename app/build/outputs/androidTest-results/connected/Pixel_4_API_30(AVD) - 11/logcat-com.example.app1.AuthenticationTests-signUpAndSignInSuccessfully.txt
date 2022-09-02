@@ -1,0 +1,520 @@
+09-01 23:35:33.053 10239 10267 I TestRunner: started: signUpAndSignInSuccessfully(com.example.app1.AuthenticationTests)
+09-01 23:35:33.057 10239 10267 D FirebaseAuth: Notifying id token listeners about a sign-out event.
+09-01 23:35:33.057 10239 10267 D FirebaseAuth: Notifying auth state listeners about a sign-out event.
+09-01 23:35:33.093   501   532 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+09-01 23:35:33.136   339   339 I perfetto: ing_service_impl.cc:758 Configured tracing session 39, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+09-01 23:35:33.138   338   338 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=39)
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.158   501  1952 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:33.245 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: PRE_ON_CREATE
+09-01 23:35:33.245   290   290 D goldfish-address-space: claimShared: Ask to claim region [0x3f5765000 0x3f60ca000]
+09-01 23:35:33.331 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-01 23:35:33.489   338   338 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+09-01 23:35:33.527 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: CREATED
+09-01 23:35:33.537 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: STARTED
+09-01 23:35:33.538 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: RESUMED
+09-01 23:35:33.594   290   290 D goldfish-address-space: claimShared: Ask to claim region [0x3f1577000 0x3f1e28000]
+09-01 23:35:33.602   290   290 D goldfish-address-space: claimShared: Ask to claim region [0x3f60ca000 0x3f697b000]
+09-01 23:35:33.606   290   290 D goldfish-address-space: claimShared: Ask to claim region [0x3f8965000 0x3f9216000]
+09-01 23:35:33.676   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3fc965000 0x3fd2ca000]
+09-01 23:35:34.015   501   537 D ArtManagerInternalImpl: /data/misc/iorapd/com.example.app1/1/com.example.app1.authentication.LoginActivity/compiled_traces/compiled_trace.pb doesn't exist
+09-01 23:35:34.016   501   532 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+09-01 23:35:34.067   501   537 I ActivityTaskManager: Displayed com.example.app1/.authentication.LoginActivity: +932ms
+09-01 23:35:34.142 10239 10239 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362094/com.example.app1:id/logo>
+09-01 23:35:34.226  9137  9188 I PBSessionCacheImpl: Deleted sessionId[40186613039216924] from persistence.
+09-01 23:35:34.248  9137  9220 W SearchServiceCore: Abort, client detached.
+09-01 23:35:34.644 10239 10239 I ViewInteraction: Performing 'single click' action on view should return first matching item
+09-01 23:35:34.711   501   532 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+09-01 23:35:34.712   501  1975 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:34.712   501  1975 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:34.732   501   532 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+09-01 23:35:34.755 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: PAUSED
+09-01 23:35:34.757   501  1652 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.757   501  1652 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.757   501  1652 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.758   501  1652 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.759   501  1652 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:34.851   501  1652 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:34.863 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: PRE_ON_CREATE
+09-01 23:35:34.893 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+09-01 23:35:35.050 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: CREATED
+09-01 23:35:35.052 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: STARTED
+09-01 23:35:35.054 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: RESUMED
+09-01 23:35:35.188   290   290 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a2e000 0x3f32df000]
+09-01 23:35:35.207   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f697b000 0x3f722c000]
+09-01 23:35:35.220   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f722c000 0x3f7add000]
+09-01 23:35:35.290   501   537 I ActivityTaskManager: Displayed com.example.app1/.authentication.SignUpActivity: +579ms
+09-01 23:35:35.627 10239 10239 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+09-01 23:35:35.740 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: STOPPED
+09-01 23:35:36.129 10239 10239 I ViewInteraction: Performing 'type text(newuser@mail.com)' action on view should return first matching item
+09-01 23:35:36.241 10239 10239 I AssistStructure: Flattened final assist data: 2492 bytes, containing 1 windows, 13 views
+09-01 23:35:36.261  9030  9030 W qei     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+09-01 23:35:36.275  1380  1380 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+09-01 23:35:36.276  1380  1380 I AndroidIME: AbstractIme.onActivate():84 LatinIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Email : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = DisabledMic : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+09-01 23:35:36.277  1380  1380 I Delight5Facilitator: Delight5Facilitator.initializeForIme():561 initializeForIme() : Locale = [en_US], layout = qwerty
+09-01 23:35:36.277  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+09-01 23:35:36.277  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+09-01 23:35:36.279  1380  3859 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():160 maybeScheduleAutoPackDownloadForFallback()
+09-01 23:35:36.279  1380  3859 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():197 maybeScheduleAutoPackDownload() for language tag en-US
+09-01 23:35:36.292  1380  1380 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+09-01 23:35:36.318  1400  1400 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:1044241196
+09-01 23:35:36.329  1380  1380 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+09-01 23:35:36.334 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-01 23:35:36.334 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-01 23:35:36.371  1380  1380 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{c127a55 V.E...... ......ID 0,0-1080,1977}
+09-01 23:35:36.371  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+09-01 23:35:36.371  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+09-01 23:35:36.372  1380  1380 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+09-01 23:35:36.372  1380  1380 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+09-01 23:35:36.393 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+09-01 23:35:36.393 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+09-01 23:35:36.460   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f1577000 0x3f1e28000]
+09-01 23:35:36.473   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f5765000 0x3f6016000]
+09-01 23:35:36.475   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f6016000 0x3f68c7000]
+09-01 23:35:36.498 10239 10239 D UiControllerImpl: Injecting string: "newuser@mail.com"
+09-01 23:35:36.803   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f48b1000]
+09-01 23:35:36.818   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f48b1000 0x3f5162000]
+09-01 23:35:36.871 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:36.871 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:36.899 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:36.905   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f2a2e000 0x3f32df000]
+09-01 23:35:36.945 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:36.945 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:36.978 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:37.041  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:37.095  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:37.095  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 516<527, inputStateId=430, lastInputStateId=431
+09-01 23:35:37.099  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 525<527, inputStateId=431, lastInputStateId=431
+09-01 23:35:37.159  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:37.165  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 527<529, inputStateId=432, lastInputStateId=432
+09-01 23:35:37.221  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:37.231  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 529<532, inputStateId=433, lastInputStateId=433
+09-01 23:35:37.372  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:37.379  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 532<535, inputStateId=434, lastInputStateId=434
+09-01 23:35:37.460  1380  1380 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():29 Acquire InputContextLock takes 3 ms, mainThreadForSure=true.
+09-01 23:35:37.661 10239 10239 I ViewInteraction: Performing 'type text(Passw0rd#)' action on view should return first matching item
+09-01 23:35:37.713  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:37.715  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:37.719  1380  1380 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+09-01 23:35:37.720  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+09-01 23:35:37.720  1380  1380 I AndroidIME: AbstractIme.onDeactivate():161 LatinIme.onDeactivate()
+09-01 23:35:37.735 10239 10239 W IInputConnectionWrapper: beginBatchEdit on inactive InputConnection
+09-01 23:35:37.736 10239 10239 W IInputConnectionWrapper: endBatchEdit on inactive InputConnection
+09-01 23:35:37.762  1380  1380 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+09-01 23:35:37.762  1380  1380 I AndroidIME: AbstractIme.onActivate():84 PasswordIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Password : Learning = Disable : Suggestion = Hide : AutoCorrection = Disable : Microphone = Hide : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+09-01 23:35:37.777  1380  1380 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+09-01 23:35:37.802  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:37.811  1380  1380 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{c127a55 V.E...... ......ID 0,0-1080,1977}
+09-01 23:35:37.811  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+09-01 23:35:37.811  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+09-01 23:35:37.811   501  1975 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:37.812  1380  1380 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-PasswordOrNumberOrDateInputType,}
+09-01 23:35:37.812  1380  1380 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+09-01 23:35:37.886 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:37.886 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:37.974 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:38.049 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:38.049 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:38.061 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:38.138   338   338 I perfetto: probes_producer.cc:329  Producer stop (id=39)
+09-01 23:35:38.140   338   338 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+09-01 23:35:38.144   339   339 I perfetto: ng_service_impl.cc:1948 Tracing session 39 ended, total sessions:0
+09-01 23:35:38.191 10239 10239 D UiControllerImpl: Injecting string: "Passw0rd#"
+09-01 23:35:38.969 10239 10239 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362305/com.example.app1:id/terms_policy>
+09-01 23:35:39.010  1380  1380 I AndroidIME: AbstractIme.onDeactivate():161 PasswordIme.onDeactivate()
+09-01 23:35:39.381 10239 10239 I ViewInteraction: Performing 'single click' action on view should return first matching item
+09-01 23:35:39.511   501  2382 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:39.512   501  2172 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:39.515   501  2172 I chatty  : uid=1000(system) Binder:501_17 identical 1 line
+09-01 23:35:39.646   501  2172 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:39.922 10239 10239 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362251/com.example.app1:id/sign_up>
+09-01 23:35:39.936 10239 10239 W CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+09-01 23:35:39.975 10239 10239 I ViewInteraction: Performing 'single click' action on view should return first matching item
+09-01 23:35:40.200   501  1652 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:40.202 10239 10945 W System  : Ignoring header X-Firebase-Locale because its value was null.
+09-01 23:35:40.266   312   466 D AudioFlinger: mixer(0xe8438030) throttle end: throttle time(40)
+09-01 23:35:40.304   501  1652 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:40.671 10239 10239 I ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view view.getRootView() to equal view
+09-01 23:35:40.683   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f1577000 0x3f1b7a000]
+09-01 23:35:40.718 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: PAUSED
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.752   501  2382 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:40.759 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: RESTARTED
+09-01 23:35:40.760 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: STARTED
+09-01 23:35:40.761 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: RESUMED
+09-01 23:35:40.799 10239 10945 W System  : Ignoring header X-Firebase-Locale because its value was null.
+09-01 23:35:40.882   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f5765000 0x3f6016000]
+09-01 23:35:40.915   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f6016000 0x3f68c7000]
+09-01 23:35:40.930   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f68c7000 0x3f7178000]
+09-01 23:35:40.953   501  4011 D HostConnection: HostConnection::get() New Host Connection established 0xf32ec700, tid 4011
+09-01 23:35:41.046   501  4011 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+09-01 23:35:41.047   501  4011 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-01 23:35:41.076   501  4011 D EGL_emulation: eglCreateContext: 0xb0ec5cd0: maj 3 min 0 rcv 3
+09-01 23:35:41.078   501  4011 D EGL_emulation: eglMakeCurrent: 0xb0ec5cd0: ver 3 0 (tinfo 0xbac6f8f0) (first time)
+09-01 23:35:41.090   907   914 I s.nexuslaunche: NativeAlloc concurrent copying GC freed 6213(350KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 3764KB/7528KB, paused 79us total 356.797ms
+09-01 23:35:41.091   907   916 W System  : A resource failed to call release.
+09-01 23:35:41.091   907   916 I chatty  : uid=10136(com.google.android.apps.nexuslauncher) FinalizerDaemon identical 1 line
+09-01 23:35:41.091   907   916 W System  : A resource failed to call release.
+09-01 23:35:41.170   705   719 I ndroid.systemu: NativeAlloc concurrent copying GC freed 4749(262KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7458KB/14MB, paused 89us total 456.124ms
+09-01 23:35:41.272   501   510 I system_server: NativeAlloc concurrent copying GC freed 111027(4369KB) AllocSpace objects, 35(1212KB) LOS objects, 50% free, 15MB/31MB, paused 66us total 294.073ms
+09-01 23:35:41.275   501   511 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+09-01 23:35:41.275   501   511 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-01 23:35:41.276   501   511 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+09-01 23:35:41.276   501   511 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-01 23:35:41.331 10239 10945 D FirebaseAuth: Notifying id token listeners about user ( aSFkVLKXLwasyKUPJ8G4wYQJS9M2 ).
+09-01 23:35:41.337 10239 10945 D FirebaseAuth: Notifying auth state listeners about user ( aSFkVLKXLwasyKUPJ8G4wYQJS9M2 ).
+09-01 23:35:41.363 10239 10239 D FirebaseAuth: Notifying id token listeners about a sign-out event.
+09-01 23:35:41.363 10239 10239 D FirebaseAuth: Notifying auth state listeners about a sign-out event.
+09-01 23:35:41.488   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f3b90000 0x3f3be6000]
+09-01 23:35:41.494   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f3be6000 0x3f3c3c000]
+09-01 23:35:41.524   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f3c3c000 0x3f3c92000]
+09-01 23:35:41.575   501   511 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+09-01 23:35:41.575   501   511 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-01 23:35:41.576   501   511 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+09-01 23:35:41.576   501   511 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+09-01 23:35:41.654 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: STOPPED
+09-01 23:35:41.659 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SignUpActivity@5b43164 in: DESTROYED
+09-01 23:35:41.743   501   512 W System  : A resource failed to call release.
+09-01 23:35:41.804   501   512 I chatty  : uid=1000(system) FinalizerDaemon identical 12 lines
+09-01 23:35:41.805   501   512 W System  : A resource failed to call release.
+09-01 23:35:42.726 10239 10239 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362094/com.example.app1:id/logo>
+09-01 23:35:43.232 10239 10239 I ViewInteraction: Performing 'type text(newuser@mail.com)' action on view should return first matching item
+09-01 23:35:43.262   501  2172 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:43.321 10239 10239 I AssistStructure: Flattened final assist data: 2552 bytes, containing 1 windows, 14 views
+09-01 23:35:43.331  1380  1380 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+09-01 23:35:43.333  1380  1380 I AndroidIME: AbstractIme.onActivate():84 LatinIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Email : Learning = Disable : Suggestion = Show : AutoCorrection = Disable : Microphone = DisabledMic : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+09-01 23:35:43.334  1380  1380 I Delight5Facilitator: Delight5Facilitator.initializeForIme():561 initializeForIme() : Locale = [en_US], layout = qwerty
+09-01 23:35:43.335  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.cancelShutdown():55 cancelShutdown()
+09-01 23:35:43.335  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.syncLanguagePacks():67 syncLanguagePacks()
+09-01 23:35:43.338  1380  1380 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+09-01 23:35:43.340  1380  3859 I SpeechFactory: SpeechRecognitionFactory.maybeScheduleAutoPackDownloadForFallback():160 maybeScheduleAutoPackDownloadForFallback()
+09-01 23:35:43.340  1380  3859 I FallbackOnDeviceRecognitionProvider: FallbackOnDeviceRecognitionProvider.maybeScheduleAutoPackDownload():197 maybeScheduleAutoPackDownload() for language tag en-US
+09-01 23:35:43.392  1380  1380 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+09-01 23:35:43.412  1380  1380 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{c127a55 V.E...... ......ID 0,0-1080,1977}
+09-01 23:35:43.413  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+09-01 23:35:43.413  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+09-01 23:35:43.421  1380  1380 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-EmailInputType,}
+09-01 23:35:43.421  1380  1380 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+09-01 23:35:43.468   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f1b7a000 0x3f242b000]
+09-01 23:35:43.470 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.470 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.478   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f242b000 0x3f2cdc000]
+09-01 23:35:43.482   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f2cdc000 0x3f358d000]
+09-01 23:35:43.485 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.502 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.502 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.557  9030  9030 W qei     : Pending fill request while another request in the same session was triggered. [CONTEXT service_id=177 ]
+09-01 23:35:43.585   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f0000000 0x3f08b1000]
+09-01 23:35:43.595   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f08b1000 0x3f1162000]
+09-01 23:35:43.613 10239 10239 D UiControllerImpl: Injecting string: "newuser@mail.com"
+09-01 23:35:43.628  1400  1400 V InlineSuggestionRenderService: handleDestroySuggestionViews called for 0:574570005
+09-01 23:35:43.661   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f7178000 0x3f7a29000]
+09-01 23:35:43.700 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:43.701   501   591 D InputDispatcher: Waiting to send key to Window{88e172f u0 com.example.app1/com.example.app1.authentication.LoginActivity} because there are unprocessed events that may cause focus to change
+09-01 23:35:43.885  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:43.898 10818 10828 I gle.android.gm: Background concurrent copying GC freed 57155(3405KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 4396KB/8792KB, paused 67us total 394.647ms
+09-01 23:35:43.927  1380  2546 E InputContextLock: InputContextLock.maybeTrackAcquireLockTime():29 Acquire InputContextLock takes 10 ms, mainThreadForSure=false.
+09-01 23:35:43.928  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 555<566, inputStateId=459, lastInputStateId=460
+09-01 23:35:43.994  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:43.997  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 566<568, inputStateId=461, lastInputStateId=461
+09-01 23:35:44.099  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:44.109  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 568<571, inputStateId=462, lastInputStateId=462
+09-01 23:35:44.206  1380  2546 I native  : input-context-store.cc:173 Ignoring stale client request for FetchSuggestions
+09-01 23:35:44.240  1380  1380 W InputContextProxy: InputContextProxy.applyClientDiffInternal():832 Ignore [FetchSuggestions] diff due to stale request: 571<574, inputStateId=463, lastInputStateId=463
+09-01 23:35:44.529 10239 10239 I ViewInteraction: Performing 'type text(Passw0rd#)' action on view should return first matching item
+09-01 23:35:44.575  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:44.576  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:44.577  1380  1380 I KeyboardWrapper: KeyboardWrapper.consumeEvent():264 Skip consuming an event as current keyboard is deactivated (state=0, keyboard existence=true)
+09-01 23:35:44.577  1380  1380 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdown():77 shutdown()
+09-01 23:35:44.577  1380  1380 I AndroidIME: AbstractIme.onDeactivate():161 LatinIme.onDeactivate()
+09-01 23:35:44.592 10239 10239 W IInputConnectionWrapper: beginBatchEdit on inactive InputConnection
+09-01 23:35:44.593 10239 10239 W IInputConnectionWrapper: endBatchEdit on inactive InputConnection
+09-01 23:35:44.612  1380  1380 I KeyboardViewUtil: KeyboardViewUtil.getKeyboardHeightRatio():128 systemKeyboardHeightRatio:1.000000; userKeyboardHeightRatio:1.000000.
+09-01 23:35:44.612  1380  1380 I AndroidIME: AbstractIme.onActivate():84 PasswordIme.onActivate() : EditorInfo = Package = com.example.app1 : Type = Password : Learning = Disable : Suggestion = Hide : AutoCorrection = Disable : Microphone = Hide : NoPersonalizedLearning = Disable : AutoStartVoiceInput = Disable, IncognitoMode = false
+09-01 23:35:44.632  1380  1380 I KeyboardViewHelper: KeyboardViewHelper.getView():164 Get view with height ratio:1.000000; experiment height ratio:1.000000.
+09-01 23:35:44.633 10239 10251 I om.example.app: Background concurrent copying GC freed 171875(8487KB) AllocSpace objects, 86(2744KB) LOS objects, 49% free, 9976KB/19MB, paused 44us total 227.583ms
+09-01 23:35:44.641  1380  1380 W TooltipLifecycleManager: TooltipLifecycleManager.dismissTooltip():130 dismissTooltip(): tooltip with id inline_suggestion_tooltip not found in tooltipManager.
+09-01 23:35:44.645  1380  1380 W KeyboardModeManager: KeyboardModeManager.setInputView():302 setInputView() : inputView = com.google.android.apps.inputmethod.libs.framework.core.InputView{c127a55 V.E...... ......ID 0,0-1080,1977}
+09-01 23:35:44.645  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.isEnabledForHostApp():252 Conv2Query not enabled due to current app [com.example.app1] not in whitelist
+09-01 23:35:44.646  1380  1380 I ConversationToQueryExtension: ConversationToQueryExtension.onActivate():162 onActivate() : Disabled by unsupported host app
+09-01 23:35:44.647  1380  1380 I CurrentMicStatusHolder: CurrentMicStatusHolder.onStartInputView():79 Current Mic status = {MicIconHidden-PasswordOrNumberOrDateInputType,}
+09-01 23:35:44.647  1380  1380 I VoiceImeExtension: VoiceImeExtension.shouldStartVoiceInputAutomatically():336 No private IME option set to start voice input.
+09-01 23:35:44.715 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.715 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.737 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.746 10818 10818 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.746 10818 10818 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.754 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-01 23:35:44.827 10239 10239 D UiControllerImpl: Injecting string: "Passw0rd#"
+09-01 23:35:44.870  9137  9147 W earchbox:searc: Suspending all threads took: 7.465ms
+09-01 23:35:44.893 10239 10253 W System  : A resource failed to call dispose.
+09-01 23:35:44.895 10239 10253 W System  : A resource failed to call release.
+09-01 23:35:44.899 10239 10253 W System  : A resource failed to call dispose.
+09-01 23:35:44.900 10239 10253 W System  : A resource failed to call dispose.
+09-01 23:35:45.435 10239 10239 I ViewInteraction: Performing 'close keyboard' action on view view.getId() is <2131362250/com.example.app1:id/sign_in>
+09-01 23:35:45.460  1380  1380 I AndroidIME: AbstractIme.onDeactivate():161 PasswordIme.onDeactivate()
+09-01 23:35:45.795 10239 10239 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131362250/com.example.app1:id/sign_in>
+09-01 23:35:45.895   501   631 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:45.896   501   631 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:45.897   501  1975 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:45.897   501   532 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+09-01 23:35:45.904   339   339 I perfetto: ing_service_impl.cc:758 Configured tracing session 40, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+09-01 23:35:45.905   338   338 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=40)
+09-01 23:35:45.945   501   532 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+09-01 23:35:45.995 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: PAUSED
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:45.999   501  2382 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.000   501  2382 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:46.013   338   338 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+09-01 23:35:46.035   501   631 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:46.099 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: PRE_ON_CREATE
+09-01 23:35:46.181  9137  9220 I WorkerManager: dispose()
+09-01 23:35:46.182  9137  9220 W ThreadPoolDumper: Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+09-01 23:35:46.179 10239 10945 W System  : Ignoring header X-Firebase-Locale because its value was null.
+09-01 23:35:46.235 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: CREATED
+09-01 23:35:46.238 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: STARTED
+09-01 23:35:46.245 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: RESUMED
+09-01 23:35:46.338   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f1b7a000 0x3f24df000]
+09-01 23:35:46.353   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f24df000 0x3f2e44000]
+09-01 23:35:46.359   290   400 D goldfish-address-space: claimShared: Ask to claim region [0x3f2e44000 0x3f37a9000]
+09-01 23:35:46.440   501   537 I ActivityTaskManager: Displayed com.example.app1/.authentication.SimpleSignInActivity: +533ms
+09-01 23:35:46.545 10239 10945 W System  : Ignoring header X-Firebase-Locale because its value was null.
+09-01 23:35:46.683   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f24df000 0x3f2e44000]
+09-01 23:35:46.727   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f4965000]
+09-01 23:35:46.853   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f1b7a000 0x3f24df000]
+09-01 23:35:46.973 10239 10945 D FirebaseAuth: Notifying id token listeners about user ( aSFkVLKXLwasyKUPJ8G4wYQJS9M2 ).
+09-01 23:35:46.973 10239 10945 D FirebaseAuth: Notifying auth state listeners about user ( aSFkVLKXLwasyKUPJ8G4wYQJS9M2 ).
+09-01 23:35:47.046   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f2e44000 0x3f3447000]
+09-01 23:35:47.119   501   532 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+09-01 23:35:47.143   339   339 I perfetto: ing_service_impl.cc:758 Configured tracing session 41, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
+09-01 23:35:47.145   338   338 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=41)
+09-01 23:35:47.156   501   532 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+09-01 23:35:47.162 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: PAUSED
+09-01 23:35:47.182   501   631 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.182   501   631 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.182   501   631 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.182   501   631 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.182   501   631 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.183   501   631 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.183   501   631 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.183   501   631 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.183   501   631 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.183   501   631 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.197   501   631 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+09-01 23:35:47.277   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f3447000 0x3f3480000]
+09-01 23:35:47.312   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f3480000 0x3f34b9000]
+09-01 23:35:47.365 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@f7f60c9 in: PRE_ON_CREATE
+09-01 23:35:47.365   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f34b9000 0x3f34f2000]
+09-01 23:35:47.496 10239 10351 W SyncTree: Listen at /users/aSFkVLKXLwasyKUPJ8G4wYQJS9M2/topics failed: DatabaseError: Permission denied
+09-01 23:35:47.540 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@f7f60c9 in: CREATED
+09-01 23:35:47.560 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@f7f60c9 in: STARTED
+09-01 23:35:47.563 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.MainActivity@f7f60c9 in: RESUMED
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: Failed to read value.
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: com.google.firebase.database.DatabaseException: Firebase Database error: Permission denied
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.google.firebase.database.DatabaseError.toException(DatabaseError.java:230)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.example.app1.MainActivity$onCreate$3.onCancelled(MainActivity.kt:107)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.google.firebase.database.core.ValueEventRegistration.fireCancelEvent(ValueEventRegistration.java:80)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.google.firebase.database.core.view.CancelEvent.fire(CancelEvent.java:40)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.google.firebase.database.core.view.EventRaiser$1.run(EventRaiser.java:55)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.os.Handler.handleCallback(Handler.java:938)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadForAtLeast(UiControllerImpl.java:8)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:18)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.os.Handler.handleCallback(Handler.java:938)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.os.Looper.loop(Looper.java:223)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at java.lang.reflect.Method.invoke(Native Method)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+09-01 23:35:47.574 10239 10239 W ERROR UPDATING DATA: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+09-01 23:35:47.602 10239 10239 E RecyclerView: No adapter attached; skipping layout
+09-01 23:35:47.605   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f34f2000 0x3f3e57000]
+09-01 23:35:47.609   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f4965000 0x3f52ca000]
+09-01 23:35:47.610   290  5663 D goldfish-address-space: claimShared: Ask to claim region [0x3f52ca000 0x3f5c2f000]
+09-01 23:35:47.680   501   537 I ActivityTaskManager: Displayed com.example.app1/.MainActivity: +560ms
+09-01 23:35:47.719   705   719 I ndroid.systemu: NativeAlloc concurrent copying GC freed 4491(226KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7513KB/14MB, paused 1.570ms total 597.020ms
+09-01 23:35:48.251 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.LoginActivity@2a77f84 in: STOPPED
+09-01 23:35:48.386 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: STOPPED
+09-01 23:35:48.391 10239 10239 D LifecycleMonitor: Lifecycle status change: com.example.app1.authentication.SimpleSignInActivity@d991f4b in: DESTROYED
+09-01 23:35:48.991   501  2382 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+09-01 23:35:49.273 10239 10251 I om.example.app: Background young concurrent copying GC freed 92898(4510KB) AllocSpace objects, 50(4512KB) LOS objects, 45% free, 10MB/19MB, paused 22us total 124.196ms
+09-01 23:35:49.310 10239 10253 W System  : A resource failed to call end.
+09-01 23:35:49.667 10239 10816 W System.err: java.io.FileNotFoundException: https://st.ilfattoquotidiano.it/wp-content/themes/ifq-2019/assets/img/ifq-logo-squared.png
+09-01 23:35:49.667 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+09-01 23:35:49.667 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+09-01 23:35:49.694 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+09-01 23:35:49.694 10239 10816 W System.err: 	at com.example.app1.CustomFeeder.getIcon(CustomFeeder.kt:173)
+09-01 23:35:49.694 10239 10816 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:112)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+09-01 23:35:49.701 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+09-01 23:35:50.490 10239 10251 I om.example.app: Background concurrent copying GC freed 93066(4496KB) AllocSpace objects, 53(8436KB) LOS objects, 49% free, 13MB/27MB, paused 60us total 347.829ms
+09-01 23:35:50.924   338   338 I perfetto: probes_producer.cc:329  Producer stop (id=40)
+09-01 23:35:50.930   339   339 I perfetto: ng_service_impl.cc:1948 Tracing session 40 ended, total sessions:1
+09-01 23:35:52.146   338   338 I perfetto: probes_producer.cc:329  Producer stop (id=41)
+09-01 23:35:52.152   339   339 I perfetto: ng_service_impl.cc:1948 Tracing session 41 ended, total sessions:0
+09-01 23:35:52.158   338   338 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+09-01 23:35:52.882 10239 10816 W System.err: java.io.FileNotFoundException: https://api-msfnews.mediaset.net/tgcom24/redirect/27493679
+09-01 23:35:52.885 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:255)
+09-01 23:35:52.885 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:211)
+09-01 23:35:52.885 10239 10816 W System.err: 	at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:30)
+09-01 23:35:52.885 10239 10816 W System.err: 	at java.net.URL.openStream(URL.java:1072)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlin.io.TextStreamsKt.readBytes(ReadWrite.kt:150)
+09-01 23:35:52.885 10239 10816 W System.err: 	at com.example.app1.CustomFeeder.getIcon(CustomFeeder.kt:148)
+09-01 23:35:52.885 10239 10816 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:112)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+09-01 23:35:52.885 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+09-01 23:35:53.578 10239 10251 I om.example.app: Background young concurrent copying GC freed 114564(4994KB) AllocSpace objects, 57(9048KB) LOS objects, 48% free, 13MB/27MB, paused 13.425ms total 71.153ms
+09-01 23:35:54.580 10239 10816 W om.example.app: JNI critical lock held for 19.028ms on Thread[46,tid=10816,Runnable,Thread*=0xe5580010,peer=0x13700a48,"DefaultDispatcher-worker-2"]
+09-01 23:35:55.043 10239 10251 I om.example.app: Background concurrent copying GC freed 128078(4860KB) AllocSpace objects, 98(13MB) LOS objects, 49% free, 9539KB/18MB, paused 42us total 148.412ms
+09-01 23:35:55.152 10239 10253 W System  : A resource failed to call end.
+09-01 23:35:55.152 10239 10253 I chatty  : uid=10155(com.example.app1) FinalizerDaemon identical 1 line
+09-01 23:35:55.168 10239 10253 W System  : A resource failed to call end.
+09-01 23:35:55.912 10239 10251 I om.example.app: Background young concurrent copying GC freed 2933(259KB) AllocSpace objects, 24(5708KB) LOS objects, 25% free, 13MB/18MB, paused 29.147ms total 235.892ms
+09-01 23:35:57.961 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-01 23:35:58.440 10239 10251 I om.example.app: Background concurrent copying GC freed 75066(2996KB) AllocSpace objects, 66(7260KB) LOS objects, 49% free, 8464KB/16MB, paused 24us total 163.442ms
+09-01 23:35:58.443 10239 10253 W System  : A resource failed to call end.
+09-01 23:35:58.443 10239 10253 W System  : A resource failed to call end.
+09-01 23:35:58.798 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:com.google.android.mdd.service.START cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-01 23:35:58.825 10239 10816 W System.err: org.xmlpull.v1.XmlPullParserException: name expected (position:START_TAG <a.length>@48:85 in java.io.InputStreamReader@3fd67db)
+09-01 23:35:58.829 10239 10816 W System.err: 	at com.android.org.kxml2.io.KXmlParser.checkRelaxed(KXmlParser.java:305)
+09-01 23:35:58.830 10239 10816 W System.err: 	at com.android.org.kxml2.io.KXmlParser.readName(KXmlParser.java:1548)
+09-01 23:35:58.830 10239 10816 W System.err: 	at com.android.org.kxml2.io.KXmlParser.parseStartTag(KXmlParser.java:1091)
+09-01 23:35:58.830 10239 10816 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:372)
+09-01 23:35:58.830 10239 10816 W System.err: 	at com.android.org.kxml2.io.KXmlParser.next(KXmlParser.java:313)
+09-01 23:35:58.830 10239 10816 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.skip(AndroidParserBase.kt:145)
+09-01 23:35:58.830 10239 10816 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.access$skip(AndroidParserBase.kt:69)
+09-01 23:35:58.830 10239 10816 W System.err: 	at tw.ktrssreader.parser.AndroidParserBase.parseStandardChannel(AndroidParserBase.kt:466)
+09-01 23:35:58.830 10239 10816 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:27)
+09-01 23:35:58.830 10239 10816 W System.err: 	at tw.ktrssreader.parser.AndroidRssStandardParser.parse(AndroidRssStandardParser.kt:22)
+09-01 23:35:58.830 10239 10816 W System.err: 	at com.example.app1.CustomFeeder$setFeed$1.invokeSuspend(CustomFeeder.kt:255)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlinx.coroutines.internal.LimitedDispatcher.run(LimitedDispatcher.kt:42)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:95)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:570)
+09-01 23:35:58.830 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:749)
+09-01 23:35:58.831 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:677)
+09-01 23:35:58.831 10239 10816 W System.err: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:664)
+09-01 23:35:59.760   411   411 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+09-01 23:35:59.761   411   411 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+09-01 23:35:59.798 10818 10818 D BoundBrokerSvc: onUnbind: Intent { act=com.google.firebase.dynamiclinks.service.START pkg=com.google.android.gms }
+09-01 23:35:59.885   409   409 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
+09-01 23:35:59.885   409   409 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+09-01 23:36:00.563 10239 10277 I OpenGLRenderer: Davey! duration=1653ms; Flags=0, IntendedVsync=1895445863994, Vsync=1895445863994, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=1895448096217, AnimationStart=1895448097942, PerformTraversalsStart=1895448098483, DrawStart=1896806167895, SyncQueued=1897045004275, SyncStart=1897074834223, IssueDrawCommandsStart=1897091350545, SwapBuffers=1897108157025, FrameCompleted=1897129609977, DequeueBufferDuration=15216640, QueueBufferDuration=2125673, GpuCompleted=1892955162293,
+09-01 23:36:04.617  1380  1459 I VoiceInputManagerWrapper: VoiceInputManagerWrapper.shutdownVoiceInternal():95 shutdownVoiceInternal()
+09-01 23:36:26.649   197   215 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
+09-01 23:36:26.648   197   197 W Binder:197_1: type=1400 audit(0.0:316): avc: denied { read } for name="wakeup34" dev="sysfs" ino=18627 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+09-01 23:36:26.656   197   197 W Binder:197_1: type=1400 audit(0.0:317): avc: denied { read } for name="wakeup35" dev="sysfs" ino=18690 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+09-01 23:36:26.659   197   215 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+09-01 23:36:27.882 10239 10239 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362216/com.example.app1:id/rv>
+09-01 23:36:32.512   197   197 W Binder:197_1: type=1400 audit(0.0:318): avc: denied { read } for name="wakeup34" dev="sysfs" ino=18627 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+09-01 23:36:32.514   197   215 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup34: Permission denied
+09-01 23:36:32.525   197   215 E android.system.suspend@1.0-service: Error opening kernel wakelock stats for: wakeup35: Permission denied
+09-01 23:36:32.524   197   197 W Binder:197_1: type=1400 audit(0.0:319): avc: denied { read } for name="wakeup35" dev="sysfs" ino=18690 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=0
+09-01 23:36:50.697 10818 10850 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+09-01 23:36:59.771   411   411 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+09-01 23:36:59.771   411   411 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+09-01 23:36:59.897   409   409 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
+09-01 23:36:59.897   409   409 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+09-01 23:37:05.036   155   155 E SELinux : avc:  denied  { find } for interface=android.hardware.memtrack::IMemtrack sid=u:r:gmscore_app:s0:c512,c768 pid=10818 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:hal_memtrack_hwservice:s0 tclass=hwservice_manager permissive=0
+09-01 23:37:05.036 10818 11133 E memtrack: Couldn't load memtrack module
+09-01 23:37:08.389 10239 10239 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131362216/com.example.app1:id/rv>
+09-01 23:37:08.392 10239 10267 I TestRunner: finished: signUpAndSignInSuccessfully(com.example.app1.AuthenticationTests)
