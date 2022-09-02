@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
@@ -21,8 +22,10 @@ class LangFragment : Fragment() {
                 .split(':')[0]
         val current_user = Firebase.auth.currentUser!!
         if (! current_user.isAnonymous){
-            Firebase.database.reference.child(getString(R.string.firebase_users))
-                .child(current_user.uid).child("lang").setValue(language)
+            FirebaseDatabase
+                .getInstance("https://feed-you-ca52a-default-rtdb.europe-west1.firebasedatabase.app/")
+                .getReference().child("users").child(current_user.uid)
+                .child("lang").setValue(language)
         }
         if (pref != null) {
             with(pref.edit()) {
