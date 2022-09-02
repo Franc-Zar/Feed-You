@@ -27,6 +27,7 @@
             android:exported="false" />
         <activity
             android:name=".settings.account.PasswordChangeActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".settings.menu.MenuActivity"
@@ -61,9 +62,11 @@
         <activity
             android:name=".authentication.PasswordRecoveryActivity"
             android:exported="false"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.App1.NoActionBar" />
         <activity
             android:name=".authentication.SignUpActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -83,6 +86,7 @@
         <activity
             android:name=".authentication.LoginActivity"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.App1.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

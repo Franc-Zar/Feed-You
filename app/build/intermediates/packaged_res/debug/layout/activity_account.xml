@@ -187,6 +187,10 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
         </LinearLayout>
     </ScrollView>
 
