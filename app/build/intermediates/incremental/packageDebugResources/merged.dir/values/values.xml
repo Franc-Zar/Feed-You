@@ -22,8 +22,6 @@
     <string-array name="langs">
         <item>it: Italiano</item>
         <item>en: English</item>
-        <item>fr: Français</item>
-        <item>de: Deutsche</item>
     </string-array>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/asap</item>
@@ -178,17 +176,17 @@
 
     </style>
     <style name="Theme.App1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
+        
         <item name="colorPrimary">@color/main</item>
         <item name="colorPrimaryVariant">@color/feedyou_azure_dark</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+        
         <item name="colorSecondary">@color/feedyou_grey</item>
         <item name="colorSecondaryVariant">@color/white</item>
         <item name="colorOnSecondary">@color/darker_grey</item>
-        <!-- Status bar color. -->
+        
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        
         <item name="android:textColorHint">?attr/colorSecondary</item>
         <item name="android:colorControlActivated">?attr/colorPrimaryVariant</item>
     </style>
@@ -199,7 +197,7 @@
     </style>
     <style name="Theme.App1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:background">#33646464</item> <!-- Or any transparency or color you need -->
+        <item name="android:background">#33646464</item> 
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>

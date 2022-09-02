@@ -26,7 +26,7 @@ import kotlin.system.exitProcess
 class MainActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var switch_activity: Intent
-    private val current_user = Firebase.auth.currentUser!!
+    private var current_user = Firebase.auth.currentUser!!
     private lateinit var rv : RecyclerView
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -51,6 +51,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if(current_user != Firebase.auth.currentUser!!){
+            current_user = Firebase.auth.currentUser!!
+        }
 
         if (!current_user.isAnonymous and !intent.hasExtra("INITIALIZED")) {
             //nome db: feed-you-ca52a-default-rtdb
@@ -139,6 +142,65 @@ class MainActivity : AppCompatActivity() {
 
     fun myUpdateOperation(){
         val pref =getSharedPreferences(getString(R.string.prefTopics),Context.MODE_PRIVATE)
+        if(current_user != Firebase.auth.currentUser!!){
+            current_user = Firebase.auth.currentUser!!
+        }
+        if (!current_user.isAnonymous and !intent.hasExtra("INITIALIZED")) {
+            //nome db: feed-you-ca52a-default-rtdb
+            database = FirebaseDatabase.getInstance("https://feed-you-ca52a-default-rtdb.europe-west1.firebasedatabase.app/")
+                .getReference().child("users").child(current_user.uid) //.child(getString(R.string.firebase_users))
+
+            val langPref = database.child("lang")
+            val langLocalPref = getSharedPreferences(getString(R.string.lang), MODE_PRIVATE)
+
+            langPref.get().addOnSuccessListener {
+                val lang = it.value
+                if (lang != null) {
+                    with(langLocalPref.edit()) {
+                        putString(getString(R.string.lang), lang.toString())
+                        apply()
+                    }
+                }
+            }
+
+            val topicPref = database.child("topics")
+            val topicLocalPref = getSharedPreferences(getString(R.string.prefTopics), MODE_PRIVATE)
+            topicPref.get().addOnSuccessListener {
+                val topic = it.value
+                if (topic != null) {
+                    with(topicLocalPref.edit()) {
+                        putString(getString(R.string.prefTopics), topic.toString())
+                        apply()
+                    }
+                }
+            }
+
+            topicPref.addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+                    // This method is called once with the initial value and again
+                    // whenever data at this location is updated.
+                    val value = dataSnapshot.value
+                    if (value != null){
+                        Log.d("DATA UPDATED", "Value is: $value")
+                        database.child("topics").setValue(value)
+                        with(topicLocalPref.edit()) {
+                            putString(getString(R.string.prefTopics), value.toString())
+                            apply()
+                        }
+                        val intent = Intent(baseContext, MainActivity::class.java).apply {
+                            putExtra("INITIALIZED", true)
+                        }
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+                        startActivity(intent)
+                    }
+                }
+                override fun onCancelled(error: DatabaseError) {
+                    // Failed to read value
+                    Log.w("ERROR UPDATING DATA", "Failed to read value.", error.toException())
+                }
+            })
+        }
+
         if(pref.all.isNotEmpty()){
             if (!pref.all.getValue(getString(R.string.prefTopics))?.equals("[]")!!) {
                 val feeder = CustomFeeder(this)
